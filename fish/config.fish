@@ -122,8 +122,9 @@ alias ch='cd ~'
 alias cr="cd ~/.config/rofi"
 alias cm="cd ~/Music"
 alias cP="cd ~/.config/polybar.old/"
-alias cdoc="j ~/documents"
-alias cdo="j ~/downloads"
+alias cdoc="cd ~/Documents"
+alias cdo="cd ~/Downloads"
+alias cco="cd ~/.config"
 
 
 alias kmux="tmux kill-server"

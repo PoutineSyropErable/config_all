@@ -18,6 +18,9 @@ end
 
 alias fmod="vim ~/.fishrc"
 alias fview="bat ~/.fishrc"
+alias cnv="vim ~/.config/nvim"
+alias cn="cd ~/.config/nvim"
+
 
 alias lp="lsblk -o +PARTLABEL"
 alias listpartitions="lsblk -o +PARTLABEL"

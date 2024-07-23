@@ -1,0 +1,5 @@
+
+#"gpu removed
+#" ${color1}Memory speed${color1} ${alignr}${offset -10}${color1} ${exec grep -Po '\d+:\s\K(\d+)(?=.*\*$)' /sys/class/drm/card1/device/pp_dpm_mclk}
+#"${color1}Fan${color} ${alignr}${offset -10}${color1}${hwmon 2 fan 1}
+

@@ -8,12 +8,16 @@ atuin init fish --disable-up-arrow | source
 #atuin init fish --disable-ctrl-r --disable-up-arrow | source
 
 alias svim="sudo -e vim"
-alias nano="vim"
+alias ovim="/usr/bin/vim"
+alias vim="ovim"
+alias nano="nvim"
 function get
     set -l n $argv[1]
     awk "{print \$$n}"
 end
 
+alias fmod="vim ~/.fishrc"
+alias fview="bat ~/.fishrc"
 
 alias lp="lsblk -o +PARTLABEL"
 alias listpartitions="lsblk -o +PARTLABEL"
@@ -21,6 +25,7 @@ alias listblocks="lsblk -o +PARTLABEL"
 alias lsblk1="lsblk -o +PARTLABEL"
 
 alias reload="source ~/.config/fish/config.fish"
+alias r="source ~/.config/fish/config.fish"
 alias cl="clear"
 alias en="echo -n"
 alias theme="kitty +kitten themes"

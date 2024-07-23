@@ -1,0 +1,151 @@
+#!/config
+
+conky.config = {
+ 
+    --Various settings
+ 
+    background = true,                          -- forked to background
+    cpu_avg_samples = 2,                        -- The number of samples to average for CPU monitoring.
+    diskio_avg_samples = 10,                    -- The number of samples to average for disk I/O monitoring.
+    double_buffer = true,                       -- Use the Xdbe extension? (eliminates flicker)
+    if_up_strictness = 'address',               -- how strict if testing interface is up - up, link or address
+    net_avg_samples = 2,                        -- The number of samples to average for net data
+    no_buffers = true,                          -- Subtract (file system) buffers from used memory?
+    temperature_unit = 'celsius',               -- fahrenheit or celsius
+    text_buffer_size = 4192,                    -- size of buffer for display of content of large variables - default 256
+    update_interval = 1,                        -- update interval
+    imlib_cache_size = 0,                       -- disable image cache to get a new spotify cover per song
+ 
+ 
+    --Placement
+    xinerama_head = 2,                          -- monitor 1
+    alignment = 'top_right',                    -- top_left,top_middle,top_right,bottom_left,bottom_middle,bottom_right,
+                                                -- middle_left,middle_middle,middle_right,none
+    gap_x = 140,                                 -- pixels between right or left border
+	--28
+    gap_y =60,                                 -- pixels between bottom or left border
+	--gap_y = 41 ?  --monitor 0
+	--gap_y = 59  --monitor 1
+    minimum_height = 200,                      -- minimum height of window
+    minimum_width = 100,                        -- minimum width of window
+    maximum_width = 800,                        -- maximum hwidth of window
+ 
+    --Graphical
+ 
+    border_inner_margin = 3,                   -- margin between border and text
+    border_outer_margin = 3,                   -- margin between border and edge of window
+    border_width = 1,                           -- border width in pixels
+    default_bar_width = 0,                      -- default is 0 - full width
+    default_bar_height = 5,                     -- default is 6
+    default_gauge_height = 6,                  -- default is 25
+    default_gauge_width =40,                    -- default is 40
+    default_graph_height = 5,                   -- default is 25
+    default_graph_width = 0,                    -- default is 0 - full width
+    default_shade_color = '#000000',            -- default shading colour
+    default_outline_color = '#000000',          -- default outline colour
+    draw_borders = false,                       -- draw borders around text
+    draw_graph_borders = true,                  -- draw borders around graphs
+    draw_shades = false,                        -- draw shades
+    draw_outline = false,                       -- draw outline
+    stippled_borders = 1,                       -- dashing the border
+ 
+    --Textual
+ 
+    extra_newline = false,                      -- extra newline at the end - for asesome's wiboxes
+    format_human_readable = true,               -- KiB, MiB rather then number of bytes
+    font = 'Roboto Mono:size=8',               -- font for complete conky unless in code defined
+    max_text_width = 0,                         -- 0 will make sure line does not get broken if width too smal
+    max_user_text = 16384,                      -- max text in conky default 16384
+    override_utf8_locale = true,                -- force UTF8 requires xft
+    short_units = true,                         -- shorten units from KiB to k
+    top_name_width = 10,                        -- width for $top name value default 15
+    top_name_verbose = false,                   -- If true, top name shows the full command line of  each  process - Default value is false.
+    uppercase = false,                          -- uppercase or not
+    use_spacer = 'none',                        -- adds spaces around certain objects to align - default none
+    use_xft = true,                             -- xft font - anti-aliased font
+    xftalpha = 1,                               -- alpha of the xft font - between 0-1
+ 
+    --Windows
+ 
+    own_window = true,                          -- create your own window to draw
+    own_window_argb_value = 100,                -- real transparency - composite manager required 0-255
+    own_window_argb_visual = true,              -- use ARGB - composite manager required
+    own_window_colour = '#000000',              -- set colour if own_window_transparent no
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',  -- if own_window true - just hints - own_window_type sets it
+    own_window_transparent = false,             -- if own_window_argb_visual is true sets background opacity 0%
+    own_window_title = 'system_conky',          -- set the name manually  - default conky "hostname"
+    own_window_type = 'override',                  -- if own_window true options are: normal/override/dock/desktop/panel
+    --own_window_type = 'normal',                  -- for neofetch flex 
+ 
+    --Colours
+ 
+    default_color = '#D9DDE2',                  -- default color and border color
+    color1 = '#FFA726',                         --orange
+    color2 = '#00BFFF',                         -- light blue
+ 
+    --Lua
+ 
+ 
+};
+ 
+    conky.text = [[
+    ${color1}${font GE Inspira:size=36}${alignc}${time %H}:${time %M}:${time %S}${font}${color}
+    ${color1}${font GE Inspira:size=12}${alignc}${time %A} ${time %B} ${time %e}, ${time %Y}${font}${color}
+ 
+${color2}${font Roboto:size=12}${voffset 2}S Y S T E M   ${hr 2}${font}${color}
+    ${color1}Hostname:${color1} ${alignr}${nodename}
+    ${color1}Distro:${color1}${alignr}$sysname ${alignr}${execi 6000 lsb_release -a | grep 'Description'|awk {'print $3, $4, $5'}}
+    ${color1}Kernel:${color1}${alignr}${exec uname -r}
+    ${color1}Uptime:${color1} ${alignr}${uptime}
+    ${color1}Processes:${color1}${alignr}${processes} (${color1}${running_processes}${color})
+ 
+${color2}${font Roboto:size=12}C P U  ${hr 2}${font}${color}
+    ${color1}CPU Model:${color1} ${alignr}${offset 10}${execi 6000 cat /proc/cpuinfo | grep 'model name' | sed -e 's/model name.*: //' | sed -e 's/Processor//'  | sed -e 's/(tm)/™/' | sed -e 's/(R)//' | sed -e 's/CPU//' | sed -e 's/@/:/' | sed -e 's/\ \ //' | sed -e 's/[0-9].[0-9][0-9]GHz//' | sed -e 's/$/   /' | uniq    }
+    ${color1}CPU Freq:${color1} ${alignr}${offset 10}${freq}MHz  
+    ${color1}CPU Temperature:${color1} ${alignr}${offset 10}${execi 1 sensors | grep -i acpitz -A 4 | grep temp1 | grep -oP '\+\K\d+\.\d+(?=°C)' }°C  
+    ${color1}CPU Core 1:${color1}${offset 10}${cpu cpu1}${offset 10}${cpubar cpu1}
+    ${color1}CPU Core 2:${color1}${offset 10}${cpu cpu2}${offset 10}${cpubar cpu2}
+    ${color1}CPU Core 3:${color1}${offset 10}${cpu cpu3}${offset 10}${cpubar cpu3}
+    ${color1}CPU Core 4:${color1}${offset 10}${cpu cpu4}${offset 10}${cpubar cpu4}
+    ${color1}CPU Core 5:${color1}${offset 10}${cpu cpu5}${offset 10}${cpubar cpu5}
+    ${color1}CPU Core 6:${color1}${offset 10}${cpu cpu6}${offset 10}${cpubar cpu6}
+    ${color1}CPU Core 7:${color1}${offset 10}${cpu cpu7}${offset 10}${cpubar cpu7}
+    ${color1}CPU Core 8:${color1}${offset 10}${cpu cpu8}${offset 10}${cpubar cpu8}
+ 
+${color2}${font Roboto:size=12}M E M O R Y   ${hr 2}${font}${color2}
+    ${color1}RAM:  ${color1}${mem} / ${memmax}${offset 10}${membar}
+    ${color1}Swap: ${color1}${swap} / ${swapmax}${offset 10}${swapbar}
+ 
+${color2}${font Roboto:size=12}G P U ${hr 2}${font}${color}
+    ${color1}GPU Model:${alignr}${color1}${execi 65000 glxinfo | grep 'OpenGL renderer string:' | awk '{print $4" "$5" "$6" "$7" "$8'}}
+    ${color1}GPU:${color1} ${alignr}${offset -10}${exec cat /sys/class/drm/card1/device/gpu_busy_percent}%${font}
+    ${color1}${execgraph 20"cat /sys/class/drm/card1/device/gpu_busy_percent" 3fa5ff 3fa5ff}
+    ${color1}Temperature:${color1}${alignr}${offset -10}${color1}${execi 1 sensors | grep 'amdgpu-pci-0400' -A 4 | grep 'edge' | awk '{ print $2}' | tr -d "+" }
+    ${color1}GPU speed: ${color} ${alignr}${offset -10}${color1}${exec grep -Po '\d+:\s\K(\d+)(?=.*\*$)' /sys/class/drm/card1/device/pp_dpm_sclk}
+    ${color1}Memory usage${color1} ${alignr}${offset -10}${color1}${exec numfmt --to=iec < /sys/class/drm/card1/device/mem_info_vram_used}
+    ${color1}Memory total${color1} ${alignr}${offset -10}${color1}${exec numfmt --to=iec < /sys/class/drm/card1/device/mem_info_vram_total}
+ 
+${color2}${font Roboto:size=12}D R I V E S   ${hr 2}${font}${color}
+    ${color1}Home: ${color1} ${offset 5}${fs_used /home} / ${fs_size /home}${offset 10}${fs_bar /home}
+    ${color1}I/O Read:${color1} ${alignr}${offset -10}${diskio_read /dev/nvme0n1p7}${alignr}${diskiograph_read /dev/nvme0n1p7 8,100}
+    ${color1}I/O Write:${color1} ${alignr}${offset -10}${diskio_write /dev/nvme0n1p7}${alignr}${diskiograph_write /dev/nvme0n1p7 8,100}
+    
+    ${color1}File System: ${color1} ${offset 5}${fs_used /} / ${fs_size /}${offset 10}${fs_bar /}
+    ${color1}I/O Read:${color1} ${alignr}${offset -10}${diskio_read /dev/nvme0n1p6}${alignr}${diskiograph_read nvme0n1p6 8,100}
+    ${color1}I/O Write:${color1} ${alignr}${offset -10}${diskio_write /dev/nvme0n1p6}${alignr}${diskiograph_write nvme0n1p6 8,100}
+
+${color2}${font Roboto:size=12}N E T W O R K   ${hr 2}${font}${color}
+    ${color1}IP Address: ${color1}${offset 35$}${addrs wlan0}
+    ${color1}Eth Up:${color1} ${alignr}${offset -10$}${upspeed wlan0}${alignr}${upspeedgraph wlan0 8,100}
+    ${color1}Eth Down:${color1} ${alignr}${offset -10$}${downspeed wlan0}${alignr}${downspeedgraph wlan0 8,100}
+ 
+${color2}${font Roboto:size=12}P R O C E S S E S ${hr 2}${font}${color}
+    ${color1}TOP: ${alignr}${offset -40}PID      ${alignr}CPU%      Mem%
+    ${color1}${top name 1} ${alignr}${offset -80}${top pid 1}${alignr}${offset -40}${top cpu 1}${alignr}${top mem 1}
+    ${color1}${top name 2} ${alignr}${offset -80}${top pid 2}${alignr}${offset -40}${top cpu 2}${alignr}${top mem 2}
+    ${color1}${top name 3} ${alignr}${offset -80}${top pid 3}${alignr}${offset -40}${top cpu 3}${alignr}${top mem 3}
+    ${color1}${top name 4} ${alignr}${offset -80}${top pid 4}${alignr}${offset -40}${top cpu 4}${alignr}${top mem 4}
+    ${color1}${top name 5} ${alignr}${offset -80}${top pid 5}${alignr}${offset -40}${top cpu 5}${alignr}${top mem 5}
+    ${color1}${top name 6} ${alignr}${offset -80}${top pid 6}${alignr}${offset -40}${top cpu 6}${alignr}${top mem 6}
+ 
+]];

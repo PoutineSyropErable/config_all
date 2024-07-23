@@ -1,0 +1,3 @@
+killall - q conky
+conky -c $HOME/.config/conky/show_all/show_all_conf &
+

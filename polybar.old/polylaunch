@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+notify-send "Launched Polybar"
+
+#-------------default info:
+#config_path="~/.config/polybar/config"
+#bar_name="example"
+
+config_path="$HOME/.config/polybar.old/config"
+
+bar_name="${1:-bar1}"
+echo "in launch: Bar_name = $bar_name"
+
+#kill the bar being taken care off
+$HOME/.config/polybar.old/polykill_bar $1
+
+
+for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+	echo "Here's a monitor: $m "
+	MONITOR=$m   polybar --reload --config="$config_path" "$bar_name" &
+done
+
+
+echo "Polybar launched..."
+
+

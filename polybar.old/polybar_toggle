@@ -1,0 +1,15 @@
+#!/bin/bash
+set -x
+bar_name="${1:-bar1}"
+echo "in Toggle: bar_name = $bar_name"
+
+
+
+
+if pgrep -a "polybar" | grep "config $bar_name" ; then
+	echo "$bar_name is being killed"
+	"$HOME"/.config/polybar.old/polykill_bar $bar_name
+else
+	echo "$bar_name is being launched"
+	"$HOME"/.config/polybar.old/polylaunch $bar_name
+fi

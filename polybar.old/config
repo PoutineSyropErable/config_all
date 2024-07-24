@@ -1069,8 +1069,7 @@ interface = wlan0
 
 
 ; Minimum output width of upload/download rate
-udspeed-minwidth = 5
 ;format-connected = <ramp-signal>
 ;format-packetloss = <animation-packetloss> <label-connected>
-label-connected = %{F#00ff00}%upspeed:9% %{F#ff0000}%downspeed:9% %{F-}
+label-connected = %{F#00ff00}    %upspeed%     %{F#ff0000} %downspeed% %{F-}
 

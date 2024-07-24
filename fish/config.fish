@@ -334,3 +334,7 @@ function conda_activate
         echo "Error: Conda not found at $conda_path"
     end
 end
+
+
+alias set_private="/home/francois/.local/share/private/local/settings/set_private.sh"
+alias set_public="/home/francois/.local/share/private/local/settings/set_public.sh"

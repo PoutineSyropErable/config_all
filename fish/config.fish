@@ -18,7 +18,9 @@ end
 
 alias fmod="vim ~/.fishrc"
 alias fview="bat ~/.fishrc"
-alias cnv="vim ~/.config/nvim"
+alias imod="vim ~/.i3rc"
+alias iview="bat ~/.i3rc"
+alias cnv="cd ~/.config/nvim ; nvim ."
 alias cn="cd ~/.config/nvim"
 
 
@@ -29,6 +31,7 @@ alias lsblk1="lsblk -o +PARTLABEL"
 
 alias reload="source ~/.config/fish/config.fish"
 alias r="source ~/.config/fish/config.fish"
+alias pk="polykill"
 alias cl="clear"
 alias en="echo -n"
 alias theme="kitty +kitten themes"

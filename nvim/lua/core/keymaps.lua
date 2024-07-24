@@ -6,12 +6,12 @@ vim.api.nvim_set_keymap('n', '<leader>r', ':source %<CR>', { noremap = true, sil
 -- Key mapping to toggle NvimTree
 vim.api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap('n', '<leader>c', ':"+yy', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>y', ':"+y', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>p', ':"+p', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>c', '"+yy', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>y', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>p', '"+p', { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap('v', '<leader>c', ':"+yy', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<leader>y', ':"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<leader>c', '"+yy', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<leader>y', '"+y', { noremap = true, silent = true })
 
 
 local builtin = require('telescope.builtin')

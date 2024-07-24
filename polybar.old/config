@@ -283,7 +283,7 @@ monitor = ${env:MONITOR}
 position=bottom
 bottom = true
 
-modules-left = 
+modules-left = weather wireless-network
 modules-center = filesystem keybinds home-space
 modules-right =  eth gpu gpu_temp gpu_mem memory
 
@@ -1052,4 +1052,25 @@ menu-0-1 = " Kitty "
 menu-0-1-exec =kitty --detach vim  ~/keybinds/kitty_keys.md
 menu-0-2 = " Tmux "
 menu-0-2-exec = kitty --detact ~/keybinds/tmux_keys.md
+
+
+
+[module/weather]
+type = custom/script
+exec = $HOME/.config/polybar.old/weather-polybar-plugin/weather-plugin.sh
+tail = false
+interval = 960
+
+
+
+[module/wireless-network]
+type = internal/network
+interface = wlan0
+
+
+; Minimum output width of upload/download rate
+udspeed-minwidth = 5
+;format-connected = <ramp-signal>
+;format-packetloss = <animation-packetloss> <label-connected>
+label-connected = %{F#00ff00}%upspeed:9% %{F#ff0000}%downspeed:9% %{F-}
 

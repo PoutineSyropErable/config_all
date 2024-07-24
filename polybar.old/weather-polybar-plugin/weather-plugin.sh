@@ -6,8 +6,8 @@
 
 APIKEY=`cat /home/francois/.config/polybar.old/weather-polybar-plugin/.owm-key`
 # if you leave these empty location will be picked based on your ip-adres
-CITY_NAME='Rome'
-COUNTRY_CODE='IT'
+CITY_NAME='Saint-Bruno-de-Montarville'
+COUNTRY_CODE='CA'
 # Desired output language
 LANG="en"
 # UNITS can be "metric", "imperial" or "kelvin". Set KNOTS to "yes" if you

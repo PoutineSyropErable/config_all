@@ -511,7 +511,7 @@ bindsym $mod+r mode "resize"
 
 ######### POLYBAR
 exec_always --no-startup-id /home/francois/.config/polybar.old/polylaunch &
-
+exec_always --no-startup-id /home/francois/.config/polybar.old/polylaunch bar2 &
 
 
 
@@ -569,6 +569,7 @@ bindsym $mod+Control+5 exec --no-startup-id fish -c "pv $HOME/QolScripts/screen_
 bindsym $mod+Control+6 exec --no-startup-id fish -c "pv $HOME/QolScripts/screen_placer.py"
 
 bindsym $mod+Control+b exec --no-startup-id  $HOME/.config/polybar.old/polybar_toggle bar2
+bindsym $mod+Control+Shift+b exec --no-startup-id  $HOME/.config/polybar.old/polybar_toggle bar3
 bindsym $mod+Control+t exec --no-startup-id  $HOME/.config/polybar.old/polybar_toggle bar1
 bindsym $mod+Control+c exec --no-startup-id  $HOME/.config/conky/conky_toggle
 exec --no-startup-id $HOME/.config/conky/conky_toggle

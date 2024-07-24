@@ -20,6 +20,8 @@ alias fmod="vim ~/.fishrc"
 alias fview="bat ~/.fishrc"
 alias imod="vim ~/.i3rc"
 alias iview="bat ~/.i3rc"
+alias tmod="vim ~/.tmuxrc"
+alias tview="bat ~/.tmuxrc"
 alias cnv="cd ~/.config/nvim ; nvim ."
 alias cn="cd ~/.config/nvim"
 

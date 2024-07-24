@@ -189,7 +189,7 @@ bottom = true
 
 modules-left = mpv-title mpv-info mpv-control
 modules-center = filesystem keybinds home-space
-modules-right =  eth gpu gpu_temp memory
+modules-right =  eth gpu gpu_temp gpu_mem memory
 
 
 
@@ -230,19 +230,65 @@ tray-padding = 2
 tray-background = #0063ff
 
 cursor-click = pointer
-;wm-restack = bspwm
 wm-restack = i3
 
-;override-redirect = true
 
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
 
 #-------------------------------------------------
 
+[bar/bar3]
+monitor = ${env:MONITOR} 
+position=bottom
+bottom = true
+
+modules-left = 
+modules-center = filesystem keybinds home-space
+modules-right =  eth gpu gpu_temp gpu_mem memory
+
+
+
+width = 100%
+height = 27
+;offset-x = 1%
+;offset-y = 1%
+radius = 6.0
+fixed-center = true
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 3
+line-color = #f00
+
+border-size = 5
+border-color = #00000000
+
+padding-left = 1
+padding-right = 1
+
+module-margin-left = 1
+module-margin-right = 1
+
+;font-0 = "Hack Nerd Font:pixelsize=9;3"
+font-0 = "JetBrainsMono Nerd Font:size=10;2"
+font-1 = "Hack Nerd Font:pixelsize=15;3"
+font-2 = "JetBrainsMono Nerd Font:size=15;3"
+font-3 = "JetBrainsMono Nerd Font:size=9;2"
+font-4 = "Siji:size=10;0"
+font-5 = "FontAwesome:size=13;14"
+
+
+
+tray-position = right
+tray-padding = 2
+tray-background = #0063ff
+
+cursor-click = pointer
+wm-restack = i3
+
+
+
+#-------------------------------------------------
 
 
 [module/xwindow]
@@ -541,14 +587,29 @@ format-prefix-foreground = ${colors.full_green}
 format-underline = ${colors.matrix_green}
 label = %percentage:2%%
 
-[module/gpu_temp]
-type = custom/script 
-interval = 2
-format-prefix = "GPU TEMP: "
-format-prefix-foreground = ${colors.full_green}
-format-underline = ${colors.matrix_green}
-exec = sensors | grep 'amdgpu-pci-0400' -A 4 | grep 'edge' | awk '{ print $    2}' | tr -d "+"
-label = %output:2%
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+
+format = <ramp> <label>
+format-underline = ${colors.white}
+format-warn = <ramp> <label-warn>
+format-warn-underline = ${colors.red}
+
+label = %temperature-c%
+label-warn = %temperature-c%
+label-warn-foreground = ${colors.red}
+label-warn-underline  = ${colors.yellow2}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 =  
+ramp-1-foreground = ${colors.sky_blue7}
+ramp-2-foreground = ${colors.yellow3}
+ramp-3-foreground = ${colors.red}
+
+
 
 
 [module/gpu]
@@ -560,12 +621,33 @@ format-underline = ${colors.matrix_green}
 exec = cat /sys/class/drm/card1/device/gpu_busy_percent 
 label = %output:2%%
 
+
+[module/gpu_temp]
+type = custom/script 
+interval = 2
+format-prefix = "GPU  :"
+format-prefix-foreground = ${colors.sky_blue4}
+format-underline = ${colors.sky_blue4}
+exec = sensors | grep 'amdgpu-pci-0400' -A 4 | grep 'edge' | awk '{ print $    2}' | tr -d "+"
+label = %output:2%
+
+[module/gpu_mem]
+
+type = custom/script 
+interval = 5
+format-prefix = "GPU MEM: "
+format-prefix-foreground = ${colors.pink3}
+format-underline = ${colors.pink2}
+exec = fish -c "pv $HOME/.config/polybar.old/polybar-radeontop/radeontop.py"
+label = %output%
+
+
 [module/memory]
 type = internal/memory
 interval = 2
 format-prefix = "RAM "
 format-prefix-foreground = ${colors.matrix_green}
-format-underline = #4bffdc
+format-underline = ${colors.green4}
 label = %percentage_used%%
 
 [module/wlan]
@@ -601,9 +683,9 @@ type = internal/network
 interface = wlan0
 interval = 1
 
-format-connected-underline = #55aa55
+format-connected-underline = ${colors.orange}
 format-connected-prefix = "󰀂 "
-format-connected-prefix-foreground = ${colors.matrix_green}
+format-connected-prefix-foreground = ${colors.yellow1}
 label-connected = %local_ip%
 
 ;format-disconnected =
@@ -735,27 +817,6 @@ animation-discharging-4 = 
 animation-discharging-foreground = ${colors.yellow1}
 animation-discharging-framerate = 750
 
-[module/temperature]
-type = internal/temperature
-thermal-zone = 0
-warn-temperature = 60
-
-format = <ramp> <label>
-format-underline = ${colors.white}
-format-warn = <ramp> <label-warn>
-format-warn-underline = ${colors.red}
-
-label = %temperature-c%
-label-warn = %temperature-c%
-label-warn-foreground = ${colors.red}
-label-warn-underline  = ${colors.yellow2}
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-1-foreground = ${colors.sky_blue7}
-ramp-2-foreground = ${colors.yellow3}
-ramp-3-foreground = ${colors.red}
 
 
 [module/powermenu]

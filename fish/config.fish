@@ -9,7 +9,7 @@ atuin init fish --disable-up-arrow | source
 
 alias svim="sudo -e vim"
 alias ovim="/usr/bin/vim"
-alias vim="ovim"
+alias vim="nvim"
 alias nano="nvim"
 function get
     set -l n $argv[1]

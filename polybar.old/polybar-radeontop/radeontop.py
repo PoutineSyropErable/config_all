@@ -13,30 +13,9 @@ db 0.83%, cb 0.83%, vram 6.61% 539.47mb, gtt 0.92% 73.34mb, mclk 100.00% 2.000gh
 class radeontop:
     def __init__(self):
         Komi = subprocess.Popen(["radeontop", "-l", "1", "-d", "-"], stdout=PIPE, stderr=DEVNULL)
-        output = Komi.communicate()[0].decode('utf-8')  # Komi can communicate?
-        output = output.split("\n")[1]
-        self.output = output.split(",")
+        vram = Komi.communicate()[0].decode('utf-8')  # Komi can communicate?
+        vram = vram.split("\n")[1]
+        self.vram = vram.split(",")[12].split()[1]
 
-    def join_tuple_string(self, strings_tuple) -> str:
-        return ' '.join(strings_tuple).strip()
-
-    def get_usage(self, field):
-        for x in self.output:
-            if field in x:
-                results = re.findall(r'(\d+.\d+)(mb|ghz)?', x)
-                return list(map(self.join_tuple_string, results))
-
-    def get_multiple_usages(self, fields: []):
-        result = {}
-        for x in fields:
-            result[x] = self.get_usage(x)
-
-        return result
-
-
-if __name__ == "__main__":
-    rtop = radeontop()
-    radeontop_fields = ["gpu"]
-    result = rtop.get_multiple_usages(radeontop_fields)
-    format_string = f"GPU: {result['gpu'][0]}%"
-    print(format_string)
+rtop = radeontop()
+print(rtop.vram)

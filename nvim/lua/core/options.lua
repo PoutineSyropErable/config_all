@@ -16,6 +16,14 @@ vim.opt.expandtab = false
 
 vim.cmd [[ set noswapfile ]]
 vim.cmd [[ set termguicolors ]]
-vim.opt.clipboard = 'unnamedplus'
+--vim.opt.clipboard = 'unnamedplus'
 --Line numbers
 vim.wo.number = true
+
+--if you are on a comment and press enter, don't start on another comment
+vim.api.nvim_set_var('commentstring', '')
+-- Make searches case insensitive
+vim.o.ignorecase = true
+
+-- Override ignorecase if search pattern contains uppercase letters
+vim.o.smartcase = true

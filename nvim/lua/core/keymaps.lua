@@ -5,6 +5,9 @@ vim.g.mapleader = ' ' -- Assuming the leader key is set to space
 vim.api.nvim_set_keymap('n', '<leader>r', ':source %<CR>', { noremap = true, silent = true })
 -- Key mapping to toggle NvimTree
 vim.api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+-- Create a custom key mapping to focus the view on the currently selected directory
+vim.api.nvim_set_keymap('n', '<leader>e', ':lua require("nvim-tree.api").tree.focus()<CR>', { noremap = true, silent = true })
+
 
 vim.api.nvim_set_keymap('n', '<leader>c', '"+yy', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>y', '"+y', { noremap = true, silent = true })
@@ -64,8 +67,6 @@ function Write_and_close()
 	vim.cmd('bd') -- Delete the buffer
 end
 
--- Map the function to <C-w>-x
-vim.api.nvim_set_keymap('n', '<C-w>x', ':lua write_and_close()<CR>', { noremap = true, silent = true })
 
 
 -- Keymap for horizontal split using Ctrl+w h
@@ -75,8 +76,8 @@ vim.keymap.set('n', '<C-w>v', ':split<CR>', { noremap = true, silent = true })
 -- Keymap for creating a new tab using Ctrl+w c
 vim.keymap.set('n', '<C-w>c', ':tabnew<CR>', { noremap = true, silent = true })
 -- Keymap for closing the current pane using Ctrl+w x
---vim.keymap.set('n', '<C-w>x', ':bd<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-w>x', ':lua Write_and_close()<CR>', { noremap = true, silent = true })
+-- Map the function to <C-w>-x to write and close buffer
+vim.api.nvim_set_keymap('n', '<C-w>x', ':lua write_and_close()<CR>', { noremap = true, silent = true })
 -- Keymap for closing the current tab using Ctrl+w X
 vim.keymap.set('n', '<C-w>X', ':bd<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-w>d', ':close<CR>', { noremap = true, silent = true })
@@ -84,8 +85,8 @@ vim.keymap.set('n', '<C-w>d', ':close<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-w>s', ':wa<CR>', { noremap = true, silent = true })
 -- Select all text
 vim.keymap.set('', '<C-w>a', 'ggVG<CR>', { noremap = true, silent = true })
-vim.keymap.set('', '<C-w>q', ':wq!<CR>', { noremap = true, silent = true })
-vim.keymap.set('', '<C-w>Q', ':wa | qa!<CR>', { noremap = true, silent = true })
+vim.keymap.set('', '<C-w>q', ':wa | qa!<CR>', { noremap = true, silent = true })
+vim.keymap.set('', '<C-w>Q', ':qa!<CR>', { noremap = true, silent = true })
 
 
 -- Resize splits with Ctrl + arrow keys

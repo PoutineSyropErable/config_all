@@ -22,7 +22,10 @@ alias imod="vim ~/.i3rc"
 alias iview="bat ~/.i3rc"
 alias tmod="vim ~/.tmuxrc"
 alias tview="bat ~/.tmuxrc"
+alias umux="~/.config/tmux/tmux_github_sync.sh"
 alias cnv="cd ~/.config/nvim ; nvim ."
+alias vmod="cd ~/.config/nvim ; nvim ."
+alias nmod="cd ~/.config/nvim ; nvim ."
 alias cn="cd ~/.config/nvim"
 
 
@@ -104,7 +107,8 @@ echo -n "/home/francois/MainPython_Virtual_Environment/.venv/bin/python" | c
 echo "The path of the python interpreter is now inside your clipboard. Just Control v it"
 end
 
-alias leavevenv="deactivate"
+
+#alias leavevenv="deactivate"
 alias lvenv="deactivate"
 alias quitvenv="deactivate"
 
@@ -133,7 +137,8 @@ alias cP="cd ~/.config/polybar.old/"
 alias cdoc="cd ~/Documents"
 alias cdo="cd ~/Downloads"
 alias cco="cd ~/.config"
-
+alias ct="cd ~/.local/share/Trash/files"
+alias ctm="cd ~/.config/tmux"
 
 alias kmux="tmux kill-server"
 alias lmux="tmux detach"
@@ -275,6 +280,7 @@ export PATH="/home/francois/Videos/i3-video-wallpaper-main/:$PATH"
 export PATH="/home/francois/go/bin:$PATH"
 export PATH="$HOME/.config/rofi/scripts:$PATH"
 export PATH="$HOME/.config/rofi/applets/bin:$PATH"
+export PATH="$HOME/.config/tmux:$PATH"
 
 export PATH="/home/francois/Music:$PATH"
 export PATH="/home/francois/Videos/Animated_Background/:$PATH"

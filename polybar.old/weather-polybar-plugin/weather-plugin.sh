@@ -20,7 +20,6 @@ LANG="en"
 # kelvin   | Kelvin      | km/h
 
 UNITS="metric"
-
 # Color Settings ______________________________________________________________
 
 COLOR_CLOUD="#606060"
@@ -57,7 +56,7 @@ DISPLAY_WIND="yes"
 BEAUFORTICON="yes"
 
 # Display in knots. yes/no
-KNOTS="yes"
+KNOTS="no"
 
 # How many decimals after the floating point
 DECIMALS=0
@@ -247,6 +246,7 @@ function setIcons {
         fi
     fi
     if [ $KNOTS = "yes" ]; then
+		notify-send "sending it knots"
         case $UNITS in
             "imperial") 
                 # The division by one is necessary because scale works only for divisions. bc is stupid.
@@ -274,6 +274,7 @@ function setIcons {
                 elif [ $UNITS = "imperial" ]; then
                     WIND="$WIND ${COLOR_TEXT_BEGIN}mph$COLOR_TEXT_END"
                 else
+					notify-send "It's sending in metric"
                     WIND="$WIND ${COLOR_TEXT_BEGIN}km/h$COLOR_TEXT_END"
                 fi
             fi

@@ -283,8 +283,8 @@ monitor = ${env:MONITOR}
 position=bottom
 bottom = true
 
-modules-left = weather wireless-network
-modules-center = filesystem keybinds home-space
+modules-left = weather wireless-network aconfmgr-size
+modules-center =  filesystem keybinds home-space
 modules-right =  eth gpu gpu_temp gpu_mem memory
 
 
@@ -1073,3 +1073,11 @@ interface = wlan0
 ;format-packetloss = <animation-packetloss> <label-connected>
 label-connected = %{F#00ff00}    %upspeed%     %{F#ff0000} %downspeed% %{F-}
 
+
+
+[module/aconfmgr-size]
+type = custom/script
+exec = du -h --max-depth=1 "/var/tmp/aconfmgr" | tail -n 1 | awk '{print $1}'
+interval = 5
+label =       󰁯 : %output%
+;use a zero width space

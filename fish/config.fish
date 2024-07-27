@@ -1,6 +1,6 @@
 #!/bin/bash
 if status is-interactive
-# Commands to run in interactive sessions can go here
+	# Commands to run in interactive sessions can go here
 end
 
 thefuck --alias | source
@@ -12,11 +12,11 @@ alias ovim="/usr/bin/vim"
 alias vim="nvim"
 alias nano="nvim"
 function get
-    set -l n $argv[1]
-    awk "{print \$$n}"
+set -l n $argv[1]
+awk "{print \$$n}"
 end
 
-alias fmod="vim ~/.fishrc"
+alias fmod="vim ~/.config/fish/config.fish"
 alias fview="bat ~/.fishrc"
 alias imod="vim ~/.i3rc"
 alias iview="bat ~/.i3rc"
@@ -29,10 +29,12 @@ alias nmod="cd ~/.config/nvim ; nvim ."
 alias cn="cd ~/.config/nvim"
 
 
-alias lp="lsblk -o +PARTLABEL"
-alias listpartitions="lsblk -o +PARTLABEL"
-alias listblocks="lsblk -o +PARTLABEL"
 alias lsblk1="lsblk -o +PARTLABEL"
+
+
+
+
+
 
 alias reload="source ~/.config/fish/config.fish"
 alias r="source ~/.config/fish/config.fish"
@@ -63,38 +65,40 @@ alias findr="sudo find / -name "
 alias findi="sudo find / -lname "
 #alias sudo nano="svim"
 function findc
-find . -iname "*$argv*"
+	find . -iname "*$argv*"
 end
+
+
 
 function change_permission
-    if test (count $argv) -lt 2
-		echo "This will change the permission of all files of <type> to <permissions> in the current directory"
-        echo "Usage: changepermr_current_dir <extension> <permissions>"
-		echo " 644 for regular files, 744 for scripts/executable, 600 for private files "
-        return 1
-    end
+    echo "This will change the permission of all files of <type> to <permissions> in the current directory"
+    echo "Usage: change_permission <extension> <permissions>"
+    echo " 644 for regular files, 744 for scripts/executable, 600 for private files, 755 for directories "
 
-    read -p "File Type: " ext
-    read -p "Permissions: " perm
-    read -p "Recursive (y/n): " recursive
-	if [ "$recursive" = "y" ]
-			find . -type f -name "*.$ext" -exec chmod $perm {} +
-		else
-			find . -maxdepth 1 -type f -name "*.$ext" -exec chmod $perm {} +
-		end
+    set -l ext (read -P "File Type: ")
+    set -l perm (read -P "Permissions: ")
+    set -l recursive (read -P "Recursive (y/n): ")
+
+    if test "$recursive" = "y"
+        find . -type f -name "*.$ext" -exec chmod $perm {} +
+    else
+        find . -maxdepth 1 -type f -name "*.$ext" -exec chmod $perm {} +
+    end
 end
 
+
+
 function change_permission_recursive
-    if test (count $argv) -lt 2
+	if test (count $argv) -lt 2
 		echo "WARNING. THIS IS RECURSIVE"
 		echo "This will change the permission of all files of <type> to <permissions> recursively from current directory"
-        echo "Usage: changepermr <extension> <permissions>"
+		echo "Usage: changepermr <extension> <permissions>"
 		echo " 644 for regular files, 744 for scripts/executable, 600 for private files "
-        return 1
-    end
-    set ext $argv[1]
-    set perm $argv[2]
-    find . -type f -name "*.$ext" -exec chmod $perm {} +
+		return 1
+	end
+	set ext $argv[1]
+	set perm $argv[2]
+	find . -type f -name "*.$ext" -exec chmod $perm {} +
 end
 
 function fzfv
@@ -177,44 +181,44 @@ alias jmux="tmux kill-session"
 
 
 function tswap
-    set -l pane1 $argv[1]
-    set -l pane2 $argv[2]
+set -l pane1 $argv[1]
+set -l pane2 $argv[2]
 
-    tmux swap-pane -s $pane1 -t $pane2
+tmux swap-pane -s $pane1 -t $pane2
 end
 
 
 
 
 function comparehash_md5
-    set file "$argv[1]"
-    set expected_hash "$argv[2]"
+set file "$argv[1]"
+set expected_hash "$argv[2]"
 
-    set actual_hash (md5sum "$file" | awk '{print $1}')
+set actual_hash (md5sum "$file" | awk '{print $1}')
 
-    if test "$actual_hash" = "$expected_hash"
-        echo "Hashes match: $actual_hash"
-    else
-        echo "Hashes do not match:"
-		echo "Actual hash:   $actual_hash"
-        echo "Expected hash: $expected_hash"
-    end
+if test "$actual_hash" = "$expected_hash"
+	echo "Hashes match: $actual_hash"
+else
+	echo "Hashes do not match:"
+	echo "Actual hash:   $actual_hash"
+	echo "Expected hash: $expected_hash"
+end
 end
 
 
 function comparehash_sha
-    set file "$argv[1]"
-    set expected_hash "$argv[2]"
+set file "$argv[1]"
+set expected_hash "$argv[2]"
 
-    set actual_hash (sha256sum "$file" | awk '{print $1}')
+set actual_hash (sha256sum "$file" | awk '{print $1}')
 
-    if test "$actual_hash" = "$expected_hash"
-        echo "Hashes match: $actual_hash"
-    else
-        echo "Hashes do not match:"
-		echo "Actual hash:   $actual_hash"
-        echo "Expected hash: $expected_hash"
-    end
+if test "$actual_hash" = "$expected_hash"
+	echo "Hashes match: $actual_hash"
+else
+	echo "Hashes do not match:"
+	echo "Actual hash:   $actual_hash"
+	echo "Expected hash: $expected_hash"
+end
 end
 
 
@@ -235,20 +239,20 @@ alias prevc="history --max=1 | c"
 
 
 function ndiff
-    if test (count $argv) -ne 2
-        echo "Usage: nrdiff file1 file2"
-        return 1
-    end
-    diff --color $argv[1] $argv[2] | diff-so-fancy | bat
+if test (count $argv) -ne 2
+	echo "Usage: nrdiff file1 file2"
+	return 1
+end
+diff --color $argv[1] $argv[2] | diff-so-fancy | bat
 end
 
 
 function bdiff
-    if test (count $argv) -ne 2
-        echo "Usage: ndiff file1 file2"
-        return 1
-    end
-    git diff --no-index --color $argv[1] $argv[2] | diff-so-fancy | bat
+if test (count $argv) -ne 2
+	echo "Usage: ndiff file1 file2"
+	return 1
+end
+git diff --no-index --color $argv[1] $argv[2] | diff-so-fancy | bat
 end
 
 
@@ -268,14 +272,14 @@ zoxide init fish | source
 #
 # You may also like to assign a key (Ctrl-O) to this command:
 #
- bind \cf 'set old_tty (stty -g); stty sane; lfcd; stty $old_tty; commandline -f repaint'
+bind \cf 'set old_tty (stty -g); stty sane; lfcd; stty $old_tty; commandline -f repaint'
 #
 # You may put this in a function called fish_user_key_bindings.
 
 function lfcd --wraps="lf" --description="lf - Terminal file manager (changing directory on exit)"
-    # `command` is needed in case `lfcd` is aliased to `lf`.
-    # Quotes will cause `cd` to not change directory if `lf` prints nothing to stdout due to an error.
-    cd "$(command lf -print-last-dir $argv)"
+# `command` is needed in case `lfcd` is aliased to `lf`.
+# Quotes will cause `cd` to not change directory if `lf` prints nothing to stdout due to an error.
+cd "$(command lf -print-last-dir $argv)"
 end
 
 alias lf="lfcd"
@@ -332,15 +336,15 @@ alias update_slideshow="./update_slideshow_files"
 
 
 export TERMINAL=kitty
-export EDITOR=vim
+export EDITOR=nvim
 
 
 
 function fish_greeting
-	clear
-	echo "Welcome to Poutine Au Sirop D'erable's config!" | figlet | lolcat
-	#fortune | cowsay -f dragon
-	#-o is for offensive/spicier
+clear
+echo "Welcome to Poutine Au Sirop D'erable's config!" | figlet | lolcat
+#fortune | cowsay -f dragon
+#-o is for offensive/spicier
 end
 
 
@@ -362,13 +366,13 @@ end
 
 # Function to activate Conda environments
 function conda_activate
-    set conda_path "/home/francois/miniconda3/bin/conda"
-    if test -x $conda_path
-        eval $conda_path "shell.fish" "hook" $argv | source
-		conda activate venv
-    else
-        echo "Error: Conda not found at $conda_path"
-    end
+set conda_path "/home/francois/miniconda3/bin/conda"
+if test -x $conda_path
+	eval $conda_path "shell.fish" "hook" $argv | source
+	conda activate venv
+else
+	echo "Error: Conda not found at $conda_path"
+end
 end
 
 

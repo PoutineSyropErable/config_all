@@ -27,3 +27,16 @@ vim.o.ignorecase = true
 
 -- Override ignorecase if search pattern contains uppercase letters
 vim.o.smartcase = true
+
+
+
+-- Show special characters
+vim.opt.list = true
+vim.opt.listchars = {
+	tab = '>-', 
+	trail = '·', 
+	space = '·', 
+	eol = '¬', 
+	precedes = '«', 
+	extends = '»'
+}

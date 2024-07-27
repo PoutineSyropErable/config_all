@@ -370,7 +370,7 @@ label-unmounted-foreground = ${colors.foreground-alt}
 
 [module/home-space]
 type= custom/script
-exec = /home/francois/.config/polybar.old/home_disk_space.sh
+exec = $HOME/.config/polybar.old/home_disk_space.sh
 format ="%{F#0a81f5}/ %{F-}: <label>"
 interval = 0.2
 
@@ -529,7 +529,7 @@ format-background = ${colors.light_gray}
 
 [module/mpv-title]
 type= custom/script
-exec = /home/francois/Videos/i3-video-wallpaper-main/mpv-title.sh
+exec = $HOME/Videos/i3-video-wallpaper-main/mpv-title.sh
 format =" <label> "
 interval = 0.2
 format-foreground = ${colors.pink5}
@@ -542,7 +542,7 @@ format-background = ${colors.light_gray}
 
 [module/mpv-info]
 type= custom/script
-exec = /home/francois/Videos/i3-video-wallpaper-main/mpv-info.sh
+exec = $HOME/Videos/i3-video-wallpaper-main/mpv-info.sh
 format =" <label> "
 interval = 0.2
 format-foreground = ${colors.purple1}
@@ -558,29 +558,29 @@ format-background = ${colors.light_gray}
 
 #I could just use " text " for spaces dumb me
 menu-0-0 = ​   ​   
-menu-0-0-exec = /bin/sh -c "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh seek -10"
+menu-0-0-exec = /bin/sh -c "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh seek -10"
 
 menu-0-1 = ​ 󰐎 ​ 
-menu-0-1-exec = /bin/sh -c "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh toggle"
+menu-0-1-exec = /bin/sh -c "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh toggle"
 
 menu-0-2 = ​ 󰓛 ​ 
-menu-0-2-exec = /bin/sh -c "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh stop"
+menu-0-2-exec = /bin/sh -c "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh stop"
 
 menu-0-3 = ​   ​  
-menu-0-3-exec = /bin/sh -c "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh seek +10"
+menu-0-3-exec = /bin/sh -c "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh seek +10"
 
 
 menu-0-4 = ​  ​ 
-menu-0-4-exec = /bin/sh -c "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh volume -5"
+menu-0-4-exec = /bin/sh -c "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh volume -5"
 
 menu-0-5 = ​   ​  
-menu-0-5-exec = /bin/sh -c "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh volume +5"
+menu-0-5-exec = /bin/sh -c "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh volume +5"
 
 [module/mpv-control-menu]
 #thats useless
 type = custom/script
 interval = 1  # Adjust interval as needed
-exec = /home/francois/Videos/i3-video-wallpaper-main/mpv-menu.sh
+exec = $HOME/Videos/i3-video-wallpaper-main/mpv-menu.sh
 format = <label>
 format-background = #000
 format-foreground = #fff
@@ -607,7 +607,7 @@ bar-empty-foreground = ${colors.foreground-alt}
 
 [module/brightness]
 type = custom/script
-exec = /home/francois/.config/polybar.old/polybar_brightness.sh
+exec = $HOME/.config/polybar.old/polybar_brightness.sh
 interval = 0.5
 
 
@@ -618,7 +618,7 @@ format-foreground = ${colors.yellow4}
 
 [module/keyboard_light]
 type = custom/script
-exec = /home/francois/.config/polybar.old/polybar_keyboard_light.sh
+exec = $HOME/.config/polybar.old/polybar_keyboard_light.sh
 interval = 0.5
 
 format = <label>

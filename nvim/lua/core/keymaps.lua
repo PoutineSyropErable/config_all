@@ -212,7 +212,17 @@ vim.keymap.set("n", "<BS>", require("oil").open, { desc = "Open parent directory
 vim.api.nvim_set_keymap('n', '<leader>o', ':Oil<CR>', { noremap = true, silent = true })
 
 
+-- Lua function for interactive replacement
+function ReplaceFrancois()
+    local search_pattern = "/home/francois"
+    local replacement = "$HOME"
 
+    -- Run the substitute command interactively
+    vim.cmd(string.format("%%s/%s/%s/gc", vim.fn.escape(search_pattern, '/'), vim.fn.escape(replacement, '/')))
+end
+
+-- Command to trigger the replacement function
+vim.api.nvim_create_user_command('ReplaceFrancois', ReplaceFrancois, {})
 --end
 print("Vim configuration reloaded")
 --print(vim.env.TERM)

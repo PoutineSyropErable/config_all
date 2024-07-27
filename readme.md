@@ -20,7 +20,9 @@ I'm kinda doxing myself but hey... Let's rip the bandaid
 My name is François, I live in Québec, Canada. If you didn't get the Poutine au Sirop D'érable name joke, here it is. 
 <details>
   <summary>Click to reveal spoiler</summary>
-So basically, it's like an american called "Gun wielding bald Eagle", british->"Tea drinking coloniser", Australian->"Inverted Jailed Kangouroos".
+So basically I wanted people to know I speak french, more precisly Canadian French but there's a running gag that those who put QC in their username didn't pass highschool. I mean, imagine if 10% had USA in their username... So I went and mixed all the local stereotypes.
+
+it's like an american called "Gun wielding bald Eagle", british->"Tea drinking coloniser", Australian->"Inverted Jailed Kangouroos".
 </details>
 
 <details>

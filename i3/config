@@ -508,7 +508,7 @@ bindsym $mod+r mode "resize"
 
 
 ######### POLYBAR
-exec_always --no-startup-id /home/francois/.config/polybar.old/all_bars.sh
+exec_always --no-startup-id $HOME/.config/polybar.old/all_bars.sh
 
 
 
@@ -543,7 +543,7 @@ bindsym $mod2+Shift+space exec --no-startup-id brightnessctl -d platform::kbd_ba
 
 
 
-exec_always --no-startup-id picom -b --config /home/francois/.config/picom/picom.conf
+exec_always --no-startup-id picom -b --config $HOME/.config/picom/picom.conf
 
 
 
@@ -656,40 +656,40 @@ bindsym $mod+Control+eacute exec mpc single
 bindsym $mod+$mod2+Control+a exec --no-startup-id notify-send -u critical -t 3000 "it works"
 
 # Toggle play/pause
-bindsym $mod+$mod2+Control+p exec "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh toggle"
+bindsym $mod+$mod2+Control+p exec "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh toggle"
 
 # Stop
-bindsym $mod+$mod2+Control+s exec "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh stop"
+bindsym $mod+$mod2+Control+s exec "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh stop"
 
 # Seek -1 second
-bindsym $mod+$mod2+Control+comma exec "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh seek -1"
+bindsym $mod+$mod2+Control+comma exec "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh seek -1"
 
 # Seek +1 second
-bindsym $mod+$mod2+Control+period exec "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh seek +1"
+bindsym $mod+$mod2+Control+period exec "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh seek +1"
 
 # Seek -5 seconds
-bindsym $mod+$mod2+Control+j exec "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh seek -5"
+bindsym $mod+$mod2+Control+j exec "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh seek -5"
 
 # Seek +5 seconds
-bindsym $mod+$mod2+Control+k exec "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh seek +5"
+bindsym $mod+$mod2+Control+k exec "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh seek +5"
 
 # Seek -10 seconds
-bindsym $mod+$mod2+Control+Left exec "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh seek -10"
+bindsym $mod+$mod2+Control+Left exec "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh seek -10"
 
 # Seek +10 seconds
-bindsym $mod+$mod2+Control+Right exec "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh seek +10"
+bindsym $mod+$mod2+Control+Right exec "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh seek +10"
 
 # Seek +30 seconds
-bindsym $mod+$mod2+Control+Shift+Right exec "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh seek +30"
+bindsym $mod+$mod2+Control+Shift+Right exec "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh seek +30"
 
 # Seek -30 seconds
-bindsym $mod+$mod2+Control+Shift+Left exec "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh seek -30"
+bindsym $mod+$mod2+Control+Shift+Left exec "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh seek -30"
 
 # Volume -5
-bindsym $mod+$mod2+Control+Down exec "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh volume -5"
+bindsym $mod+$mod2+Control+Down exec "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh volume -5"
 
 # Volume +5
-bindsym $mod+$mod2+Control+Up exec "/home/francois/Videos/i3-video-wallpaper-main/mpv-control.sh volume +5"
+bindsym $mod+$mod2+Control+Up exec "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh volume +5"
 
 # Pactl volume down
 bindsym $mod+Home exec "pactl set-sink-volume @DEFAULT_SINK@ -1%"

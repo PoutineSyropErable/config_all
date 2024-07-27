@@ -7,7 +7,7 @@ thefuck --alias | source
 atuin init fish --disable-up-arrow | source
 #atuin init fish --disable-ctrl-r --disable-up-arrow | source
 
-alias svim="sudo -e vim"
+alias svim="sudo -E nvim"
 alias ovim="/usr/bin/vim"
 alias vim="nvim"
 alias nano="nvim"
@@ -32,8 +32,8 @@ alias cn="cd ~/.config/nvim"
 alias lsblk1="lsblk -o +PARTLABEL"
 
 
-
-
+alias franckfind="grep -r -l "/home/francois" ."
+alias ff="grep -r -l "/home/francois" ."
 
 
 alias reload="source ~/.config/fish/config.fish"
@@ -123,11 +123,11 @@ function fzfc
 fzf -m --preview='feh {}' | c 
 end
 
-alias pythonvenv="/home/francois/MainPython_Virtual_Environment/.venv/bin/python"
+alias pythonvenv="$HOME/MainPython_Virtual_Environment/.venv/bin/python"
 alias pv="pythonvenv"
 
 function govenv
-source /home/francois/MainPython_Virtual_Environment/.venv/bin/activate.fish
+source $HOME/MainPython_Virtual_Environment/.venv/bin/activate.fish
 end
 
 
@@ -136,7 +136,7 @@ alias sdir="searchdir"
 
 function pvp1
 echo "Control+Shift+p Python: Select Interpreter, Enter Interpreter path"
-echo -n "/home/francois/MainPython_Virtual_Environment/.venv/bin/python" | c 
+echo -n "$HOME/MainPython_Virtual_Environment/.venv/bin/python" | c 
 echo "The path of the python interpreter is now inside your clipboard. Just Control v it"
 end
 
@@ -172,6 +172,7 @@ alias cdo="cd ~/Downloads"
 alias cco="cd ~/.config"
 alias ct="cd ~/.local/share/Trash/files"
 alias ctm="cd ~/.config/tmux"
+alias chg=" cd ~/home_for_git"
 
 alias kmux="tmux kill-server"
 alias lmux="tmux detach"
@@ -292,9 +293,9 @@ alias lf="lfcd"
 alias "logism=/opt/logisim-evolution/bin/logisim-evolution"
 alias "logisim=/opt/logisim-evolution/bin/logisim-evolution"
 
-alias "mars=java -jar \"/home/francois/Documents/Linux Documents/University (real)/Semester 7/COMP 273/MARS.jar\""
+alias "mars=java -jar \"$HOME/Documents/Linux Documents/University (real)/Semester 7/COMP 273/MARS.jar\""
 
-alias "MARS=java -jar \"/home/francois/Documents/Linux Documents/University (real)/Semester 7/COMP 273/MARS.jar\""
+alias "MARS=java -jar \"$HOME/Documents/Linux Documents/University (real)/Semester 7/COMP 273/MARS.jar\""
 alias "journal=xournalpp"
 alias "xournal=xournalpp"
 alias "notebook=xournalpp"
@@ -351,13 +352,13 @@ end
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-#if test -f /home/francois/miniconda3/bin/conda
-#    eval /home/francois/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+#if test -f $HOME/miniconda3/bin/conda
+#    eval $HOME/miniconda3/bin/conda "shell.fish" "hook" $argv | source
 #else
-#    if test -f "/home/francois/miniconda3/etc/fish/conf.d/conda.fish"
-#        . "/home/francois/miniconda3/etc/fish/conf.d/conda.fish"
+#    if test -f "$HOME/miniconda3/etc/fish/conf.d/conda.fish"
+#        . "$HOME/miniconda3/etc/fish/conf.d/conda.fish"
 #    else
-#        set -x PATH "/home/francois/miniconda3/bin" $PATH
+#        set -x PATH "$HOME/miniconda3/bin" $PATH
 #    end
 #end
 # <<< conda initialize <<<
@@ -366,7 +367,7 @@ end
 
 # Function to activate Conda environments
 function conda_activate
-set conda_path "/home/francois/miniconda3/bin/conda"
+set conda_path "$HOME/miniconda3/bin/conda"
 if test -x $conda_path
 	eval $conda_path "shell.fish" "hook" $argv | source
 	conda activate venv

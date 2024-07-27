@@ -66,7 +66,36 @@ function findc
 find . -iname "*$argv*"
 end
 
+function change_permission
+    if test (count $argv) -lt 2
+		echo "This will change the permission of all files of <type> to <permissions> in the current directory"
+        echo "Usage: changepermr_current_dir <extension> <permissions>"
+		echo " 644 for regular files, 744 for scripts/executable, 600 for private files "
+        return 1
+    end
 
+    read -p "File Type: " ext
+    read -p "Permissions: " perm
+    read -p "Recursive (y/n): " recursive
+	if [ "$recursive" = "y" ]
+			find . -type f -name "*.$ext" -exec chmod $perm {} +
+		else
+			find . -maxdepth 1 -type f -name "*.$ext" -exec chmod $perm {} +
+		end
+end
+
+function change_permission_recursive
+    if test (count $argv) -lt 2
+		echo "WARNING. THIS IS RECURSIVE"
+		echo "This will change the permission of all files of <type> to <permissions> recursively from current directory"
+        echo "Usage: changepermr <extension> <permissions>"
+		echo " 644 for regular files, 744 for scripts/executable, 600 for private files "
+        return 1
+    end
+    set ext $argv[1]
+    set perm $argv[2]
+    find . -type f -name "*.$ext" -exec chmod $perm {} +
+end
 
 function fzfv
 vim (fzf -m --preview='bat --color=always {}')
@@ -256,7 +285,6 @@ alias lf="lfcd"
 
 
 #to get logisim-evolution working without actually installing a package. 
-export PATH="/home/francois/Documents/Linux Documents/University (real):$PATH"
 alias "logism=/opt/logisim-evolution/bin/logisim-evolution"
 alias "logisim=/opt/logisim-evolution/bin/logisim-evolution"
 
@@ -271,31 +299,32 @@ alias "note=xournalpp"
 
 #alias "logout=wlogout"
 
-
+export TMPDIR=/var/tmp/aconfmgr
 export PATH="$HOME:$PATH"
+export PATH="$HOME/Documents/Linux Documents/University (real):$PATH"
 export PATH="$HOME/QolScripts:$PATH"
 export PATH="$HOME/Network:$PATH"
 export PATH="$HOME/Pictures:$PATH"
-export PATH="/home/francois/Videos/i3-video-wallpaper-main/:$PATH"
-export PATH="/home/francois/go/bin:$PATH"
+export PATH="$HOME/Videos/i3-video-wallpaper-main/:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.config/rofi/scripts:$PATH"
 export PATH="$HOME/.config/rofi/applets/bin:$PATH"
 export PATH="$HOME/.config/tmux:$PATH"
 
-export PATH="/home/francois/Music:$PATH"
-export PATH="/home/francois/Videos/Animated_Background/:$PATH"
-export PATH="/home/francois/Pictures/Slideshow_Scripts/Utils:$PATH"
-export PATH="/home/francois/Pictures/Slideshow_Scripts/Master:$PATH"
-export PATH="/home/francois/Pictures/Slideshow_Scripts/Parent:$PATH"
-export PATH="/home/francois/miniconda3/bin:$PATH"
+export PATH="$HOME/Music:$PATH"
+export PATH="$HOME/Videos/Animated_Background/:$PATH"
+export PATH="$HOME/Pictures/Slideshow_Scripts/Utils:$PATH"
+export PATH="$HOME/Pictures/Slideshow_Scripts/Master:$PATH"
+export PATH="$HOME/Pictures/Slideshow_Scripts/Parent:$PATH"
+export PATH="$HOME/miniconda3/bin:$PATH"
 
 
 
 
-export PATH="/home/francois/.config/conky:$PATH"
+export PATH="$HOME/.config/conky:$PATH"
 
-export PATH="/home/francois/.config/polybar.old/:$PATH"
-export PATH="/home/francois/.config/polybar/:$PATH"
+export PATH="$HOME/.config/polybar.old/:$PATH"
+export PATH="$HOME/.config/polybar/:$PATH"
 
 alias convert_folder="./update_slideshow_files"
 alias update_slideshow="./update_slideshow_files"
@@ -309,6 +338,7 @@ export EDITOR=vim
 
 function fish_greeting
 	clear
+	echo "Welcome to Poutine Au Sirop D'erable's config!" | figlet | lolcat
 	#fortune | cowsay -f dragon
 	#-o is for offensive/spicier
 end
@@ -342,5 +372,5 @@ function conda_activate
 end
 
 
-alias set_private="/home/francois/.local/share/private/local/settings/set_private.sh"
-alias set_public="/home/francois/.local/share/private/local/settings/set_public.sh"
+alias set_private="$HOME/.local/share/private/local/settings/set_private.sh"
+alias set_public="$HOME/.local/share/private/local/settings/set_public.sh"

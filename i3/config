@@ -122,9 +122,9 @@ exec --no-startup-id xset s 600 #lock timeout
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id pasystray
 exec --no-startup-id dunst
-exec_always --no-startup-id nm-applet
+exec --no-startup-id pasystray
+exec --no-startup-id nm-applet
 
 exec --no-startup-id notify-send -u low -t 5000 "loading into i3"
 

@@ -274,7 +274,6 @@ function setIcons {
                 elif [ $UNITS = "imperial" ]; then
                     WIND="$WIND ${COLOR_TEXT_BEGIN}mph$COLOR_TEXT_END"
                 else
-					notify-send "It's sending in metric"
                     WIND="$WIND ${COLOR_TEXT_BEGIN}km/h$COLOR_TEXT_END"
                 fi
             fi

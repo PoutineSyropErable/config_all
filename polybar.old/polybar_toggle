@@ -9,7 +9,7 @@ fallback_monitor="eDP-1"
 #main_monitor="eDP-1"
 #main_monitor="HDMI-1"
 #main_monitor="DP-1"
-main_monitor="HDMI-1"
+main_monitor="DP-1"
 
 all_monitors="$(xrandr --query | grep " connected" | cut -d" " -f1)"
 

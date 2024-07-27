@@ -1,3 +1,9 @@
+Example:
+https://www.youtube.com/watch?v=_ZSJtvB35-E
+
+![Screenshot](https://github.com/PoutineSyropErable/home_for_git_public/raw/master/Pictures/Screenshot.png)
+
+
 
 For full usage, you'll need to also download:
 https://github.com/PoutineSyropErable/home_for_git_public

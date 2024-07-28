@@ -1,0 +1,33 @@
+root:x:0:0::/root:/usr/bin/bash
+bin:x:1:1::/:/usr/bin/nologin
+daemon:x:2:2::/:/usr/bin/nologin
+mail:x:8:12::/var/spool/mail:/usr/bin/nologin
+ftp:x:14:11::/srv/ftp:/usr/bin/nologin
+http:x:33:33::/srv/http:/usr/bin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/usr/bin/nologin
+dbus:x:81:81:System Message Bus:/:/usr/bin/nologin
+systemd-coredump:x:980:980:systemd Core Dumper:/:/usr/bin/nologin
+systemd-network:x:979:979:systemd Network Management:/:/usr/bin/nologin
+systemd-oom:x:978:978:systemd Userspace OOM Killer:/:/usr/bin/nologin
+systemd-journal-remote:x:977:977:systemd Journal Remote:/:/usr/bin/nologin
+systemd-resolve:x:976:976:systemd Resolver:/:/usr/bin/nologin
+systemd-timesync:x:975:975:systemd Time Synchronization:/:/usr/bin/nologin
+tss:x:974:974:tss user for tpm2:/:/usr/bin/nologin
+uuidd:x:68:68::/:/usr/bin/nologin
+dhcpcd:x:973:973:dhcpcd privilege separation:/:/usr/bin/nologin
+avahi:x:972:972:Avahi mDNS/DNS-SD daemon:/:/usr/bin/nologin
+mpd:x:45:45::/var/lib/mpd:/usr/bin/nologin
+git:x:971:971:git daemon user:/:/usr/bin/git-shell
+colord:x:970:970:Color management daemon:/var/lib/colord:/usr/bin/nologin
+gdm:x:120:120:Gnome Display Manager:/var/lib/gdm:/usr/bin/nologin
+geoclue:x:969:969:Geoinformation service:/var/lib/geoclue:/usr/bin/nologin
+polkitd:x:102:102:User for polkitd:/:/usr/bin/nologin
+rtkit:x:133:133:RealtimeKit:/proc:/usr/bin/nologin
+francois:x:1001:1001:François Pagé:/home/francois:/bin/bash
+ArchMaster:x:1002:1002::/home/ArchMaster:/bin/bash
+flatpak:x:967:967:Flatpak system helper:/:/usr/bin/nologin
+sddm:x:966:966:SDDM Greeter Account:/var/lib/sddm:/usr/bin/nologin
+gitea:x:964:964:Gitea daemon user:/var/lib/gitea:/bin/bash
+stash:x:963:963:Stash daemon:/var/lib/stash:/usr/bin/nologin
+mysql:x:961:961:MariaDB:/var/lib/mysql:/usr/bin/nologin
+saned:x:960:960:SANE daemon user:/:/usr/bin/nologin

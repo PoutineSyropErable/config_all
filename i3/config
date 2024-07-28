@@ -527,7 +527,7 @@ exec_always --no-startup-id $HOME/.config/polybar.old/all_bars.sh
 #-------------------------------------------- start of perso stuff
 
 #bindsym $mod+l exec i3lock -i ~/Pictures/Desktop\ Background\ Slideshow/resized/anime\ cyberpunk\ girl.png
-exec --no-startup-id betterlockscreen -u ~/Pictures/Desktop\ Background\ Slideshow/Cool\ Pictures/resized_1200/anime\ cyberpunk\ girl.png
+exec --no-startup-id $HOME/QolScripts/set_lock_screen.sh
 #bindsym $mod+l exec betterlockscreen -l
 bindsym $mod+F10 exec --no-startup-id betterlockscreen -l
 
@@ -566,11 +566,12 @@ exec --no-startup-id xrandr --output HDMI-1 $HOME/QolScripts/turn_off_other_scre
 
 bindsym $mod+Control+1 exec --no-startup-id  $HOME/QolScripts/turn_off_other_screens.sh
 
-bindsym $mod+Control+2 exec --no-startup-id fish -c "pv $HOME/QolScripts/screen_placer.py eDP-1 HDMI-1"
+bindsym $mod+Control+2 exec --no-startup-id fish -c "pv $HOME/QolScripts/screen_placer.py eDP-1 HDMI-1" ; exec --no-startup-id $HOME/QolScripts/set_lock_screen.sh
+
 
 bindsym $mod+Control+3 exec --no-startup-id $HOME/QolScripts/screen_placement_layout_n1.sh
 
-bindsym $mod+Control+4 exec --no-startup-id xrandr --output DP-1 --mode 2560x1440 --fbmm 597x366 --rate 75 --right-of HMDI-1 ; exec kcmshell6 kcm_kscreen
+bindsym $mod+Control+4 exec --no-startup-id xrandr --output DP-1 --mode 2560x1440 --fbmm 597x366 --rate 75 --right-of HMDI-1 ; exec kcmshell6 kcm_kscreen ; $HOME/QolScripts/set_lock_screen.sh
 
 bindsym $mod+Control+5 exec --no-startup-id fish -c "pv $HOME/QolScripts/screen_placer.py HDMI-1 DP-1"
 

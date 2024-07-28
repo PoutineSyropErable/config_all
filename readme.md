@@ -4,6 +4,10 @@ https://www.youtube.com/watch?v=_ZSJtvB35-E
 ![Screenshot](https://github.com/PoutineSyropErable/home_for_git_public/raw/master/Pictures/Screenshot.png)
 
 
+it takes even me 5 hours to recover from this, but hey... 
+If you are up for the challenge. I'll make an install guide for it.
+
+It's mostly redownloading packages, fighting with mpd
 
 For full usage, you'll need to also download:
 https://github.com/PoutineSyropErable/home_for_git_public

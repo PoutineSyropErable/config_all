@@ -1,0 +1,22 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sdc8
+UUID=6e1e28f3-0667-4493-a3e4-b57c7a15cac7	/         	btrfs     	rw,relatime,ssd,discard=async,space_cache=v2,subvolid=5,subvol=/	0 0
+
+# /dev/sdc5
+UUID=C2EC-6C10      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/sdc7
+UUID=00bf1ae3-d268-4024-93e7-94135f1aa197	none      	swap      	defaults  	0 0
+
+# /dev/sdc8
+UUID=6e1e28f3-0667-4493-a3e4-b57c7a15cac7	/         	btrfs     	rw,relatime,ssd,discard=async,space_cache=v2,subvolid=5,subvol=/	0 0
+
+# /dev/sdc5
+UUID=C2EC-6C10      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/sdc7
+UUID=00bf1ae3-d268-4024-93e7-94135f1aa197	none      	swap      	defaults  	0 0
+

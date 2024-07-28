@@ -1,0 +1,6 @@
+# MPD host
+host=127.0.0.1
+
+# MPD port
+port=6600
+

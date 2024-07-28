@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+
+if pgrep -a "conky" | grep -vi "conky_toggle" | grep -vi "manager" ; then
+	echo "Conky is running, ending it"
+	killall -q conky
+	pkill -9 conky
+else
+	conky -c $HOME/.config/conky/show_all/show_all_conf &
+fi
+
+

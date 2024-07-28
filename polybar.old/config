@@ -283,7 +283,7 @@ monitor = ${env:MONITOR}
 position=bottom
 bottom = true
 
-modules-left = weather wireless-network aconfmgr-size
+modules-left = weather wireless-network
 modules-center =  filesystem keybinds home-space
 modules-right =  eth gpu gpu_temp gpu_mem memory
 

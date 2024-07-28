@@ -35,6 +35,7 @@ alias lsblk1="lsblk -o +PARTLABEL"
 alias franckfind="grep -r -l "/home/francois" ."
 alias ff="grep -r -l "/home/francois" ."
 
+alias jat="jq . |  bat --language json"
 
 alias reload="source ~/.config/fish/config.fish"
 alias r="source ~/.config/fish/config.fish"

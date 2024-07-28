@@ -31,7 +31,7 @@ vim.o.smartcase = true
 
 
 -- Show special characters
-vim.opt.list = true
+vim.opt.list = false
 vim.opt.listchars = {
 	tab = '>-', 
 	trail = '·', 

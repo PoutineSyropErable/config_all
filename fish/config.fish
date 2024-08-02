@@ -124,11 +124,11 @@ function fzfc
 fzf -m --preview='feh {}' | c 
 end
 
-alias pythonvenv="$HOME/MainPython_Virtual_Environment/.venv/bin/python"
+alias pythonvenv="$HOME/MainPython_Virtual_Environment/pip_venv/bin/python"
 alias pv="pythonvenv"
 
 function govenv
-source $HOME/MainPython_Virtual_Environment/.venv/bin/activate.fish
+source $HOME/MainPython_Virtual_Environment/pip_venv/bin/activate.fish
 end
 
 
@@ -137,7 +137,7 @@ alias sdir="searchdir"
 
 function pvp1
 echo "Control+Shift+p Python: Select Interpreter, Enter Interpreter path"
-echo -n "$HOME/MainPython_Virtual_Environment/.venv/bin/python" | c 
+echo -n "$HOME/MainPython_Virtual_Environment/pip_venv/bin/python" | c 
 echo "The path of the python interpreter is now inside your clipboard. Just Control v it"
 end
 
@@ -145,6 +145,25 @@ end
 #alias leavevenv="deactivate"
 alias lvenv="deactivate"
 alias quitvenv="deactivate"
+
+
+
+function lallvenv
+    if status --is-interactive
+        # Deactivate all active Conda environments
+        while set -q CONDA_DEFAULT_ENV
+            conda deactivate
+        end
+
+        # Deactivate Python virtual environment if active
+        if set -q VIRTUAL_ENV
+            deactivate
+        end
+    end
+end
+
+
+alias lallenv="lallvenv"
 
 
 alias urlisten="sudo tcpdump -i wlan0 -n tcp port 80 or tcp port 443"
@@ -371,7 +390,7 @@ function conda_activate
 set conda_path "$HOME/miniconda3/bin/conda"
 if test -x $conda_path
 	eval $conda_path "shell.fish" "hook" $argv | source
-	conda activate venv
+	conda activate conda_venv
 else
 	echo "Error: Conda not found at $conda_path"
 end
@@ -380,3 +399,8 @@ end
 
 alias set_private="$HOME/.local/share/private/local/settings/set_private.sh"
 alias set_public="$HOME/.local/share/private/local/settings/set_public.sh"
+
+
+
+#govenv
+#conda_activate

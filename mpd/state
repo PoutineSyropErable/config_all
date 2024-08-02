@@ -2,9 +2,9 @@ sw_volume: 98
 audio_device_state:1:My ALSA Device
 audio_device_state:1:My Pulse Output
 audio_device_state:1:My FIFO Output
-state: pause
-current: 19
-time: 3.786000
+state: play
+current: 16
+time: 35.381000
 random: 1
 repeat: 1
 single: 0
@@ -13,73 +13,21 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:Lies of P/01. Feel.flac
-1:Lies of P/02. Divine Service.flac
-2:Lies of P/03. Someday.flac
-3:Lies of P/04. Fascination (Instrumental Version).flac
-4:Lies of P/05. Quixotic.flac
-5:Lies of P/06. Why.flac
-6:Lies of P/08. Proposal, Flower, Wolf Part 1.flac
-7:Lies of P/09. Far East Princess.flac
-8:Lies of P/10. Memory of Beach.flac
-9:Lies of P/11. Shadow Flower.flac
-10:Lies of P/12. Proposal, Flower, Wolf Part 1 (Golden).flac
-11:Lies of P/13. Quixotic (Instrumental Version).flac
-12:Lies of P/14. Shadow Flower (Golden).flac
-13:Lies of P/15. Memory of Beach (Golden).flac
-14:Lies of P/16. Fascination (Gramophone Version).flac
-15:Lies of P/17. Main Menu.flac
-16:Lies of P/18. Dreadful March.flac
-17:Lies of P/19. Opening Credits.flac
-18:Lies of P/20. Hotel Krat.flac
-19:Lies of P/21. Pianist of Krat I.flac
-20:Lies of P/22. Mad Donkey.flac
-21:Lies of P/23. Judgement of Mourning.flac
-22:Lies of P/24. Trinity Sanctum.flac
-23:Lies of P/25. Let There Be Flame.flac
-24:Lies of P/26. St. Frangelico Cathedral.flac
-25:Lies of P/27. Fallen Archbishop Andreus (Battle Intro).flac
-26:Lies of P/28. Fallen Archbishop Andreus (Phase Change).flac
-27:Lies of P/29. Wing of Hypocrisy.flac
-28:Lies of P/30. A World with No Lies.flac
-29:Lies of P/31. Far East Princess (Red Lobster Inn).flac
-30:Lies of P/32. Rabbits on the Hunt.flac
-31:Lies of P/33. Black Rabbit Brotherhood (Battle End).flac
-32:Lies of P/34. Pianist of Krat II.flac
-33:Lies of P/35. Fascination.flac
-34:Lies of P/36. Rosa Isabelle Street.flac
-35:Lies of P/37. Estella Opera House.flac
-36:Lies of P/38. Fascination (Adelina Version).flac
-37:Lies of P/39. King of Puppets (Battle Intro).flac
-38:Lies of P/40. Stage of Grief.flac
-39:Lies of P/41. King of Puppets (Phase Change).flac
-40:Lies of P/42. Shattered Memories.flac
-41:Lies of P/43. Charity Market.flac
-42:Lies of P/44. Lorenzini Arcade Garden.flac
-43:Lies of P/45. Hall of Fame.flac
-44:Lies of P/46. Saintess of Mercy Statue.flac
-45:Lies of P/47. Green Monster of the Swamp (Phase Change).flac
-46:Lies of P/48. Green and Greed.flac
-47:Lies of P/49. Walker of Illusions.flac
-48:Lies of P/50. Attacked Hotel Krat.flac
-49:Lies of P/51. Pianist of Krat III.flac
-50:Lies of P/52. Black Rabbit Brotherhood Revenge (Battle Intro).flac
-51:Lies of P/53. Prey for Revenge.flac
-52:Lies of P/54. Arche Abbey.flac
-53:Lies of P/55. Laxasia the Complete (Battle Intro).flac
-54:Lies of P/56. Apostles of Evolution (Phase 1).flac
-55:Lies of P/57. Laxasia the Complete (Phase Change).flac
-56:Lies of P/58. Apostles of Evolution (Phase 2).flac
-57:Lies of P/59. Laxasia the Complete (Battle End).flac
-58:Lies of P/60. Arche Abbey Upper Part.flac
-59:Lies of P/61. Simon Manus, Arm of God (Battle Intro).flac
-60:Lies of P/62. Simon Manus, Awakened God (Phase Change).flac
-61:Lies of P/63. Arm of God.flac
-62:Lies of P/64. Nameless Chaos.flac
-63:Lies of P/65. Real Boy.flac
-64:Lies of P/66. Free from the Puppet String.flac
-65:Lies of P/67. Rise of P.flac
-66:Lies of P/68. New Eve.flac
-67:Lies of P/69. Pianist of Krat IV.flac
-68:Lies of P/70. Memory of Beach (Piano Version).flac
+0:Lies of P Good Disk/01. Feel.flac
+1:Lies of P Good Disk/02. Divine Service.flac
+2:Lies of P Good Disk/03. Someday.flac
+3:Lies of P Good Disk/04. Fascination (Instrumental Version).flac
+4:Lies of P Good Disk/05. Quixotic.flac
+5:Lies of P Good Disk/06. Why.flac
+6:Lies of P Good Disk/07. Misty Er_A.flac
+7:Lies of P Good Disk/08. Proposal, Flower, Wolf Part 1.flac
+8:Lies of P Good Disk/09. Far East Princess.flac
+9:Lies of P Good Disk/10. Memory of Beach.flac
+10:Lies of P Good Disk/11. Shadow Flower.flac
+11:Lies of P Good Disk/12. Proposal, Flower, Wolf Part 1 (Golden).flac
+12:Lies of P Good Disk/13. Quixotic (Instrumental Version).flac
+13:Lies of P Good Disk/14. Shadow Flower (Golden).flac
+14:Lies of P Good Disk/15. Memory of Beach (Golden).flac
+15:Lies of P Good Disk/69. Pianist of Krat IV.flac
+16:Lies of P Good Disk/70. Memory of Beach (Piano Version).flac
 playlist_end

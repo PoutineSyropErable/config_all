@@ -144,7 +144,7 @@ bottom = false
 modules-left = powermenu mpd mpd-info
 #modules-left = powermenu brightness keyboard_light mpd mpd-info
 modules-center = i3
-modules-right = wlan pulseaudio cpu temperature date tray
+modules-right = wired-network pulseaudio cpu temperature date tray
 #modules-right = wlan pulseaudio cpu battery temperature date tray
 
 
@@ -1071,6 +1071,13 @@ interval = 960
 [module/wireless-network]
 type = internal/network
 interface = wlan0
+
+
+[module/wired-network]
+type = internal/network
+interface = eth1
+
+
 
 
 ; Minimum output width of upload/download rate

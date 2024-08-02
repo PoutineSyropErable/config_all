@@ -28,8 +28,9 @@ exec_always --no-startup-id setxkbmap ca fr
 
 
 # Canadian French. French Canadian. keyboard binding. keyboard layout. key binding
-
+exec --no-startup-id mpd
 exec --no-startup-id mpdris2-rs --no-notification --host localhost:6600
+
 #To replace all instance for monitors:
 # :%s/HMDI-A-0/HDMI-1/g
 
@@ -743,3 +744,4 @@ for_window [class="Polybar"] floating enable
 exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/nohorny_slideshow.sh
 exec --no-startup-id mpd
 bindsym $mod+x exec fish -c "set_public"
+

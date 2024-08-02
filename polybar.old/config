@@ -287,7 +287,7 @@ monitor = ${env:MONITOR}
 position=bottom
 bottom = true
 
-modules-left = weather wireless-network
+modules-left = weather up-down-speed
 #modules-center = keybinds
 modules-center =  filesystem keybinds home-space
 modules-right =  eth gpu gpu_temp gpu_mem memory
@@ -1072,9 +1072,9 @@ type = internal/network
 interface = wlan0
 
 
-[module/wired-network]
+[module/up-down-speed]
 type = internal/network
-interface = eth1
+interface = enp14s0
 
 
 

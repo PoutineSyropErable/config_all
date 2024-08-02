@@ -679,19 +679,19 @@ interval = 2
 format-prefix = "GPU  :"
 format-prefix-foreground = ${colors.sky_blue4}
 format-underline = ${colors.sky_blue4}
-exec = nvidia-smi --query-gpu=temperature.gpu --format=csv,noheader,nounits
-label = %output:2%°C 
+exec = sensors | grep 'amdgpu-pci-0400' -A 4 | grep 'edge' | awk '{ print $    2}' | tr -d "+"
+label = %output:2%
 
 [module/gpu_mem]
-
 type = custom/script 
 interval = 5
 format-prefix = "GPU MEM: "
 format-prefix-foreground = ${colors.pink3}
 format-underline = ${colors.pink2}
-exec = nvidia-smi --query-gpu=memory.used,memory.total --format=csv,noheader,nounits | awk '{ print $1 }' | cut -d',' -f1
+exec = fish -c "pv $HOME/.config/polybar.old/polybar-radeontop/radeontop.py"
+label = %output%
 
-label = %output% MB
+
 
 
 [module/memory]

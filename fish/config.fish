@@ -17,6 +17,8 @@ awk "{print \$$n}"
 end
 
 alias fmod="vim ~/.config/fish/config.fish"
+alias pmod="vim ~/.config/polybar.old/config"
+alias pview="bat ~/.config/polybar.old/config"
 alias fview="bat ~/.fishrc"
 alias imod="vim ~/.i3rc"
 alias iview="bat ~/.i3rc"

@@ -662,14 +662,13 @@ ramp-3-foreground = ${colors.red}
 
 
 
-
 [module/gpu]
 type = custom/script 
 interval = 2
 format-prefix = "GPU:"
 format-prefix-foreground = ${colors.full_green}
 format-underline = ${colors.matrix_green}
-exec = nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits
+exec = cat /sys/class/drm/card1/device/gpu_busy_percent 
 label = %output:2%%
 
 

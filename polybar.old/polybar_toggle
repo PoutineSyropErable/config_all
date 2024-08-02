@@ -3,12 +3,10 @@ bar_name="${1:-bar1}"
 config_path="$HOME/.config/polybar.old/config"
 echo "in Toggle: bar_name = $bar_name"
 
-fallback_monitor="DVI-D-0"
+fallback_monitor="DP-3"
 
-#main_monitor="eDP-1"
 #main_monitor="HDMI-1"
-#main_monitor="DP-1"
-main_monitor="DP-1"
+main_monitor="DP3"
 
 all_monitors="$(xrandr --query | grep " connected" | cut -d" " -f1)"
 

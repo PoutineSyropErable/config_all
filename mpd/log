@@ -14521,3 +14521,80 @@ Jul 28 01:08 : player: played "Lies of P Good Disk/04. Fascination (Instrumental
 Jul 28 01:11 : player: played "Lies of P Good Disk/13. Quixotic (Instrumental Version).flac"
 Jul 28 01:12 : player: played "Lies of P Good Disk/69. Pianist of Krat IV.flac"
 Jul 28 01:16 : player: played "Lies of P Good Disk/05. Quixotic.flac"
+ALSA lib pcm_dmix.c:1000:(snd_pcm_dmix_open) unable to open slave
+Aug 01 20:11 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": No such file or directory
+Aug 01 20:11 : mixer: Failed to read mixer for 'My ALSA Device': no such mixer control: PCM
+Aug 01 20:11 : player: played "Lies of P Good Disk/01. Feel.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/04. Fascination (Instrumental Version).flac; Failed to open '/home/francois/Music/My Music/Lies of P/04. Fascination (Instrumental Version).flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/04. Fascination (Instrumental Version).flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/52. Black Rabbit Brotherhood Revenge (Battle Intro).flac; Failed to open '/home/francois/Music/My Music/Lies of P/52. Black Rabbit Brotherhood Revenge (Battle Intro).flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/52. Black Rabbit Brotherhood Revenge (Battle Intro).flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/69. Pianist of Krat IV.flac; Failed to open '/home/francois/Music/My Music/Lies of P/69. Pianist of Krat IV.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/69. Pianist of Krat IV.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/53. Prey for Revenge.flac; Failed to open '/home/francois/Music/My Music/Lies of P/53. Prey for Revenge.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/53. Prey for Revenge.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/19. Opening Credits.flac; Failed to open '/home/francois/Music/My Music/Lies of P/19. Opening Credits.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/19. Opening Credits.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/22. Mad Donkey.flac; Failed to open '/home/francois/Music/My Music/Lies of P/22. Mad Donkey.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/22. Mad Donkey.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/09. Far East Princess.flac; Failed to open '/home/francois/Music/My Music/Lies of P/09. Far East Princess.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/09. Far East Princess.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/16. Fascination (Gramophone Version).flac; Failed to open '/home/francois/Music/My Music/Lies of P/16. Fascination (Gramophone Version).flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/16. Fascination (Gramophone Version).flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/64. Nameless Chaos.flac; Failed to open '/home/francois/Music/My Music/Lies of P/64. Nameless Chaos.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/64. Nameless Chaos.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/20. Hotel Krat.flac; Failed to open '/home/francois/Music/My Music/Lies of P/20. Hotel Krat.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/20. Hotel Krat.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/06. Why.flac; Failed to open '/home/francois/Music/My Music/Lies of P/06. Why.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/06. Why.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/03. Someday.flac; Failed to open '/home/francois/Music/My Music/Lies of P/03. Someday.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/03. Someday.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/61. Simon Manus, Arm of God (Battle Intro).flac; Failed to open '/home/francois/Music/My Music/Lies of P/61. Simon Manus, Arm of God (Battle Intro).flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/61. Simon Manus, Arm of God (Battle Intro).flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/47. Green Monster of the Swamp (Phase Change).flac; Failed to open '/home/francois/Music/My Music/Lies of P/47. Green Monster of the Swamp (Phase Change).flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/47. Green Monster of the Swamp (Phase Change).flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/29. Wing of Hypocrisy.flac; Failed to open '/home/francois/Music/My Music/Lies of P/29. Wing of Hypocrisy.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/29. Wing of Hypocrisy.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/36. Rosa Isabelle Street.flac; Failed to open '/home/francois/Music/My Music/Lies of P/36. Rosa Isabelle Street.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/36. Rosa Isabelle Street.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/24. Trinity Sanctum.flac; Failed to open '/home/francois/Music/My Music/Lies of P/24. Trinity Sanctum.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/24. Trinity Sanctum.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/43. Charity Market.flac; Failed to open '/home/francois/Music/My Music/Lies of P/43. Charity Market.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/43. Charity Market.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/41. King of Puppets (Phase Change).flac; Failed to open '/home/francois/Music/My Music/Lies of P/41. King of Puppets (Phase Change).flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/41. King of Puppets (Phase Change).flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/42. Shattered Memories.flac; Failed to open '/home/francois/Music/My Music/Lies of P/42. Shattered Memories.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/42. Shattered Memories.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/45. Hall of Fame.flac; Failed to open '/home/francois/Music/My Music/Lies of P/45. Hall of Fame.flac': No such file or directory
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/10. Memory of Beach.flac; Failed to open '/home/francois/Music/My Music/Lies of P/10. Memory of Beach.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/45. Hall of Fame.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/10. Memory of Beach.flac; Failed to open '/home/francois/Music/My Music/Lies of P/10. Memory of Beach.flac': No such file or directory
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/51. Pianist of Krat III.flac; Failed to open '/home/francois/Music/My Music/Lies of P/51. Pianist of Krat III.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/10. Memory of Beach.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/51. Pianist of Krat III.flac; Failed to open '/home/francois/Music/My Music/Lies of P/51. Pianist of Krat III.flac': No such file or directory
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/44. Lorenzini Arcade Garden.flac; Failed to open '/home/francois/Music/My Music/Lies of P/44. Lorenzini Arcade Garden.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/51. Pianist of Krat III.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/44. Lorenzini Arcade Garden.flac; Failed to open '/home/francois/Music/My Music/Lies of P/44. Lorenzini Arcade Garden.flac': No such file or directory
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/70. Memory of Beach (Piano Version).flac; Failed to open '/home/francois/Music/My Music/Lies of P/70. Memory of Beach (Piano Version).flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/44. Lorenzini Arcade Garden.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/70. Memory of Beach (Piano Version).flac; Failed to open '/home/francois/Music/My Music/Lies of P/70. Memory of Beach (Piano Version).flac': No such file or directory
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/54. Arche Abbey.flac; Failed to open '/home/francois/Music/My Music/Lies of P/54. Arche Abbey.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/70. Memory of Beach (Piano Version).flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/54. Arche Abbey.flac; Failed to open '/home/francois/Music/My Music/Lies of P/54. Arche Abbey.flac': No such file or directory
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/12. Proposal, Flower, Wolf Part 1 (Golden).flac; Failed to open '/home/francois/Music/My Music/Lies of P/12. Proposal, Flower, Wolf Part 1 (Golden).flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/54. Arche Abbey.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/12. Proposal, Flower, Wolf Part 1 (Golden).flac; Failed to open '/home/francois/Music/My Music/Lies of P/12. Proposal, Flower, Wolf Part 1 (Golden).flac': No such file or directory
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/40. Stage of Grief.flac; Failed to open '/home/francois/Music/My Music/Lies of P/40. Stage of Grief.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/12. Proposal, Flower, Wolf Part 1 (Golden).flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/40. Stage of Grief.flac; Failed to open '/home/francois/Music/My Music/Lies of P/40. Stage of Grief.flac': No such file or directory
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/05. Quixotic.flac; Failed to open '/home/francois/Music/My Music/Lies of P/05. Quixotic.flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/40. Stage of Grief.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/05. Quixotic.flac; Failed to open '/home/francois/Music/My Music/Lies of P/05. Quixotic.flac': No such file or directory
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/55. Laxasia the Complete (Battle Intro).flac; Failed to open '/home/francois/Music/My Music/Lies of P/55. Laxasia the Complete (Battle Intro).flac': No such file or directory
+Aug 01 20:11 : player: played "Lies of P/05. Quixotic.flac"
+Aug 01 20:11 : exception: Failed to decode /home/francois/Music/My Music/Lies of P/55. Laxasia the Complete (Battle Intro).flac; Failed to open '/home/francois/Music/My Music/Lies of P/55. Laxasia the Complete (Battle Intro).flac': No such file or directory
+ALSA lib pcm_dmix.c:1000:(snd_pcm_dmix_open) unable to open slave
+Aug 01 20:11 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": No such file or directory
+Aug 01 20:11 : player: played "Lies of P/55. Laxasia the Complete (Battle Intro).flac"
+ALSA lib pcm_dmix.c:1000:(snd_pcm_dmix_open) unable to open slave
+Aug 01 20:11 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": No such file or directory

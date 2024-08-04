@@ -420,7 +420,10 @@ if not set -q TMUX
 end
 
 # Check and launch dbus-launch if not running
-dbus-launch
+if not pgrep dbus-daemon > /dev/null
+    dbus-launch
+end
+
 
 # Check and set DISPLAY variable if not already set
 if not set -q DISPLAY

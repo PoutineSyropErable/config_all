@@ -421,5 +421,8 @@ end
 # Check and launch mpd if not running
 if not pgrep mpd > /dev/null
     mpd
+	mpc volume 30
 end
+
+
 

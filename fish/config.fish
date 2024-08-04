@@ -393,16 +393,27 @@ alias set_public="$HOME/.local/share/private/local/settings/set_public.sh"
 
 alias pwsh='powershell.exe -Command'
 
-# Alias to shut down WSL from within WSL
-alias shutdown_wsl='mpd --kill ; pwsh "wsl --shutdown"'d
-alias wsl_shutdown='mpd --kill ; pwsh "wsl --shutdown"'d
-alias shutdown='mpd --kill ; pwsh "wsl --shutdown"'d
-alias reboot='mpd --kill ; pwsh "wsl --shutdown"'d
+# Alias to shut down WSL from within WSL# Check and launch tmux if not already running in this session
+function shutdown_wsl
+    # Stop mpd gracefully
+    if pgrep mpd > /dev/null
+        echo "Stopping mpd..."
+        mpd --kill
+        echo "mpd stopped."
+    else
+        echo "mpd is not running."
+    end
+
+    # Shutdown WSL using PowerShell
+    echo "Shutting down WSL..."
+    powershell.exe -Command "wsl --shutdown"
+end
 
 
+alias shutdown="shutdown_wsl"
+alias wsl_shutdown="shutdown_wsl"
+alias reboot="shutdown_wsl"
 
-
-# Check and launch tmux if not already running in this session
 # Check if TMUX variable is set to detect an existing tmux session
 if not set -q TMUX
     tmux
@@ -429,7 +440,6 @@ end
 # Check and launch mpd if not running
 if not pgrep mpd > /dev/null
     mpd
-	mpc volume 30
 end
 
 

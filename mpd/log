@@ -14601,3 +14601,9 @@ Aug 04 15:24 : exception: Failed to open "My ALSA Device" (alsa); Failed to open
 Aug 04 15:25 : exception: Failed to create Avahi client: Daemon not running
 Aug 04 15:25 : player: played "Lies of P Good Disk/69. Pianist of Krat IV.flac"
 Aug 04 15:25 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 15:26 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:27 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:28 : player: played "Lies of P Good Disk/11. Shadow Flower.flac"
+Aug 04 15:29 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:29 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 15:29 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down

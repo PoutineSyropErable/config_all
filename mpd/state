@@ -3,8 +3,8 @@ audio_device_state:1:My ALSA Device
 audio_device_state:1:My Pulse Output
 audio_device_state:1:My FIFO Output
 state: play
-current: 13
-time: 121.381000
+current: 10
+time: 157.743000
 random: 1
 repeat: 1
 single: 0

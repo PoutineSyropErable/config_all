@@ -420,25 +420,20 @@ if not set -q TMUX
 end
 
 # Check and launch dbus-launch if not running
-if not pgrep dbus-daemon > /dev/null
-    dbus-launch
-end
+dbus-launch >> /dev/null
 
 
 # Check and set DISPLAY variable if not already set
-if not set -q DISPLAY
-    set -x DISPLAY (cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0 #GWSL
-end
+set -x DISPLAY (cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0 #GWSL
 
 # Check and set PULSE_SERVER variable if not already set
-if not set -q PULSE_SERVER
-    set -x PULSE_SERVER tcp:(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}') #GWSL
-end
+set -x PULSE_SERVER tcp:(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}') #GWSL
 
 # Check and set LIBGL_ALWAYS_INDIRECT variable if not already set
-if not set -q LIBGL_ALWAYS_INDIRECT
-    set -x LIBGL_ALWAYS_INDIRECT 1 #GWSL
-end
+set -x LIBGL_ALWAYS_INDIRECT 1 #GWSL
+
+
+pulseaudio --start
 
 # Check and launch mpd if not running
 if not pgrep mpd > /dev/null

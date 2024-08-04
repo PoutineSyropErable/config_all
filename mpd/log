@@ -14610,3 +14610,21 @@ Aug 04 15:29 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach
 Aug 04 15:30 : player: played "Lies of P Good Disk/11. Shadow Flower.flac"
 Aug 04 15:30 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
 Aug 04 15:30 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:31 : player: played "Lies of P Good Disk/70. Memory of Beach (Piano Version).flac"
+Aug 04 15:31 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:31 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 15:31 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 04 15:31 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 04 15:31 : player: played "Lies of P Good Disk/70. Memory of Beach (Piano Version).flac"
+Aug 04 15:32 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:32 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 15:32 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 04 15:32 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 04 15:33 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:34 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:34 : player: played "Lies of P Good Disk/70. Memory of Beach (Piano Version).flac"
+Aug 04 15:34 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 15:35 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:35 : player: played "Lies of P Good Disk/08. Proposal, Flower, Wolf Part 1.flac"
+Aug 04 15:35 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 15:36 : exception: Failed to create Avahi client: Daemon not running

@@ -391,14 +391,12 @@ alias set_public="$HOME/.local/share/private/local/settings/set_public.sh"
 #tmux
 
 
-
-
-# Alias to run PowerShell commands from within WSL
 alias pwsh='powershell.exe -Command'
 
 # Alias to shut down WSL from within WSL
-alias shutdown='pwsh "wsl --shutdown"'
-alias wsl_shutdown='pwsh "wsl --shutdown"'
+alias shutdown_wsl='mpd --kill ; pwsh "wsl --shutdown"'d
+
+
 
 
 # Check and launch tmux if not already running in this session
@@ -429,11 +427,8 @@ end
 if not pgrep mpd > /dev/null
     mpd
 	mpc volume 30
-en# Alias to run PowerShell commands from within WSL
-alias pwsh='powershell.exe -Command'
+end
 
-# Alias to shut down WSL from within WSL
-alias shutdown_wsl='pwsh "wsl --shutdown"'d
 
 
 

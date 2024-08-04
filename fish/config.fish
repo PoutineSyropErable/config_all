@@ -395,6 +395,9 @@ alias pwsh='powershell.exe -Command'
 
 # Alias to shut down WSL from within WSL
 alias shutdown_wsl='mpd --kill ; pwsh "wsl --shutdown"'d
+alias wsl_shutdown='mpd --kill ; pwsh "wsl --shutdown"'d
+alias shutdown='mpd --kill ; pwsh "wsl --shutdown"'d
+alias reboot='mpd --kill ; pwsh "wsl --shutdown"'d
 
 
 

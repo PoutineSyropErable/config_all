@@ -14555,3 +14555,38 @@ Aug 04 15:07 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach
 Aug 04 15:08 : exception: Failed to create Avahi client: Daemon not running
 Aug 04 15:08 : player: played "Lies of P Good Disk/03. Someday.flac"
 Aug 04 15:08 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 15:09 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:10 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:11 : player: played "Lies of P Good Disk/08. Proposal, Flower, Wolf Part 1.flac"
+Aug 04 15:11 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 15:11 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:12 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:13 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:14 : player: played "Lies of P Good Disk/06. Why.flac"
+Aug 04 15:14 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 15:14 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:14 : output: Failed to play on "My Pulse Output" (pulse): disconnected
+Aug 04 15:15 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:15 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 15:15 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 04 15:15 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 04 15:16 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:16 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 15:16 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 04 15:16 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 04 15:17 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:17 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 15:17 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 04 15:17 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 04 15:18 : player: played "Lies of P Good Disk/06. Why.flac"
+Aug 04 15:18 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 15:18 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:18 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 04 15:19 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:20 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:20 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 04 15:20 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 04 15:21 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:21 : player: played "Lies of P Good Disk/70. Memory of Beach (Piano Version).flac"
+Aug 04 15:21 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 15:22 : exception: Failed to create Avahi client: Daemon not running

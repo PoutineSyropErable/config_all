@@ -392,6 +392,15 @@ alias set_public="$HOME/.local/share/private/local/settings/set_public.sh"
 
 
 
+
+# Alias to run PowerShell commands from within WSL
+alias pwsh='powershell.exe -Command'
+
+# Alias to shut down WSL from within WSL
+alias shutdown='pwsh "wsl --shutdown"'
+alias wsl_shutdown='pwsh "wsl --shutdown"'
+
+
 # Check and launch tmux if not already running in this session
 # Check if TMUX variable is set to detect an existing tmux session
 if not set -q TMUX
@@ -399,9 +408,7 @@ if not set -q TMUX
 end
 
 # Check and launch dbus-launch if not running
-if not pgrep dbus-daemon > /dev/null
-    dbus-launch
-end
+dbus-launch
 
 # Check and set DISPLAY variable if not already set
 if not set -q DISPLAY
@@ -422,7 +429,11 @@ end
 if not pgrep mpd > /dev/null
     mpd
 	mpc volume 30
-end
+en# Alias to run PowerShell commands from within WSL
+alias pwsh='powershell.exe -Command'
+
+# Alias to shut down WSL from within WSL
+alias shutdown_wsl='pwsh "wsl --shutdown"'d
 
 
 

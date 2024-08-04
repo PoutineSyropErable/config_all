@@ -141,10 +141,10 @@ vim.api.nvim_set_keymap('n', '«', '@', { noremap = true, silent = true })
 
 
 -- Map Tab to indent line forward
-vim.api.nvim_set_keymap('n', '<Tab>', '>gv', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<Tab>', '>>', { noremap = true, silent = true })
 
 -- Map Shift+Tab to indent line backward
-vim.api.nvim_set_keymap('n', '<S-Tab>', '<gv', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<S-Tab>', '<<', { noremap = true, silent = true })
 
 
 -- Map Tab to indent line forward

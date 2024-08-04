@@ -14529,3 +14529,9 @@ Aug 04 14:57 : exception: Failed to create Avahi client: Daemon not running
 Aug 04 14:58 : player: played "Lies of P Good Disk/01. Feel.flac"
 Aug 04 14:58 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
 Aug 04 14:58 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 14:59 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:00 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:01 : player: played "Lies of P Good Disk/08. Proposal, Flower, Wolf Part 1.flac"
+Aug 04 15:01 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 15:01 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 15:02 : exception: Failed to create Avahi client: Daemon not running

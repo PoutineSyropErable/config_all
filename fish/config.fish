@@ -16,6 +16,7 @@ set -l n $argv[1]
 awk "{print \$$n}"
 end
 
+alias bmod="vim ~/.bashrc"
 alias fmod="vim ~/.config/fish/config.fish"
 alias fview="bat ~/.fishrc"
 alias imod="vim ~/.i3rc"
@@ -380,3 +381,45 @@ end
 
 alias set_private="$HOME/.local/share/private/local/settings/set_private.sh"
 alias set_public="$HOME/.local/share/private/local/settings/set_public.sh"
+
+
+#dbus-launch
+#export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0 #GWSL
+#export PULSE_SERVER=tcp:$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}') #GWSL
+#export LIBGL_ALWAYS_INDIRECT=1 #GWSL
+#mpd
+#tmux
+
+
+
+# Check and launch tmux if not already running in this session
+# Check if TMUX variable is set to detect an existing tmux session
+if not set -q TMUX
+    tmux
+end
+
+# Check and launch dbus-launch if not running
+if not pgrep dbus-daemon > /dev/null
+    dbus-launch
+end
+
+# Check and set DISPLAY variable if not already set
+if not set -q DISPLAY
+    set -x DISPLAY (cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0 #GWSL
+end
+
+# Check and set PULSE_SERVER variable if not already set
+if not set -q PULSE_SERVER
+    set -x PULSE_SERVER tcp:(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}') #GWSL
+end
+
+# Check and set LIBGL_ALWAYS_INDIRECT variable if not already set
+if not set -q LIBGL_ALWAYS_INDIRECT
+    set -x LIBGL_ALWAYS_INDIRECT 1 #GWSL
+end
+
+# Check and launch mpd if not running
+if not pgrep mpd > /dev/null
+    mpd
+end
+

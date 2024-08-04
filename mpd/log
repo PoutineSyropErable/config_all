@@ -14521,3 +14521,11 @@ Jul 28 01:08 : player: played "Lies of P Good Disk/04. Fascination (Instrumental
 Jul 28 01:11 : player: played "Lies of P Good Disk/13. Quixotic (Instrumental Version).flac"
 Jul 28 01:12 : player: played "Lies of P Good Disk/69. Pianist of Krat IV.flac"
 Jul 28 01:16 : player: played "Lies of P Good Disk/05. Quixotic.flac"
+Aug 04 14:56 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 14:56 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 14:56 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 04 14:56 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 04 14:57 : exception: Failed to create Avahi client: Daemon not running
+Aug 04 14:58 : player: played "Lies of P Good Disk/01. Feel.flac"
+Aug 04 14:58 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 04 14:58 : exception: Failed to create Avahi client: Daemon not running

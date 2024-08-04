@@ -9,9 +9,10 @@ vim.api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle<CR>', { noremap = tru
 vim.api.nvim_set_keymap('n', '<leader>e', ':lua require("nvim-tree.api").tree.focus()<CR>', { noremap = true, silent = true })
 
 
-vim.api.nvim_set_keymap('n', '<leader>c', '"+yy', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>y', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>c', '"+yy', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>p', '"+p', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>v', '"+p', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-c>', '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-C>', '"+y', { noremap = true, silent = true })
 
@@ -19,7 +20,9 @@ vim.api.nvim_set_keymap('v', '<C-C>', '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<C-c>', '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<C-V>', '"+p', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<leader>y', '"+y', { noremap = true, silent = true })
-
+vim.api.nvim_set_keymap('v', '<leader>c', '"+yy', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<leader>p', '"+p', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<leader>v', '"+p', { noremap = true, silent = true })
 
 
 

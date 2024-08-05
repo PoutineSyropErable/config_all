@@ -261,6 +261,7 @@ map sl create_shortcut
 # Movement
 map ch cd ~
 map cc cd ~/.config
+map ck cd ~/.config/kitty
 map cD cd ~/Documents
 map cd cd ~/Downloads
 map cp cd ~/Pictures
@@ -299,6 +300,7 @@ map eO toggle_exec
 
 map ep change_permissions
 
+map of !feh "$f"
 map on !nvim "$f"
 map oN !nvim "."
 map ov !codium "$f"

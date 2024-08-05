@@ -21,6 +21,7 @@ alias fmod="vim ~/.config/fish/config.fish"
 alias fview="bat ~/.fishrc"
 alias imod="vim ~/.i3rc"
 alias iview="bat ~/.i3rc"
+alias kimod="vim ~/.config/kitty/kitty.conf"
 alias tmod="vim ~/.tmuxrc"
 alias tview="bat ~/.tmuxrc"
 alias umux="~/.config/tmux/tmux_github_sync.sh"
@@ -125,11 +126,12 @@ function fzfc
 fzf -m --preview='feh {}' | c 
 end
 
-alias pythonvenv="$HOME/MainPython_Virtual_Environment/.venv/bin/python"
+alias pythonvenv="$HOME/MainPython_Virtual_Environment/pip_venv/bin/python"
 alias pv="pythonvenv"
+alias cv="$HOME/miniconda/envs/conda_venv"
 
 function govenv
-source $HOME/MainPython_Virtual_Environment/.venv/bin/activate.fish
+source $HOME/MainPython_Virtual_Environment/pip_venv/bin/activate.fish
 end
 
 
@@ -138,7 +140,7 @@ alias sdir="searchdir"
 
 function pvp1
 echo "Control+Shift+p Python: Select Interpreter, Enter Interpreter path"
-echo -n "$HOME/MainPython_Virtual_Environment/.venv/bin/python" | c 
+echo -n "$HOME/MainPython_Virtual_Environment/pip_venv/bin/python" | c 
 echo "The path of the python interpreter is now inside your clipboard. Just Control v it"
 end
 
@@ -169,6 +171,8 @@ alias ch='cd ~'
 alias cr="cd ~/.config/rofi"
 alias cm="cd ~/Music"
 alias cP="cd ~/.config/polybar.old/"
+alias ck="cd ~/.config/kitty/"
+alias cpi="cd ~/Pictures"
 alias cdoc="cd ~/Documents"
 alias cdo="cd ~/Downloads"
 alias cco="cd ~/.config"
@@ -372,7 +376,7 @@ function conda_activate
 set conda_path "$HOME/miniconda3/bin/conda"
 if test -x $conda_path
 	eval $conda_path "shell.fish" "hook" $argv | source
-	conda activate venv
+	conda activate conda_venv
 else
 	echo "Error: Conda not found at $conda_path"
 end
@@ -420,7 +424,7 @@ if not set -q TMUX
 end
 
 # Check and launch dbus-launch if not running
-dbus-launch >> /dev/null
+dbus-launch > /dev/null
 
 
 # Check and set DISPLAY variable if not already set
@@ -430,10 +434,10 @@ set -x DISPLAY (cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'
 set -x PULSE_SERVER tcp:(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}') #GWSL
 
 # Check and set LIBGL_ALWAYS_INDIRECT variable if not already set
-set -x LIBGL_ALWAYS_INDIRECT 1 #GWSL
+#set -x LIBGL_ALWAYS_INDIRECT 1 #GWSL
 
 
-pulseaudio --start
+pulseaudio --start > /dev/null
 
 # Check and launch mpd if not running
 if not pgrep mpd > /dev/null

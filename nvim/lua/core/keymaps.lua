@@ -14,13 +14,15 @@ vim.api.nvim_set_keymap('n', '<leader>c', '"+yy', { noremap = true, silent = tru
 vim.api.nvim_set_keymap('n', '<leader>p', '"+p', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>v', '"+p', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-c>', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-x>', '"+d', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-C>', '"+y', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('v', '<C-C>', '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<C-c>', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<C-x>', '"+d', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<C-V>', '"+p', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<leader>y', '"+y', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<leader>c', '"+yy', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<leader>c', '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<leader>p', '"+p', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<leader>v', '"+p', { noremap = true, silent = true })
 

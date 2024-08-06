@@ -301,6 +301,7 @@ map eO toggle_exec
 map ep change_permissions
 
 map of !feh "$f"
+map oe !explorer.exe .
 map on !nvim "$f"
 map oN !nvim "."
 map ov !codium "$f"

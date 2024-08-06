@@ -30,9 +30,31 @@ alias vmod="cd ~/.config/nvim ; nvim ."
 alias nmod="cd ~/.config/nvim ; nvim ."
 alias cn="cd ~/.config/nvim"
 
-
 alias lsblk1="lsblk -o +PARTLABEL"
 
+function music
+    # Check if tmux is running
+    if tmux has-session 2>/dev/null
+        # Get the current tmux session name
+        set current_session (tmux display-message -p '#S')
+
+        # Rename the current tmux session to "Music"
+        tmux rename-session -t $current_session Music
+
+        # Send command to open ncmpcpp
+        tmux send-keys -t Music 'ncmpcpp' C-m
+    else
+        # Start a new tmux session named "Music" and open ncmpcpp
+        tmux new-session -s Music -d
+        tmux send-keys -t Music 'ncmpcpp' C-m
+        # Attach to the new tmux session
+        tmux attach-session -t Music
+    end
+
+tmux split window -v
+#tmux resize-pane -D 10  # Resize pane 10 cells downwards
+
+end
 
 alias franckfind="grep -r -l "/home/francois" ."
 alias ff="grep -r -l "/home/francois" ."
@@ -425,7 +447,8 @@ end
 
 # Check and launch dbus-launch if not running
 dbus-launch > /dev/null
-
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
 
 # Check and set DISPLAY variable if not already set
 set -x DISPLAY (cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0 #GWSL

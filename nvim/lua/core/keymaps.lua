@@ -19,6 +19,7 @@ vim.api.nvim_set_keymap('v', '<C-C>', '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<C-c>', '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<C-V>', '"+p', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<leader>y', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<leader>c', '"+y', { noremap = true, silent = true })
 
 
 
@@ -85,6 +86,7 @@ vim.keymap.set('n', '<C-w>d', ':close<CR>', { noremap = true, silent = true })
 vim.keymap.set('n', '<C-w>s', ':wa<CR>', { noremap = true, silent = true })
 -- Select all text
 vim.keymap.set('', '<C-w>a', 'ggVG<CR>', { noremap = true, silent = true })
+vim.keymap.set('', '<C-a>', 'ggVG<CR>', { noremap = true, silent = true })
 vim.keymap.set('', '<C-w>q', ':wa | qa!<CR>', { noremap = true, silent = true })
 vim.keymap.set('', '<C-w>Q', ':qa!<CR>', { noremap = true, silent = true })
 

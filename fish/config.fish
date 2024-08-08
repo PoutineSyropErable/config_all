@@ -305,7 +305,7 @@ alias "note=xournalpp"
 
 #alias "logout=wlogout"
 
-export TMPDIR=/var/tmp/aconfmgr
+#export TMPDIR=/var/tmp/aconfmgr
 export PATH="$HOME:$PATH"
 export PATH="$HOME/Documents/Linux Documents/University (real):$PATH"
 export PATH="$HOME/QolScripts:$PATH"

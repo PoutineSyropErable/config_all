@@ -144,7 +144,7 @@ bottom = false
 modules-left = powermenu mpd mpd-info
 #modules-left = powermenu brightness keyboard_light mpd mpd-info
 modules-center = i3
-modules-right = wired-network pulseaudio cpu temperature date tray
+modules-right =  wired-network pulseaudio filesystem cpu temperature date tray
 #modules-right = wlan pulseaudio cpu battery temperature date tray
 
 
@@ -192,7 +192,7 @@ bottom = false
 modules-left = powermenu mpd mpd-info
 #modules-left = powermenu brightness keyboard_light mpd mpd-info
 modules-center = i3
-modules-right = pulseaudio cpu battery temperature date
+modules-right =  pulseaudio filesystem cpu battery temperature date
 
 
 
@@ -237,7 +237,7 @@ bottom = true
 
 modules-left = mpv-title mpv-info mpv-control
 #modules-center = filesystem keybinds
-modules-center = filesystem keybinds home-space
+modules-center =  keybinds
 modules-right =  eth gpu gpu_temp gpu_mem memory
 
 
@@ -289,7 +289,7 @@ bottom = true
 
 modules-left = weather up-down-speed
 #modules-center = keybinds
-modules-center =  keybinds filesystem 
+modules-center =  keybinds
 modules-right =  eth gpu gpu_temp gpu_mem memory
 
 
@@ -368,7 +368,7 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#0a81f5}/ %{F-}: %percentage_used%%
+label-mounted = %{F#ff9f2f}/ %{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 

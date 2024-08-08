@@ -5,7 +5,7 @@
 !readme.md
 !.gitignore
 # Include specific directories
-!/aconfmgr/
+#!/aconfmgr/
 !/cava/
 !/conky/
 !/dunst/
@@ -26,20 +26,20 @@
 !/tmux/
 
 
-!/aconfmgr/10-ignores.sh
-!/aconfmgr/files
-!/aconfmgr/files/*
-!/aconfmgr/files/**
-!/aconfmgr/files/*/*
-!/aconfmgr/files/*/*/*
-!/aconfmgr/files/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*/*/*/*/*/*
+#!/aconfmgr/10-ignores.sh
+#!/aconfmgr/files
+#!/aconfmgr/files/*
+#!/aconfmgr/files/**
+#!/aconfmgr/files/*/*
+#!/aconfmgr/files/*/*/*
+#!/aconfmgr/files/*/*/*/*
+#!/aconfmgr/files/*/*/*/*/*
+#!/aconfmgr/files/*/*/*/*/*/*
+#!/aconfmgr/files/*/*/*/*/*/*/*
+#!/aconfmgr/files/*/*/*/*/*/*/*/*
+#!/aconfmgr/files/*/*/*/*/*/*/*/*/*
+#!/aconfmgr/files/*/*/*/*/*/*/*/*/*/*
+#!/aconfmgr/files/*/*/*/*/*/*/*/*/*/*/*
 
 !/cava/**/*
 !/cava/*/
@@ -152,4 +152,4 @@
 !/tmux/*/*/*/*/
 
 
-/polybar.old/weather-polybar-plugin/.owm-key
+#/polybar.old/weather-polybar-plugin/.owm-key

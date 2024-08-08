@@ -16,12 +16,12 @@ if [[ -z "$status" ]]; then
 	mesg="MPD is Offline"
 else
 	prompt="`mpc -f "%artist%" current`"
-	mesg="`mpc -f "%title%" current` :: `mpc status | grep "#" | awk '{print $3}'`"
+	mesg="`mpc -f "%file%" current` :: `mpc status | grep "#" | awk '{print $3}'`"
 fi
 
 if [[ ( "$theme" == *'type-1'* ) || ( "$theme" == *'type-3'* ) || ( "$theme" == *'type-5'* ) ]]; then
 	list_col='1'
-	list_row='6'
+	list_row='7'
 elif [[ ( "$theme" == *'type-2'* ) || ( "$theme" == *'type-4'* ) ]]; then
 	list_col='6'
 	list_row='1'
@@ -40,6 +40,8 @@ if [[ "$layout" == 'NO' ]]; then
 	option_4=" Next"
 	option_5=" Repeat"
 	option_6=" Random"
+	option_7="󰑘 Single"
+
 else
 	if [[ ${status} == *"[playing]"* ]]; then
 		option_1=""
@@ -51,7 +53,10 @@ else
 	option_4=""
 	option_5=""
 	option_6=""
+	option_7="󰑘"
 fi
+
+
 
 # Toggle Actions
 active=''
@@ -64,6 +69,9 @@ elif [[ ${status} == *"repeat: off"* ]]; then
 else
     option_5=" Parsing Error"
 fi
+
+
+
 # Random
 if [[ ${status} == *"random: on"* ]]; then
     [ -n "$active" ] && active+=",5" || active="-a 5"
@@ -72,6 +80,17 @@ elif [[ ${status} == *"random: off"* ]]; then
 else
     option_6=" Parsing Error"
 fi
+
+#Single
+if [[ ${status} == *"single: on"* ]]; then
+    active="-a 6"
+elif [[ ${status} == *"single: off"* ]]; then
+    urgent="-u 6"
+else
+    option_7=" Parsing Error"
+fi
+
+
 
 # Rofi CMD
 rofi_cmd() {
@@ -82,12 +101,18 @@ rofi_cmd() {
 		-mesg "$mesg" \
 		${active} ${urgent} \
 		-markup-rows \
-		-theme ${theme}
+		-theme ${theme} \
+        -kb-row-up    'i,Up' \
+        -kb-row-down  'k,Down' \
+        -kb-row-left  'j' \
+        -kb-row-right 'l' \
+        -kb-accept-entry 'h,Return'
+
 }
 
 # Pass variables to rofi dmenu
 run_rofi() {
-	echo -e "$option_1\n$option_2\n$option_3\n$option_4\n$option_5\n$option_6" | rofi_cmd
+	echo -e "$option_1\n$option_2\n$option_3\n$option_4\n$option_5\n$option_6\n$option_7" | rofi_cmd
 }
 
 # Execute Command
@@ -104,6 +129,8 @@ run_cmd() {
 		mpc -q repeat
 	elif [[ "$1" == '--opt6' ]]; then
 		mpc -q random
+	elif [[ "$1" == '--opt7' ]]; then
+		mpc -q single
 	fi
 }
 
@@ -128,4 +155,7 @@ case ${chosen} in
     $option_6)
 		run_cmd --opt6
         ;;
+	$option_7)
+		run_cmd --opt7
+		;;
 esac

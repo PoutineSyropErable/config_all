@@ -14,6 +14,11 @@ mixer="`amixer info Master | grep 'Mixer name' | cut -d':' -f2 | tr -d \',' '`"
 speaker="`amixer get Master | tail -n1 | awk -F ' ' '{print $5}' | tr -d '[]'`"
 mic="`amixer get Capture | tail -n1 | awk -F ' ' '{print $5}' | tr -d '[]'`"
 
+echo "$mixer"
+echo "$speaker"
+echo "$mic"
+
+
 active=""
 urgent=""
 
@@ -89,7 +94,12 @@ rofi_cmd() {
 		-mesg "$mesg" \
 		${active} ${urgent} \
 		-markup-rows \
-		-theme ${theme}
+		-theme ${theme} \
+        -kb-row-up    'i,Up' \
+        -kb-row-down  'k,Down' \
+        -kb-row-left  'j' \
+        -kb-row-right 'l' \
+        -kb-accept-entry 'h,Return'
 }
 
 # Pass variables to rofi dmenu

@@ -51,13 +51,21 @@ rofi_cmd() {
 		-p "$prompt" \
 		-mesg "$mesg" \
 		-markup-rows \
-		-theme ${theme}
+		-theme ${theme} \
+		-kb-row-up    'i,Up' \
+		-kb-row-down  'k,Down' \
+		-kb-row-left  'j' \
+		-kb-row-right 'l' \
+		-kb-accept-entry 'h,Return'
 }
+#chosen=$(echo -e "$option_1\n$option_2\n$option_3\n$option_4\n$option_5\n$option_6" | rofi -dmenu -kb-row-up 'i' -kb-row-down 'k' -kb-row-left 'j' -kb-row-right 'l')
 
 # Pass variables to rofi dmenu
 run_rofi() {
 	echo -e "$option_1\n$option_2\n$option_3\n$option_4\n$option_5\n$option_6" | rofi_cmd
 }
+
+
 
 # Confirmation CMD
 confirm_cmd() {
@@ -92,7 +100,7 @@ run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
 		betterlockscreen -l
 	elif [[ "$1" == '--opt2' ]]; then
-		confirm_run 'kill -9 -1'
+		confirm_run 'i3-msg exit'
 	elif [[ "$1" == '--opt3' ]]; then
 		confirm_run 'mpc -q pause' 'amixer set Master mute' 'systemctl suspend'
 	elif [[ "$1" == '--opt4' ]]; then

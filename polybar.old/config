@@ -731,7 +731,7 @@ ramp-signal-underline = #9f78e1
 
 [module/eth]
 type = internal/network
-interface = wlan0
+interface = enp14s0
 interval = 1
 
 format-connected-underline = ${colors.orange}

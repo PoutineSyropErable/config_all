@@ -503,7 +503,7 @@ type = internal/mpd
 format-online = %{T4}<label-song>%{T-}  %{T3}<icon-prev> <toggle> <icon-stop> <icon-next>%{T-}
 ;<icon-random> <icon-repeat>%{T-}
 #red4 was the old color
-format-online-foreground = ${colors.pink5}
+format-online-foreground = ${colors.yellow3}
 format-online-background = ${colors.light_gray}
 
 ;https://www.nerdfonts.com/cheat-sheet

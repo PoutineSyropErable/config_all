@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c018a466dcf352f3a7a92371ee395811039ac811f327a39ef2fd0fe874903bf5
-size 135
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Fonts
+ *
+ **/
+
+* {
+    font: "JetBrains Mono Nerd Font 10";
+}

@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9c47127d238ac7b1e01681f52af1793819950c1aaeb726e9d7bd92f6dc2f979a
-size 278
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Colors
+ **/
+
+* {
+    background:     #1D1F28FF;
+    background-alt: #282A36FF;
+    foreground:     #FDFDFDFF;
+    selected:       #79E6F3FF;
+    active:         #5ADECDFF;
+    urgent:         #F37F97FF;
+}

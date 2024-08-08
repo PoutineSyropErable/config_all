@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:559635e45dbd86acfe32335245cc976d64e26735b06d22a2b24e3df82f545ac3
-size 128
+/**
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Github : @adi1090x
+ * 
+ * Fonts
+ *
+ **/
+
+* {
+    font: "Iosevka Nerd Font 10";
+}

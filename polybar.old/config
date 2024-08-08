@@ -192,7 +192,7 @@ bottom = false
 modules-left = powermenu mpd mpd-info
 #modules-left = powermenu brightness keyboard_light mpd mpd-info
 modules-center = i3
-modules-right = wlan pulseaudio cpu battery temperature date
+modules-right = pulseaudio cpu battery temperature date
 
 
 
@@ -289,7 +289,7 @@ bottom = true
 
 modules-left = weather up-down-speed
 #modules-center = keybinds
-modules-center =  filesystem keybinds home-space
+modules-center =  keybinds filesystem 
 modules-right =  eth gpu gpu_temp gpu_mem memory
 
 
@@ -1082,7 +1082,7 @@ interface = enp14s0
 ; Minimum output width of upload/download rate
 ;format-connected = <ramp-signal>
 ;format-packetloss = <animation-packetloss> <label-connected>
-label-connected = %{F#00ff00}    %upspeed%     %{F#ff0000} %downspeed% %{F-}
+label-connected = %{F#00ff00}   %upspeed%     %{F#ff0000} %downspeed% %{F-}
 
 
 

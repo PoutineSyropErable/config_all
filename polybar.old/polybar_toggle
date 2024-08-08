@@ -6,7 +6,7 @@ echo "in Toggle: bar_name = $bar_name"
 fallback_monitor="DP-3"
 
 #main_monitor="HDMI-1"
-main_monitor="DP3"
+main_monitor="DP-3"
 
 all_monitors="$(xrandr --query | grep " connected" | cut -d" " -f1)"
 

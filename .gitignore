@@ -152,4 +152,4 @@
 !/tmux/*/*/*/*/
 
 
-/polybar.old/weather-polybar-plugin/.owm-key
+#/polybar.old/weather-polybar-plugin/.owm-key

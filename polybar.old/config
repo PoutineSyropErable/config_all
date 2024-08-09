@@ -116,15 +116,15 @@ sky_blue9 =  #007b8e
 sky_blue10 =  #005c6b
 sky_blue11 =  #003d47
 
-light_gray = #bb565656
+light_gray = #af292929
 
 
 
 bad_warning1 = #ffc100	
 bad_warning2 = #ff9a00	
 bad_warning3 = #ff7400	
-bad_warning4 =#ff4d00	
-bad_warning5 =#ff0000
+bad_warning4 = #ff4d00	
+bad_warning5 = #ff0000
 
 orange = ${colors.bad_warning3}
 
@@ -345,7 +345,8 @@ tray-padding = 0
 [module/xwindow]
 type = internal/xwindow
 format-foreground= ${colors.purple1}
-label =  %title:0:30:...% 
+format-background = ${colors.light_gray}
+label = ​ %title:0:12:...% ​ 
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -369,7 +370,7 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#ff9f2f}/ %{F-}: %percentage_used%%
+label-mounted = %{F#ff77aa}/ %{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -504,7 +505,7 @@ type = internal/mpd
 format-online = %{T4}<label-song>%{T-}  %{T3}<icon-prev> <toggle> <icon-stop> <icon-next>%{T-}
 ;<icon-random> <icon-repeat>%{T-}
 #red4 was the old color
-format-online-foreground = ${colors.yellow3}
+format-online-foreground = ${colors.bad_warning2}
 format-online-background = ${colors.light_gray}
 
 ;https://www.nerdfonts.com/cheat-sheet
@@ -1083,7 +1084,7 @@ interface = enp14s0
 ; Minimum output width of upload/download rate
 ;format-connected = <ramp-signal>
 ;format-packetloss = <animation-packetloss> <label-connected>
-label-connected = %{F#00ff00}   %upspeed%     %{F#ff0000} %downspeed% %{F-}
+label-connected =​   	%{F#00ff00}   %upspeed%    %{F#ff0000} %downspeed% %{F-}    %{F#ffc100}%linkspeed% %{F-} 
 
 
 

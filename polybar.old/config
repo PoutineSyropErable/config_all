@@ -141,10 +141,10 @@ monitor = ${env:MONITOR}
 position=top
 bottom = false
 
-modules-left = powermenu mpd mpd-info xwindow
+modules-left = powermenu mpd mpd-info 
 #modules-left = powermenu brightness keyboard_light mpd mpd-info
 modules-center = i3
-modules-right =  wired-network pulseaudio filesystem cpu temperature date tray
+modules-right =  xwindow pulseaudio filesystem cpu temperature date tray
 #modules-right = wlan pulseaudio cpu battery temperature date tray
 
 
@@ -189,10 +189,10 @@ monitor = ${env:MONITOR}
 position=top
 bottom = false
 
-modules-left = powermenu mpd mpd-info xwindow
+modules-left = powermenu mpd mpd-info
 #modules-left = powermenu brightness keyboard_light mpd mpd-info
 modules-center = i3
-modules-right =  pulseaudio filesystem cpu battery temperature date
+modules-right = xwindow pulseaudio filesystem cpu battery temperature date
 
 
 

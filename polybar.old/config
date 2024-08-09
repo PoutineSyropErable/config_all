@@ -212,7 +212,7 @@ bottom = false
 modules-left = powermenu mpd mpd-info xwindow
 #modules-left = powermenu brightness keyboard_light mpd mpd-info
 modules-center = i3
-modules-right = eth pulseaudio filesystem  temperature date
+modules-right = eth pulseaudio filesystem  date
 
 
 

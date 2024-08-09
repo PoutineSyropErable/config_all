@@ -406,4 +406,8 @@ alias set_public="$HOME/.local/share/private/local/settings/set_public.sh"
 
 
 #govenv
-#conda_activate
+#conda_activat
+if not pgrep mpd > /dev/null 
+	mpd
+end
+

@@ -106,6 +106,8 @@ light_yellow4 = #fffd8d
 light_yellow5 = #fdfa72
 
 dodger_blue = #2e9fff 
+folder_blue = #0a81f5
+
 
 blue1 = #e5e5ff
 blue2 = #7f7fff
@@ -162,7 +164,7 @@ bottom = false
 modules-left = powermenu mpd mpd-info xwindow
 #modules-left = powermenu brightness keyboard_light mpd mpd-info
 modules-center = i3
-modules-right =   pulseaudio filesystem date tray
+modules-right =  eth pulseaudio filesystem date tray
 #modules-right = wlan pulseaudio cpu battery temperature date tray
 
 
@@ -256,7 +258,7 @@ bottom = true
 modules-left = mpv-title mpv-info mpv-control
 #modules-center = filesystem keybinds
 modules-center =  keybinds
-modules-right =  eth gpu gpu_temp gpu_mem memory cpu
+modules-right =  gpu gpu_temp gpu_mem memory cpu
 
 
 
@@ -308,7 +310,7 @@ bottom = true
 modules-left = weather up-down-speed
 #modules-center = keybinds
 modules-center =  keybinds 
-modules-right =  eth gpu_mem gpu_temp gpu memory  cpu_temp cpu
+modules-right =   gpu_mem gpu_temp gpu memory  cpu_temp cpu
 
 
 width = 100%
@@ -762,9 +764,9 @@ type = internal/network
 interface = enp14s0
 interval = 1
 
-format-connected-underline = ${colors.orange}
+format-connected-underline = ${colors.folder_blue}
 format-connected-prefix = "󰀂 "
-format-connected-prefix-foreground = ${colors.yellow1}
+format-connected-prefix-foreground = ${colors.sky_blue7}
 label-connected = %local_ip%
 
 ;format-disconnected =

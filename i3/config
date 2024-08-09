@@ -607,10 +607,9 @@ bindsym $mod+Control+i             exec --no-startup-id $HOME/Pictures/Slideshow
 bindsym $mod+Control+o             exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Master/faster.sh
 
 
-#bindsym $mod+Control+m       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "$HOME/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/anime cyberpunk girl.png"
 bindsym $mod+Control+m       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "$HOME/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/wp13527036-malenia-elden-ring-wallpapers.png"
 
-
+bindsym $mod+Control+Shift+m       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "$HOME/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/anime cyberpunk girl.png"
 
 
 # Media player controls

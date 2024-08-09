@@ -30,7 +30,7 @@ alias cnv="cd ~/.config/nvim ; nvim ."
 alias vmod="cd ~/.config/nvim ; nvim ."
 alias nmod="cd ~/.config/nvim ; nvim ."
 alias cn="cd ~/.config/nvim"
-
+alias cmod="vim ~/.config/conky/show_all/show_all_conf"
 
 alias lsblk1="lsblk -o +PARTLABEL"
 

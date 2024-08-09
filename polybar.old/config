@@ -104,6 +104,22 @@ light_yellow3 = #fffdaf
 light_yellow4 = #fffd8d	
 light_yellow5 = #fdfa72
 
+
+blue1 = #e5e5ff
+blue2 = #7f7fff
+blue3 = #0000ff
+blue4 = #00007f
+blue5 = #000019
+
+
+blue6 = #45b6fe
+blue7 = #6ac5fe
+blue8 = #8fd3fe
+blue9 = #b5e2ff
+blue10 = #daf0ff 
+
+
+
 sky_blue1 =  #ccf8ff
 sky_blue2 =  #89eeff
 sky_blue3 =  #66e9ff
@@ -370,7 +386,7 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#ff77aa}/ %{F-}: %percentage_used%%
+label-mounted = %{F#dcae1e}/ %{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -668,8 +684,8 @@ ramp-3-foreground = ${colors.red}
 type = custom/script 
 interval = 2
 format-prefix = "GPU:"
-format-prefix-foreground = ${colors.full_green}
-format-underline = ${colors.matrix_green}
+format-prefix-foreground = ${colors.matrix_green}
+format-underline = ${colors.full_green}
 exec = cat /sys/class/drm/card1/device/gpu_busy_percent 
 label = %output:2%%
 
@@ -758,8 +774,8 @@ time = %H:%M:%S
 time-alt = %H:%M:%S
 
 format-prefix = 
-format-prefix-foreground = ${colors.blue}
-format-underline = #0a6cf5
+format-prefix-foreground = ${colors.blue2}
+format-underline = #0066cc
 
 label = %date% %time%
 

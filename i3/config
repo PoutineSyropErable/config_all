@@ -734,8 +734,8 @@ default_border pixel 2
 
 
 
-gaps inner 7
-gaps outer 7
+gaps inner 4
+gaps outer 4
 
 
 for_window [class="Polybar"] border none
@@ -745,3 +745,5 @@ exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/nohorny_slideshow.s
 exec --no-startup-id mpd
 bindsym $mod+x exec fish -c "set_public"
 
+
+exec --no-startup-id mpdris2-rs

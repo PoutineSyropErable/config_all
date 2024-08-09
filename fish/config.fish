@@ -18,19 +18,22 @@ end
 
 alias fmod="vim ~/.config/fish/config.fish"
 alias bmod="vim ~/.bashrc"
+alias kimod="vim ~/.config/kitty/kitty.conf"
 alias pmod="vim ~/.config/polybar.old/config"
-alias pview="bat ~/.config/polybar.old/config"
-alias fview="bat ~/.fishrc"
 alias imod="vim ~/.i3rc"
-alias iview="bat ~/.i3rc"
 alias tmod="vim ~/.tmuxrc"
+alias cmod="vim ~/.config/conky/show_all/show_all_conf"
+alias vmod="cd ~/.config/nvim ; nvim ."
+alias cnv="cd ~/.config/nvim ; nvim ."
+
+
+alias pview="bat ~/.config/polybar.old/config"
+alias nmod="cd ~/.config/nvim ; nvim ."
+alias fview="bat ~/.fishrc"
+alias iview="bat ~/.i3rc"
 alias tview="bat ~/.tmuxrc"
 alias umux="~/.config/tmux/tmux_github_sync.sh"
-alias cnv="cd ~/.config/nvim ; nvim ."
-alias vmod="cd ~/.config/nvim ; nvim ."
-alias nmod="cd ~/.config/nvim ; nvim ."
 alias cn="cd ~/.config/nvim"
-alias cmod="vim ~/.config/conky/show_all/show_all_conf"
 
 alias lsblk1="lsblk -o +PARTLABEL"
 

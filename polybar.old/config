@@ -107,7 +107,7 @@ light_yellow5 = #fdfa72
 
 dodger_blue = #2e9fff 
 folder_blue = #0a81f5
-
+folder_yellow = #dcae1e
 
 blue1 = #e5e5ff
 blue2 = #7f7fff
@@ -705,8 +705,8 @@ label = %output:2%%
 type = custom/script 
 interval = 2
 format-prefix = "GPU  :"
-format-prefix-foreground = #ff9a00
-format-underline = #e66c2c
+format-prefix-foreground = ${colors.yellow2}
+format-underline = ${colors.dodger_blue}
 exec = sensors | grep 'amdgpu-pci-1200' -A 4 | grep 'edge' | awk '{ print $    2}' | tr -d "+"
 label = %output:2%
 

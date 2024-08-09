@@ -701,15 +701,27 @@ bindsym $mod+$mod2+Control+Up exec "$HOME/Videos/i3-video-wallpaper-main/mpv-con
 
 # Pactl volume down
 bindsym $mod+End exec "pactl set-sink-volume @DEFAULT_SINK@ -1%"
+bindsym $mod+Shift+End exec "pactl set-sink-volume @DEFAULT_SINK@ -5%"
 
 # Pactl volume up
 bindsym $mod+Home exec "pactl set-sink-volume @DEFAULT_SINK@ +1%"
+bindsym $mod+Shift+Home exec "pactl set-sink-volume @DEFAULT_SINK@ +5%"
+# Pactl volume down
+
+bindsym $mod2+End exec "pactl set-sink-volume @DEFAULT_SINK@ -1%"
+bindsym $mod2+Shift+End exec "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+
+# Pactl volume up
+bindsym $mod2+Home exec "pactl set-sink-volume @DEFAULT_SINK@ +1%"
+bindsym $mod2+Shift+Home exec "pactl set-sink-volume @DEFAULT_SINK@ +5%"
 
 # MPC volume down
-bindsym $mod+Next exec "mpc volume -1"
+bindsym $mod2+Next exec "mpc volume -1"
+bindsym $mod2+Shift+Next exec "mpc volume -5"
 
 # MPC volume up
-bindsym $mod+Prior exec "mpc volume +1"
+bindsym $mod2+Prior exec "mpc volume +1"
+bindsym $mod2+Shift+Prior exec "mpc volume +5"
 
 bindsym $mod+Shift+m  exec --no-startup-id kitty -e tmux new-session -s Music 'ncmpcpp'
 bindsym $mod2+Shift+m exec --no-startup-id kitty -e tmux new-session 'ncmpcpp'

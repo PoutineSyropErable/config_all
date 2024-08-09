@@ -22,6 +22,8 @@ alias kimod="vim ~/.config/kitty/kitty.conf"
 alias pmod="vim ~/.config/polybar.old/config"
 alias imod="vim ~/.i3rc"
 alias tmod="vim ~/.tmuxrc"
+alias mmod="vim ~/.config/mpd/mpd.conf"
+alias ncmod="vim ~/.ncmpcpp/config"
 alias cmod="vim ~/.config/conky/show_all/show_all_conf"
 alias vmod="cd ~/.config/nvim ; nvim ."
 alias cnv="cd ~/.config/nvim ; nvim ."
@@ -410,7 +412,7 @@ alias set_public="$HOME/.local/share/private/local/settings/set_public.sh"
 
 #govenv
 #conda_activat
-if not pgrep mpd > /dev/null 
-	mpd
-end
+#if not pgrep mpd > /dev/null 
+#	mpd
+#end
 

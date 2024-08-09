@@ -527,6 +527,11 @@ format-online = %{T4}<label-song>%{T-}  %{T3}<icon-prev> <toggle> <icon-stop> <i
 format-online-foreground = ${colors.bad_warning2}
 format-online-background = ${colors.light_gray}
 
+
+host = 127.0.0.1
+port = 6600
+
+
 ;https://www.nerdfonts.com/cheat-sheet
 icon-prev = 󰒮
 icon-play = 󰐊 

@@ -18,6 +18,7 @@ exec --no-startup-id $HOME/BatteryInfo/start_battery_monitor.sh
 
 
 #------------------------
+# Canadian French. French Canadian. keyboard binding. keyboard layout. key binding
 exec_always --no-startup-id setxkbmap ca fr
 #exec_always --no-startup-id $HOME/refresh_xbindkeys
 # Since now, I've switched to Windows+Right shift for those. 
@@ -27,9 +28,6 @@ exec_always --no-startup-id setxkbmap ca fr
 
 
 
-# Canadian French. French Canadian. keyboard binding. keyboard layout. key binding
-exec --no-startup-id mpd
-exec --no-startup-id mpdris2-rs --no-notification --host localhost:6600
 
 #To replace all instance for monitors:
 # :%s/HMDI-A-0/HDMI-1/g
@@ -127,7 +125,7 @@ exec --no-startup-id dunst
 exec --no-startup-id pasystray
 exec --no-startup-id nm-applet
 
-exec --no-startup-id notify-send -u low -t 5000 "loading into i3"
+#exec --no-startup-id notify-send -u low -t 5000 "loading into i3"
 
 
 
@@ -742,8 +740,8 @@ for_window [class="Polybar"] border none
 for_window [class="Polybar"] floating enable
 
 exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/nohorny_slideshow.sh
-exec --no-startup-id mpd
 bindsym $mod+x exec fish -c "set_public"
 
 
-exec --no-startup-id mpdris2-rs
+#exec --no-startup-id mpd
+#exec --no-startup-id mpdris2-rs --no-notification --host localhost:6600

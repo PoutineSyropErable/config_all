@@ -151,5 +151,9 @@
 !/tmux/*/*/*/
 !/tmux/*/*/*/*/
 
-
 /polybar.old/weather-polybar-plugin/.owm-key
+
+
+/mpd/state
+thefuck/__pycache__/settings.cpython-312.pyc
+

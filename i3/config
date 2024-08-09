@@ -733,8 +733,9 @@ default_border pixel 2
 
 
 
-gaps inner 4
-gaps outer 4
+gaps inner 5
+gaps outer 5
+
 
 
 for_window [class="Polybar"] border none

@@ -23,7 +23,7 @@ conky.config = {
                                                 -- middle_left,middle_middle,middle_right,none
     gap_x = 88,                                 -- pixels between right or left border
 	--28
-    gap_y =50,                                 -- pixels between bottom or left border
+    gap_y =40,                                 -- pixels between bottom or left border
 	--gap_y = 41 ?  --monitor 0
 	--gap_y = 59  --monitor 1
     minimum_height = 200,                      -- minimum height of window

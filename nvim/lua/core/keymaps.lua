@@ -9,19 +9,19 @@ vim.api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle<CR>', { noremap = tru
 vim.api.nvim_set_keymap('n', '<leader>e', ':lua require("nvim-tree.api").tree.focus()<CR>', { noremap = true, silent = true })
 
 
-vim.api.nvim_set_keymap('n', '<leader>c', '"+yy', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>y', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>c', '"+yy', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>p', '"+p', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-c>', '"+y', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-C>', '"+y', { noremap = true, silent = true })
-
-vim.api.nvim_set_keymap('v', '<C-C>', '"+y', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<C-c>', '"+y', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<C-V>', '"+p', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>v', '"+p', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<leader>y', '"+y', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('v', '<leader>c', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<leader>c', '"+yy', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<leader>p', '"+p', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<leader>v', '"+p', { noremap = true, silent = true })
 
 
+vim.api.nvim_set_keymap('n', '<leader>u', '<C-a>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<leader>u', '<C-a>', { noremap = true, silent = true })
+vim.keymap.set('', '<leader>a', 'ggVG<CR>', { noremap = true, silent = true })
 
 
 
@@ -52,14 +52,23 @@ vim.keymap.set('', "<C-s>l", nvim_tmux_nav.NvimTmuxNavigateRight)
 vim.keymap.set('', "<C-s>,", nvim_tmux_nav.NvimTmuxNavigateLastActive)
 vim.keymap.set('', "<C-s>Space", nvim_tmux_nav.NvimTmuxNavigateNext)
 
+vim.keymap.set('', "<C-s><Left>", nvim_tmux_nav.NvimTmuxNavigateLeft)
+vim.keymap.set('', "<C-s><Down>", nvim_tmux_nav.NvimTmuxNavigateDown)
+vim.keymap.set('', "<C-s><Up>", nvim_tmux_nav.NvimTmuxNavigateUp)
+vim.keymap.set('', "<C-s><Right>", nvim_tmux_nav.NvimTmuxNavigateRight)
+
+
+
 
 vim.keymap.set('', "<C-w>j", nvim_tmux_nav.NvimTmuxNavigateLeft)
 vim.keymap.set('', "<C-w>k", nvim_tmux_nav.NvimTmuxNavigateDown)
 vim.keymap.set('', "<C-w>i", nvim_tmux_nav.NvimTmuxNavigateUp)
 vim.keymap.set('', "<C-w>l", nvim_tmux_nav.NvimTmuxNavigateRight)
 
-
-
+vim.keymap.set('', "<C-w><Left>", nvim_tmux_nav.NvimTmuxNavigateLeft)
+vim.keymap.set('', "<C-w><Down>", nvim_tmux_nav.NvimTmuxNavigateDown)
+vim.keymap.set('', "<C-w><Up>", nvim_tmux_nav.NvimTmuxNavigateUp)
+vim.keymap.set('', "<C-w><Right>", nvim_tmux_nav.NvimTmuxNavigateRight)
 
 
 -- Define a function to write and then close the buffer
@@ -89,6 +98,51 @@ vim.keymap.set('', '<C-w>a', 'ggVG<CR>', { noremap = true, silent = true })
 vim.keymap.set('', '<C-a>', 'ggVG<CR>', { noremap = true, silent = true })
 vim.keymap.set('', '<C-w>q', ':wa | qa!<CR>', { noremap = true, silent = true })
 vim.keymap.set('', '<C-w>Q', ':qa!<CR>', { noremap = true, silent = true })
+
+
+
+vim.keymap.set('', '<C-a>', 'ggVG<CR>', { noremap = true, silent = true })
+vim.keymap.set('', '<C-S>', ':w<CR>', { noremap = true, silent = true })
+vim.keymap.set('', '<C-s>s', ':w<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-c>', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-x>', '"+d', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-C>', '"+y', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('v', '<C-C>', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<C-c>', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<C-x>', '"+d', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<C-V>', '"+p', { noremap = true, silent = true })
+
+-- In vscode, Control c doesn't seem to work. So, here's hoping it does
+vim.api.nvim_set_keymap('', '<C-c>', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('', '<C-x>', '"+d', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('', '<C-V>', '"+p', { noremap = true, silent = true })
+-- Bind Backspace to 'd' in visual mode
+vim.api.nvim_set_keymap('v', '<BS>', '"_d', { noremap = true, silent = true })
+--
+
+
+-- Map Enter in normal mode to add a new line
+vim.api.nvim_set_keymap('n', '<CR>', "o<Esc>", { noremap = true, silent = true })
+
+
+
+
+
+
+
+
+
+-- Map Tab to indent line forward
+vim.api.nvim_set_keymap('n', '<Tab>', '>>', { noremap = true, silent = true })
+-- Map Shift+Tab to indent line backward
+vim.api.nvim_set_keymap('n', '<S-Tab>', '<<', { noremap = true, silent = true })
+-- Map Tab to indent line forward
+vim.api.nvim_set_keymap('v', '<Tab>', '>>', { noremap = true, silent = true })
+-- Map Shift+Tab to indent line backward
+vim.api.nvim_set_keymap('v', '<S-Tab>', '<<', { noremap = true, silent = true })
+
+
 
 
 -- Resize splits with Ctrl + arrow keys
@@ -134,23 +188,10 @@ vim.api.nvim_set_keymap('i', '<M-j>', '<Left>', { noremap = true, silent = true 
 vim.api.nvim_set_keymap('i', '<M-k>', '<Down>', { noremap = true, silent = true })  -- Move left
 vim.api.nvim_set_keymap('i', '<M-l>', '<Right>', { noremap = true, silent = true }) -- Move right
 
-
--- Indent Line Forward with `»`
+-- Use  that symbol if on keyboard for better maccro playing
 vim.api.nvim_set_keymap('n', '«', '@', { noremap = true, silent = true })
 
 
--- Map Tab to indent line forward
-vim.api.nvim_set_keymap('n', '<Tab>', '>gv', { noremap = true, silent = true })
-
--- Map Shift+Tab to indent line backward
-vim.api.nvim_set_keymap('n', '<S-Tab>', '<gv', { noremap = true, silent = true })
-
-
--- Map Tab to indent line forward
-vim.api.nvim_set_keymap('v', '<Tab>', '>>', { noremap = true, silent = true })
-
--- Map Shift+Tab to indent line backward
-vim.api.nvim_set_keymap('v', '<S-Tab>', '<<', { noremap = true, silent = true })
 
 
 

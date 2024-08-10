@@ -1,12 +1,4 @@
-; Send F11 to the active window with Win + F
-
-; Minimize the active window with Win + N
-
-
-#s:: ; Windows + S
-Click Right
-return
-; this will be usefull when you miss click on windows pageup/down for stack swap on same fancy zone. 
+ne. 
 
 
 
@@ -18,6 +10,14 @@ return
 Send, ^{PgDn} ; Sends Ctrl + Page Down (common for going down in lists or switching tabs)
 return
 
+
+#s:: ; Windows + S
+Click Right
+return
+; this will be usefull when you miss click on windows pageup/down for stack swap on same fancy zo
+
+
+;-----------------------------------------------
 
 #f::   ;  Windows + F
     if (toggle:=!toggle)
@@ -32,13 +32,13 @@ return
 
 
 
-#n::
+#n::	; Windows + n
     if (toggle:=!toggle)
         WinMinimize % "ahk_id " _hwnd := WinExist("A")
     else
         WinRestore, % "ahk_id " _hwnd
 return
-
+; toggle Minimise -- Not really usefull since you can't minimise
 
 
 ; Kill the active window with Win + ;

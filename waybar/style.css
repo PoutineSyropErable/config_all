@@ -38,3 +38,81 @@
 }
 
 
+
+
+
+/* Basic styling for the Waybar */
+
+/* Clock module */
+#clock {
+    padding: 0 10px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+#clock .tooltip {
+    padding: 5px;
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* Calendar view styling */
+#clock .calendar {
+    font-size: 12px;
+}
+
+#clock .calendar .month {
+    color: #ffead3;
+    font-weight: bold;
+}
+
+#clock .calendar .day {
+    color: #ecc6d9;
+    font-weight: bold;
+}
+
+#clock .calendar .week {
+    color: #99ffdd;
+    font-weight: bold;
+}
+
+#clock .calendar .weekday {
+    color: #ffcc66;
+    font-weight: bold;
+}
+
+#clock .calendar .today {
+    color: #ff6699;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* PulseAudio Slider */
+#pulseaudio-slider {
+    min-width: 200px; /* Adjust width as needed */
+    padding: 0 10px;
+}
+
+#pulseaudio-slider slider {
+    min-height: 0px;
+    min-width: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+    min-height: 20px; /* Adjust height as needed */
+    min-width: 200px; /* Adjust width as needed */
+    border-radius: 5px;
+    background-color: #333; /* Adjust background color as needed */
+}
+
+#pulseaudio-slider highlight {
+    min-width: 10px;
+    border-radius: 5px;
+    background-color: #4caf50; /* Adjust filled bar color as needed */
+}

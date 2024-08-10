@@ -1,24 +1,61 @@
 {
-  "layer": "top",
-  "position": "top",
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["clock"],
-  "modules-right": ["network", "battery", "volume", "cpu"],
-  "clock": {
-    "format": "%Y-%m-%d %H:%M:%S"
-  },
-  "battery": {
-    "format": "{capacity}%"
-  },
-  "network": {
-    "format": "{essid} {signal_strength}%"
-  },
-  "volume": {
-    "format": "{volume}%"
-  },
-  "cpu": {
-    "format": "{usage}%",
-    "interval": 1
-  }
+	"layer": "top",
+	"position": "top",
+	"modules-left": [],
+	"modules-center": ["hyprland/workspaces"],
+	"modules-right": ["network", "battery", "pulseaudio/slider", "cpu", "clock"],
+
+
+
+	"clock": {
+		"interval": 60,
+		"format": "{:%H:%M}",
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+		"calendar": {
+			"mode": "month",
+			"mode-mon-col": 3,
+			"weeks-pos": "right",
+			"on-scroll": 1,
+			"format": {
+				"months": "<span color='#ffead3'><b>{}</b></span>",
+				"days": "<span color='#ecc6d9'><b>{}</b></span>",
+				"weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+				"weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+				"today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+			},
+			"actions": {
+				"on-click-right": "mode",
+				"on-click-forward": "tz_up",
+				"on-click-backward": "tz_down",
+				"on-scroll-up": "shift_up",
+				"on-scroll-down": "shift_down"
+			}
+		}
+	},
+
+
+	"network": {
+		"format": "{essid} {signal_strength}%"
+	},
+
+	"pulseaudio/slider": {
+		"min": 0,
+		"max": 100,
+		"orientation": "horizontal"
+	},
+
+	"cpu": {
+		"format": "{usage}%",
+		"interval": 1
+	}
+
 }
+
+
+
+
+
+
+
+
 

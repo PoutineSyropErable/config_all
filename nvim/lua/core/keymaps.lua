@@ -4,9 +4,26 @@ vim.g.mapleader = ' ' -- Assuming the leader key is set to space
 -- Key mapping to source the current file
 vim.api.nvim_set_keymap('n', '<leader>r', ':source %<CR>', { noremap = true, silent = true })
 -- Key mapping to toggle NvimTree
-vim.api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>tt', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 -- Create a custom key mapping to focus the view on the currently selected directory
 vim.api.nvim_set_keymap('n', '<leader>e', ':lua require("nvim-tree.api").tree.focus()<CR>', { noremap = true, silent = true })
+
+local term_map = require("terminal.mappings")
+vim.keymap.set({ "n", "x" }, "<leader>ts", term_map.operator_send, { expr = true })
+vim.keymap.set("n", "<leader>to", term_map.toggle)
+vim.keymap.set("n", "<leader>tO", term_map.toggle({ open_cmd = "enew" }))
+vim.keymap.set("n", "<leader>tr", term_map.run)
+vim.keymap.set("n", "<leader>tR", term_map.run(nil, { layout = { open_cmd = "enew" } }))
+vim.keymap.set("n", "<leader>tk", term_map.kill)
+vim.keymap.set("n", "<leader>t]", term_map.cycle_next)
+vim.keymap.set("n", "<leader>t[", term_map.cycle_prev)
+vim.keymap.set("n", "<leader>tl", term_map.move({ open_cmd = "belowright vnew" }))
+vim.keymap.set("n", "<leader>tL", term_map.move({ open_cmd = "botright vnew" }))
+vim.keymap.set("n", "<leader>th", term_map.move({ open_cmd = "belowright new" }))
+vim.keymap.set("n", "<leader>tH", term_map.move({ open_cmd = "botright new" }))
+vim.keymap.set("n", "<leader>tf", term_map.move({ open_cmd = "float" }))
+
+
 
 
 vim.api.nvim_set_keymap('n', '<leader>y', '"+y', { noremap = true, silent = true })

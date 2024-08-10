@@ -24,6 +24,7 @@
 !/polybar.old/
 !/rofi/
 !/tmux/
+!/waybar/
 
 
 !/aconfmgr/10-ignores.sh
@@ -151,6 +152,11 @@
 !/tmux/*/*/*/
 !/tmux/*/*/*/*/
 
+!/waybar/**/*
+!/waybar/*/
+!/waybar/*/*/
+!/waybar/*/*/*/
+!/waybar/*/*/*/*/
 
 /polybar.old/weather-polybar-plugin/.owm-key
 

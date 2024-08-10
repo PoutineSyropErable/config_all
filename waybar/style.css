@@ -1,0 +1,40 @@
+/* General workspace styling */
+#workspaces {
+    /* General container styling */
+    background: #333; /* Background color of the workspace container */
+    padding: 0 10px;
+}
+
+/* Active workspace styling */
+#workspaces .active {
+    color: #00ff00; /* Color for the active workspace */
+    font-weight: bold;
+}
+
+/* Inactive workspace styling */
+#workspaces .inactive {
+    color: #666; /* Color for inactive workspaces */
+}
+
+/* Icon styling */
+#workspaces .icon {
+    margin-right: 5px; /* Spacing between icon and text */
+}
+
+/* Styling for specific workspace ids if needed */
+#workspaces .workspace-id-1 {
+    color: #ff0000; /* Example color for workspace 1 */
+}
+
+/* Special workspace styling (e.g., persistent) */
+#workspaces .special {
+    color: #ff0; /* Color for special workspaces */
+}
+
+/* Separator styling */
+#workspaces .separator {
+    color: #888; /* Color for separator */
+    margin: 0 5px;
+}
+
+

@@ -1,7 +1,3 @@
-ne. 
-
-
-
 #a:: ; Windows + A
 Send, ^{PgUp} ; Sends Ctrl + Page Up (common for going up in lists or switching tabs)
 return

@@ -88,11 +88,22 @@
     text-decoration: underline;
 }
 
-
 /* PulseAudio Slider */
 #pulseaudio-slider {
     min-width: 200px; /* Adjust width as needed */
     padding: 0 10px;
+
+}
+
+#pulseaudio-slider .icon {
+    margin-right: 5px;
+    font-size: 20px; /* Adjust size as needed */
+}
+
+#pulseaudio-slider .volume {
+    color: #ffffff;
+    font-size: 16px;
+    margin-right: 10px;
 }
 
 #pulseaudio-slider slider {
@@ -106,7 +117,7 @@
 
 #pulseaudio-slider trough {
     min-height: 20px; /* Adjust height as needed */
-    min-width: 200px; /* Adjust width as needed */
+    min-width: 100px; /* Adjust width as needed */
     border-radius: 5px;
     background-color: #333; /* Adjust background color as needed */
 }

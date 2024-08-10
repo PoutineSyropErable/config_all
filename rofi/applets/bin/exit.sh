@@ -13,7 +13,7 @@ elif pgrep -x "i3" > /dev/null; then
 	#notify-send "i3"
 	echo "i3"
     i3-msg exit
-else
-    echo "Neither Hyprland nor i3 is running."
+elif pgrep -x "sway" > /dev/null; then
+    swaymsg exit
 fi
 

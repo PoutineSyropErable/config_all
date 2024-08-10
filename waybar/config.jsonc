@@ -41,7 +41,8 @@
 	"pulseaudio/slider": {
 		"min": 0,
 		"max": 100,
-		"orientation": "horizontal"
+		"orientation": "horizontal",
+		"format": " {volume}%"
 	},
 
 	"cpu": {

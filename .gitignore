@@ -6,6 +6,7 @@
 !.gitignore
 # Include specific directories
 !/aconfmgr/
+!/awesome/
 !/cava/
 !/conky/
 !/dunst/
@@ -24,9 +25,18 @@
 !/polybar/
 !/polybar.old/
 !/rofi/
+!/sway
 !/tmux/
 !/waybar/
 
+
+
+
+!/awesome/**/*
+!/awesome/*/
+!/awesome/*/*/
+!/awesome/*/*/*/
+!/awesome/*/*/*/*/
 
 !/aconfmgr/10-ignores.sh
 !/aconfmgr/files
@@ -155,6 +165,12 @@
 !/rofi/*/*/*/*/
 !/rofi/*/*/*/*/*
 
+!/sway/**/*
+!/sway/*/
+!/sway/*/*/
+!/sway/*/*/*/
+!/sway/*/*/*/*/
+!/sway/*/*/*/*/*
 
 !/tmux/**/*
 !/tmux/*/

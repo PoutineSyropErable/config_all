@@ -26,6 +26,13 @@ require("lazy").setup({
 			})
 		end
 	},
+	
+	{
+		'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end
+    },
 
 
 	{ 'alexghergh/nvim-tmux-navigation', config = function()

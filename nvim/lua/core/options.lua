@@ -45,5 +45,6 @@ vim.opt.listchars = {
 
 
 
-
+-- Remove `c` and `r` from formatoptions to exclude comments
+vim.o.formatoptions = vim.o.formatoptions:gsub('c', ''):gsub('r', '')
 

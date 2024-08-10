@@ -188,7 +188,7 @@ bindsym $mod2+o exec --no-startup-id ~/.config/rofi/applets/bin/apps.sh
 bindsym $mod+p exec --no-startup-id ~/.config/rofi/applets/bin/powermenu.sh
 bindsym $mod2+p exec --no-startup-id ~/.config/rofi/applets/bin/powermenu.sh
 
-bindsym $mod+y exec --no-startup-id ~/.config/rofi/applets/bin/quicklinks.sh
+bindsym $mod+y exec --no-startup-id thunderbird
 
 bindsym $mod+t exec --no-startup-id ~/.config/rofi/applets/bin/screenshot.sh
 bindsym $mod2+t exec --no-startup-id ~/.config/rofi/applets/bin/screenshot.sh
@@ -750,7 +750,7 @@ default_border pixel 2
 
 
 
-gaps inner 5
+gaps inner 6
 gaps outer 5
 
 

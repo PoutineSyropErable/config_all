@@ -16163,3 +16163,919 @@ Aug 06 01:49 : player: played "Air Supply - All Out Of Love.mp3"
 Aug 06 01:49 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
 Aug 06 01:49 : exception: Failed to create Avahi client: Daemon not running
 Aug 06 01:50 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 01:51 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 01:51 : player: played "Lies of P/46. Saintess of Mercy Statue.flac"
+Aug 06 01:51 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 01:52 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 01:53 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 01:54 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 01:54 : player: played "MGSR - It Has To Be This Way.mp3"
+Aug 06 01:54 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 01:55 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 01:56 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 01:56 : player: played "Lies of P/17. Main Menu.flac"
+Aug 06 01:56 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 01:57 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 01:58 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 01:59 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 02:00 : player: played "Sabaton - The Last Stand.mp3"
+Aug 06 02:21 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 02:21 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 02:21 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 02:22 : player: played "Sabaton - The Last Stand.mp3"
+Aug 06 02:22 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 02:22 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 02:23 : output: Failed to play on "My Pulse Output" (pulse): disconnected
+Aug 06 18:05 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:05 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:05 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:05 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 18:06 : player: played "Sabaton - The Last Stand.mp3"
+Aug 06 18:06 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:06 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:06 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:06 : player: played "Lies of P/67. Rise of P.flac"
+Aug 06 18:06 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:06 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:07 : player: played "Lies of P/55. Laxasia the Complete (Battle Intro).flac"
+Aug 06 18:07 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:07 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:07 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:08 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:15 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:15 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:15 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:15 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 18:16 : player: played "The Mandragora - The Witcher 3 Blood and Wine OST.mp3"
+Aug 06 18:16 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:16 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:16 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:17 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:18 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:19 : player: played "Anime/Bleach - La Distancia Para Un Duelo.mp3"
+Aug 06 18:19 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:19 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:19 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:20 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:21 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:22 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:23 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:24 : player: played "Hoist the Colours (Bass Singers Version).mp3"
+Aug 06 18:24 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:24 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:24 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:25 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:26 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:27 : player: played "The Witcher 3/34 Merchants of Novigrad.mp3"
+Aug 06 18:27 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:27 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:27 : player: played "Lies of P/52. Black Rabbit Brotherhood Revenge (Battle Intro).flac"
+Aug 06 18:27 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:27 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:27 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:28 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:29 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:30 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:31 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:32 : player: played "Anime/Naruto - Narutos Theme song.mp3"
+Aug 06 18:32 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:32 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:32 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:33 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:34 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:36 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:36 : player: played "Fleetwood Mac - The Chain.mp3"
+Aug 06 18:36 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:36 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection terminated
+Aug 06 18:37 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:38 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:38 : player: played "Lies of P/61. Simon Manus, Arm of God (Battle Intro).flac"
+Aug 06 18:38 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:38 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:39 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:40 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:41 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:41 : player: played "Aaron Copland - Fanfare For The Common Man.mp3"
+Aug 06 18:41 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:41 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:42 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:43 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:43 : player: played "The Witcher 3/30 The Song of the Swordâ€“Dancer.mp3"
+Aug 06 18:43 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:43 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:44 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:45 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:45 : player: played "Lies of P/62. Simon Manus, Awakened God (Phase Change).flac"
+Aug 06 18:45 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:45 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:46 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:47 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:48 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:49 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:50 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:50 : player: played "Bloodborne/06 - Blood-Starved Beast.flac"
+Aug 06 18:50 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:50 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:51 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:52 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:53 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:53 : player: played "Beast In Black - Cry out for a Hero.mp3"
+Aug 06 18:53 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:53 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:54 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:55 : player: played "Anime/Tokoy Ghoul - Unravel.mp3"
+Aug 06 18:55 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:55 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:55 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:56 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:57 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:57 : player: played "The Witcher 3/03 Eredin, King of the Hunt.mp3"
+Aug 06 18:57 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 18:57 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 18:58 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 18:59 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:00 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:01 : player: played "Pat Benatar - We Belong.mp3"
+Aug 06 19:01 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 19:01 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:01 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection terminated
+Aug 06 19:02 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:03 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:04 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:05 : player: played "Latino-Bleach/Bleach OST 3-Clavar La Espada.mp3"
+Aug 06 19:05 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 19:05 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 19:05 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:06 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:51 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:52 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:53 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 19:53 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:53 : player: played "Payday 2 - Break the rules (short).mp3"
+Aug 06 19:53 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 19:53 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 19:54 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 19:54 : player: played "Lies of P/51. Pianist of Krat III.flac"
+Aug 06 19:54 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 19:54 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 19:54 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:55 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:55 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 19:55 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 06 19:55 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 19:55 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 19:56 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:57 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:57 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 19:57 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 19:58 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:59 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 19:59 : player: played "Payday 2 - Break the rules (short).mp3"
+Aug 06 19:59 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 20:00 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:01 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:02 : player: played "Lies of P/50. Attacked Hotel Krat.flac"
+Aug 06 20:02 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 20:02 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:03 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:04 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:05 : player: played "Maxine Nightingale - Right Back Where We Started From.mp3"
+Aug 06 20:05 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 20:05 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:06 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:07 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:08 : player: played "Lies of P/20. Hotel Krat.flac"
+Aug 06 20:08 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 20:08 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:09 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:10 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:11 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:12 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:13 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:14 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:15 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:16 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:17 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:18 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:19 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:20 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:21 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:22 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:23 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:24 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:25 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:26 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:27 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:28 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:29 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 20:29 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:30 : player: played "Lies of P/29. Wing of Hypocrisy.flac"
+Aug 06 20:30 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 20:30 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:31 : player: played "Anime/Tokoy Ghoul - Unravel.mp3"
+Aug 06 20:31 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 20:31 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:32 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:34 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:35 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:35 : player: played "Lies of P/53. Prey for Revenge.flac"
+Aug 06 20:35 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 20:36 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:37 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:38 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:39 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:40 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:40 : player: played "Electric Light Orchestra - Mr. Blue Sky .mp3"
+Aug 06 20:40 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 20:41 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:42 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:43 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:43 : player: played "Lies of P/14. Shadow Flower (Golden).flac"
+Aug 06 20:43 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 20:44 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:45 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:46 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:46 : player: played "The Witcher 3/01 The Trail.mp3"
+Aug 06 20:46 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 20:47 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:48 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:48 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 20:49 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:50 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:51 : player: played "Marvin Gaye - Lets get it on.mp3"
+Aug 06 20:51 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 20:51 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:52 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:53 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:54 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:55 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:56 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:57 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:58 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 20:59 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:00 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:01 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:02 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:03 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:04 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:05 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:06 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:07 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:08 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:09 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:10 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:11 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:12 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:13 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:14 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:15 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:16 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:17 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:18 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:19 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:20 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:21 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:22 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:23 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:24 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:25 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:26 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:27 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:28 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:29 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:30 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:31 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:32 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:33 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:35 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:36 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:37 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:38 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:39 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:40 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:41 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:42 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:43 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:44 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:45 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:46 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:47 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:48 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:49 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:50 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:51 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:52 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:53 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:54 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:55 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:56 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:57 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:58 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 21:59 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:00 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:01 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:02 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:03 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:04 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:05 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:06 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:07 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:08 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:09 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:10 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:11 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:12 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:13 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:14 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:15 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:16 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:17 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:18 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:19 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:20 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:21 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:22 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:23 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:24 : player: played "Initial D  Gas Gas Gas (Manuel).mp3"
+Aug 06 22:25 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:25 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 22:26 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:26 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 22:27 : player: played "Initial D  Gas Gas Gas (Manuel).mp3"
+Aug 06 22:27 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 22:27 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 22:27 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 22:27 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 22:27 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 22:27 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 22:27 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 22:27 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 22:27 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 22:27 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:28 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:29 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:30 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:31 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:31 : player: played "Initial D  Gas Gas Gas (Manuel).mp3"
+Aug 06 22:31 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 22:32 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:33 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:34 : player: played "Lies of P/48. Green and Greed.flac"
+Aug 06 22:34 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 22:34 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:35 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:35 : player: played "Anime/OPM Theme.mp3"
+Aug 06 22:35 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 22:36 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:37 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:38 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:39 : player: played "Lies of P/02. Divine Service.flac"
+Aug 06 22:39 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 22:39 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:40 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:41 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:42 : player: played "Queen - Another One Bites the Dust (Official Video).mp3"
+Aug 06 22:42 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 22:42 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:43 : player: played "Lies of P/68. New Eve.flac"
+Aug 06 22:43 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 22:43 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:44 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:45 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:46 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:47 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:47 : player: played "Payday 2 - Break the rules (short).mp3"
+Aug 06 22:47 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 22:48 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:49 : player: played "The Witcher 3/12 The Nightingale.mp3"
+Aug 06 22:49 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 22:49 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:50 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:51 : player: played "Anime/Black Clover - Opening 10 (HD).mp3"
+Aug 06 22:51 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 22:51 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:52 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:53 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:54 : player: played "Dark Souls III OST Main Theme.mp3"
+Aug 06 22:54 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 22:54 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:56 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:57 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:57 : player: played "Undertale - Hopes and Dreams.mp3"
+Aug 06 22:57 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 22:58 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 22:59 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:00 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:00 : player: played "Lies of P/10. Memory of Beach.flac"
+Aug 06 23:00 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:01 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:02 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:03 : player: played "Bloodborne/02 - The Night Unfurls.flac"
+Aug 06 23:03 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:03 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:04 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:05 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:06 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:06 : player: played "Beast In Black - Cry out for a Hero.mp3"
+Aug 06 23:06 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:07 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:08 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:08 : player: played "MGSR - The Only Thing I Know For Real.mp3"
+Aug 06 23:08 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:09 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:10 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:11 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:11 : player: played "Marva Whitney - Unwind Yourself.wmv.mp3"
+Aug 06 23:11 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:12 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:13 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:14 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:14 : player: played "The Witcher 3/08 Spikeroog.mp3"
+Aug 06 23:14 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:15 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:16 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:17 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:17 : player: played "Lies of P/08. Proposal, Flower, Wolf Part 1.flac"
+Aug 06 23:17 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:18 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:19 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:20 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:21 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:21 : player: played "Queen - Hammer To Fall (Official Video).mp3"
+Aug 06 23:21 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:21 : player: played "Anime/JoJos Bizarre Adventure Opening 1  4K  60FPS  Creditless.mp3"
+Aug 06 23:21 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:21 : player: played "Lies of P/67. Rise of P.flac"
+Aug 06 23:21 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:22 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:23 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:24 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:25 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:25 : player: played "Powerwolf - Fist by Fist (Sacralize or Strike).mp3"
+Aug 06 23:25 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:26 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:27 : player: played "I Cannot Let You Leave  - The Witcher 3 Wild Hunt OST.mp3"
+Aug 06 23:27 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:27 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:28 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:28 : output: Failed to play on "My Pulse Output" (pulse): disconnected
+Aug 06 23:29 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:29 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:29 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:30 : exception: Failed to create Avahi client: Daemon not running
+Aug 06 23:30 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:30 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:31 : player: played "Anime/One Piece - Opening 1 - We Are .mp3"
+Aug 06 23:31 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:31 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:31 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:31 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:31 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:31 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:31 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:31 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:31 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:31 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:31 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:31 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:31 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:33 : player: played "The Witcher 3/13 City of Intrigues.mp3"
+Aug 06 23:33 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:35 : player: played "The Witcher 3/10 Silver for Monsters....mp3"
+Aug 06 23:35 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:38 : player: played "The Witcher 3/30 The Song of the Swordâ€“Dancer.mp3"
+Aug 06 23:38 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:41 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:42 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:42 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:42 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:42 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:42 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:42 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:42 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:42 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:42 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:42 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:42 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:43 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 06 23:43 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 06 23:43 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:43 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:43 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 06 23:43 : player: played "Undertale - Megalovania Swap(4,2) Deltarune.mp3"
+Aug 06 23:43 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:47 : player: played "Latino-Bleach/Elvis Crespo - Suavemente.mp3"
+Aug 06 23:47 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:49 : player: played "Anime/Hunter X Hunter - Opening 1  Departure!.mp3"
+Aug 06 23:49 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:54 : player: played "Anime/Bleach - Ichigos Theme - Number One.mp3"
+Aug 06 23:54 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:55 : player: played "Lies of P/57. Laxasia the Complete (Phase Change).flac"
+Aug 06 23:55 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:56 : player: played "The Witcher 3/12 The Nightingale.mp3"
+Aug 06 23:56 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 06 23:59 : player: played "Lies of P/25. Let There Be Flame.flac"
+Aug 06 23:59 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:03 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 07 00:03 : player: played "CeeLo Green - FUCK YOU (Official Video).mp3"
+Aug 07 00:03 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:03 : exception: Failed to open audio output
+Aug 07 00:04 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:04 : player: played "Anime/OPM Intro.mp3"
+Aug 07 00:04 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:04 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 07 00:07 : player: played "Anime/OPM Intro.mp3"
+Aug 07 00:07 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:08 : player: played "Lies of P/49. Walker of Illusions.flac"
+Aug 07 00:08 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:11 : player: played "Lies of P/46. Saintess of Mercy Statue.flac"
+Aug 07 00:11 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:12 : player: played "The Witcher 3/24 Yes, I Do....mp3"
+Aug 07 00:12 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:13 : player: played "Undertale - Bonetrousle.mp3"
+Aug 07 00:13 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:13 : player: played "Lies of P/34. Pianist of Krat II.flac"
+Aug 07 00:13 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:16 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 07 00:16 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 07 00:17 : player: played "Bloodborne/08 - Watchers.flac"
+Aug 07 00:17 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:18 : player: played "Doom - E1M1 (Classic) - At Dooms Gate.mp3"
+Aug 07 00:18 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:19 : player: played "Lies of P/57. Laxasia the Complete (Phase Change).flac"
+Aug 07 00:19 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:26 : player: played "Dragonforce - Valley of the Damned.mp3"
+Aug 07 00:26 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:28 : player: played "The Witcher 3/30 The Song of the Swordâ€“Dancer.mp3"
+Aug 07 00:28 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:33 : player: played "Powerwolf - Killers with the Cross.mp3"
+Aug 07 00:33 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:33 : player: played "Lies of P/65. Real Boy.flac"
+Aug 07 00:33 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:36 : player: played "Beast In Black - Cry out for a Hero.mp3"
+Aug 07 00:36 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 00:39 : player: played "CeeLo Green - FUCK YOU (Official Video).mp3"
+Aug 07 16:44 : exception: Failed to create Avahi client: Daemon not running
+Aug 07 16:44 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 16:44 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 07 16:46 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 07 16:46 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 07 16:46 : player: played "CeeLo Green - FUCK YOU (Official Video).mp3"
+Aug 07 16:46 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 16:47 : player: played "Anime/Mob Psycho 100 II - Opening  999.mp3"
+Aug 07 16:47 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 16:50 : player: played "Lies of P/45. Hall of Fame.flac"
+Aug 07 16:50 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 18:48 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 18:50 : player: played "Pat Benatar - We Belong.mp3"
+Aug 07 18:50 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 18:54 : player: played "Pitbull - Back in Time (Official Video).mp3"
+Aug 07 18:54 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 18:57 : player: played "Maxine Nightingale - Right Back Where We Started From.mp3"
+Aug 07 18:57 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 19:02 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 19:03 : player: played "DOOM - Cultist Base.mp3"
+Aug 07 19:03 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 19:05 : player: played "Lies of P/40. Stage of Grief.flac"
+Aug 07 19:05 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 19:09 : player: played "Initial D  Gas Gas Gas (Manuel).mp3"
+Aug 07 19:09 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:02 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:04 : player: played "The Witcher 3/08 Spikeroog.mp3"
+Aug 07 20:05 : exception: Failed to create Avahi client: Daemon not running
+Aug 07 20:05 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 07 20:05 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 07 20:05 : player: played "The Witcher 3/08 Spikeroog.mp3"
+Aug 07 20:05 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 07 20:05 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:06 : player: played "The Witcher 3/08 Spikeroog.mp3"
+Aug 07 20:06 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:08 : player: played "Anime/Jojos Bizarre Adventure Diamond is Unbreakable - Opening 1 (Creditless)  -HD-.mp3"
+Aug 07 20:08 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:10 : player: played "The Witcher 3/18 Witch Hunters.mp3"
+Aug 07 20:10 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:11 : player: played "Lies of P/66. Free from the Puppet String.flac"
+Aug 07 20:11 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:12 : player: played "Lies of P/51. Pianist of Krat III.flac"
+Aug 07 20:12 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:15 : player: played "AC DC - Highway to Hell.mp3"
+Aug 07 20:15 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:20 : player: played "Initial D  Gas Gas Gas (Manuel).mp3"
+Aug 07 20:20 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:22 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 07 20:22 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 07 20:22 : player: played "Come A Little Bit Closer - Jay & The Americans.mp3"
+Aug 07 20:22 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:24 : player: played "Anime/Attack on Titan Season 2 - Opening  Shinzou wo Sasageyo!.mp3"
+Aug 07 20:24 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:24 : player: played "Lies of P/28. Fallen Archbishop Andreus (Phase Change).flac"
+Aug 07 20:24 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:28 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:29 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:29 : player: played "Bloodborne/12 - Amygdala.flac"
+Aug 07 20:29 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:33 : player: played "Kung Fu Hustle & shit/KFH - Decree of the Sichuan General - Kung Fu Hustle.mp3"
+Aug 07 20:33 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:36 : player: played "Lies of P/25. Let There Be Flame.flac"
+Aug 07 20:36 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+                                                                                 Aug 07 20:38 : exception: Failed to create Avahi client: Daemon not running
+Aug 07 20:38 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:38 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 07 20:38 : player: played "Lies of P/25. Let There Be Flame.flac"
+Aug 07 20:38 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:43 : player: played "Lies of P/04. Fascination (Instrumental Version).flac"
+Aug 07 20:43 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:47 : player: played "Bloodborne/06 - Blood-Starved Beast.flac"
+Aug 07 20:47 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:51 : player: played "Lies of P/70. Memory of Beach (Piano Version).flac"
+Aug 07 20:51 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:55 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:55 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:56 : player: played "The Witcher 3/16 Kaer Morhen.mp3"
+Aug 07 20:56 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 20:56 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 07 20:58 : player: played "The Witcher 3/16 Kaer Morhen.mp3"
+Aug 07 20:58 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:00 : player: played "The Witcher 3/10 Silver for Monsters....mp3"
+Aug 07 21:00 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:04 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 07 21:04 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 07 21:04 : player: played "A Little Less Conversation (JXL Radio Edit Remix) HD.mp3"
+Aug 07 21:04 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:06 : player: played "Anime/Bleach - Principio De Lucha.mp3"
+Aug 07 21:06 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:10 : player: played "Bloodborne/12 - Amygdala.flac"
+Aug 07 21:10 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:12 : player: played "Lies of P/23. Judgement of Mourning.flac"
+Aug 07 21:12 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:15 : player: played "The Witcher 3/25 Welcome, Imlerith.mp3"
+Aug 07 21:15 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:19 : player: played "YMFAH - DuckTales Remastered - Moon Theme Remix.mp3"
+Aug 07 21:19 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:20 : player: played "Anime/Jojos Bizarre Adventure Diamond is Unbreakable - Opening 1 (Creditless)  -HD-.mp3"
+Aug 07 21:20 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:22 : player: played "Lies of P/42. Shattered Memories.flac"
+Aug 07 21:22 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:26 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 07 21:26 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 07 21:26 : player: played "Anime/OPM Intro.mp3"
+Aug 07 21:26 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:28 : player: played "Doom - E1M1 (Classic) - At Dooms Gate.mp3"
+Aug 07 21:28 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:32 : player: played "Smash Mouth - All Star (Official Music Video).mp3"
+Aug 07 21:32 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:36 : player: played "Fleetwood Mac - The Chain.mp3"
+Aug 07 21:36 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:40 : player: played "Beast In Black - Cry out for a Hero.mp3"
+Aug 07 21:40 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:40 : player: played "Lies of P/66. Free from the Puppet String.flac"
+Aug 07 21:40 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:42 : player: played "You just activated my trap card. (Yu Gi Oh).mp3"
+Aug 07 21:42 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:45 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 07 21:45 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 07 21:45 : player: played "Kung Fu Hustle & shit/KH - Fishermans Song of the East China Sea.mp3"
+Aug 07 21:45 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:47 : player: played "Its Gonna Get Weird.mp3"
+Aug 07 21:47 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:51 : player: played "DMC 5 - Devil Trigger.mp3"
+Aug 07 21:51 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 21:52 : player: played "Lies of P/33. Black Rabbit Brotherhood (Battle End).flac"
+Aug 07 21:52 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 22:14 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 22:22 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 22:22 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 22:23 : player: played "Jim Croce - Time in a bottle.mp3"
+Aug 07 22:23 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 22:26 : player: played "Rick Astley - Never Gonna Give You Up (Official Music Video).mp3"
+Aug 07 22:26 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 23:49 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 23:52 : player: played "Electric Light Orchestra - Mr. Blue Sky .mp3"
+Aug 07 23:52 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 23:55 : player: played "Bloodborne/09 - Hail the Nightmare.flac"
+Aug 07 23:55 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 07 23:57 : player: played "MGSR - Collective Christmass.mp3"
+Aug 07 23:57 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 00:00 : player: played "Aaron Copland - Fanfare For The Common Man.mp3"
+Aug 08 00:00 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 00:04 : player: played "a-ha - Take On Me (Official Video) -Remastered in 4K-.mp3"
+Aug 08 00:04 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 00:06 : player: played "The Witcher 3/20 Fate Calls.mp3"
+Aug 08 00:06 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 00:11 : player: played "DragonForce - Through The Fire And Flames (Official Video).mp3"
+Aug 08 00:11 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 00:15 : player: played "Anime/My Hero Academia OST - You Say Run.mp3"
+Aug 08 00:15 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 00:17 : player: played "Latino-Bleach/Bleach - Nube Negra.mp3"
+Aug 08 00:17 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 00:20 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 08 00:20 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 08 00:20 : player: played "Lies of P/20. Hotel Krat.flac"
+Aug 08 00:20 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 00:24 : player: played "Elvis Crespo - Suavemente.mp3"
+Aug 08 00:24 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 00:28 : player: played "Lies of P/54. Arche Abbey.flac"
+Aug 08 00:28 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 00:36 : player: played "Payday 2 - Break The Rules.mp3"
+Aug 08 00:36 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 00:39 : player: played "Stellar Blade - Raven OST.mp3"
+Aug 08 00:39 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 00:41 : player: played "YMFAH - Mario Kart 8 - Big Blue.mp3"
+Aug 08 00:41 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 00:47 : player: played "Undertale - Megalovania.mp3"
+Aug 08 00:47 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 00:51 : player: played "Hoist the Colours (Bass Singers Version).mp3"
+Aug 08 00:51 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 00:55 : player: played "Lies of P/10. Memory of Beach.flac"
+Aug 08 00:55 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 00:59 : player: played "CeeLo Green - FUCK YOU (Official Video).mp3"
+Aug 08 00:59 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:02 : player: played "Lies of P/60. Arche Abbey Upper Part.flac"
+Aug 08 01:02 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:05 : player: played "The Witcher 3/03 Eredin, King of the Hunt.mp3"
+Aug 08 01:05 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:09 : player: played "Powerwolf - Fire & Forgive.mp3"
+Aug 08 01:09 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:12 : player: played "Anime/Fist of TNS - You wa Shock.mp3"
+Aug 08 01:12 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:15 : player: played "Lies of P/03. Someday.flac"
+Aug 08 01:15 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:16 : player: played "Lies of P/34. Pianist of Krat II.flac"
+Aug 08 01:16 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:19 : player: played "DOOM - BFG 10 000.mp3"
+Aug 08 01:19 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:20 : player: played "The Witcher 3/27 After the Storm.mp3"
+Aug 08 01:20 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:22 : player: played "Anime/Bleach - Nube Negra.mp3"
+Aug 08 01:22 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:26 : player: played "Country Roads - Kingsman.mp3"
+Aug 08 01:26 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:28 : player: played "Undertale - Spider Dance.mp3"
+Aug 08 01:28 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:29 : player: played "Lies of P/26. St. Frangelico Cathedral.flac"
+Aug 08 01:29 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:33 : player: played "Anime/Bleach OST 3-Clavar La Espada.mp3"
+Aug 08 01:33 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:33 : player: played "Anime/A Cruel Angels Thesis (Directors Edit Version).mp3"
+Aug 08 01:33 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:36 : player: played "Anime/MASLE OP 2 - Creepy Nuts「Bling-Bang-Bang-Born」.mp3"
+Aug 08 01:36 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:41 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 08 01:41 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 08 01:41 : player: played "Bloodborne/02 - Laurence, the First Vicar.flac"
+Aug 08 01:41 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:43 : player: played "Anime/Attack on Titan Season 2 - Opening  Shinzou wo Sasageyo!.mp3"
+Aug 08 01:43 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:47 : mad: input does not appear to be a mp3 bit stream
+Note: Illegal Audio-MPEG-Header 0xffe402f4 at offset 8204.
+Note: Trying to resync...
+Note: Skipped 576 bytes in input.
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 08 01:47 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 08 01:48 : player: played "Anime/OPM Theme Extended.mp3"
+Aug 08 01:48 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:52 : player: played "Holding Out For A Hero (Bonny Tyler).mp3"
+Aug 08 01:52 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 01:57 : player: played "Marvin Gaye - Lets get it on.mp3"
+Aug 08 01:57 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 02:00 : player: played "The Witcher 3/05 Aen Seidhe.mp3"
+Aug 08 02:00 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 02:02 : player: played "Anime/One Piece - Opening 1 - We Are .mp3"
+Aug 08 02:02 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 02:07 : player: played "Bloodborne - Laurence.mp3"
+Aug 08 02:07 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 02:09 : player: played "The Witcher 3/07 Emhyr var Emreis.mp3"
+Aug 08 02:09 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 02:11 : player: played "Anime/Mob Psycho 100 - Opening  99.mp3"
+Aug 08 02:11 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 02:15 : player: played "Word Up - The BossHoss.mp3"
+Aug 08 02:15 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 02:17 : player: played "Anime/JoJos Bizarre Adventure Opening 2  4K  60FPS  Creditless.mp3"
+Aug 08 02:17 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 02:20 : player: played "YMFAH - The Sims Soundtrack Buy Mode 2.mp3"
+Aug 08 02:20 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 02:23 : player: played "Queen - Another One Bites the Dust (Official Video).mp3"
+Aug 08 02:23 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 02:27 : player: played "Lies of P/63. Arm of God.flac"
+Aug 08 02:27 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 02:32 : player: played "meganeko - The Cyber Grind (Ultrakill Soundtrack).mp3"
+Aug 08 02:32 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 02:34 : player: played "James Brown - I Feel Good.mp3"
+Aug 08 02:34 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 08 04:08 : output: Failed to pause "My Pulse Output" (pulse): failed to connect the stream: Connection terminated
+Aug 09 22:29 : exception: Failed to create Avahi client: Daemon not running
+Aug 09 22:29 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 09 22:29 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 09 22:29 : mixer: Failed to set mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 09 22:29 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 09 22:29 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 09 22:30 : player: played "The Witcher 3/31 The Hunt is Coming.mp3"
+Aug 09 22:30 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 09 22:31 : player: played "The Witcher 3/31 The Hunt is Coming.mp3"
+Aug 09 22:31 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 09 22:33 : player: played "Anime/Black Clover - Opening 10 (HD).mp3"
+Aug 09 22:33 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 09 22:33 : player: played "Gin Wigmore - Kill Of The Night.mp3"
+Aug 09 22:35 : exception: Failed to create Avahi client: Daemon not running
+Aug 09 23:09 : exception: Failed to open "My ALSA Device" (alsa); Failed to open ALSA device "default": Host is down
+Aug 09 23:09 : mixer: Failed to read mixer for 'My ALSA Device': failed to attach to default: Host is down
+Aug 09 23:09 : player: played "The Witcher 3/05 Aen Seidhe.mp3"
+Aug 09 23:10 : player: played "The Witcher 3/05 Aen Seidhe.mp3"
+Aug 09 19:45 : exception: Failed to create Avahi client: Daemon not running
+Aug 09 19:56 : exception: Failed to create Avahi client: Daemon not running
+Aug 09 20:52 : exception: Failed to create Avahi client: Daemon not running
+Aug 09 20:53 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 09 20:53 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 09 20:55 : player: played "Doom - E1M1 (Classic) - At Dooms Gate.mp3"
+Aug 09 21:06 : output: Failed to play on "My Pulse Output" (pulse): failed to connect the stream: Timeout
+Aug 09 21:08 : player: played "Pirate of The Caribbean - End Credits.mp3"
+Aug 09 21:09 : output: Failed to play on "My Pulse Output" (pulse): failed to connect the stream: Timeout
+Aug 09 23:05 : exception: Failed to create Avahi client: Daemon not running
+Aug 09 23:07 : player: played "Pirate of The Caribbean - End Credits.mp3"
+Aug 09 23:09 : player: played "Lies of P/50. Attacked Hotel Krat.flac"
+Aug 09 23:14 : player: played "Anime/Bleach - Ichigos Theme - Number One.mp3"
+Aug 09 23:19 : player: played "meganeko - The Cyber Grind (Ultrakill Soundtrack).mp3"
+Aug 09 23:19 : exception: Failed to create Avahi client: Daemon not running
+Aug 09 23:19 : player: played "meganeko - The Cyber Grind (Ultrakill Soundtrack).mp3"
+Aug 09 23:22 : player: played "Lies of P/20. Hotel Krat.flac"
+Aug 09 23:27 : player: played "DragonForce - Through The Fire And Flames (Official Video).mp3"
+Aug 09 23:32 : player: played "Bloodborne - Laurence.mp3"
+Aug 09 23:36 : player: played "Bloodborne - Lady Maria.mp3"
+Aug 09 23:40 : player: played "Lies of P/64. Nameless Chaos.flac"
+Aug 09 23:42 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 09 23:42 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 09 23:42 : player: played "Lies of P/29. Wing of Hypocrisy.flac"
+Aug 09 23:44 : player: played "Anime/Kaguya-sama Love is War - Opening 2  4K  60FPS  Creditless .mp3"
+Aug 09 23:46 : player: played "Undertale - Spider Dance.mp3"
+Aug 09 23:48 : player: played "The Witcher 3/35 Hunt Or Be Hunted.mp3"
+Aug 09 23:50 : player: played "CCR - Fortunate Son.mp3"
+Aug 09 23:51 : player: played "Lies of P/41. King of Puppets (Phase Change).flac"
+Aug 09 23:55 : player: played "Anime/My Hero Academia OST - You Say Run.mp3"
+Aug 09 23:58 : player: played "The Witcher 3/29 Farewell, Old Friend.mp3"
+Aug 10 00:00 : player: played "Anime/One Piece - Opening 1 - We Are .mp3"
+Aug 10 00:03 : player: played "Bloodborne/05 - Cleric Beast.flac"
+Aug 10 00:03 : player: played "Lies of P/33. Black Rabbit Brotherhood (Battle End).flac"
+Aug 10 00:08 : player: played "Puss in Boots - Fearless Hero.mp3"
+Aug 10 00:13 : player: played "Anime/Naruto - Narutos Theme song.mp3"
+Aug 10 00:14 : player: played "Undertale - Bonetrousle.mp3"
+Aug 10 00:16 : player: played "Lies of P/18. Dreadful March.flac"
+Aug 10 00:18 : player: played "Lies of P/35. Fascination.flac"
+Aug 10 00:22 : player: played "Rick Astley - Never Gonna Give You Up (Official Music Video).mp3"
+Aug 10 00:26 : player: played "YMFAH - Tetris Theme -  (The 8-Bit Big Band).mp3"
+Aug 10 00:29 : player: played "YMFAH - Mario Kart 8 - Big Blue.mp3"
+Aug 10 00:34 : player: played "Ozzy Osbourne - Crazy Train.mp3"
+Aug 10 00:37 : player: played "Aaron Copland - Fanfare For The Common Man.mp3"
+Aug 10 00:40 : player: played "The Witcher 3/01 The Trail.mp3"
+Aug 10 00:44 : player: played "YMFAH - DuckTales Remastered - Moon Theme Remix.mp3"
+Aug 10 00:46 : player: played "Lies of P/50. Attacked Hotel Krat.flac"
+Aug 10 00:48 : player: played "Anime/Hunter X Hunter - Opening 1  Departure!.mp3"
+Aug 10 00:52 : player: played "Coldplay - Viva La Vida (Official Video).mp3"
+Aug 10 00:54 : player: played "Lies of P/22. Mad Donkey.flac"
+Aug 10 00:58 : player: played "The Animals - House of the Rising Sun (1964) HQWidescreen ♫ 59 YEARS AGO.mp3"
+Aug 10 01:40 : player: played "Payday 2 - Break The Rules.mp3"
+Aug 10 01:45 : player: played "Eminem - Without Me (Official Music Video).mp3"
+Aug 10 01:48 : player: played "Lies of P/48. Green and Greed.flac"
+Aug 10 01:51 : player: played "Lies of P/63. Arm of God.flac"
+Aug 10 01:55 : player: played "Mission Impossible Theme (Full Theme).mp3"
+Aug 10 01:57 : player: played "Lies of P/36. Rosa Isabelle Street.flac"
+Aug 10 01:59 : player: played "Undertale - Death by Glamour.mp3"
+Aug 10 02:02 : player: played "Country Roads - John Denver.mp3"
+Aug 10 02:05 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 10 02:05 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 10 02:05 : player: played "Maxine Nightingale - Right Back Where We Started From.mp3"
+Aug 10 02:10 : player: played "Latino-Bleach/Elvis Crespo - Suavemente.mp3"
+Aug 10 02:12 : player: played "The Witcher 3/07 Emhyr var Emreis.mp3"
+Aug 10 02:17 : player: played "Initial D  Running in The 90s.mp3"
+Aug 10 02:19 : player: played "Anime/OPM Theme.mp3"
+Aug 10 02:22 : player: played "James Brown - I Feel Good.mp3"
+Aug 10 02:24 : player: played "YMFAH - The Sims Soundtrack Buy Mode 2.mp3"
+Aug 10 02:27 : player: played "Lies of P/25. Let There Be Flame.flac"
+Aug 10 02:29 : player: played "The Witcher 3/04 Wake Up, Ciri.mp3"
+Aug 10 02:33 : player: played "Boney M. - Sunny (1976).mp3"
+Aug 10 02:35 : player: played "YUNGBLUD - superdeadfriends (Official Audio).mp3"
+Aug 10 02:40 : player: played "Powerwolf - Fire & Forgive.mp3"
+Aug 10 02:43 : player: played "Lies of P/09. Far East Princess.flac"
+Aug 10 02:47 : player: played "Latino-Bleach/Bleach OST 3-Clavar La Espada.mp3"
+Aug 10 02:49 : player: played "Lies of P/19. Opening Credits.flac"
+Aug 10 02:58 : player: played "DOOM - BFG Division (Mick Gordon).mp3"
+Aug 10 03:01 : player: played "Bloodborne/12 - Amygdala.flac"
+Aug 10 03:03 : player: played "Anime/Black Clover - Opening 10 (HD).mp3"
+Aug 10 03:04 : player: played "You just activated my trap card. (Yu Gi Oh).mp3"
+Aug 10 03:09 : player: played "Latino-Bleach/Suavemente Gucci Ganon.mp3"
+Aug 10 03:13 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 10 03:13 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 10 03:13 : player: played "ACDC - Back In Black (Official Video).mp3"
+Aug 10 03:15 : player: played "Anime/Mob Psycho 100 II - Opening  999.mp3"

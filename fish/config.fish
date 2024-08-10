@@ -170,7 +170,7 @@ end
 #alias leavevenv="deactivate"
 alias lvenv="deactivate"
 alias quitvenv="deactivate"
-
+alias show_mesh="python '/home/francois/QolScripts/show_mesh.py'"
 
 alias urlisten="sudo tcpdump -i wlan0 -n tcp port 80 or tcp port 443"
 alias iplisten="sudo iftop"
@@ -334,6 +334,7 @@ alias "note=xournalpp"
 
 export TMPDIR=/tmp
 export PATH="$HOME:$PATH"
+export PATH="$HOME/TetWild/build:$PATH"
 export PATH="$HOME/Documents/Linux Documents/University (real):$PATH"
 export PATH="$HOME/QolScripts:$PATH"
 export PATH="$HOME/Network:$PATH"
@@ -372,6 +373,7 @@ export EDITOR=nvim
 function fish_greeting
 clear
 echo "Welcome to Poutine Au Sirop D'erable's config!" | figlet | lolcat
+echo "You might need to disable and reenable sound support on GWSL" | lolcat
 #fortune | cowsay -f dragon
 #-o is for offensive/spicier
 end
@@ -446,7 +448,7 @@ if not set -q TMUX
 end
 
 # Check and launch dbus-launch if not running
-dbus-launch > /dev/null
+dbus-launch
 export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
 
@@ -460,7 +462,7 @@ set -x PULSE_SERVER tcp:(cat /etc/resolv.conf | grep nameserver | awk '{print $2
 #set -x LIBGL_ALWAYS_INDIRECT 1 #GWSL
 
 
-pulseaudio --start > /dev/null
+pulseaudio --start
 
 # Check and launch mpd if not running
 if not pgrep mpd > /dev/null
@@ -469,4 +471,4 @@ end
 
 
 
-
+#conda_activate

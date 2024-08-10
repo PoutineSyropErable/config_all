@@ -225,7 +225,7 @@ return
 
 
 #s:: ; Windows + S
-Click Right
+Click Left
 return
 ; this will be usefull when you miss click on windows pageup/down for stack swap on same fancy zo
 

@@ -17,6 +17,13 @@ exec --no-startup-id $HOME/BatteryInfo/start_battery_monitor.sh
 
 
 
+# Unset Wayland environment variable when i3 starts
+exec_always --no-startup-id sh -c 'unset HYPRLAND_INSTANCE_SIGNATURE'
+exec_always --no-startup-id fish -c 'set -e HYPRLAND_INSTANCE_SIGNATURE'
+exec_always --no-startup-id tmux setenv -g HYPRLAND_INSTANCE_SIGNATURE ''
+
+
+
 #------------------------
 # Canadian French. French Canadian. keyboard binding. keyboard layout. key binding
 exec_always --no-startup-id setxkbmap ca fr
@@ -30,7 +37,7 @@ exec_always --no-startup-id setxkbmap ca fr
 
 
 #To replace all instance for monitors:
-# :%s/HMDI-A-0/HDMI-1/g
+# :%s/HMDI-A-0/HDMI-A-0/g
 
 #Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.
 #:%s/foo/bar/g
@@ -328,29 +335,29 @@ set $ws30 "30"
 
 
 # this is useless since it goes to promary screen anyway
-workspace $ws1 output eDP-3 
-workspace $ws2 output eDP-3 
-workspace $ws3 output eDP-3 
-workspace $ws4 output eDP-3 
-workspace $ws5 output eDP-3 
-workspace $ws6 output eDP-3 
-workspace $ws7 output eDP-3 
-workspace $ws8 output eDP-3 
-workspace $ws9 output eDP-3 
-workspace $ws10 output eDP-3 
+workspace $ws1 output DisplayPort-2 
+workspace $ws2 output DisplayPort-2 
+workspace $ws3 output DisplayPort-2 
+workspace $ws4 output DisplayPort-2 
+workspace $ws5 output DisplayPort-2 
+workspace $ws6 output DisplayPort-2 
+workspace $ws7 output DisplayPort-2 
+workspace $ws8 output DisplayPort-2 
+workspace $ws9 output DisplayPort-2 
+workspace $ws10 output DisplayPort-2 
 #...
 
 # This is usefull for when there's the second screen
-workspace $ws11 output HDMI-1 
-workspace $ws12 output HDMI-1 
-workspace $ws13 output HDMI-1 
-workspace $ws14 output HDMI-1 
-workspace $ws15 output HDMI-1 
-workspace $ws16 output HDMI-1 
-workspace $ws17 output HDMI-1 
-workspace $ws18 output HDMI-1 
-workspace $ws19 output HDMI-1 
-workspace $ws20 output HDMI-1 
+workspace $ws11 output HDMI-A-0 
+workspace $ws12 output HDMI-A-0 
+workspace $ws13 output HDMI-A-0 
+workspace $ws14 output HDMI-A-0 
+workspace $ws15 output HDMI-A-0 
+workspace $ws16 output HDMI-A-0 
+workspace $ws17 output HDMI-A-0 
+workspace $ws18 output HDMI-A-0 
+workspace $ws19 output HDMI-A-0 
+workspace $ws20 output HDMI-A-0 
 #...
 
 workspace $ws21 output DP-1 
@@ -561,17 +568,17 @@ exec_always --no-startup-id picom -b --config $HOME/.config/picom/picom.conf
 
 
 
-exec --no-startup-id xrandr --output HDMI-1 $HOME/QolScripts/turn_off_other_screens.sh
+exec --no-startup-id xrandr --output HDMI-A-0 $HOME/QolScripts/turn_off_other_screens.sh
 
 bindsym $mod+Control+1 exec --no-startup-id  $HOME/QolScripts/turn_off_other_screens.sh
 
-bindsym $mod+Control+2 exec --no-startup-id fish -c "pv $HOME/QolScripts/screen_placer.py eDP-3 HDMI-1" ; exec --no-startup-id $HOME/QolScripts/set_lock_screen.sh
+bindsym $mod+Control+2 exec --no-startup-id fish -c "pv $HOME/QolScripts/screen_placer.py DisplayPort-2 HDMI-A-0" ; exec --no-startup-id $HOME/QolScripts/set_lock_screen.sh
 
 bindsym $mod+Control+3 exec --no-startup-id $HOME/QolScripts/screen_placement_layout_n1.sh
 
 bindsym $mod+Control+4 exec --no-startup-id xrandr --output DP-1 --mode 2560x1440 --fbmm 597x366 --rate 75 --right-of HMDI-1 ; exec kcmshell6 kcm_kscreen
 
-bindsym $mod+Control+5 exec --no-startup-id fish -c "pv $HOME/QolScripts/screen_placer.py HDMI-1 DP-1"
+bindsym $mod+Control+5 exec --no-startup-id fish -c "pv $HOME/QolScripts/screen_placer.py HDMI-A-0 DP-1"
 
 bindsym $mod+Control+6 exec --no-startup-id fish -c "pv $HOME/QolScripts/screen_placer.py"
 
@@ -757,3 +764,4 @@ bindsym $mod+x exec fish -c "set_public"
 
 #exec --no-startup-id mpd
 #exec --no-startup-id mpdris2-rs --no-notification --host localhost:6600
+

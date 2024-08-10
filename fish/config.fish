@@ -4,6 +4,7 @@ if status is-interactive
 end
 
 thefuck --alias | source
+alias f="fuck"
 atuin init fish --disable-up-arrow | source
 #atuin init fish --disable-ctrl-r --disable-up-arrow | source
 
@@ -21,6 +22,7 @@ alias bmod="vim ~/.bashrc"
 alias kimod="vim ~/.config/kitty/kitty.conf"
 alias pmod="vim ~/.config/polybar.old/config"
 alias imod="vim ~/.i3rc"
+alias hmod="vim ~/.hyprrc"
 alias tmod="vim ~/.tmuxrc"
 alias mmod="vim ~/.config/mpd/mpd.conf"
 alias ncmod="vim ~/.ncmpcpp/config"

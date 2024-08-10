@@ -40,3 +40,10 @@ vim.opt.listchars = {
 	precedes = '«', 
 	extends = '»'
 }
+
+--vim.opt.clipboard = 'unnamedplus'
+
+
+
+
+

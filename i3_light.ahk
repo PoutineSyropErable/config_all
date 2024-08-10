@@ -268,7 +268,9 @@ return
 
 
 #Enter:: ; Windows + Enter
-Run "C:\Program Files\WSL\wslg.exe" -d Arch --cd "~" -- kitty
+Run wt new-tab -p "{a5a97cb8-8961-5535-816d-772efe0c6a3f}" --startingDirectory "~"
 return
+
+
 
 

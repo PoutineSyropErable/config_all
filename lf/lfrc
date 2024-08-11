@@ -273,6 +273,7 @@ map ct cd ~/.local/share/Trash/files
 map cj cd /home/francois/MainPython_Virtual_Environment/projects/polyfem2d
 
 map cr cd ~/.config/rofi/applets/bin
+map cn cd ~/.config/nvim
 
 map cl cd ~/.config/lf
 map cP cd ~/.config/polybar.old

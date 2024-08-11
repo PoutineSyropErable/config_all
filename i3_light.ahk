@@ -267,10 +267,16 @@ return
 
 
 
-#Enter:: ; Windows + Enter
+#Enter:: ; Windows + Enter To open Arch WSL
 Run wt new-tab -p "{a5a97cb8-8961-5535-816d-772efe0c6a3f}" --startingDirectory "~"
 return
 
+#w::
+Run firefox
+
+#p::     ; Windows + To open Developper Powershell
+Run wt new-tab -p  "{701794fd-607c-5404-a93a-538ab1bd5727}" --startingDirectory "~"
 
 
-
+#c:: ; Windows+ c for file explorer
+Run explorer.exe

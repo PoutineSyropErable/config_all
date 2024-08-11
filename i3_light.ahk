@@ -286,22 +286,25 @@ Run C:\Users\Francois\AppData\Local\Microsoft\WindowsApps\gwsl.exe --r --wsl_mac
 
 
 
-; Set your hotkey to open the program
 ^!p:: ; Ctrl + Alt + P
 {
     ; Get the mouse position
     MouseGetPos, mouseX, mouseY
-    MsgBox, Mouse Position: X=%mouseX% Y=%mouseY%
-
-    ; Retrieve monitor information and identify which monitor the mouse is on
-    SysGet, MonitorCount, MonitorCount
+    
+    ; Retrieve the number of monitors
+    SysGet, MonitorCount, Monitor
     MsgBox, Number of Monitors: %MonitorCount%
 
+    ; Loop through each monitor to find which one the mouse is on
     Loop, %MonitorCount%
     {
-        SysGet, Monitor, Monitor, %A_Index%
+        ; Get monitor details and store in Monitor_index
+        SysGet, Monitor_index, Monitor, %A_Index%
+        
+        ; Display the details of the current monitor for debugging
         MsgBox, Monitor %A_Index%: Left=%MonitorLeft% Top=%MonitorTop% Right=%MonitorRight% Bottom=%MonitorBottom%
-
+        
+        ; Check if the mouse position is within the monitor boundaries
         if (mouseX >= MonitorLeft && mouseX <= MonitorRight && mouseY >= MonitorTop && mouseY <= MonitorBottom)
         {
             TargetMonitor := A_Index
@@ -316,15 +319,14 @@ Run C:\Users\Francois\AppData\Local\Microsoft\WindowsApps\gwsl.exe --r --wsl_mac
     ; Wait for the window to appear
     WinWait, ahk_pid %PID%
 
-    ; Move the window to the detected monitor
-    SysGet, Monitor, Monitor, %TargetMonitor%
 
+    ; Move the window to the detected monitor
+    SysGet, Monitor_index, Monitor, %TargetMonitor%
     newX := MonitorLeft + 100 ; Offset from the left edge
     newY := MonitorTop + 100  ; Offset from the top edge
     MsgBox, Moving window to X=%newX% Y=%newY%
 
     WinMove, ahk_pid %PID%, , %newX%, %newY%
 }
-
 
 

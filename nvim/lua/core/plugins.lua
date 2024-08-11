@@ -10,6 +10,7 @@ require("lazy").setup({
 	"nvim-treesitter/nvim-treesitter",
 	"vim-test/vim-test",
 	"lewis6991/gitsigns.nvim",
+	"sindrets/diffview.nvim",
 	"preservim/vimux",
 	"norcalli/nvim-colorizer.lua",
 	{ 'alexghergh/nvim-tmux-navigation', config = function()

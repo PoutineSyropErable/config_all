@@ -5,8 +5,41 @@ vim.g.mapleader = ' ' -- Assuming the leader key is set to space
 vim.api.nvim_set_keymap('n', '<leader>r', ':source %<CR>', { noremap = true, silent = true })
 -- Key mapping to toggle NvimTree
 vim.api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
--- Create a custom key mapping to focus the view on the currently selected directory
-vim.api.nvim_set_keymap('n', '<leader>e', ':lua require("nvim-tree.api").tree.focus()<CR>', { noremap = true, silent = true })
+
+
+
+
+-- Set up an autocmd to apply the key mapping only in NvimTree
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "NvimTree",
+    callback = function()
+        -- Bind 'u' to '<CR>' (Enter key) only in NvimTree
+        vim.api.nvim_buf_set_keymap(0, 'n', 'u', '<CR>', { noremap = true, silent = true })
+    end,
+})
+
+function ExecuteFile()
+    local filetype = vim.bo.filetype
+    local filename = vim.fn.expand('%')
+
+    if filetype == 'python' then
+        vim.cmd('terminal python3 ' .. filename)
+    elseif filetype == 'javascript' then
+        vim.cmd('terminal node ' .. filename)
+    elseif filetype == 'bash' then
+        vim.cmd('terminal bash ' .. filename)
+    elseif filetype == 'sh' then
+        vim.cmd('terminal sh ' .. filename)
+    elseif filetype == 'ruby' then
+        vim.cmd('terminal ruby ' .. filename)
+    elseif filetype == 'lua' then
+        vim.cmd('terminal lua ' .. filename)
+    else
+        print('No interpreter configured for this filetype')
+    end
+end
+
+
 
 
 vim.api.nvim_set_keymap('n', '<leader>y', '"+y', { noremap = true, silent = true })
@@ -47,6 +80,15 @@ vim.api.nvim_set_keymap('n', '<C-b>', ':bprevious<CR>', { noremap = true, silent
 vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>', { noremap = true, silent = true })
 -- map Ctrl+f to scroll up 1/2 screen
 vim.api.nvim_set_keymap('n', '<C-f>', '<C-u>', { noremap = true, silent = true })
+
+
+
+vim.api.nvim_set_keymap('n', '<Leader>T', ':terminal<CR>', { noremap = true, silent = true })
+--vim.api.nvim_set_keymap('t', '<C-n>', '<C-\\><C-n>:bnext<CR>', { noremap = true, silent = true })
+-- Navigate to the previous buffer
+vim.api.nvim_set_keymap('t', '<C-b>', '<C-\\><C-n>:bprevious<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', { noremap = true, silent = true })
+
 
 
 vim.keymap.set('', "<C-s>j", nvim_tmux_nav.NvimTmuxNavigateLeft)
@@ -94,6 +136,47 @@ vim.keymap.set('', '<C-w>q', ':wa | qa!<CR>', { noremap = true, silent = true })
 vim.keymap.set('', '<C-w>Q', ':qa!<CR>', { noremap = true, silent = true })
 
 
+vim.keymap.set('', '<C-a>', 'ggVG<CR>', { noremap = true, silent = true })
+vim.keymap.set('', '<C-S>', ':w<CR>', { noremap = true, silent = true })
+vim.keymap.set('', '<C-s>s', ':w<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-c>', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-x>', '"+d', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-C>', '"+y', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('v', '<C-C>', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<C-c>', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<C-x>', '"+d', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<C-V>', '"+p', { noremap = true, silent = true })
+
+-- In vscode, Control c doesn't seem to work. So, here's hoping it does
+vim.api.nvim_set_keymap('', '<C-c>', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('', '<C-x>', '"+d', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('', '<C-V>', '"+p', { noremap = true, silent = true })
+-- Bind Backspace to 'd' in visual mode
+vim.api.nvim_set_keymap('v', '<BS>', '"_d', { noremap = true, silent = true })
+--
+
+
+-- Map Enter in normal mode to call the custom function
+vim.api.nvim_set_keymap('n', '<CR>', "o<Esc>", { noremap = true, silent = true })
+
+
+
+-- Indent Line Forward with `»`
+vim.api.nvim_set_keymap('n', '«', '@', { noremap = true, silent = true })
+
+
+
+
+-- Map Tab to indent line forward
+vim.api.nvim_set_keymap('n', '<Tab>', '>>', { noremap = true, silent = true })
+-- Map Shift+Tab to indent line backward
+vim.api.nvim_set_keymap('n', '<S-Tab>', '<<', { noremap = true, silent = true })
+-- Map Tab to indent line forward
+vim.api.nvim_set_keymap('v', '<Tab>', '>>', { noremap = true, silent = true })
+-- Map Shift+Tab to indent line backward
+vim.api.nvim_set_keymap('v', '<S-Tab>', '<<', { noremap = true, silent = true })
+
 -- Resize splits with Ctrl + arrow keys
 vim.api.nvim_set_keymap('n', '<C-Up>', ':resize +5<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-Down>', ':resize -5<CR>', { noremap = true, silent = true })
@@ -138,22 +221,6 @@ vim.api.nvim_set_keymap('i', '<M-k>', '<Down>', { noremap = true, silent = true 
 vim.api.nvim_set_keymap('i', '<M-l>', '<Right>', { noremap = true, silent = true }) -- Move right
 
 
--- Indent Line Forward with `»`
-vim.api.nvim_set_keymap('n', '«', '@', { noremap = true, silent = true })
-
-
--- Map Tab to indent line forward
-vim.api.nvim_set_keymap('n', '<Tab>', '>>', { noremap = true, silent = true })
-
--- Map Shift+Tab to indent line backward
-vim.api.nvim_set_keymap('n', '<S-Tab>', '<<', { noremap = true, silent = true })
-
-
--- Map Tab to indent line forward
-vim.api.nvim_set_keymap('v', '<Tab>', '>>', { noremap = true, silent = true })
-
--- Map Shift+Tab to indent line backward
-vim.api.nvim_set_keymap('v', '<S-Tab>', '<<', { noremap = true, silent = true })
 
 
 

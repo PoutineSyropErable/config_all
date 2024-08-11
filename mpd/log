@@ -17079,3 +17079,49 @@ Aug 10 03:13 : mad: input does not appear to be a mp3 bit stream
 Aug 10 03:13 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
 Aug 10 03:13 : player: played "ACDC - Back In Black (Official Video).mp3"
 Aug 10 03:15 : player: played "Anime/Mob Psycho 100 II - Opening  999.mp3"
+Aug 10 03:20 : player: played "Payday 2 - DonAcDum.mp3"
+Aug 10 03:22 : player: played "The Witcher 3/25 Welcome, Imlerith.mp3"
+Aug 10 03:25 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 10 03:25 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 10 03:25 : player: played "The Witcher 3/18 Witch Hunters.mp3"
+Aug 10 03:27 : player: played "Anime/Attack on Titan Season 2 - Opening  Shinzou wo Sasageyo!.mp3"
+Aug 10 03:27 : player: played "YMFAH - Life Will Change (Instrumental) Persona 5.mp3"
+Aug 10 03:27 : player: played "YMFAH - Life Will Change (Instrumental) Persona 5.mp3"
+Aug 10 03:29 : exception: Failed to create Avahi client: Daemon not running
+Aug 10 03:33 : player: played "YMFAH - Life Will Change (Instrumental) Persona 5.mp3"
+Aug 10 03:38 : player: played "Anime/OPM Theme Extended.mp3"
+Aug 10 03:41 : player: played "Undertale - Megalovania Swap(4,2) Deltarune.mp3"
+Aug 10 03:43 : player: played "Undertale - Megalovania Swap(4,2) Deltarune.mp3"
+Aug 10 03:46 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 10 03:46 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 10 03:46 : player: played "Lies of P/42. Shattered Memories.flac"
+Aug 10 03:48 : player: played "Anime/Black Clover - Opening 7 (HD).mp3"
+Aug 10 03:49 : player: played "Lies of P/17. Main Menu.flac"
+Aug 10 03:50 : player: played "Lies of P/41. King of Puppets (Phase Change).flac"
+Aug 10 03:50 : player: played "MGSR - Red Sun.mp3"
+Aug 10 03:54 : player: played "Johnny Cash - Hurt.mp3"
+Aug 10 03:58 : player: played "Kung Fu Hustle & shit/KFH - Decree of the Sichuan General - Kung Fu Hustle.mp3"
+Aug 10 04:00 : player: played "MGSR - The Only Thing I Know For Real.mp3"
+Aug 10 04:04 : player: played "Lies of P/13. Quixotic (Instrumental Version).flac"
+Aug 10 04:05 : player: played "Lies of P/37. Estella Opera House.flac"
+Aug 10 04:10 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 10 04:10 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 10 04:10 : player: played "Crazy On You.mp3"
+Aug 10 04:12 : player: played "Anime/Golden Experience Requiem Opening JoJo Part 5 Finale -1080P HD-.mp3"
+Aug 10 04:15 : player: played "Bloodborne - Father Gascoigne, The Hunter.mp3"
+Aug 10 04:17 : player: played "The Witcher 3/12 The Nightingale.mp3"
+Aug 10 04:18 : player: played "Queen - Another One Bites the Dust (Official Video).mp3"
+Aug 10 23:46 : exception: Failed to create Avahi client: Daemon not running
+Aug 10 23:49 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 10 23:49 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 10 23:49 : player: played "Queen - Another One Bites the Dust (Official Video).mp3"
+Aug 10 23:51 : player: played "Anime/Bleach - Principio De Lucha.mp3"
+Aug 10 23:55 : player: played "Latino-Bleach/Bleach OST 3-Clavar La Espada.mp3"
+Aug 11 00:00 : output: Failed to play on "My Pulse Output" (pulse): failed to connect the stream: Connection terminated
+Aug 10 20:00 : exception: Failed to create Avahi client: Daemon not running
+Aug 10 20:03 : player: played "Eminem - Without Me (Official Music Video).mp3"
+Aug 11 00:07 : player: played "Lies of P/05. Quixotic.flac"

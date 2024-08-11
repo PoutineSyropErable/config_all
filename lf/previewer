@@ -1,0 +1,9 @@
+#!/bin/bash
+case "$1" in
+  *.jpg|*.png|*.svg)
+    # using chafa:
+    chafa "$1" -f sixel -s "$2x$3" --animate false
+    exit 1
+
+  *) cat "$1"
+esac

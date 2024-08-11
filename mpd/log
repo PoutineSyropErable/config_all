@@ -17125,3 +17125,46 @@ Aug 11 00:00 : output: Failed to play on "My Pulse Output" (pulse): failed to co
 Aug 10 20:00 : exception: Failed to create Avahi client: Daemon not running
 Aug 10 20:03 : player: played "Eminem - Without Me (Official Music Video).mp3"
 Aug 11 00:07 : player: played "Lies of P/05. Quixotic.flac"
+Aug 11 00:10 : player: played "YUNGBLUD - superdeadfriends (Official Audio).mp3"
+Aug 11 05:55 : output: Failed to pause "My Pulse Output" (pulse): failed to connect the stream: Connection terminated
+Aug 11 14:37 : exception: Failed to create Avahi client: Daemon not running
+Aug 11 14:37 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 11 14:37 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 11 14:38 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 11 14:38 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 11 14:38 : player: played "The Witcher 3/31 The Hunt is Coming.mp3"
+Aug 11 14:38 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 11 14:45 : player: played "Bloodborne - Ludwig, The Accursed & Holy Blade (The Old Hunters).mp3"
+Aug 11 14:45 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 11 14:46 : player: played "The Witcher 3/04 Wake Up, Ciri.mp3"
+Aug 11 14:47 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 11 14:49 : player: played "Lies of P/50. Attacked Hotel Krat.flac"
+Aug 11 14:49 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 11 14:50 : player: played "Kung Fu Hustle & shit/KFH - Ying Xiong Men Zhan Sheng Le Da Du He (Casino fight pt 2).mp3"
+Aug 11 14:51 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 11 14:56 : player: played "DOOM - Cultist Base.mp3"
+Aug 11 14:56 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 11 14:57 : player: played "Lies of P/24. Trinity Sanctum.flac"
+Aug 11 14:57 : player: played "Lies of P/24. Trinity Sanctum.flac"
+Aug 11 14:59 : player: played "Bloodborne/02 - The Night Unfurls.flac"
+Aug 11 15:01 : player: played "The Mandragora - The Witcher 3 Blood and Wine OST.mp3"
+Aug 11 15:04 : player: played "Latino-Bleach/Borombon - Camilo Azuquita.mp3"
+Aug 11 15:06 : player: played "The Witcher 3/33 Ladies of the Woods.mp3"
+Aug 11 15:10 : player: played "Lies of P/01. Feel.flac"
+Aug 11 15:11 : player: played "Anime/Jojos Bizarre Adventure Diamond is Unbreakable - Opening 1 (Creditless)  -HD-.mp3"
+Aug 11 15:13 : player: played "Anime/Black Clover - Opening 10 (HD).mp3"
+Aug 11 15:16 : player: played "Latino-Bleach/Bleach - La Distancia Para Un Duelo.mp3"
+Aug 11 15:18 : player: played "Battle Without Honor Or Humanity.mp3"
+Aug 11 15:22 : player: played "Powerwolf - Venom of Venus.mp3"
+Aug 11 15:24 : player: played "Lies of P/42. Shattered Memories.flac"
+Aug 11 15:28 : player: played "Lies of P/10. Memory of Beach.flac"
+Aug 11 15:32 : player: played "God of War - Main Theme (01).mp3"
+Aug 11 15:35 : player: played "Immigrant Song.mp3"
+Aug 11 15:39 : player: played "Joe Cocker - You Can Leave Your Hat On (Official Video) HD.mp3"
+Aug 11 15:42 : player: played "Lies of P/45. Hall of Fame.flac"
+Aug 11 15:44 : player: played "The Witcher 3/31 The Hunt is Coming.mp3"
+Aug 11 15:46 : player: played "Lies of P/29. Wing of Hypocrisy.flac"
+Aug 11 15:51 : player: played "Powerwolf - Fire & Forgive.mp3"
+Aug 11 15:55 : player: played "Bloodborne/07 - Terror.flac"
+Aug 11 15:58 : player: played "Bloodborne/09 - Hail the Nightmare.flac"

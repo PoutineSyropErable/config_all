@@ -1,0 +1,56 @@
+font_size 16.0
+confirm_os_window_close 2
+
+
+
+
+
+dynamic_background_opacity true
+background_opacity         0.55
+#background_image Pictures/8714ab1fb626c435433e749ca0cc83cd.png
+#background_image Pictures/the-storyteller-elden-ring-4k-wallpaper-uhdpaper.com-876@1@f.png
+#background_image Pictures/wp13334761.png
+<<<<<<< HEAD
+#background_image Pictures/1311862.png #ranni
+=======
+#background_image Pictures/1311862.png
+
+>>>>>>> 9d9e7b6d9e7d97b2eb7c066081482926b955c741
+#background_image Pictures/anime_cyberpunk_girl.png
+
+
+shell fish
+
+
+tab_bar_style fade
+# Enable tab bar
+tab_bar_edge bottom
+
+map ctrl+shift+h noop
+
+
+# Display tab numbers
+tab_number_display always
+
+# Display tab title
+tab_title_template {index}:{title}
+
+# Customize tab bar appearance
+# active_tab_foreground #ffffff
+# active_tab_background #000000
+# inactive_tab_foreground #aaaaaa
+# inactive_tab_background #222222
+
+[split]
+# background=#ff007f
+# foreground=#ffffff
+
+
+# BEGIN_KITTY_THEME
+# Default
+include current-theme.conf
+# END_KITTY_THEME
+
+shell /usr/bin/tmux
+
+

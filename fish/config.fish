@@ -17,6 +17,7 @@ awk "{print \$$n}"
 end
 
 alias bmod="vim ~/.bashrc"
+alias pmod="vim ~/.config/polybar.old/config"
 alias fmod="vim ~/.config/fish/config.fish"
 alias fview="bat ~/.fishrc"
 alias imod="vim ~/.i3rc"
@@ -190,6 +191,8 @@ alias l='eza -cf'
 alias lsdir='ls -d */'
 
 alias ch='cd ~'
+alias chf='cd /mnt/c/Users/Francois'
+alias cdof='cd /mnt/c/Users/Francois/Documents'
 alias cr="cd ~/.config/rofi"
 alias cm="cd ~/Music"
 alias cP="cd ~/.config/polybar.old/"
@@ -301,19 +304,19 @@ zoxide init fish | source
 #
 # You may also like to assign a key (Ctrl-O) to this command:
 #
-bind \cf 'set old_tty (stty -g); stty sane; lfcd; stty $old_tty; commandline -f repaint'
+#bind \cf 'set old_tty (stty -g); stty sane; lfcd; stty $old_tty; commandline -f repaint'
 #
 # You may put this in a function called fish_user_key_bindings.
 
-function lfcd --wraps="lf" --description="lf - Terminal file manager (changing directory on exit)"
+#function lfcd --wraps="lf" --description="lf - Terminal file manager (changing directory on exit)"
 # `command` is needed in case `lfcd` is aliased to `lf`.
 # Quotes will cause `cd` to not change directory if `lf` prints nothing to stdout due to an error.
-cd "$(command lf -print-last-dir $argv)"
-end
+#cd "$(command lf -print-last-dir $argv)"
+#end
 
-alias lf="lfcd"
+#alias lf="lfcd"
 
-#alias less="bat --color=always --paging=always"
+alias bless="bat --color=always --paging=always"
 
 
 
@@ -472,3 +475,4 @@ end
 
 
 #conda_activate
+source ~/.config/lf/lf.fish

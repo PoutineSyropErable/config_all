@@ -283,3 +283,48 @@ Run explorer.exe
 
 #Enter::
 Run C:\Users\Francois\AppData\Local\Microsoft\WindowsApps\gwsl.exe --r --wsl_machine="Arch" --wsl_cmd="kitty" --w_mode="Multi Window" --clip_enabled="Default" --gtk_scale="Default" --qt_scale="Default" --append="" --theme="follow" --root="false" --dbus="false" --
+
+
+
+; Set your hotkey to open the program
+^!p:: ; Ctrl + Alt + P
+{
+    ; Get the mouse position
+    MouseGetPos, mouseX, mouseY
+    MsgBox, Mouse Position: X=%mouseX% Y=%mouseY%
+
+    ; Retrieve monitor information and identify which monitor the mouse is on
+    SysGet, MonitorCount, MonitorCount
+    MsgBox, Number of Monitors: %MonitorCount%
+
+    Loop, %MonitorCount%
+    {
+        SysGet, Monitor, Monitor, %A_Index%
+        MsgBox, Monitor %A_Index%: Left=%MonitorLeft% Top=%MonitorTop% Right=%MonitorRight% Bottom=%MonitorBottom%
+
+        if (mouseX >= MonitorLeft && mouseX <= MonitorRight && mouseY >= MonitorTop && mouseY <= MonitorBottom)
+        {
+            TargetMonitor := A_Index
+            MsgBox, Mouse is on Monitor %TargetMonitor%
+            break
+        }
+    }
+
+    ; Run the program (replace with the actual path to your program)
+    Run, notepad.exe, , , PID
+
+    ; Wait for the window to appear
+    WinWait, ahk_pid %PID%
+
+    ; Move the window to the detected monitor
+    SysGet, Monitor, Monitor, %TargetMonitor%
+
+    newX := MonitorLeft + 100 ; Offset from the left edge
+    newY := MonitorTop + 100  ; Offset from the top edge
+    MsgBox, Moving window to X=%newX% Y=%newY%
+
+    WinMove, ahk_pid %PID%, , %newX%, %newY%
+}
+
+
+

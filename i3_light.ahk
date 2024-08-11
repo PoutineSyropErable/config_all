@@ -267,7 +267,7 @@ return
 
 
 
-#Enter:: ; Windows + Enter To open Arch WSL
+#<:: ; Windows + Enter To open Arch WSL
 Run wt new-tab -p "{a5a97cb8-8961-5535-816d-772efe0c6a3f}" --startingDirectory "~"
 return
 
@@ -280,3 +280,6 @@ Run wt new-tab -p  "{701794fd-607c-5404-a93a-538ab1bd5727}" --startingDirectory 
 
 #c:: ; Windows+ c for file explorer
 Run explorer.exe
+
+#Enter::
+Run C:\Users\Francois\AppData\Local\Microsoft\WindowsApps\gwsl.exe --r --wsl_machine="Arch" --wsl_cmd="kitty" --w_mode="Multi Window" --clip_enabled="Default" --gtk_scale="Default" --qt_scale="Default" --append="" --theme="follow" --root="false" --dbus="false" --

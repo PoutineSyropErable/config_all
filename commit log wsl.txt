@@ -1,0 +1,171 @@
+commit e317fdddf2778e75947bc96090611facec24835e
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 11 16:02:34 2024 -0400
+
+    Changes on Lf, it nows supports images preview on wayland and cd on quit. It needs this fork of lf https://github.com/horriblename/lf, This is for Wayland support. Idk if this lf runs with X11, if not, then I'll need both ls and a script to run the correct one
+
+commit da326d38c6f75c28b90f79c00a6fc9a2399f9a35
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 11 03:28:05 2024 -0400
+
+    Added some difftool/mergetool plugin
+
+commit bdf7096ec5358d8f46fd53b630d228d968d06ecd
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 11 03:25:36 2024 -0400
+
+    Blankline and coloring added to neovim
+
+commit 9ba573c4f97f170ad6fbb86908dd98e4ec6cb83b
+Merge: b0136bc 9d9e7b6
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 11 00:11:06 2024 -0400
+
+    Merge branch 'WSL' of https://github.com/PoutineSyropErable/PoutineErable.config into WSL
+
+commit b0136bc37d5c1ca93eebee5c547c5742ba301b1a
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 11 00:08:36 2024 -0400
+
+    Terminal bindings in nvim
+
+commit 9d9e7b6d9e7d97b2eb7c066081482926b955c741
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sat Aug 10 15:28:06 2024 -0400
+
+    no kitty background, can change again. And new cn for cd neovim config in lf
+
+commit 89ae71bc397dcd1a30539f50371077f8cfe558d3
+Merge: 7d479f0 3c2fc06
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sat Aug 10 03:19:44 2024 -0400
+
+    Merge branch 'WSL' of https://github.com/PoutineSyropErable/PoutineErable.config into WSL
+    Should be a merge of local and branch, it's the same branch. hopefully
+    only one line is different
+
+commit 7d479f0e845aeee347c2fc2aff8bb1fa1527abbd
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sat Aug 10 03:18:23 2024 -0400
+
+    Any new changes?
+
+commit 3c2fc067940dddaf87295a178b07a25d64df1bef
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Thu Aug 8 20:02:36 2024 -0400
+
+    git ignore change
+
+commit 16b32ba25c85cffc4e42beb56cd80fc9bc0c2f6c
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Thu Aug 8 18:08:25 2024 -0400
+
+    No api key
+
+commit 7fbbbf1ea8b5a1796c69970046cb10c510b3e1e0
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Thu Aug 8 18:02:14 2024 -0400
+
+    No api key
+
+commit a4ed91658a2ed5bba780adccf5ac24c1fad85aff
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Tue Aug 6 01:51:38 2024 -0400
+
+    small config changes i guess? Oh and Kitty background is added. Also, I need to update home for git as I have more pictures converting scripts now. No top bars-black bars, and no bars crop only were added
+
+commit 8db8274d15ebd80f2ad251538dfcd7567f858a15
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Mon Aug 5 02:09:00 2024 -0400
+
+    conda commands
+
+commit 4da1d33f42007d510800213b9eea0c773acbc9bf
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 4 15:37:34 2024 -0400
+
+    Using dev null redirect on gwsl ports display/sound. Start pulse audio too
+
+commit 8ecf275e8afce071a26b9a0765262870203d66e5
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 4 15:31:16 2024 -0400
+
+    dbus back to single start
+
+commit 173e1f4f13c75f432463ea4f3d765e401be6afe6
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 4 15:30:19 2024 -0400
+
+    fish shutdown better in function?
+
+commit aef779a26e0380bc166367b1a835c62327e1b008
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 4 15:26:01 2024 -0400
+
+    fish shutdown correctly added, hopefully changes wont be lost
+
+commit c3bfcc729643a95a38c0aebb7a4e2b36aa4dfc8d
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 4 15:24:59 2024 -0400
+
+    fish debug, mpd gracefull shutdown when running wsl_shutdown
+
+commit a376da42f07a46e6f2d1fb5063eb4ebd0be4fec3
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 4 15:23:00 2024 -0400
+
+    wsl shutdown added to fish
+
+commit 5de986858e5ecae5db6e6d66e7f897d20e7d45c8
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 4 15:08:54 2024 -0400
+
+    in fish forced setting the sound correctly
+
+commit bdcb3996b7d6d346be261521cb2a3fc0d88a3c9e
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 4 15:03:40 2024 -0400
+
+    tmp dir unfucked in fish config. set so /tmp
+
+commit 9bfc52e09ef679dd8564746f119a22d1c5748836
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 4 14:59:51 2024 -0400
+
+    fish as systemctl didn't work previously, now it does
+
+commit c679ddba7ba46c85e65e3611f8cbae1e10de2553
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 4 02:31:10 2024 -0400
+
+    tmux mpc control finished. Though the muscle memory for arrow window switch will fuck me as it now control sounds. Same with numpad 4268 being asdw doing volume and seek.
+
+commit b39b32dd4b7023e1852c0b41d044cd22b183a1b6
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 4 02:15:58 2024 -0400
+
+    tmux control mpd
+
+commit 2f74abdfc22a08c1fb35e34415088ee0769ab172
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 4 02:14:44 2024 -0400
+
+    tmux control mpd
+
+commit 088bee5373f85a6e90ec24325a057c4dd2d99dbb
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 4 01:41:12 2024 -0400
+
+    tmux coloring
+
+commit 07aa092787158865350b20bb9d25a5c1723a782a
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Aug 4 01:38:15 2024 -0400
+
+    fish is systemctl, tmux is polybar
+
+commit 1434fa44c48a057a41756788998b341289882d47
+Author: François Pagé <francois.page@mail.mcgill.ca>
+Date:   Sun Jul 28 01:21:44 2024 -0400
+
+    This is the desktop branch

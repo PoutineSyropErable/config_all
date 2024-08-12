@@ -2,9 +2,9 @@ sw_volume: 100
 audio_device_state:0:My ALSA Device
 audio_device_state:1:My Pulse Output
 audio_device_state:1:My FIFO Output
-state: play
-current: 254
-time: 120.012000
+state: pause
+current: 238
+time: 143.250000
 random: 1
 repeat: 1
 single: 0
@@ -13,293 +13,293 @@ crossfade: 0
 mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
-0:9_To_5.mp3
-1:Aaron Copland - Fanfare For The Common Man.mp3
-2:ACDC - Back In Black (Official Video).mp3
-3:AC DC - Highway to Hell.mp3
-4:ACDC - Thunderstruck.mp3
-5:a-ha - Take On Me (Official Video) -Remastered in 4K-.mp3
-6:Aint No Mountain High Enough  - Marvin Gaye.mp3
-7:Air Supply - All Out Of Love.mp3
-8:A Little Less Conversation (JXL Radio Edit Remix) HD.mp3
-9:Battle Without Honor Or Humanity.mp3
-10:Beast In Black - Cry out for a Hero.mp3
-11:Bloodborne - Cleric Beast.mp3
-12:Bloodborne - Father Gascoigne, The Hunter.mp3
-13:Bloodborne - Lady Maria.mp3
-14:Bloodborne - Laurence.mp3
-15:Bloodborne - Ludwig, The Accursed & Holy Blade (The Old Hunters).mp3
-16:Bloodborne - Orphan of Kos (The Old Hunters).mp3
-17:Boney M. - Sunny (1976).mp3
-18:Bon Jovi - You Give Love A Bad Name.mp3
-19:Carmen - Habanera (Bizet Anna Caterina Antonacci, The Royal Opera).mp3
-20:CCR - Fortunate Son.mp3
-21:CeeLo Green - FUCK YOU (Official Video).mp3
-22:Coldplay - Viva La Vida (Official Video).mp3
-23:Come A Little Bit Closer - Jay & The Americans.mp3
-24:Come And Get Your Love.mp3
-25:Country Roads - Fallout.mp3
-26:Country Roads - John Denver.mp3
-27:Country Roads - Kingsman.mp3
-28:Crazy On You.mp3
-29:CYBERPUNK 2077 - FRIDAY NIGHT FIRE FIGHT.mp3
-30:Dark Souls III OST Main Theme.mp3
-31:Dark Souls III - Vordt of the Boreal Valley.mp3
-32:DMC 5 - Devil Trigger.mp3
-33:DOOM - BFG 10 000.mp3
-34:DOOM - BFG Division (Mick Gordon).mp3
-35:DOOM - Cultist Base.mp3
-36:Doom - E1M1 (Classic) - At Dooms Gate.mp3
-37:DOOM - E1M1 (Mick Gordon).mp3
-38:DOOM - Rip & Tear.mp3
-39:DOOM - The Only Thing they Fear is You (Mick Gordon).mp3
-40:Dragonforce - Soldiers of the Wasteland.mp3
-41:DragonForce - Through The Fire And Flames (Official Video).mp3
-42:Dragonforce - Valley of the Damned.mp3
-43:Edgerunners -  I Really Want to Stay At Your House by Rosa Walton  Netflix.mp3
-44:Edgerunners - RAT BOY & IBDY - Whos Ready For Tomorrow.mp3
-45:Edwin Starr - War (What is it good for)  Lycris HQ!!.mp3
-46:Electric Light Orchestra - Mr. Blue Sky .mp3
-47:Elvis Crespo - Suavemente.mp3
-48:Eminem - Lose Yourself -HD-.mp3
-49:Eminem - Without Me (Official Music Video).mp3
-50:Fleetwood Mac - The Chain.mp3
-51:Frank Sinatra - My Way.mp3
-52:Free Bird(Kingsman).mp3
-53:Free Bird (Original).test.mp3
-54:Gin Wigmore - Kill Of The Night.mp3
-55:God of War - Main Theme (01).mp3
-56:Guilty Gear - Love the Subhuman Self.mp3
-57:Hisoka Theme [extended] - Hunter X Hunter OST.mp3
-58:Hoist the Colours (Bass Singers Version).mp3
-59:Holding Out For A Hero (Bonny Tyler).mp3
-60:Holding Out For a Hero - Shrek 2.mp3
-61:Hooked on a Feeling.mp3
-62:I Cannot Let You Leave  - The Witcher 3 Wild Hunt OST.mp3
-63:Immigrant Song.mp3
-64:Initial D  Deja Vu.mp3
-65:Initial D  Gas Gas Gas (Manuel).mp3
-66:Initial D  Running in The 90s.mp3
-67:Its Gonna Get Weird.mp3
-68:James Brown - I Feel Good.mp3
-69:Jim Croce - Time in a bottle.mp3
-70:Joe Cocker - You Can Leave Your Hat On (Official Video) HD.mp3
-71:Johnny Cash - Hurt.mp3
-72:Marva Whitney - Unwind Yourself.wmv.mp3
-73:Marvin Gaye - Lets get it on.mp3
-74:Maxine Nightingale - Right Back Where We Started From.mp3
-75:meganeko - The Cyber Grind (Ultrakill Soundtrack).mp3
-76:MGSR - A Stranger I Remain.mp3
-77:MGSR - Collective Christmass.mp3
-78:MGSR - Collective Consciousness.mp3
-79:MGSR - It Has To Be This Way.mp3
-80:MGSR - Red Sun.mp3
-81:MGSR - The Only Thing I Know For Real.mp3
-82:Mission Impossible Theme (Full Theme).mp3
-83:Ozzy Osbourne - Crazy Train.mp3
-84:Pat Benatar - We Belong.mp3
-85:Payday 2 - Break The Rules.mp3
-86:Payday 2 - Break the rules (short).mp3
-87:Payday 2 - DonAcDum.mp3
-88:Pirate of The Caribbean - End Credits.mp3
-89:Pirates of the Caribbean 2 - Soundtr 01 - Jack Sparrow.mp3
-90:Pitbull - Back in Time (Official Video).mp3
-91:Pitbull - Timber (Official Video) ft. Ke$ha.mp3
-92:Powerwolf - Army Of The Night.mp3
-93:Powerwolf - Fire & Forgive.mp3
-94:Powerwolf - Fist by Fist (Sacralize or Strike).mp3
-95:Powerwolf - Killers with the Cross.mp3
-96:Powerwolf - Venom of Venus.mp3
-97:Puss in Boots - Fearless Hero.mp3
-98:Queen - Another One Bites the Dust (Official Video).mp3
-99:Queen - Bohemian Rhapsody (Remastered 2011).flac
-100:Queen - Hammer To Fall (Official Video).mp3
-101:Rick Astley - Never Gonna Give You Up (Official Music Video).mp3
-102:Sabaton - The Last Stand.mp3
-103:Smash Mouth - All Star (Official Music Video).mp3
-104:Smash Mouth - Im A Believer.mp3
-105:Space Marine - Im Still Standing (AI Cover).mp3
-106:Stellar Blade - Raven OST.mp3
-107:Sweet Dreams (Are Made Of This).mp3
-108:Tally Hall - Ruler of Everything.mp3
-109:The Animals - House of the Rising Sun (1964) HQWidescreen ♫ 59 YEARS AGO.mp3
-110:The Fields of Ard Skellig (Extended) -The Witcher 3 Wild Hunt OST.mp3
-111:The Heavy - How You Like Me Now.mp3
-112:The Mandragora - The Witcher 3 Blood and Wine OST.mp3
-113:Undertale - Battle Against a True Hero.mp3
-114:Undertale - Bonetrousle.mp3
-115:Undertale - Death by Glamour.mp3
-116:Undertale - Hopes and Dreams.mp3
-117:Undertale - Megalovania.mp3
-118:Undertale - Megalovania Swap(4,2) Deltarune.mp3
-119:Undertale - Spider Dance.mp3
-120:Welcome to the Internet.mp3
-121:Word Up - The BossHoss.mp3
-122:YAMFAH - Initial D Deja Vu - Epic Orchestral Cover.mp3
-123:YMFAH - Delfino Plaza - (The 8-Bit Big Band).mp3
-124:YMFAH - DuckTales Remastered - Moon Theme Remix.mp3
-125:YMFAH - Life Will Change (Instrumental) Persona 5.mp3
-126:YMFAH - Mario Kart 8 - Big Blue.mp3
-127:YMFAH - Tetris Theme -  (The 8-Bit Big Band).mp3
-128:YMFAH - The Legendary Air Ride Machine .mp3
-129:YMFAH - The Sims Soundtrack Buy Mode 2.mp3
-130:You just activated my trap card. (Yu Gi Oh).mp3
-131:YUNGBLUD - superdeadfriends (Official Audio).mp3
-132:Lies of P/01. Feel.flac
-133:Lies of P/02. Divine Service.flac
-134:Lies of P/03. Someday.flac
-135:Lies of P/04. Fascination (Instrumental Version).flac
-136:Lies of P/05. Quixotic.flac
-137:Lies of P/06. Why.flac
-138:Lies of P/08. Proposal, Flower, Wolf Part 1.flac
-139:Lies of P/09. Far East Princess.flac
-140:Lies of P/10. Memory of Beach.flac
-141:Lies of P/11. Shadow Flower.flac
-142:Lies of P/12. Proposal, Flower, Wolf Part 1 (Golden).flac
-143:Lies of P/13. Quixotic (Instrumental Version).flac
+0:The Witcher 3/35 Hunt Or Be Hunted.mp3
+1:The Witcher 3/34 Merchants of Novigrad.mp3
+2:The Witcher 3/33 Ladies of the Woods.mp3
+3:The Witcher 3/32 The Fields of Ard Skellig.mp3
+4:The Witcher 3/31 The Hunt is Coming.mp3
+5:The Witcher 3/30 The Song of the Swordâ€“Dancer.mp3
+6:The Witcher 3/29 Farewell, Old Friend.mp3
+7:The Witcher 3/28 Blood on the Cobblestones.mp3
+8:The Witcher 3/27 After the Storm.mp3
+9:The Witcher 3/26 Drink Up, There_s More!.mp3
+10:The Witcher 3/25 Welcome, Imlerith.mp3
+11:The Witcher 3/24 Yes, I Do....mp3
+12:The Witcher 3/23 Forged in Fire.mp3
+13:The Witcher 3/22 Cloak and Dagger.mp3
+14:The Witcher 3/21 The Vagabond.mp3
+15:The Witcher 3/20 Fate Calls.mp3
+16:The Witcher 3/19 ...Steel for Humans.mp3
+17:The Witcher 3/18 Witch Hunters.mp3
+18:The Witcher 3/17 Eyes of the Wolf.mp3
+19:The Witcher 3/16 Kaer Morhen.mp3
+20:The Witcher 3/13 City of Intrigues.mp3
+21:The Witcher 3/12 The Nightingale.mp3
+22:The Witcher 3/11 Whispers of Oxenfurt.mp3
+23:The Witcher 3/10 Silver for Monsters....mp3
+24:The Witcher 3/08 Spikeroog.mp3
+25:The Witcher 3/07 Emhyr var Emreis.mp3
+26:The Witcher 3/05 Aen Seidhe.mp3
+27:The Witcher 3/04 Wake Up, Ciri.mp3
+28:The Witcher 3/03 Eredin, King of the Hunt.mp3
+29:The Witcher 3/02 Geralt of Rivia.mp3
+30:The Witcher 3/01 The Trail.mp3
+31:Bloodborne/12 - Amygdala.flac
+32:Bloodborne/11 - The Witch of Hemwick.flac
+33:Bloodborne/10 - Darkbeast.flac
+34:Bloodborne/09 - Hail the Nightmare.flac
+35:Bloodborne/08 - Watchers.flac
+36:Bloodborne/07 - Terror.flac
+37:Bloodborne/06 - Blood-Starved Beast.flac
+38:Bloodborne/05 - Cleric Beast.flac
+39:Bloodborne/04 - The Hunter.flac
+40:Bloodborne/02 - The Night Unfurls.flac
+41:Bloodborne/02 - Laurence, the First Vicar.flac
+42:Bloodborne/01 - Omen.flac
+43:Anime/Tokoy Ghoul - Unravel.mp3
+44:Anime/OPM Theme.mp3
+45:Anime/OPM Theme Extended.mp3
+46:Anime/OPM Intro.mp3
+47:Anime/One Piece - Opening 26 - Us! .mp3
+48:Anime/One Piece - Opening 24.mp3
+49:Anime/One Piece - Opening 1 - We Are .mp3
+50:Anime/Naruto - Narutos Theme song.mp3
+51:Anime/My Hero Academia OST - You Say Run.mp3
+52:Anime/Mob Psycho 100 - Opening  99.mp3
+53:Anime/Mob Psycho 100 II - Opening  999.mp3
+54:Anime/MASLE OP 2 - Creepy Nuts「Bling-Bang-Bang-Born」.mp3
+55:Anime/Kaguya-sama Love is War - Opening 2  4K  60FPS  Creditless .mp3
+56:Anime/Kaguya-sama Love Is War - Opening 1  4K  60FPS  Creditless .mp3
+57:Anime/JoJos Bizarre Adventure Opening 2  4K  60FPS  Creditless.mp3
+58:Anime/JoJos Bizarre Adventure Opening 1  4K  60FPS  Creditless.mp3
+59:Anime/Jojos Bizarre Adventure Diamond is Unbreakable - Opening 1 (Creditless)  -HD-.mp3
+60:Anime/Hunter X Hunter - Opening 1  Departure!.mp3
+61:Anime/Golden Experience Requiem Opening JoJo Part 5 Finale -1080P HD-.mp3
+62:Anime/Fist of TNS - You wa Shock.mp3
+63:Anime/Fist of TNS - (Instrumental) You wa shock.mp3
+64:Anime/Cowboy Bebop - Opening  Tank!.mp3
+65:Anime/Bleach - Principio De Lucha.mp3
+66:Anime/Bleach OST 3-Clavar La Espada.mp3
+67:Anime/Bleach - Nube Negra.mp3
+68:Anime/Bleach - La Distancia Para Un Duelo.mp3
+69:Anime/Bleach - Ichigos Theme - Number One.mp3
+70:Anime/Black Clover - Opening 7 (HD).mp3
+71:Anime/Black Clover - Opening 10 (HD).mp3
+72:Anime/Attack On Titan Season 3 Part 2 - Opening -60FPS- (1080p).mp3
+73:Anime/Attack on Titan Season 2 - Opening  Shinzou wo Sasageyo!.mp3
+74:Anime/Attack on Titan Opening 1.mp3
+75:Anime/A Cruel Angels Thesis (Directors Edit Version).mp3
+76:Kung Fu Hustle & shit/Music When The Overpowered Anime MC Revealing His Full Power.mp3
+77:Kung Fu Hustle & shit/KH - Fishermans Song of the East China Sea.mp3
+78:Kung Fu Hustle & shit/KFH - Ying Xiong Men Zhan Sheng Le Da Du He (Casino fight pt 2).mp3
+79:Kung Fu Hustle & shit/KFH - Decree of the Sichuan General - Kung Fu Hustle.mp3
+80:Kung Fu Hustle & shit/KFH - Daring General.mp3
+81:Latino-Bleach/Suavemente Gucci Ganon.mp3
+82:Latino-Bleach/Elvis Crespo - Suavemente.mp3
+83:Latino-Bleach/Borombon - Camilo Azuquita.mp3
+84:Latino-Bleach/Bleach - Principio De Lucha.mp3
+85:Latino-Bleach/Bleach OST 3-Clavar La Espada.mp3
+86:Latino-Bleach/Bleach - Nube Negra.mp3
+87:Latino-Bleach/Bleach - La Distancia Para Un Duelo.mp3
+88:Lies of P/70. Memory of Beach (Piano Version).flac
+89:Lies of P/69. Pianist of Krat IV.flac
+90:Lies of P/68. New Eve.flac
+91:Lies of P/67. Rise of P.flac
+92:Lies of P/66. Free from the Puppet String.flac
+93:Lies of P/65. Real Boy.flac
+94:Lies of P/64. Nameless Chaos.flac
+95:Lies of P/63. Arm of God.flac
+96:Lies of P/62. Simon Manus, Awakened God (Phase Change).flac
+97:Lies of P/61. Simon Manus, Arm of God (Battle Intro).flac
+98:Lies of P/60. Arche Abbey Upper Part.flac
+99:Lies of P/59. Laxasia the Complete (Battle End).flac
+100:Lies of P/58. Apostles of Evolution (Phase 2).flac
+101:Lies of P/57. Laxasia the Complete (Phase Change).flac
+102:Lies of P/56. Apostles of Evolution (Phase 1).flac
+103:Lies of P/55. Laxasia the Complete (Battle Intro).flac
+104:Lies of P/54. Arche Abbey.flac
+105:Lies of P/53. Prey for Revenge.flac
+106:Lies of P/52. Black Rabbit Brotherhood Revenge (Battle Intro).flac
+107:Lies of P/51. Pianist of Krat III.flac
+108:Lies of P/50. Attacked Hotel Krat.flac
+109:Lies of P/49. Walker of Illusions.flac
+110:Lies of P/48. Green and Greed.flac
+111:Lies of P/47. Green Monster of the Swamp (Phase Change).flac
+112:Lies of P/46. Saintess of Mercy Statue.flac
+113:Lies of P/45. Hall of Fame.flac
+114:Lies of P/44. Lorenzini Arcade Garden.flac
+115:Lies of P/43. Charity Market.flac
+116:Lies of P/42. Shattered Memories.flac
+117:Lies of P/41. King of Puppets (Phase Change).flac
+118:Lies of P/40. Stage of Grief.flac
+119:Lies of P/39. King of Puppets (Battle Intro).flac
+120:Lies of P/38. Fascination (Adelina Version).flac
+121:Lies of P/37. Estella Opera House.flac
+122:Lies of P/36. Rosa Isabelle Street.flac
+123:Lies of P/35. Fascination.flac
+124:Lies of P/34. Pianist of Krat II.flac
+125:Lies of P/33. Black Rabbit Brotherhood (Battle End).flac
+126:Lies of P/32. Rabbits on the Hunt.flac
+127:Lies of P/31. Far East Princess (Red Lobster Inn).flac
+128:Lies of P/30. A World with No Lies.flac
+129:Lies of P/29. Wing of Hypocrisy.flac
+130:Lies of P/28. Fallen Archbishop Andreus (Phase Change).flac
+131:Lies of P/27. Fallen Archbishop Andreus (Battle Intro).flac
+132:Lies of P/26. St. Frangelico Cathedral.flac
+133:Lies of P/25. Let There Be Flame.flac
+134:Lies of P/24. Trinity Sanctum.flac
+135:Lies of P/23. Judgement of Mourning.flac
+136:Lies of P/22. Mad Donkey.flac
+137:Lies of P/21. Pianist of Krat I.flac
+138:Lies of P/20. Hotel Krat.flac
+139:Lies of P/19. Opening Credits.flac
+140:Lies of P/18. Dreadful March.flac
+141:Lies of P/17. Main Menu.flac
+142:Lies of P/16. Fascination (Gramophone Version).flac
+143:Lies of P/15. Memory of Beach (Golden).flac
 144:Lies of P/14. Shadow Flower (Golden).flac
-145:Lies of P/15. Memory of Beach (Golden).flac
-146:Lies of P/16. Fascination (Gramophone Version).flac
-147:Lies of P/17. Main Menu.flac
-148:Lies of P/18. Dreadful March.flac
-149:Lies of P/19. Opening Credits.flac
-150:Lies of P/20. Hotel Krat.flac
-151:Lies of P/21. Pianist of Krat I.flac
-152:Lies of P/22. Mad Donkey.flac
-153:Lies of P/23. Judgement of Mourning.flac
-154:Lies of P/24. Trinity Sanctum.flac
-155:Lies of P/25. Let There Be Flame.flac
-156:Lies of P/26. St. Frangelico Cathedral.flac
-157:Lies of P/27. Fallen Archbishop Andreus (Battle Intro).flac
-158:Lies of P/28. Fallen Archbishop Andreus (Phase Change).flac
-159:Lies of P/29. Wing of Hypocrisy.flac
-160:Lies of P/30. A World with No Lies.flac
-161:Lies of P/31. Far East Princess (Red Lobster Inn).flac
-162:Lies of P/32. Rabbits on the Hunt.flac
-163:Lies of P/33. Black Rabbit Brotherhood (Battle End).flac
-164:Lies of P/34. Pianist of Krat II.flac
-165:Lies of P/35. Fascination.flac
-166:Lies of P/36. Rosa Isabelle Street.flac
-167:Lies of P/37. Estella Opera House.flac
-168:Lies of P/38. Fascination (Adelina Version).flac
-169:Lies of P/39. King of Puppets (Battle Intro).flac
-170:Lies of P/40. Stage of Grief.flac
-171:Lies of P/41. King of Puppets (Phase Change).flac
-172:Lies of P/42. Shattered Memories.flac
-173:Lies of P/43. Charity Market.flac
-174:Lies of P/44. Lorenzini Arcade Garden.flac
-175:Lies of P/45. Hall of Fame.flac
-176:Lies of P/46. Saintess of Mercy Statue.flac
-177:Lies of P/47. Green Monster of the Swamp (Phase Change).flac
-178:Lies of P/48. Green and Greed.flac
-179:Lies of P/49. Walker of Illusions.flac
-180:Lies of P/50. Attacked Hotel Krat.flac
-181:Lies of P/51. Pianist of Krat III.flac
-182:Lies of P/52. Black Rabbit Brotherhood Revenge (Battle Intro).flac
-183:Lies of P/53. Prey for Revenge.flac
-184:Lies of P/54. Arche Abbey.flac
-185:Lies of P/55. Laxasia the Complete (Battle Intro).flac
-186:Lies of P/56. Apostles of Evolution (Phase 1).flac
-187:Lies of P/57. Laxasia the Complete (Phase Change).flac
-188:Lies of P/58. Apostles of Evolution (Phase 2).flac
-189:Lies of P/59. Laxasia the Complete (Battle End).flac
-190:Lies of P/60. Arche Abbey Upper Part.flac
-191:Lies of P/61. Simon Manus, Arm of God (Battle Intro).flac
-192:Lies of P/62. Simon Manus, Awakened God (Phase Change).flac
-193:Lies of P/63. Arm of God.flac
-194:Lies of P/64. Nameless Chaos.flac
-195:Lies of P/65. Real Boy.flac
-196:Lies of P/66. Free from the Puppet String.flac
-197:Lies of P/67. Rise of P.flac
-198:Lies of P/68. New Eve.flac
-199:Lies of P/69. Pianist of Krat IV.flac
-200:Lies of P/70. Memory of Beach (Piano Version).flac
-201:Latino-Bleach/Bleach - La Distancia Para Un Duelo.mp3
-202:Latino-Bleach/Bleach - Nube Negra.mp3
-203:Latino-Bleach/Bleach OST 3-Clavar La Espada.mp3
-204:Latino-Bleach/Bleach - Principio De Lucha.mp3
-205:Latino-Bleach/Borombon - Camilo Azuquita.mp3
-206:Latino-Bleach/Elvis Crespo - Suavemente.mp3
-207:Latino-Bleach/Suavemente Gucci Ganon.mp3
-208:Kung Fu Hustle & shit/KFH - Daring General.mp3
-209:Kung Fu Hustle & shit/KFH - Decree of the Sichuan General - Kung Fu Hustle.mp3
-210:Kung Fu Hustle & shit/KFH - Ying Xiong Men Zhan Sheng Le Da Du He (Casino fight pt 2).mp3
-211:Kung Fu Hustle & shit/KH - Fishermans Song of the East China Sea.mp3
-212:Kung Fu Hustle & shit/Music When The Overpowered Anime MC Revealing His Full Power.mp3
-213:Anime/A Cruel Angels Thesis (Directors Edit Version).mp3
-214:Anime/Attack on Titan Opening 1.mp3
-215:Anime/Attack on Titan Season 2 - Opening  Shinzou wo Sasageyo!.mp3
-216:Anime/Attack On Titan Season 3 Part 2 - Opening -60FPS- (1080p).mp3
-217:Anime/Black Clover - Opening 10 (HD).mp3
-218:Anime/Black Clover - Opening 7 (HD).mp3
-219:Anime/Bleach - Ichigos Theme - Number One.mp3
-220:Anime/Bleach - La Distancia Para Un Duelo.mp3
-221:Anime/Bleach - Nube Negra.mp3
-222:Anime/Bleach OST 3-Clavar La Espada.mp3
-223:Anime/Bleach - Principio De Lucha.mp3
-224:Anime/Cowboy Bebop - Opening  Tank!.mp3
-225:Anime/Fist of TNS - (Instrumental) You wa shock.mp3
-226:Anime/Fist of TNS - You wa Shock.mp3
-227:Anime/Golden Experience Requiem Opening JoJo Part 5 Finale -1080P HD-.mp3
-228:Anime/Hunter X Hunter - Opening 1  Departure!.mp3
-229:Anime/Jojos Bizarre Adventure Diamond is Unbreakable - Opening 1 (Creditless)  -HD-.mp3
-230:Anime/JoJos Bizarre Adventure Opening 1  4K  60FPS  Creditless.mp3
-231:Anime/JoJos Bizarre Adventure Opening 2  4K  60FPS  Creditless.mp3
-232:Anime/Kaguya-sama Love Is War - Opening 1  4K  60FPS  Creditless .mp3
-233:Anime/Kaguya-sama Love is War - Opening 2  4K  60FPS  Creditless .mp3
-234:Anime/MASLE OP 2 - Creepy Nuts「Bling-Bang-Bang-Born」.mp3
-235:Anime/Mob Psycho 100 II - Opening  999.mp3
-236:Anime/Mob Psycho 100 - Opening  99.mp3
-237:Anime/My Hero Academia OST - You Say Run.mp3
-238:Anime/Naruto - Narutos Theme song.mp3
-239:Anime/One Piece - Opening 1 - We Are .mp3
-240:Anime/One Piece - Opening 24.mp3
-241:Anime/One Piece - Opening 26 - Us! .mp3
-242:Anime/OPM Intro.mp3
-243:Anime/OPM Theme Extended.mp3
-244:Anime/OPM Theme.mp3
-245:Anime/Tokoy Ghoul - Unravel.mp3
-246:Bloodborne/01 - Omen.flac
-247:Bloodborne/02 - Laurence, the First Vicar.flac
-248:Bloodborne/02 - The Night Unfurls.flac
-249:Bloodborne/04 - The Hunter.flac
-250:Bloodborne/05 - Cleric Beast.flac
-251:Bloodborne/06 - Blood-Starved Beast.flac
-252:Bloodborne/07 - Terror.flac
-253:Bloodborne/08 - Watchers.flac
-254:Bloodborne/09 - Hail the Nightmare.flac
-255:Bloodborne/10 - Darkbeast.flac
-256:Bloodborne/11 - The Witch of Hemwick.flac
-257:Bloodborne/12 - Amygdala.flac
-258:The Witcher 3/01 The Trail.mp3
-259:The Witcher 3/02 Geralt of Rivia.mp3
-260:The Witcher 3/03 Eredin, King of the Hunt.mp3
-261:The Witcher 3/04 Wake Up, Ciri.mp3
-262:The Witcher 3/05 Aen Seidhe.mp3
-263:The Witcher 3/07 Emhyr var Emreis.mp3
-264:The Witcher 3/08 Spikeroog.mp3
-265:The Witcher 3/10 Silver for Monsters....mp3
-266:The Witcher 3/11 Whispers of Oxenfurt.mp3
-267:The Witcher 3/12 The Nightingale.mp3
-268:The Witcher 3/13 City of Intrigues.mp3
-269:The Witcher 3/16 Kaer Morhen.mp3
-270:The Witcher 3/17 Eyes of the Wolf.mp3
-271:The Witcher 3/18 Witch Hunters.mp3
-272:The Witcher 3/19 ...Steel for Humans.mp3
-273:The Witcher 3/20 Fate Calls.mp3
-274:The Witcher 3/21 The Vagabond.mp3
-275:The Witcher 3/22 Cloak and Dagger.mp3
-276:The Witcher 3/23 Forged in Fire.mp3
-277:The Witcher 3/24 Yes, I Do....mp3
-278:The Witcher 3/25 Welcome, Imlerith.mp3
-279:The Witcher 3/26 Drink Up, There_s More!.mp3
-280:The Witcher 3/27 After the Storm.mp3
-281:The Witcher 3/28 Blood on the Cobblestones.mp3
-282:The Witcher 3/29 Farewell, Old Friend.mp3
-283:The Witcher 3/30 The Song of the Swordâ€“Dancer.mp3
-284:The Witcher 3/31 The Hunt is Coming.mp3
-285:The Witcher 3/32 The Fields of Ard Skellig.mp3
-286:The Witcher 3/33 Ladies of the Woods.mp3
-287:The Witcher 3/34 Merchants of Novigrad.mp3
-288:The Witcher 3/35 Hunt Or Be Hunted.mp3
+145:Lies of P/13. Quixotic (Instrumental Version).flac
+146:Lies of P/12. Proposal, Flower, Wolf Part 1 (Golden).flac
+147:Lies of P/11. Shadow Flower.flac
+148:Lies of P/10. Memory of Beach.flac
+149:Lies of P/09. Far East Princess.flac
+150:Lies of P/08. Proposal, Flower, Wolf Part 1.flac
+151:Lies of P/06. Why.flac
+152:Lies of P/05. Quixotic.flac
+153:Lies of P/04. Fascination (Instrumental Version).flac
+154:Lies of P/03. Someday.flac
+155:Lies of P/02. Divine Service.flac
+156:Lies of P/01. Feel.flac
+157:YUNGBLUD - superdeadfriends (Official Audio).mp3
+158:You just activated my trap card. (Yu Gi Oh).mp3
+159:YMFAH - The Sims Soundtrack Buy Mode 2.mp3
+160:YMFAH - The Legendary Air Ride Machine .mp3
+161:YMFAH - Tetris Theme -  (The 8-Bit Big Band).mp3
+162:YMFAH - Mario Kart 8 - Big Blue.mp3
+163:YMFAH - Life Will Change (Instrumental) Persona 5.mp3
+164:YMFAH - DuckTales Remastered - Moon Theme Remix.mp3
+165:YMFAH - Delfino Plaza - (The 8-Bit Big Band).mp3
+166:YAMFAH - Initial D Deja Vu - Epic Orchestral Cover.mp3
+167:Word Up - The BossHoss.mp3
+168:Welcome to the Internet.mp3
+169:Undertale - Spider Dance.mp3
+170:Undertale - Megalovania Swap(4,2) Deltarune.mp3
+171:Undertale - Megalovania.mp3
+172:Undertale - Hopes and Dreams.mp3
+173:Undertale - Death by Glamour.mp3
+174:Undertale - Bonetrousle.mp3
+175:Undertale - Battle Against a True Hero.mp3
+176:The Mandragora - The Witcher 3 Blood and Wine OST.mp3
+177:The Heavy - How You Like Me Now.mp3
+178:The Fields of Ard Skellig (Extended) -The Witcher 3 Wild Hunt OST.mp3
+179:The Animals - House of the Rising Sun (1964) HQWidescreen ♫ 59 YEARS AGO.mp3
+180:Tally Hall - Ruler of Everything.mp3
+181:Sweet Dreams (Are Made Of This).mp3
+182:Stellar Blade - Raven OST.mp3
+183:Space Marine - Im Still Standing (AI Cover).mp3
+184:Smash Mouth - Im A Believer.mp3
+185:Smash Mouth - All Star (Official Music Video).mp3
+186:Sabaton - The Last Stand.mp3
+187:Rick Astley - Never Gonna Give You Up (Official Music Video).mp3
+188:Queen - Hammer To Fall (Official Video).mp3
+189:Queen - Bohemian Rhapsody (Remastered 2011).flac
+190:Queen - Another One Bites the Dust (Official Video).mp3
+191:Puss in Boots - Fearless Hero.mp3
+192:Powerwolf - Venom of Venus.mp3
+193:Powerwolf - Killers with the Cross.mp3
+194:Powerwolf - Fist by Fist (Sacralize or Strike).mp3
+195:Powerwolf - Fire & Forgive.mp3
+196:Powerwolf - Army Of The Night.mp3
+197:Pitbull - Timber (Official Video) ft. Ke$ha.mp3
+198:Pitbull - Back in Time (Official Video).mp3
+199:Pirates of the Caribbean 2 - Soundtr 01 - Jack Sparrow.mp3
+200:Pirate of The Caribbean - End Credits.mp3
+201:Payday 2 - DonAcDum.mp3
+202:Payday 2 - Break the rules (short).mp3
+203:Payday 2 - Break The Rules.mp3
+204:Pat Benatar - We Belong.mp3
+205:Ozzy Osbourne - Crazy Train.mp3
+206:Mission Impossible Theme (Full Theme).mp3
+207:MGSR - The Only Thing I Know For Real.mp3
+208:MGSR - Red Sun.mp3
+209:MGSR - It Has To Be This Way.mp3
+210:MGSR - Collective Consciousness.mp3
+211:MGSR - Collective Christmass.mp3
+212:MGSR - A Stranger I Remain.mp3
+213:meganeko - The Cyber Grind (Ultrakill Soundtrack).mp3
+214:Maxine Nightingale - Right Back Where We Started From.mp3
+215:Marvin Gaye - Lets get it on.mp3
+216:Marva Whitney - Unwind Yourself.wmv.mp3
+217:Johnny Cash - Hurt.mp3
+218:Joe Cocker - You Can Leave Your Hat On (Official Video) HD.mp3
+219:Jim Croce - Time in a bottle.mp3
+220:James Brown - I Feel Good.mp3
+221:Its Gonna Get Weird.mp3
+222:Initial D  Running in The 90s.mp3
+223:Initial D  Gas Gas Gas (Manuel).mp3
+224:Initial D  Deja Vu.mp3
+225:Immigrant Song.mp3
+226:I Cannot Let You Leave  - The Witcher 3 Wild Hunt OST.mp3
+227:Hooked on a Feeling.mp3
+228:Holding Out For a Hero - Shrek 2.mp3
+229:Holding Out For A Hero (Bonny Tyler).mp3
+230:Hoist the Colours (Bass Singers Version).mp3
+231:Hisoka Theme [extended] - Hunter X Hunter OST.mp3
+232:Guilty Gear - Love the Subhuman Self.mp3
+233:God of War - Main Theme (01).mp3
+234:Gin Wigmore - Kill Of The Night.mp3
+235:Free Bird (Original).test.mp3
+236:Free Bird(Kingsman).mp3
+237:Frank Sinatra - My Way.mp3
+238:Fleetwood Mac - The Chain.mp3
+239:Eminem - Without Me (Official Music Video).mp3
+240:Eminem - Lose Yourself -HD-.mp3
+241:Elvis Crespo - Suavemente.mp3
+242:Electric Light Orchestra - Mr. Blue Sky .mp3
+243:Edgerunners - RAT BOY & IBDY - Whos Ready For Tomorrow.mp3
+244:Edgerunners -  I Really Want to Stay At Your House by Rosa Walton  Netflix.mp3
+245:Edwin Starr - War (What is it good for)  Lycris HQ!!.mp3
+246:Dragonforce - Valley of the Damned.mp3
+247:DragonForce - Through The Fire And Flames (Official Video).mp3
+248:Dragonforce - Soldiers of the Wasteland.mp3
+249:DOOM - The Only Thing they Fear is You (Mick Gordon).mp3
+250:DOOM - Rip & Tear.mp3
+251:DOOM - E1M1 (Mick Gordon).mp3
+252:Doom - E1M1 (Classic) - At Dooms Gate.mp3
+253:DOOM - Cultist Base.mp3
+254:DOOM - BFG Division (Mick Gordon).mp3
+255:DOOM - BFG 10 000.mp3
+256:DMC 5 - Devil Trigger.mp3
+257:Dark Souls III - Vordt of the Boreal Valley.mp3
+258:Dark Souls III OST Main Theme.mp3
+259:CYBERPUNK 2077 - FRIDAY NIGHT FIRE FIGHT.mp3
+260:Crazy On You.mp3
+261:Country Roads - Kingsman.mp3
+262:Country Roads - John Denver.mp3
+263:Country Roads - Fallout.mp3
+264:Come And Get Your Love.mp3
+265:Come A Little Bit Closer - Jay & The Americans.mp3
+266:Coldplay - Viva La Vida (Official Video).mp3
+267:CeeLo Green - FUCK YOU (Official Video).mp3
+268:CCR - Fortunate Son.mp3
+269:Carmen - Habanera (Bizet Anna Caterina Antonacci, The Royal Opera).mp3
+270:Bon Jovi - You Give Love A Bad Name.mp3
+271:Boney M. - Sunny (1976).mp3
+272:Bloodborne - Orphan of Kos (The Old Hunters).mp3
+273:Bloodborne - Ludwig, The Accursed & Holy Blade (The Old Hunters).mp3
+274:Bloodborne - Laurence.mp3
+275:Bloodborne - Lady Maria.mp3
+276:Bloodborne - Father Gascoigne, The Hunter.mp3
+277:Bloodborne - Cleric Beast.mp3
+278:Beast In Black - Cry out for a Hero.mp3
+279:Battle Without Honor Or Humanity.mp3
+280:A Little Less Conversation (JXL Radio Edit Remix) HD.mp3
+281:Air Supply - All Out Of Love.mp3
+282:Aint No Mountain High Enough  - Marvin Gaye.mp3
+283:a-ha - Take On Me (Official Video) -Remastered in 4K-.mp3
+284:ACDC - Thunderstruck.mp3
+285:AC DC - Highway to Hell.mp3
+286:ACDC - Back In Black (Official Video).mp3
+287:Aaron Copland - Fanfare For The Common Man.mp3
+288:9_To_5.mp3
 playlist_end

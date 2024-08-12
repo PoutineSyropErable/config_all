@@ -17168,3 +17168,41 @@ Aug 11 15:46 : player: played "Lies of P/29. Wing of Hypocrisy.flac"
 Aug 11 15:51 : player: played "Powerwolf - Fire & Forgive.mp3"
 Aug 11 15:55 : player: played "Bloodborne/07 - Terror.flac"
 Aug 11 15:58 : player: played "Bloodborne/09 - Hail the Nightmare.flac"
+Aug 11 20:51 : exception: Failed to create Avahi client: Daemon not running
+Aug 11 20:53 : player: played "Hisoka Theme [extended] - Hunter X Hunter OST.mp3"
+Aug 11 20:58 : player: played "Hisoka Theme [extended] - Hunter X Hunter OST.mp3"
+Aug 11 21:01 : player: played "MGSR - It Has To Be This Way.mp3"
+Aug 11 21:05 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 11 21:05 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 11 21:05 : player: played "YMFAH - Delfino Plaza - (The 8-Bit Big Band).mp3"
+Aug 11 21:06 : player: played "Anime/Black Clover - Opening 7 (HD).mp3"
+Aug 11 21:09 : player: played "Anime/Fist of TNS - You wa Shock.mp3"
+Aug 11 21:13 : player: played "Smash Mouth - All Star (Official Music Video).mp3"
+Aug 11 21:16 : player: played "Lies of P/23. Judgement of Mourning.flac"
+Aug 11 21:23 : output: Failed to play on "My Pulse Output" (pulse): disconnected
+Aug 11 21:24 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 11 21:24 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 11 21:26 : exception: Failed to create Avahi client: Daemon not running
+Aug 11 21:38 : player: played "DOOM - BFG Division (Mick Gordon).mp3"
+Aug 11 21:40 : player: played "Lies of P/26. St. Frangelico Cathedral.flac"
+Aug 11 21:42 : player: played "The Witcher 3/18 Witch Hunters.mp3"
+Aug 11 21:46 : player: played "Air Supply - All Out Of Love.mp3"
+Aug 11 21:53 : player: played "Bloodborne/09 - Hail the Nightmare.flac"
+Aug 11 21:58 : player: played "Eminem - Without Me (Official Music Video).mp3"
+Aug 11 22:01 : player: played "Gin Wigmore - Kill Of The Night.mp3"
+Aug 11 22:04 : player: played "The Witcher 3/08 Spikeroog.mp3"
+Aug 11 22:08 : player: played "Word Up - The BossHoss.mp3"
+Aug 11 22:13 : player: played "YMFAH - Life Will Change (Instrumental) Persona 5.mp3"
+Aug 11 22:13 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 11 22:13 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 11 22:15 : player: played "Anime/Attack on Titan Season 2 - Opening  Shinzou wo Sasageyo!.mp3"
+Aug 11 22:17 : player: played "Lies of P/48. Green and Greed.flac"
+Aug 11 22:21 : player: played "Lies of P/09. Far East Princess.flac"
+Aug 11 22:25 : player: played "Bloodborne/06 - Blood-Starved Beast.flac"
+Aug 11 22:28 : player: played "The Witcher 3/01 The Trail.mp3"
+Aug 11 22:30 : player: played "MGSR - Collective Christmass.mp3"
+Aug 11 22:40 : player: played "Dragonforce - Soldiers of the Wasteland.mp3"
+                                                                                                                      Aug 12 03:43 : exception: Failed to create Avahi client: Daemon not running

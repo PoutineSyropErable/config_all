@@ -3,7 +3,8 @@ set ratios 1:2:3
 
 
 
-set sixel true
+#set sixel true
+set chafasixel
 set previewer ctpv
 set cleaner ctpvclear
 &ctpv -s $id
@@ -15,6 +16,7 @@ cmd quit-and-cd &{{
 }}
 
 map q quit-and-cd
+map Q quit
 
 # # set pane_path when changing directory
 # cmd on-cd &printf '\033]7;%s\033\\' "$PWD" > /dev/tty

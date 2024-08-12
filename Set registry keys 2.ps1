@@ -1,3 +1,4 @@
+
 # Define the paths for executables and icons
 $anacondaPath = "C:\Users\Francois\Documents\Scripts\Open in Anaconda Prompt.bat"
 $archWslPath = "C:\Users\Francois\Documents\Scripts\Open in Arch WSL.exe"
@@ -8,14 +9,15 @@ $anacondaIcon = "C:\Users\Francois\Documents\Icons\Anaconda.ico"
 $archWslIcon = "C:\Users\Francois\Documents\Icons\arch_linux_icon.ico"
 $gitGuiIcon = "C:\Program Files\Git\cmd\git-gui.exe"
 $powershellIcon = "$env:SystemRoot\system32\WindowsPowerShell\v1.0\powershell.exe"
+$vsCodeIcon = "C:\Users\Francois\AppData\Local\Programs\Microsoft VS Code\Code.exe"
 
 # Define the registry key paths and icons
 $baseKeys = @(
-    @{ Path = "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\Anaconda Prompt"; Command = "`"$anacondaPath`" `"%V`"" ; Icon = $anacondaIcon },
-    @{ Path = "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\Arch WSL"; Command = "`"$archWslPath`" `"%v`"" ; Icon = $archWslIcon },
-    @{ Path = "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\git_gui"; Command = "`"$gitGuiPath`" `--working-dir` `"%v`"" ; Icon = $gitGuiIcon },
-    @{ Path = "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\Open in PowerShell"; Command = "`"$powershellPath`" `"%V`"" ; Icon = $powershellIcon },
-    @{ Path = "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode"; Command = "`"$vsCodePath`" `"%V`"" ; Icon = $vsCodePath }
+    @{ Name = "Open in Anaconda Prompt"; Path = "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\Anaconda Prompt"; Command = "`"$anacondaPath`" `"%V`"" ; Icon = $anacondaIcon },
+    @{ Name = "Open in Arch WSL"; Path = "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\Arch WSL"; Command = "`"$archWslPath`" `"%v`"" ; Icon = $archWslIcon },
+    @{ Name = "Open Git GUI Here"; Path = "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\git_gui"; Command = "`"$gitGuiPath`" `--working-dir` `"%v`"" ; Icon = $gitGuiIcon },
+    @{ Name = "Open in PowerShell"; Path = "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\Open in PowerShell"; Command = "`"$powershellPath`" `"%V`"" ; Icon = $powershellIcon },
+    @{ Name = "Open in VSCode"; Path = "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode"; Command = "`"$vsCodePath`" `"%V`"" ; Icon = $vsCodeIcon }
 )
 
 # Create registry keys and set values
@@ -25,7 +27,7 @@ foreach ($entry in $baseKeys) {
 
     # Create the base key
     New-Item -Path $baseKeyPath -Force | Out-Null
-    Set-ItemProperty -Path $baseKeyPath -Name "(Default)" -Value ("Open in " + [System.IO.Path]::GetFileNameWithoutExtension($entry.Path))
+    Set-ItemProperty -Path $baseKeyPath -Name "(Default)" -Value $entry.Name
     
     # Set the icon
     Set-ItemProperty -Path $baseKeyPath -Name "Icon" -Value $entry.Icon

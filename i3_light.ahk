@@ -224,10 +224,11 @@ Send, ^{PgDn} ; Sends Ctrl + Page Down (common for going down in lists or switch
 return
 
 
-#s:: ; Windows + S
-Click Left
+
+
+!d:: ; This binds Alt + d
+    Click ; Simulates a left mouse click
 return
-; this will be usefull when you miss click on windows pageup/down for stack swap on same fancy zo
 
 
 ;-----------------------------------------------
@@ -267,66 +268,38 @@ return
 
 
 
-#<:: ; Windows + Enter To open Arch WSL
-Run wt new-tab -p "{a5a97cb8-8961-5535-816d-772efe0c6a3f}" --startingDirectory "~"
-return
+
 
 #w::
 Run firefox
+;Click Left
+Return
 
 #p::     ; Windows + To open Developper Powershell
 Run wt new-tab -p  "{701794fd-607c-5404-a93a-538ab1bd5727}" --startingDirectory "~"
+;Click Left
+Return
 
 
 #c:: ; Windows+ c for file explorer
 Run explorer.exe
+;Click Left
+Return
 
-#Enter::
+
+#Enter::  ; Open kitty in Arch WSL
 Run C:\Users\Francois\AppData\Local\Microsoft\WindowsApps\gwsl.exe --r --wsl_machine="Arch" --wsl_cmd="kitty" --w_mode="Multi Window" --clip_enabled="Default" --gtk_scale="Default" --qt_scale="Default" --append="" --theme="follow" --root="false" --dbus="false" --
+;Click Left
+Return
 
 
 
-^!p:: ; Ctrl + Alt + P
-{
-    ; Get the mouse position
-    MouseGetPos, mouseX, mouseY
-    
-    ; Retrieve the number of monitors
-    SysGet, MonitorCount, Monitor
-    MsgBox, Number of Monitors: %MonitorCount%
+#<:: ; Windows + < To open Arch WSL
+Run wt new-tab -p "{a5a97cb8-8961-5535-816d-772efe0c6a3f}" --startingDirectory "~"
+;Click Left
+Return
 
-    ; Loop through each monitor to find which one the mouse is on
-    Loop, %MonitorCount%
-    {
-        ; Get monitor details and store in Monitor_index
-        SysGet, Monitor_index, Monitor, %A_Index%
-        
-        ; Display the details of the current monitor for debugging
-        MsgBox, Monitor %A_Index%: Left=%MonitorLeft% Top=%MonitorTop% Right=%MonitorRight% Bottom=%MonitorBottom%
-        
-        ; Check if the mouse position is within the monitor boundaries
-        if (mouseX >= MonitorLeft && mouseX <= MonitorRight && mouseY >= MonitorTop && mouseY <= MonitorBottom)
-        {
-            TargetMonitor := A_Index
-            MsgBox, Mouse is on Monitor %TargetMonitor%
-            break
-        }
-    }
-
-    ; Run the program (replace with the actual path to your program)
-    Run, notepad.exe, , , PID
-
-    ; Wait for the window to appear
-    WinWait, ahk_pid %PID%
-
-
-    ; Move the window to the detected monitor
-    SysGet, Monitor_index, Monitor, %TargetMonitor%
-    newX := MonitorLeft + 100 ; Offset from the left edge
-    newY := MonitorTop + 100  ; Offset from the top edge
-    MsgBox, Moving window to X=%newX% Y=%newY%
-
-    WinMove, ahk_pid %PID%, , %newX%, %newY%
-}
-
-
+#`:: ; Windows + ` To open Arch WSL
+Run wt new-tab -p "{a5a97cb8-8961-5535-816d-772efe0c6a3f}" --startingDirectory "~"
+;Click Left
+Return

@@ -9,8 +9,9 @@ atuin init fish --disable-up-arrow | source
 source ~/.config/lf/lf.fish
 
 
-alias cd="z"
+#alias cd="z"
 alias j="z"
+#zoxide is better i think
 
 
 
@@ -25,6 +26,7 @@ set -l n $argv[1]
 awk "{print \$$n}"
 end
 
+alias slf="sudo -E lf"
 alias fmod="vim ~/.config/fish/config.fish"
 alias bmod="vim ~/.bashrc"
 alias kimod="vim ~/.config/kitty/kitty.conf"

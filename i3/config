@@ -8,6 +8,7 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+#
 # i3 config file (v4)
 ## Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
@@ -152,6 +153,8 @@ floating_modifier $mod
 bindsym $mod+Return exec kitty
 bindsym $mod2+Return exec kitty #big fingers
 
+
+bindsym $mod+dead_grave exec alacritty
 #i3-sensible-terminal was default
 #options: Terminator, alacritty, gnome-terminal
 
@@ -767,3 +770,4 @@ bindsym $mod+x exec fish -c "set_public"
 #exec --no-startup-id mpd
 #exec --no-startup-id mpdris2-rs --no-notification --host localhost:6600
 
+exec --no-startup-id $HOME/QolSCripts/mount_windows.sh 

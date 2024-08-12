@@ -18,7 +18,7 @@ cmd quit-and-cd &{{
 }}
 
 map q quit-and-cd
-
+map Q quit
 
 cmd play_video ${{ 
     nohup "$HOME/Videos/i3-video-wallpaper-main/play_video" "\"$f\"" &

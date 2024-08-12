@@ -8,6 +8,7 @@
 !/aconfmgr/
 !/awesome/
 !/cava/
+!/ctpv/
 !/conky/
 !/dunst/
 !/fish/
@@ -59,6 +60,11 @@
 !/cava/*/*/*/
 !/cava/*/*/*/*/
 
+!/ctpv/**/*
+!/ctpv/*/
+!/ctpv/*/*/
+!/ctpv/*/*/*/
+!/ctpv/*/*/*/*/
 
 !/conky/**/*
 !/conky/*/

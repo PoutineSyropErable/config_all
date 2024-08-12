@@ -770,4 +770,4 @@ bindsym $mod+x exec fish -c "set_public"
 #exec --no-startup-id mpd
 #exec --no-startup-id mpdris2-rs --no-notification --host localhost:6600
 
-exec --no-startup-id $HOME/QolSCripts/mount_windows.sh 
+exec --no-startup-id "$HOME/WindowsFileSystem/mount_windows.sh"

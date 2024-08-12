@@ -4,7 +4,7 @@ function lf
     if test -s $LF_CD_FILE
         set DIR (realpath (cat $LF_CD_FILE))
         if test $DIR != $PWD
-            echo "cd to $DIR"
+			#echo "cd to $DIR"
             cd $DIR
         end
         rm $LF_CD_FILE

@@ -6,8 +6,12 @@ end
 thefuck --alias | source
 alias f="fuck"
 atuin init fish --disable-up-arrow | source
-
 source ~/.config/lf/lf.fish
+
+
+alias cd="z"
+alias j="z"
+
 
 
 #atuin init fish --disable-ctrl-r --disable-up-arrow | source

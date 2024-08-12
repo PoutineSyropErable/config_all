@@ -352,6 +352,7 @@ export TMPDIR=/var/tmp/aconfmgr
 export PATH="$HOME:$PATH"
 export PATH="$HOME/Documents/Linux Documents/University (real):$PATH"
 export PATH="$HOME/QolScripts:$PATH"
+export PATH="$HOME/WindowsFileSystem:$PATH"
 export PATH="$HOME/Network:$PATH"
 export PATH="$HOME/Pictures:$PATH"
 export PATH="$HOME/Videos/i3-video-wallpaper-main/:$PATH"

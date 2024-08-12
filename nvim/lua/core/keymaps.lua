@@ -37,7 +37,6 @@ vim.api.nvim_set_keymap('v', '<leader>v', '"+p', { noremap = true, silent = true
 
 
 vim.api.nvim_set_keymap('n', '<leader>u', '<C-a>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('i', '<leader>u', '<C-a>', { noremap = true, silent = true })
 vim.keymap.set('', '<leader>a', 'ggVG<CR>', { noremap = true, silent = true })
 
 

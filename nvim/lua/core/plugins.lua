@@ -11,8 +11,17 @@ require("lazy").setup({
 	"vim-test/vim-test",
 	"lewis6991/gitsigns.nvim",
 	"preservim/vimux",
+	"norcalli/nvim-colorizer.lua",
 
 	{'akinsho/toggleterm.nvim', version = "*", config = true},
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		main = "ibl",
+		---@module "ibl"
+		---@type ibl.config
+		opts = {},
+	},
+
 
 	{
 		'rebelot/terminal.nvim',
@@ -26,13 +35,13 @@ require("lazy").setup({
 			})
 		end
 	},
-	
+
 	{
 		'numToStr/Comment.nvim',
-        config = function()
-            require('Comment').setup()
-        end
-    },
+		config = function()
+			require('Comment').setup()
+		end
+	},
 
 
 	{ 'alexghergh/nvim-tmux-navigation', config = function()

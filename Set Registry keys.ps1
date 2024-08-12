@@ -1,72 +1,79 @@
-# Define the base path for the registry keys
-$baseRegistryPath = "HKCR:\Directory\Background\shell"
-
-# Function to add a registry key and set its properties
-function Add-RegistryKey {
+# Function to set registry key
+function Set-RegistryKey {
     param (
-        [string]$keyPath,
-        [string]$defaultValue = "",
-        [string]$iconPath = "",
-        [string]$command = ""
+        [Parameter(Mandatory = $true)]
+        [string]$KeyPath,
+
+        [Parameter(Mandatory = $true)]
+        [string]$DefaultValue,
+
+        [Parameter(Mandatory = $false)]
+        [string]$IconValue,
+
+        [Parameter(Mandatory = $false)]
+        [string]$CommandValue
     )
 
-    # Create the key if it doesn't exist
-    if (-not (Test-Path $keyPath)) {
-        New-Item -Path $keyPath -Force
+    # Create the main registry key
+    if (-not (Test-Path $KeyPath)) {
+        New-Item -Path $KeyPath -Force | Out-Null
+        Write-Output "Created registry key: $KeyPath"
+    } else {
+        Write-Output "Registry key already exists: $KeyPath"
     }
 
-    # Set the default value if provided
-    if ($defaultValue -ne "") {
-        Set-ItemProperty -Path $keyPath -Name "(Default)" -Value $defaultValue
+    # Set the default value for the main key
+    New-ItemProperty -Path $KeyPath -Name "(Default)" -Value $DefaultValue -PropertyType String -Force
+    Write-Output "Set default value for $KeyPath"
+
+    # Set the Icon value if it exists
+    if ($IconValue) {
+        New-ItemProperty -Path $KeyPath -Name "Icon" -Value $IconValue -PropertyType String -Force
+        Write-Output "Set Icon value for $KeyPath"
     }
 
-    # Set the icon path if provided
-    if ($iconPath -ne "") {
-        Set-ItemProperty -Path $keyPath -Name "Icon" -Value $iconPath
-    }
-
-    # Set the command if provided
-    if ($command -ne "") {
-        $commandKeyPath = "$keyPath\command"
-        if (-not (Test-Path $commandKeyPath)) {
-            New-Item -Path $commandKeyPath -Force
+    # Set the command subkey if CommandValue is provided
+    if ($CommandValue) {
+        $CommandKeyPath = "$KeyPath\command"
+        if (-not (Test-Path $CommandKeyPath)) {
+            New-Item -Path $CommandKeyPath -Force | Out-Null
+            Write-Output "Created command subkey: $CommandKeyPath"
+        } else {
+            Write-Output "Command subkey already exists: $CommandKeyPath"
         }
-        Set-ItemProperty -Path $commandKeyPath -Name "(Default)" -Value $command
+        New-ItemProperty -Path $CommandKeyPath -Name "(Default)" -Value $CommandValue -PropertyType String -Force
+        Write-Output "Set command value for $CommandKeyPath"
     }
 }
 
-# Add the registry entries based on the provided data
+# Define settings for each registry key
 
 # Anaconda Prompt
-Add-RegistryKey -keyPath "$baseRegistryPath\Anaconda Prompt" `
-                -defaultValue "Open in Anaconda Prompt" `
-                -iconPath "C:\Users\Francois\Documents\Icons\Anaconda.ico" `
-                -command "`"C:\Users\Francois\Documents\Scripts\Open in Anaconda Prompt.bat`" `"%V`""
+Set-RegistryKey -KeyPath "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\Anaconda Prompt" `
+    -DefaultValue "Open in Anaconda Prompt" `
+    -IconValue "C:\\Users\\Francois\\Documents\\Icons\\Anaconda.ico" `
+    -CommandValue "`"C:\\Users\\Francois\\Documents\\Scripts\\Open in Anaconda Prompt.bat`" `%V`"
 
 # Arch WSL
-Add-RegistryKey -keyPath "$baseRegistryPath\Arch WSL" `
-                -defaultValue "Open in Arch WSL" `
-                -iconPath "C:\Users\Francois\Documents\Icons\arch_linux_icon.ico" `
-                -command "`"C:\Users\Francois\Documents\Scripts\Open in Arch WSL.exe`" `"%v`""
+Set-RegistryKey -KeyPath "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\Arch WSL" `
+    -DefaultValue "Open in Arch WSL" `
+    -IconValue "C:\\Users\\Francois\\Documents\\Icons\\arch_linux_icon.ico" `
+    -CommandValue "`"C:\\Users\\Francois\\Documents\\Scripts\\Open in Arch WSL.exe`" `%v`"
 
 # Git GUI
-Add-RegistryKey -keyPath "$baseRegistryPath\git_gui" `
-                -defaultValue "Open Git &GUI here" `
-                -iconPath "C:\Program Files\Git\cmd\git-gui.exe" `
-                -command "`"C:\Program Files\Git\cmd\git-gui.exe`" `"--working-dir`" `"%v.`""
+Set-RegistryKey -KeyPath "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\git_gui" `
+    -DefaultValue "Open Git &GUI here" `
+    -IconValue "C:\\Program Files\\Git\\cmd\\git-gui.exe" `
+    -CommandValue "`"C:\\Program Files\\Git\\cmd\\git-gui.exe`" `--working-dir`" `%v.`"
 
 # Open in PowerShell
-Add-RegistryKey -keyPath "$baseRegistryPath\Open in PowerShell" `
-                -defaultValue "Open in PowerShell" `
-                -iconPath "`"%SystemRoot%\system32\WindowsPowerShell\v1.0\powershell.exe`"" `
-                -command "`"C:\Users\Francois\Documents\Scripts\Open in PowerShell.bat`" `"%V`""
+Set-RegistryKey -KeyPath "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\Open in PowerShell" `
+    -DefaultValue "Open in Powershell" `
+    -IconValue "`"%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe`"" `
+    -CommandValue "`"C:\\Users\\Francois\\Documents\\Scripts\\Open in Powershell.bat`" `%V`"
 
 # VSCode
-Add-RegistryKey -keyPath "$baseRegistryPath\VSCode" `
-                -defaultValue "Open with Code" `
-                -iconPath "C:\Users\Francois\AppData\Local\Programs\Microsoft VS Code\Code.exe" `
-                -command "`"C:\Users\Francois\AppData\Local\Programs\Microsoft VS Code\Code.exe`" `"%V`""
-
-
-
-Read-Host -Prompt "Press Enter to exit"
+Set-RegistryKey -KeyPath "Registry::HKEY_CLASSES_ROOT\Directory\Background\shell\VSCode" `
+    -DefaultValue "Open with VS Code" `
+    -IconValue "C:\\Users\\Francois\\Documents\\Icons\\vscode_icon.ico" `
+    -CommandValue "`"C:\\Program Files\\Microsoft VS Code\\Code.exe`" `%V`"

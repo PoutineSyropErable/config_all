@@ -1,6 +1,9 @@
 Example:
 https://www.youtube.com/watch?v=_ZSJtvB35-E
 
+Master was the previous version, when I only had a laptop checks the other branches to see the up to date config on different machines.
+
+
 ![Screenshot](https://github.com/PoutineSyropErable/home_for_git_public/raw/master/Pictures/Screenshot.png)
 
 

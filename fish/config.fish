@@ -329,7 +329,7 @@ bind \cf 'set old_tty (stty -g); stty sane; lfcd; stty $old_tty; commandline -f 
 
 # alias lf="lfcd"
 
-#alias less="bat --color=always --paging=always"
+alias bless="bat --color=always --paging=always"
 
 
 
@@ -337,9 +337,9 @@ bind \cf 'set old_tty (stty -g); stty sane; lfcd; stty $old_tty; commandline -f 
 alias "logism=/opt/logisim-evolution/bin/logisim-evolution"
 alias "logisim=/opt/logisim-evolution/bin/logisim-evolution"
 
-alias "mars=java -jar \"$HOME/Documents/Linux Documents/University (real)/Semester 7/COMP 273/MARS.jar\""
+#alias "mars=java -jar \"$HOME/Documents/Linux Documents/University (real)/Semester 7/COMP 273/MARS.jar\""
 
-alias "MARS=java -jar \"$HOME/Documents/Linux Documents/University (real)/Semester 7/COMP 273/MARS.jar\""
+#alias "MARS=java -jar \"$HOME/Documents/Linux Documents/University (real)/Semester 7/COMP 273/MARS.jar\""
 alias "journal=xournalpp"
 alias "xournal=xournalpp"
 alias "notebook=xournalpp"
@@ -348,7 +348,10 @@ alias "note=xournalpp"
 
 #alias "logout=wlogout"
 
-export TMPDIR=/var/tmp/aconfmgr
+
+set -gx PATH "~/.tmuxifier/bin" $PATH
+
+
 export PATH="$HOME:$PATH"
 export PATH="$HOME/Documents/Linux Documents/University (real):$PATH"
 export PATH="$HOME/QolScripts:$PATH"
@@ -433,3 +436,5 @@ alias set_public="$HOME/.local/share/private/local/settings/set_public.sh"
 #	mpd
 #end
 
+
+eval (tmuxifier init - fish)

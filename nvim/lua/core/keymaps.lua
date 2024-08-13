@@ -54,8 +54,10 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 -- Navigate to the next buffer
 vim.api.nvim_set_keymap('n', '<C-n>', ':bnext<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('', '<C-w>n', ':bnext<CR>', { noremap = true, silent = true })
 -- Navigate to the previous buffer
 vim.api.nvim_set_keymap('n', '<C-b>', ':bprevious<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('', '<C-w>b', ':bprevious<CR>', { noremap = true, silent = true })
 
 -- map Ctrl+d to scroll down 1/2 screen
 vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>', { noremap = true, silent = true })
@@ -268,7 +270,7 @@ vim.api.nvim_set_keymap('n', '<C-h>', '<Cmd>lua Replace_with_input()<CR>', { nor
 
 -- Oil go backward with backspace
 vim.keymap.set("n", "-", require("oil").open, { desc = "Open parent directory" })
-vim.keymap.set("n", "<BS>", require("oil").open, { desc = "Open parent directory" })
+--vim.keymap.set("n", "<BS>", require("oil").open, { desc = "Open parent directory" })
 
 vim.api.nvim_set_keymap('n', '<leader>o', ':Oil<CR>', { noremap = true, silent = true })
 

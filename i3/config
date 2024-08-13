@@ -764,6 +764,7 @@ for_window [class="Polybar"] border none
 for_window [class="Polybar"] floating enable
 
 exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/nohorny_slideshow.sh
+#Oh it only exec at boot makes sense
 bindsym $mod+x exec fish -c "set_public"
 
 

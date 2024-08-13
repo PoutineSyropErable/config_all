@@ -49,7 +49,9 @@ alias pview="bat ~/.config/polybar.old/config"
 alias fview="bat ~/.fishrc"
 alias iview="bat ~/.i3rc"
 alias tview="bat ~/.tmuxrc"
-alias umux="~/.config/tmux/tmux_github_sync.sh"
+alias upmux="~/.config/tmux/tmux_github_sync.sh"
+alias updmux="~/.config/tmux/tmux_github_sync.sh"
+alias gitmux="~/.config/tmux/tmux_github_sync.sh"
 alias cn="cd ~/.config/nvim"
 
 alias lsblk1="lsblk -o +PARTLABEL"
@@ -62,7 +64,6 @@ alias jat="jq . |  bat --language json"
 
 alias reload="source ~/.config/fish/config.fish"
 alias r="source ~/.config/fish/config.fish"
-alias pk="polykill"
 alias cl="clear"
 alias en="echo -n"
 alias theme="kitty +kitten themes"
@@ -224,6 +225,17 @@ alias dmux="tmus detach"
 alias qmux="tmux kill-session"
 alias jmux="tmux kill-session"
 
+#Because sometimes a tmux panes can't recieve input
+alias kpane="tmux kill-pane"
+alias rmux="tmux source-file ~/.tmux.conf"
+alias umux="tmux source-file ~/.tmux.conf"
+alias jj="tmux select-pane -L"
+alias jk="tmux select-pane -D"
+alias jl="tmux select-pane -R"
+alias ji="tmux select-pane -U"
+
+
+
 
 function tswap
 set -l pane1 $argv[1]
@@ -349,10 +361,10 @@ alias "note=xournalpp"
 #alias "logout=wlogout"
 
 
-set -gx PATH "~/.tmuxifier/bin" $PATH
 
 
 export PATH="$HOME:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/Documents/Linux Documents/University (real):$PATH"
 export PATH="$HOME/QolScripts:$PATH"
 export PATH="$HOME/WindowsFileSystem:$PATH"
@@ -363,6 +375,7 @@ export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.config/rofi/scripts:$PATH"
 export PATH="$HOME/.config/rofi/applets/bin:$PATH"
 export PATH="$HOME/.config/tmux:$PATH"
+export PATH="$HOME/.tmuxifier/bin:$PATH"
 
 export PATH="$HOME/Music:$PATH"
 export PATH="$HOME/Videos/Animated_Background/:$PATH"

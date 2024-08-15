@@ -614,9 +614,10 @@ bindsym $mod+Control+Shift+m       exec --no-startup-id feh  --bg-center --bg-fi
 
 
 # Media player controls
+bindsym $mod+$mod2+Up   exec --no-startup-id mpc volume +5
+bindsym $mod+$mod2+Down exec --no-startup-id mpc volume -5
 bindsym $mod+$mod2+Left exec --no-startup-id  mpc seek -10
 bindsym $mod+$mod2+Right exec --no-startup-id mpc seek +10 
-
 
 bindsym $mod+$mod2+j exec --no-startup-id mpc seek -5 
 bindsym $mod+$mod2+l exec --no-startup-id mpc seek +5 
@@ -629,8 +630,6 @@ bindsym $mod+$mod2+Shift+Left exec --no-startup-id  mpc seek -30
 bindsym $mod+$mod2+Shift+Right exec --no-startup-id mpc seek +30 
 
 
-bindsym $mod+$mod2+Up   exec --no-startup-id mpc volume +5
-bindsym $mod+$mod2+Down exec --no-startup-id mpc volume -5
 #bindsym $mod+$XF86WakeUp+Right exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@   +1%   && $refresh_i3status
 #bindsym $mod+XF86WakeUp+Left   exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@   -1%   && $refresh_i3status
 #these two are from xbindkeys

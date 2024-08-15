@@ -2,7 +2,7 @@
 if status is-interactive
 	# Commands to run in interactive sessions can go here
 end
-
+###
 thefuck --alias | source
 alias f="fuck"
 atuin init fish --disable-up-arrow | source

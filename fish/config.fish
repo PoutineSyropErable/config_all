@@ -16,12 +16,16 @@ set -l n $argv[1]
 awk "{print \$$n}"
 end
 
+alias linecount="grep -r '' . | wc -l"
+
+
 alias fmod="vim ~/.config/fish/config.fish"
+alias cmod="vim ~/.conkyrc"
 alias pmod="vim ~/.config/polybar.old/config"
 alias pview="bat ~/.config/polybar.old/config"
 alias fview="bat ~/.fishrc"
-alias imod="vim ~/.i3rc"
-alias iview="bat ~/.i3rc"
+alias imod="vim ~/.config/i3/config"
+alias iview="bat ~/.config/i3/config"
 alias tmod="vim ~/.tmuxrc"
 alias tview="bat ~/.tmuxrc"
 alias umux="~/.config/tmux/tmux_github_sync.sh"
@@ -307,7 +311,6 @@ alias "note=xournalpp"
 
 #alias "logout=wlogout"
 
-export TMPDIR=/var/tmp/aconfmgr
 export PATH="$HOME:$PATH"
 export PATH="$HOME/Documents/Linux Documents/University (real):$PATH"
 export PATH="$HOME/QolScripts:$PATH"

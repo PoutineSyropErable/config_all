@@ -2,9 +2,19 @@
 if status is-interactive
 	# Commands to run in interactive sessions can go here
 end
-
+###
 thefuck --alias | source
+alias f="fuck"
 atuin init fish --disable-up-arrow | source
+source ~/.config/lf/lf.fish
+
+
+#alias cd="z"
+alias j="z"
+#zoxide is better i think
+
+
+
 #atuin init fish --disable-ctrl-r --disable-up-arrow | source
 
 alias svim="sudo -E nvim"
@@ -16,24 +26,33 @@ set -l n $argv[1]
 awk "{print \$$n}"
 end
 
-alias linecount="grep -r '' . | wc -l"
-
-
+alias slf="sudo -E lf"
 alias fmod="vim ~/.config/fish/config.fish"
-alias cmod="vim ~/.conkyrc"
+alias bmod="vim ~/.bashrc"
+alias kimod="vim ~/.config/kitty/kitty.conf"
 alias pmod="vim ~/.config/polybar.old/config"
-alias pview="bat ~/.config/polybar.old/config"
-alias fview="bat ~/.config/fish/config.fish"
-alias imod="vim ~/.config/i3/config"
-alias iview="bat ~/.config/i3/config"
 alias tmod="vim ~/.tmuxrc"
-alias tview="bat ~/.tmuxrc"
-alias umux="~/.config/tmux/tmux_github_sync.sh"
-alias cnv="cd ~/.config/nvim ; nvim ."
+alias mmod="vim ~/.config/mpd/mpd.conf"
+alias ncmod="vim ~/.ncmpcpp/config"
+alias cmod="vim ~/.config/conky/show_all/show_all_conf"
 alias vmod="cd ~/.config/nvim ; nvim ."
+alias cnv="cd ~/.config/nvim ; nvim ."
 alias nmod="cd ~/.config/nvim ; nvim ."
-alias cn="cd ~/.config/nvim"
 
+alias amod="vim ~/.config/awesome/rc.lua"
+alias imod="vim ~/.i3rc"
+alias hmod="vim ~/.hyprrc"
+alias smod="vim ~/.config/sway/config"
+alias wmod="vim ~/.config/waybar/"
+
+alias pview="bat ~/.config/polybar.old/config"
+alias fview="bat ~/.fishrc"
+alias iview="bat ~/.i3rc"
+alias tview="bat ~/.tmuxrc"
+alias upmux="~/.config/tmux/tmux_github_sync.sh"
+alias updmux="~/.config/tmux/tmux_github_sync.sh"
+alias gitmux="~/.config/tmux/tmux_github_sync.sh"
+alias cn="cd ~/.config/nvim"
 
 alias lsblk1="lsblk -o +PARTLABEL"
 
@@ -45,7 +64,6 @@ alias jat="jq . |  bat --language json"
 
 alias reload="source ~/.config/fish/config.fish"
 alias r="source ~/.config/fish/config.fish"
-alias pk="polykill"
 alias cl="clear"
 alias en="echo -n"
 alias theme="kitty +kitten themes"
@@ -153,6 +171,25 @@ alias lvenv="deactivate"
 alias quitvenv="deactivate"
 
 
+
+function lallvenv
+    if status --is-interactive
+        # Deactivate all active Conda environments
+        while set -q CONDA_DEFAULT_ENV
+            conda deactivate
+        end
+
+        # Deactivate Python virtual environment if active
+        if set -q VIRTUAL_ENV
+            deactivate
+        end
+    end
+end
+
+
+alias lallenv="lallvenv"
+
+
 alias urlisten="sudo tcpdump -i wlan0 -n tcp port 80 or tcp port 443"
 alias iplisten="sudo iftop"
 alias inl="sudo nethogs wlan0"
@@ -174,6 +211,7 @@ alias ch='cd ~'
 alias cr="cd ~/.config/rofi"
 alias cm="cd ~/Music"
 alias cP="cd ~/.config/polybar.old/"
+alias clf="cd ~/.config/lf"
 alias cdoc="cd ~/Documents"
 alias cdo="cd ~/Downloads"
 alias cco="cd ~/.config"
@@ -186,6 +224,17 @@ alias lmux="tmux detach"
 alias dmux="tmus detach"
 alias qmux="tmux kill-session"
 alias jmux="tmux kill-session"
+
+#Because sometimes a tmux panes can't recieve input
+alias kpane="tmux kill-pane"
+alias rmux="tmux source-file ~/.tmux.conf"
+alias umux="tmux source-file ~/.tmux.conf"
+alias jj="tmux select-pane -L"
+alias jk="tmux select-pane -D"
+alias jl="tmux select-pane -R"
+alias ji="tmux select-pane -U"
+
+
 
 
 function tswap
@@ -284,15 +333,15 @@ bind \cf 'set old_tty (stty -g); stty sane; lfcd; stty $old_tty; commandline -f 
 #
 # You may put this in a function called fish_user_key_bindings.
 
-function lfcd --wraps="lf" --description="lf - Terminal file manager (changing directory on exit)"
-# `command` is needed in case `lfcd` is aliased to `lf`.
-# Quotes will cause `cd` to not change directory if `lf` prints nothing to stdout due to an error.
-cd "$(command lf -print-last-dir $argv)"
-end
+# function lfcd --wraps="lf" --description="lf - Terminal file manager (changing directory on exit)"
+# # `command` is needed in case `lfcd` is aliased to `lf`.
+# # Quotes will cause `cd` to not change directory if `lf` prints nothing to stdout due to an error.
+# cd "$(command lf -print-last-dir $argv)"
+# end
 
-alias lf="lfcd"
+# alias lf="lfcd"
 
-#alias less="bat --color=always --paging=always"
+alias bless="bat --color=always --paging=always"
 
 
 
@@ -300,9 +349,9 @@ alias lf="lfcd"
 alias "logism=/opt/logisim-evolution/bin/logisim-evolution"
 alias "logisim=/opt/logisim-evolution/bin/logisim-evolution"
 
-alias "mars=java -jar \"$HOME/Documents/Linux Documents/University (real)/Semester 7/COMP 273/MARS.jar\""
+#alias "mars=java -jar \"$HOME/Documents/Linux Documents/University (real)/Semester 7/COMP 273/MARS.jar\""
 
-alias "MARS=java -jar \"$HOME/Documents/Linux Documents/University (real)/Semester 7/COMP 273/MARS.jar\""
+#alias "MARS=java -jar \"$HOME/Documents/Linux Documents/University (real)/Semester 7/COMP 273/MARS.jar\""
 alias "journal=xournalpp"
 alias "xournal=xournalpp"
 alias "notebook=xournalpp"
@@ -311,9 +360,14 @@ alias "note=xournalpp"
 
 #alias "logout=wlogout"
 
+
+
+
 export PATH="$HOME:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/Documents/Linux Documents/University (real):$PATH"
 export PATH="$HOME/QolScripts:$PATH"
+export PATH="$HOME/WindowsFileSystem:$PATH"
 export PATH="$HOME/Network:$PATH"
 export PATH="$HOME/Pictures:$PATH"
 export PATH="$HOME/Videos/i3-video-wallpaper-main/:$PATH"
@@ -321,6 +375,7 @@ export PATH="$HOME/go/bin:$PATH"
 export PATH="$HOME/.config/rofi/scripts:$PATH"
 export PATH="$HOME/.config/rofi/applets/bin:$PATH"
 export PATH="$HOME/.config/tmux:$PATH"
+export PATH="$HOME/.tmuxifier/bin:$PATH"
 
 export PATH="$HOME/Music:$PATH"
 export PATH="$HOME/Videos/Animated_Background/:$PATH"
@@ -376,7 +431,7 @@ function conda_activate
 set conda_path "$HOME/miniconda3/bin/conda"
 if test -x $conda_path
 	eval $conda_path "shell.fish" "hook" $argv | source
-	conda activate venv
+	conda activate conda_venv
 else
 	echo "Error: Conda not found at $conda_path"
 end
@@ -385,3 +440,14 @@ end
 
 alias set_private="$HOME/.local/share/private/local/settings/set_private.sh"
 alias set_public="$HOME/.local/share/private/local/settings/set_public.sh"
+
+
+
+#govenv
+#conda_activat
+#if not pgrep mpd > /dev/null 
+#	mpd
+#end
+
+
+eval (tmuxifier init - fish)

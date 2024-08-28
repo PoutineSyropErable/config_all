@@ -40,3 +40,17 @@ vim.opt.listchars = {
 	precedes = '«', 
 	extends = '»'
 }
+
+--vim.opt.clipboard = 'unnamedplus'
+
+
+
+-- Remove `c` and `r` from formatoptions to exclude comments
+--vim.o.formatoptions = vim.o.formatoptions:gsub('c', ''):gsub('r', '')
+
+-- Stop automatically adding comments
+vim.cmd('autocmd BufEnter * set formatoptions-=cro')
+vim.cmd('autocmd BufEnter * setlocal formatoptions-=cro')
+
+
+

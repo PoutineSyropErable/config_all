@@ -11,6 +11,48 @@ require("lazy").setup({
 	"vim-test/vim-test",
 	"lewis6991/gitsigns.nvim",
 	"preservim/vimux",
+	"norcalli/nvim-colorizer.lua",
+
+	{'akinsho/toggleterm.nvim', version = "*", config = true},
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		main = "ibl",
+		---@module "ibl"
+		---@type ibl.config
+		opts = {},
+	},
+
+
+	{
+		'rebelot/terminal.nvim',
+		config = function()
+			-- Set up the plugin with default configuration
+			require("terminal").setup({
+				-- Optional: you can provide a custom configuration here
+				layout = { open_cmd = "botright new" },
+				cmd = { vim.o.shell },
+				autoclose = false,
+			})
+		end
+	},
+
+	{
+		'numToStr/Comment.nvim',
+		config = function()
+			require('Comment').setup()
+		end
+	},
+
+	{
+		'ThePrimeagen/harpoon',
+		config = function()
+		-- This function will be called after Harpoon is loaded
+		require('harpoon').setup({
+			-- Configuration options if needed
+		})
+		end
+	},
+
 	{ 'alexghergh/nvim-tmux-navigation', config = function()
 
 		nvim_tmux_nav = require('nvim-tmux-navigation')
@@ -55,15 +97,6 @@ require("lazy").setup({
 	"tpope/vim-fugitive",
 	"tpope/vim-surround",
 	"stevearc/oil.nvim",
-	"norcalli/nvim-colorizer.lua",
-	"sindrets/diffview.nvim",
-	{
-		"lukas-reineke/indent-blankline.nvim",
-		main = "ibl",
-		---@module "ibl"
-		---@type ibl.config
-		opts = {},
-	},
 	-- completion
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-nvim-lsp",
@@ -87,41 +120,3 @@ require("lazy").setup({
 		dependencies = { "nvim-lua/plenary.nvim"}
 	},
 })
-
--- Attaches to every FileType mode
-require 'colorizer'.setup()
-
--- Attach to certain Filetypes, add special configuration for `html`
--- Use `background` for everything else.
-require 'colorizer'.setup {
-  'css';
-  'javascript';
-  html = {
-    mode = 'foreground';
-  }
-}
-
--- Use the `default_options` as the second parameter, which uses
--- `foreground` for every mode. This is the inverse of the previous
--- setup configuration.
-require 'colorizer'.setup({
-  'css';
-  'javascript';
-  html = { mode = 'background' };
-}, { mode = 'foreground' })
-
--- Use the `default_options` as the second parameter, which uses
--- `foreground` for every mode. This is the inverse of the previous
--- setup configuration.
-require 'colorizer'.setup {
-  '*'; -- Highlight all files, but customize some others.
-  css = { rgb_fn = true; }; -- Enable parsing rgb(...) functions in css.
-  html = { names = false; } -- Disable parsing "names" like Blue or Gray
-}
-
--- Exclude some filetypes from highlighting by using `!`
-require 'colorizer'.setup {
-  '*'; -- Highlight all files, but customize some others.
-  '!vim'; -- Exclude vim from highlighting.
-  -- Exclusion Only makes sense if '*' is specified!
-}

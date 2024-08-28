@@ -354,11 +354,13 @@ vim.api.nvim_set_keymap('n', '«', '@', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'w', 'w', { noremap = true, silent = true })
 -- Map `s` to move to the start of the previous word
 vim.api.nvim_set_keymap('n', 's', 'b', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'S', 'B', { noremap = true, silent = true })
 
 -- Map `s` to move to the end of the next word
 vim.api.nvim_set_keymap('n', 'e', 'e', { noremap = true, silent = true })
 -- Map `q` to move to the end of the previous word
 vim.api.nvim_set_keymap('n', 'q', 'ge', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'Q', 'gE', { noremap = true, silent = true })
 
 -- Map `b` start a macro
 vim.api.nvim_set_keymap('n', 'b', 'q', { noremap = true, silent = true })
@@ -368,11 +370,13 @@ vim.api.nvim_set_keymap('n', 'b', 'q', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', 'w', 'w', { noremap = true, silent = true })
 -- Map `s` to move to the start of the previous word
 vim.api.nvim_set_keymap('v', 's', 'b', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', 'S', 'B', { noremap = true, silent = true })
 
 -- Map `s` to move to the end of the next word
 vim.api.nvim_set_keymap('v', 'e', 'e', { noremap = true, silent = true })
 -- Map `q` to move to the end of the previous word
 vim.api.nvim_set_keymap('v', 'q', 'ge', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', 'Q', 'gE', { noremap = true, silent = true })
 
 -- Map `b` start a macro
 vim.api.nvim_set_keymap('v', 'b', 'q', { noremap = true, silent = true })

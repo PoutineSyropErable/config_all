@@ -43,6 +43,15 @@ require("lazy").setup({
 		end
 	},
 
+	{
+		'ThePrimeagen/harpoon',
+		config = function()
+		-- This function will be called after Harpoon is loaded
+		require('harpoon').setup({
+			-- Configuration options if needed
+		})
+		end
+	},
 
 	{ 'alexghergh/nvim-tmux-navigation', config = function()
 

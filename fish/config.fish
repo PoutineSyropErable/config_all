@@ -39,6 +39,8 @@ alias vmod="cd ~/.config/nvim ; nvim ."
 alias cnv="cd ~/.config/nvim ; nvim ."
 alias nmod="cd ~/.config/nvim ; nvim ."
 
+alias keymod="cd ~/.config/nvim ; nvim lua/core/keymaps.lua"
+
 alias amod="vim ~/.config/awesome/rc.lua"
 alias imod="vim ~/.i3rc"
 alias hmod="vim ~/.hyprrc"

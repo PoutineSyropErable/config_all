@@ -23,6 +23,9 @@ local function opts(desc)
   }
 end
 
+-- For C and Cpp programming
+vim.api.nvim_set_keymap('n', '<Leader>T', ':!./build.sh<CR>', { noremap = true, silent = true })
+
 
 
 vim.keymap.set('n', '<leader>sv',   tapi.node.open.vertical,              opts('Open: Vertical Split'))
@@ -61,7 +64,6 @@ vim.api.nvim_set_keymap('v', '<leader>y', '"+y', { noremap = true, silent = true
 vim.api.nvim_set_keymap('v', '<leader>c', '"+yy', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<leader>p', '"+p', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<leader>v', '"+p', { noremap = true, silent = true })
-
 
 vim.api.nvim_set_keymap('n', '<leader>u', '<C-a>', { noremap = true, silent = true })
 vim.keymap.set('', '<leader>a', 'ggVG<CR>', { noremap = true, silent = true })
@@ -188,8 +190,13 @@ vim.api.nvim_set_keymap('', '<C-w>b', ':bprevious<CR>', { noremap = true, silent
 
 -- map Ctrl+d to scroll down 1/2 screen
 vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-D>', '<PageDown>', { noremap = true, silent = true })
 -- map Ctrl+f to scroll up 1/2 screen
 vim.api.nvim_set_keymap('n', '<C-e>', '<C-u>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-E>', '<PageUp>', { noremap = true, silent = true })
+--PageUp = ctrl+b , PageDown= ctrl+f 
+
+
 
 --scroll down one line
 vim.api.nvim_set_keymap('n', '<C-f>', '<C-e>', { noremap = true, silent = true })
@@ -662,4 +669,4 @@ vim.api.nvim_create_user_command('ReplaceFrancois', ReplaceFrancois, {})
 
 --end
 print("Vim configuration reloaded")
---print(vim.env.TERM)
+--prinT(vim.env.TERM)

@@ -18,7 +18,13 @@ vim.cmd [[ set noswapfile ]]
 vim.cmd [[ set termguicolors ]]
 --vim.opt.clipboard = 'unnamedplus'
 --Line numbers
-vim.wo.number = true
+--vim.wo.number = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+-- Set the color of absolute line numbers
+-- vim.cmd([[highlight LineNr guifg=#babeff]])
+--i'll move this somewhere else?
+vim.cmd([[highlight LineNr guifg=#cba6f8]])
 
 --if you are on a comment and press enter, don't start on another comment
 vim.api.nvim_set_var('commentstring', '')

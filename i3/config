@@ -731,7 +731,7 @@ bindsym $mod2+Shift+m exec --no-startup-id kitty -e tmux new-session 'ncmpcpp'
 bindsym $mod+Shift+t exec --no-startup-id tmux kill-session -t Music 
 bindsym $mod2+Shift+t exec --no-startup-id tmux kill-server 
 
-bindsym $mod2+z exec --no-startup-id sxcs -k
+bindsym $mod2+z exec --no-startup-id sxcs -k | awk '{print $2}' | xclip -sel c
 
 #bindsym $mod2+Control+q exec --no-startup-id skippy-xd
 bindsym $mod2+Control+q exec ~/.config/rofi/rofi-window-switcher

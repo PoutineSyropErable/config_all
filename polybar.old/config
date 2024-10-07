@@ -521,7 +521,7 @@ offset-x = 0
 [module/mpd-info]
 type= custom/script
 exec = ~/.config/polybar.old/mpc_info.sh
-format =" <label> "
+format ="<label>"
 interval = 0.2
 format-foreground = ${colors.purple1}
 format-background = ${colors.light_gray}

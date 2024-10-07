@@ -59,6 +59,8 @@ alias cn="cd ~/.config/nvim"
 alias lsblk1="lsblk -o +PARTLABEL"
 
 
+alias cs9="cd sem9"
+
 alias franckfind="grep -r -l "/home/francois" ."
 alias ff="grep -r -l "/home/francois" ."
 
@@ -366,6 +368,7 @@ alias "note=xournalpp"
 
 
 export PATH="$HOME:$PATH"
+export PATH="$HOME/node_modules/tree-sitter-cli:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/Documents/Linux Documents/University (real):$PATH"
 export PATH="$HOME/QolScripts:$PATH"

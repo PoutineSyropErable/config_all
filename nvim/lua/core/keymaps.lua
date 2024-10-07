@@ -4,6 +4,7 @@
 
 
 
+
 -- Set the leader key if not already set
 vim.g.mapleader = ' ' -- Assuming the leader key is set to space
 
@@ -664,6 +665,8 @@ end
 -- Command to trigger the replacement function
 vim.api.nvim_create_user_command('ReplaceFrancois', ReplaceFrancois, {})
 
+
+vim.api.nvim_set_keymap('n', '<F5>', ':!./build.sh<CR>', { noremap = true, silent = true })
 
 
 

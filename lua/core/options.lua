@@ -42,5 +42,8 @@ vim.opt.listchars = {
 }
 
 
+vim.opt.shell = 'wsl.exe'
+vim.opt.shellcmdflag = '-d Arch'
+
 
 vim.g.jupyter_notebook = 'C:\\Users\\Francois\\anaconda3\\Scripts\\jupyter.exe'

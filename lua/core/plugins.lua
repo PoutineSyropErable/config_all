@@ -28,6 +28,18 @@ require("lazy").setup({
 	"tpope/vim-fugitive",
 	"tpope/vim-surround",
 	"stevearc/oil.nvim",
+	"norcalli/nvim-colorizer.lua",
+
+	{
+		"lukas-reineke/indent-blankline.nvim",
+		main = "ibl",
+		---@module "ibl"
+		---@type ibl.config
+		opts = {},
+	},
+	"sindrets/diffview.nvim",
+	"norcalli/nvim-colorizer.lua",
+
 
 	-- completion
 	"hrsh7th/nvim-cmp",

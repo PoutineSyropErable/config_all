@@ -255,11 +255,12 @@ return
 ; toggle Minimise -- Not really usefull since you can't unminimise the now inactive winmdow. So, it's just straight up minimize untill I change it
 
 
-; Close the active window with Win + ;
-#;:: ; Win + ;
-WinClose, A
-return
 
+
+
+
+
+;------------------------------------------------------- MY KEYBINDS ------------------------------------------
 
 ; Close the active window with Win + q
 #+;:: ; Win + Shift+ ;
@@ -267,18 +268,16 @@ WinKill, A
 return
 
 
-
-
+; Close the active window with Win + .
+#.:: ; Win + ;
+WinClose, A
+return
 
 #w::
 Run firefox
 ;Click Left
 Return
 
-#p::     ; Windows + To open Developper Powershell
-Run wt new-tab -p  "{701794fd-607c-5404-a93a-538ab1bd5727}" --startingDirectory "~"
-;Click Left
-Return
 
 
 #c:: ; Windows+ c for file explorer
@@ -287,19 +286,22 @@ Run explorer.exe
 Return
 
 
-#Enter::  ; Open kitty in Arch WSL
+
+
+#Enter::     ; Windows + Enter        To open Developper Powershell
+Run wt new-tab -p  "{701794fd-607c-5404-a93a-538ab1bd5727}" --startingDirectory "~"
+;Click Left
+Return
+
+#<::  ; Windows + < (above enter)     To open kitty in Arch WSL
 Run C:\Users\Francois\AppData\Local\Microsoft\WindowsApps\gwsl.exe --r --wsl_machine="Arch" --wsl_cmd="kitty" --w_mode="Multi Window" --clip_enabled="Default" --gtk_scale="Default" --qt_scale="Default" --append="" --theme="follow" --root="false" --dbus="false" --
 ;Click Left
 Return
 
 
 
-#<:: ; Windows + < To open Arch WSL
+#`:: ; Windows + `(left of enter)     To open Arch WSL
 Run wt new-tab -p "{a5a97cb8-8961-5535-816d-772efe0c6a3f}" --startingDirectory "~"
 ;Click Left
 Return
 
-#`:: ; Windows + ` To open Arch WSL
-Run wt new-tab -p "{a5a97cb8-8961-5535-816d-772efe0c6a3f}" --startingDirectory "~"
-;Click Left
-Return

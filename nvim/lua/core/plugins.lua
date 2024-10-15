@@ -11,8 +11,8 @@ require("lazy").setup({
 	"vim-test/vim-test",
 
 	{ "mfussenegger/nvim-dap" },          -- Main nvim-dap dependency
-	'rcarriga/nvim-dap-ui',
     { "nvim-neotest/nvim-nio" },          -- Neotest integration (for testing)
+	{ "rcarriga/nvim-dap-ui", dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} },
     { "theHamsta/nvim-dap-virtual-text" }, -- Inline variable text while debugging
     { "nvim-telescope/telescope-dap.nvim" }, -- Telescope integration with DAP
 	{ "mfussenegger/nvim-dap-python", dependencies = { "mfussenegger/nvim-dap" } },

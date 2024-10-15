@@ -96,7 +96,7 @@ keymap.set("n", "<leader>wa", ":wa<CR>") -- save all buffers
 keymap.set("n", "gx", ":!open <c-r><c-a><CR>") -- open URL under cursor
 
 
-----------------Split window management
+----------------Split window management, split, resize
 --there's a repeat of sh, it's fine. It's for inside nvim_tree, to open current file in a split
 keymap.set('n', '<leader>sv',   tapi.node.open.vertical,              opts('Open: Vertical Split'))
 keymap.set('n', '<leader>sh',   tapi.node.open.horizontal,            opts('Open: Horizontal Split'))
@@ -109,7 +109,18 @@ keymap.set("n", "<leader>sh", "<C-w><5") -- make split windows width smaller
 
 
 
+---- Resize splits with Ctrl + arrow keys
+vim.api.nvim_set_keymap('n', '<C-Up>', ':resize +5<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-Down>', ':resize -5<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-Left>', ':vertical resize -5<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-Right>', ':vertical resize +5<CR>', { noremap = true, silent = true })
 
+---- Resized splits with Alt + ijkl
+vim.api.nvim_set_keymap('n', '<M-j>', ':vertical resize -5<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<M-l>', ':vertical resize +5<CR>', { noremap = true, silent = true })
+-- these two bellow might not work idk
+vim.api.nvim_set_keymap('n', '<M-i>', ':resize 5<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<M-k>', ':resize -5<CR>', { noremap = true, silent = true })
 
 
 
@@ -440,18 +451,7 @@ vim.api.nvim_set_keymap('v', '<S-Tab>', '<<', { noremap = true, silent = true })
 
 
 
------------------- Resize splits with Ctrl + arrow keys
-vim.api.nvim_set_keymap('n', '<C-Up>', ':resize +5<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-Down>', ':resize -5<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-Left>', ':vertical resize -5<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-Right>', ':vertical resize +5<CR>', { noremap = true, silent = true })
 
-
-vim.api.nvim_set_keymap('n', '<M-j>', ':vertical resize -5<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<M-l>', ':vertical resize +5<CR>', { noremap = true, silent = true })
--- these two bellow might not work idk
-vim.api.nvim_set_keymap('n', '<M-i>', ':resize 5<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<M-k>', ':resize -5<CR>', { noremap = true, silent = true })
 
 
 

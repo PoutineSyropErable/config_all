@@ -13,6 +13,7 @@ require("mason-tool-installer").setup({
 	"isort",
 	"mypy",
 	"pylint",
+	"ruff",
 	},
 })
 

@@ -9,10 +9,28 @@ require("lazy").setup({
 	"nvim-lualine/lualine.nvim",
 	"nvim-treesitter/nvim-treesitter",
 	"vim-test/vim-test",
+
+	{ "mfussenegger/nvim-dap" },          -- Main nvim-dap dependency
 	'rcarriga/nvim-dap-ui',
-	'theHamsta/nvim-dap-virtual-text',	
+    { "nvim-neotest/nvim-nio" },          -- Neotest integration (for testing)
+    { "theHamsta/nvim-dap-virtual-text" }, -- Inline variable text while debugging
+    { "nvim-telescope/telescope-dap.nvim" }, -- Telescope integration with DAP
+	{ "mfussenegger/nvim-dap-python", dependencies = { "mfussenegger/nvim-dap" } },
 
 	'psf/black',
+	{
+        'jose-elias-alvarez/null-ls.nvim',  -- Required for integrating with Neovim's LSP
+        dependencies = { 'nvim-lua/plenary.nvim' },
+        config = function()
+            local null_ls = require('null-ls')
+
+            null_ls.setup({
+                sources = {
+                    null_ls.builtins.formatting.black,
+                },
+            })
+        end,
+    },
 
 	"preservim/vimux",
 	"norcalli/nvim-colorizer.lua",

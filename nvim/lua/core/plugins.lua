@@ -10,27 +10,59 @@ require("lazy").setup({
 	"nvim-treesitter/nvim-treesitter",
 	"vim-test/vim-test",
 
-	{ "mfussenegger/nvim-dap" },          -- Main nvim-dap dependency
-    { "nvim-neotest/nvim-nio" },          -- Neotest integration (for testing)
-	{ "rcarriga/nvim-dap-ui", dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} },
-    { "theHamsta/nvim-dap-virtual-text" }, -- Inline variable text while debugging
-    { "nvim-telescope/telescope-dap.nvim" }, -- Telescope integration with DAP
-	{ "mfussenegger/nvim-dap-python", dependencies = { "mfussenegger/nvim-dap" } },
+	-- DAP core and UI setup
+	{
+		"mfussenegger/nvim-dap", -- Main nvim-dap plugin
+		dependencies = {
+			"rcarriga/nvim-dap-ui",          -- UI for nvim-dap
+			"nvim-telescope/telescope-dap.nvim", -- Telescope integration with DAP
+			"theHamsta/nvim-dap-virtual-text", -- Inline variable text while debugging
+			"nvim-neotest/nvim-nio",         -- Required dependency for nvim-dap-ui
+		},
+		config = function()
+			local dap = require("dap")
+			local dapui = require("dapui")
+
+			-- DAP UI setup
+			dapui.setup()
+
+			-- DAP UI listeners to open/close UI automatically
+			dap.listeners.before.event_initialized["dapui_config"] = function()
+				dapui.open()
+			end
+			dap.listeners.before.event_terminated["dapui_config"] = function()
+				dapui.close()
+			end
+			dap.listeners.before.event_exited["dapui_config"] = function()
+				dapui.close()
+			end
+		end,
+		lazy = true,
+		event = { "BufReadPost", "BufNewFile" }, -- Load when reading/creating files
+	},
+
+	-- Python DAP support
+	{
+		"mfussenegger/nvim-dap-python",
+		dependencies = { "mfussenegger/nvim-dap" }, -- Ensure nvim-dap is loaded first
+		lazy = true,
+		ft = { "python" }, -- Only load when editing Python files
+	},
 
 	'psf/black',
 	{
-        'jose-elias-alvarez/null-ls.nvim',  -- Required for integrating with Neovim's LSP
-        dependencies = { 'nvim-lua/plenary.nvim' },
-        config = function()
-            local null_ls = require('null-ls')
+		'jose-elias-alvarez/null-ls.nvim',  -- Required for integrating with Neovim's LSP
+		dependencies = { 'nvim-lua/plenary.nvim' },
+		config = function()
+			local null_ls = require('null-ls')
 
-            null_ls.setup({
-                sources = {
-                    null_ls.builtins.formatting.black,
-                },
-            })
-        end,
-    },
+			null_ls.setup({
+				sources = {
+					null_ls.builtins.formatting.black,
+				},
+			})
+		end,
+	},
 
 	"preservim/vimux",
 	"norcalli/nvim-colorizer.lua",

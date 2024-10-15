@@ -19,6 +19,9 @@ vim.cmd [[ set termguicolors ]]
 --vim.opt.clipboard = 'unnamedplus'
 --Line numbers
 vim.wo.number = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+
 
 --if you are on a comment and press enter, don't start on another comment
 vim.api.nvim_set_var('commentstring', '')
@@ -51,6 +54,8 @@ vim.opt.listchars = {
 -- Stop automatically adding comments
 vim.cmd('autocmd BufEnter * set formatoptions-=cro')
 vim.cmd('autocmd BufEnter * setlocal formatoptions-=cro')
+vim.g.python3_host_prog = '/home/francois/MainPython_Virtual_Environment/pip_venv/bin/python'
+
 
 
 

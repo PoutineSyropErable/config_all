@@ -9,10 +9,20 @@ require("lazy").setup({
 	"nvim-lualine/lualine.nvim",
 	"nvim-treesitter/nvim-treesitter",
 	"vim-test/vim-test",
-	"lewis6991/gitsigns.nvim",
+	'rcarriga/nvim-dap-ui',
+	'theHamsta/nvim-dap-virtual-text',	
+
+	'psf/black',
+
 	"preservim/vimux",
 	"norcalli/nvim-colorizer.lua",
-
+	{
+		'windwp/nvim-autopairs',
+		event = "InsertEnter",
+		config = true
+		-- use opts = {} for passing setup options
+		-- this is equivalent to setup({}) function
+	},
 	{'akinsho/toggleterm.nvim', version = "*", config = true},
 	{
 		"lukas-reineke/indent-blankline.nvim",
@@ -46,10 +56,10 @@ require("lazy").setup({
 	{
 		'ThePrimeagen/harpoon',
 		config = function()
-		-- This function will be called after Harpoon is loaded
-		require('harpoon').setup({
-			-- Configuration options if needed
-		})
+			-- This function will be called after Harpoon is loaded
+			require('harpoon').setup({
+				-- Configuration options if needed
+			})
 		end
 	},
 
@@ -79,6 +89,26 @@ require("lazy").setup({
 		--	vim.keymap.set('', "<C-s>Space", nvim_tmux_nav.NvimTmuxNavigateNext)
 	end
 	},
+
+
+	"TamaMcGlinn/quickfixdd",
+	"szw/vim-maximizer",
+
+	"lewis6991/gitsigns.nvim",
+	"github/copilot.vim",
+	"tpope/vim-fugitive",
+	-- New git plugins vv, needed? idk
+
+	"f-person/git-blame.nvim",
+	'tpope/vim-rhubarb',
+	"tpope/vim-surround",
+	'airblade/vim-gitgutter',
+	'mhinz/vim-signify',
+	'kdheepak/lazygit.nvim',
+	'itchyny/vim-gitbranch',
+
+
+
 	{'romgrk/barbar.nvim',
 		dependencies = {
 			'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
@@ -94,19 +124,31 @@ require("lazy").setup({
 		version = '^1.0.0', -- optional: only update when a new 1.x version is released
 	},
 	"folke/which-key.nvim",
-	"tpope/vim-fugitive",
-	"tpope/vim-surround",
 	"stevearc/oil.nvim",
 	-- completion
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-nvim-lsp",
+	"hrsh7th/cmp-buffer",
+	"hrsh7th/cmp-path", 
+	"clangd/clangd",
+	{ 'neoclide/coc.nvim', branch = 'release' },
 	"L3MON4D3/LuaSnip",
 	"saadparwaiz1/cmp_luasnip",
 	"rafamadriz/friendly-snippets",
-	"github/copilot.vim",
-	"williamboman/mason.nvim",
+
+	{ "williamboman/mason.nvim",
+		opts = {
+			ensure_installed = {
+				"pyright",
+			},
+		},
+	},
 	"williamboman/mason-lspconfig.nvim",
+	"WhoIsSethDaniel/mason-tool-installer.nvim",
+
 	"neovim/nvim-lspconfig",
+
+
 	{
 		"vinnymeller/swagger-preview.nvim",
 		run = "npm install -g swagger-ui-watcher",

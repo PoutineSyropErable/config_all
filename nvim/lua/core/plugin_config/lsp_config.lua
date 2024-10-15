@@ -1,8 +1,39 @@
 require("mason-lspconfig").setup({
-  ensure_installed = { "lua_ls", "solargraph", "tsserver" }
+  ensure_installed = { "lua_ls", "solargraph", "ts_ls", "pyright" }
 })
 
 local lspconfig = require('lspconfig')
+
+require("mason-tool-installer").setup({
+
+	ensure_installed = {
+	"black",
+	"debugpy",
+	"flake8",
+	"isort",
+	"mypy",
+	"pylint",
+	},
+})
+
+lspconfig.pyright.setup {
+
+  settings = {
+    python = {
+      analysis = {
+        typeCheckingMode = "basic",  -- Can be "off", "basic", or "strict"
+        autoSearchPaths = true,
+        useLibraryCodeForTypes = true,
+      }
+    }
+  }
+}
+
+local opts = { noremap=true, silent=true }
+vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
+vim.api.nvim_set_keymap('n', '$', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>Br', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
 
 local lsp_defaults = lspconfig.util.default_config
 
@@ -29,7 +60,7 @@ require("lspconfig").lua_ls.setup {
 }
 
 require("lspconfig").solargraph.setup({})
-require("lspconfig").tsserver.setup({})
+require("lspconfig").ts_ls.setup({})
 require("lspconfig").gopls.setup({})
 require("lspconfig").tailwindcss.setup({})
 
@@ -46,9 +77,9 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
     vim.keymap.set('n', '<space>H', vim.lsp.buf.hover, opts)
     vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, opts)
-    vim.keymap.set('n', '<space>wa', vim.lsp.buf.add_workspace_folder, opts)
-    vim.keymap.set('n', '<space>wr', vim.lsp.buf.remove_workspace_folder, opts)
-    vim.keymap.set('n', '<space>wl', function()
+    vim.keymap.set('n', '<space>la', vim.lsp.buf.add_workspace_folder, opts)
+    vim.keymap.set('n', '<space>lr', vim.lsp.buf.remove_workspace_folder, opts)
+    vim.keymap.set('n', '<space>ll', function()
       print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
     end, opts)
     vim.keymap.set('n', '<space>D', vim.lsp.buf.type_definition, opts)

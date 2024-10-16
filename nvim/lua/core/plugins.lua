@@ -49,6 +49,16 @@ require("lazy").setup({
 		ft = { "python" }, -- Only load when editing Python files
 	},
 
+
+	-- BASH DAP support?
+	'bash-lsp/bash-language-server',
+	-- {
+	-- 	"michaeljones/bash-debug-adapter",
+	-- 	dependencies = { "mfussenegger/nvim-dap" }, -- Ensure nvim-dap is loaded first
+	-- 	lazy = true,
+	-- 	ft = { "sh", "bash" }, -- Only load when editing Bash files
+	-- },
+
 	'psf/black',
 	{
 		'jose-elias-alvarez/null-ls.nvim',  -- Required for integrating with Neovim's LSP
@@ -59,6 +69,7 @@ require("lazy").setup({
 			null_ls.setup({
 				sources = {
 					null_ls.builtins.formatting.black,
+					null_ls.builtins.formatting.clang_format,
 				},
 			})
 		end,
@@ -66,6 +77,7 @@ require("lazy").setup({
 
 	"preservim/vimux",
 	"norcalli/nvim-colorizer.lua",
+	"uga-rosa/ccc.nvim",
 	{
 		'windwp/nvim-autopairs',
 		event = "InsertEnter",
@@ -181,15 +193,20 @@ require("lazy").setup({
 	"hrsh7th/cmp-buffer",
 	"hrsh7th/cmp-path", 
 	"clangd/clangd",
-	{ 'neoclide/coc.nvim', branch = 'release' },
+	'Civitasv/cmake-tools.nvim',
+	{ 'neoclide/coc.nvim',
+		branch = 'release',
+	},
 	"L3MON4D3/LuaSnip",
 	"saadparwaiz1/cmp_luasnip",
 	"rafamadriz/friendly-snippets",
 
+	"jayp0521/mason-null-ls.nvim",
 	{ "williamboman/mason.nvim",
 		opts = {
 			ensure_installed = {
 				"pyright",
+				"clangd",
 			},
 		},
 	},

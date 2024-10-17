@@ -41,7 +41,7 @@ require("lazy").setup({
 		event = { "BufReadPost", "BufNewFile" }, -- Load when reading/creating files
 	},
 
-	-- Python DAP support
+	-- -- Python DAP support
 	{
 		"mfussenegger/nvim-dap-python",
 		dependencies = { "mfussenegger/nvim-dap" }, -- Ensure nvim-dap is loaded first
@@ -52,12 +52,7 @@ require("lazy").setup({
 
 	-- BASH DAP support?
 	'bash-lsp/bash-language-server',
-	-- {
-	-- 	"michaeljones/bash-debug-adapter",
-	-- 	dependencies = { "mfussenegger/nvim-dap" }, -- Ensure nvim-dap is loaded first
-	-- 	lazy = true,
-	-- 	ft = { "sh", "bash" }, -- Only load when editing Bash files
-	-- },
+
 
 	'psf/black',
 	{
@@ -194,9 +189,8 @@ require("lazy").setup({
 	"hrsh7th/cmp-path", 
 	"clangd/clangd",
 	'Civitasv/cmake-tools.nvim',
-	-- { 'neoclide/coc.nvim',
-	-- 	branch = 'release',
-	-- },
+	-- { 'neoclide/coc.nvim', branch = 'release' },
+	-- coc.nvm and my lsp seems to be going against each other, so i won't use it
 	"L3MON4D3/LuaSnip",
 	"saadparwaiz1/cmp_luasnip",
 	"rafamadriz/friendly-snippets",

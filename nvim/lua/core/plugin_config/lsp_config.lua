@@ -24,7 +24,6 @@ require("mason-tool-installer").setup({
 
 local lspconfig = require('lspconfig')
 local lsp_defaults = lspconfig.util.default_config
-local dap = require('dap')
 
 lsp_defaults.capabilities = vim.tbl_deep_extend(
 	'force',

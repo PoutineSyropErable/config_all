@@ -746,6 +746,8 @@ default_border pixel 2
 #
 
 
+bindsym $mod+Control+f exec --no-startup-id /home/francois/.config/conky/show_all/shuffle_x.sh
+bindsym $mod+Control+g exec --no-startup-id /home/francois/.config/conky/show_all/shuffle_y.sh
 
 gaps inner 7
 gaps outer 7

@@ -59,7 +59,7 @@ alias cn="cd ~/.config/nvim"
 alias lsblk1="lsblk -o +PARTLABEL"
 
 
-alias cs9="cd sem9"
+alias cs9="ch ; cd sem9"
 
 alias franckfind="grep -r -l "/home/francois" ."
 alias ff="grep -r -l "/home/francois" ."
@@ -397,6 +397,11 @@ export PATH="$HOME/.config/conky:$PATH"
 export PATH="$HOME/.config/polybar.old/:$PATH"
 export PATH="$HOME/.config/polybar/:$PATH"
 
+export JAVA_HOME=/usr/bin/jvm/java-22-openjdk
+export PATH="$JAVA_HOME/bin:$PATH"
+export PATH_TO_FX="/usr/lib/jvm/javafx-sdk-23/lib"
+
+
 alias convert_folder="./update_slideshow_files"
 alias update_slideshow="./update_slideshow_files"
 #alias update_background="update_slideshow_files"
@@ -409,7 +414,7 @@ export EDITOR=nvim
 
 function fish_greeting
 clear
-echo "Welcome to Poutine Au Sirop D'erable's config!" | figlet | lolcat
+# echo "Welcome to Poutine Au Sirop D'erable's config!" | figlet | lolcat
 #fortune | cowsay -f dragon
 #-o is for offensive/spicier
 end
@@ -456,3 +461,4 @@ alias set_public="$HOME/.local/share/private/local/settings/set_public.sh"
 
 
 eval (tmuxifier init - fish)
+

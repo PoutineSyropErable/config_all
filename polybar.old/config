@@ -284,7 +284,7 @@ position=bottom
 bottom = true
 
 modules-left = weather wireless-network
-modules-center =  filesystem keybinds home-space
+modules-center =  screen-settings filesystem keybinds home-space 
 modules-right =  eth gpu gpu_temp gpu_mem memory
 
 
@@ -1081,3 +1081,31 @@ exec = du -h --max-depth=1 "/var/tmp/aconfmgr" | tail -n 1 | awk '{print $1}'
 interval = 5
 label =       󰁯 : %output%
 ;use a zero width space
+
+
+
+
+
+[module/screen-settings]
+type = custom/menu
+expand-right = true
+click-left = polybar-msg hook screen-settings-menu 1
+
+label-open = "Screen Settings"
+label-close = " X "
+label-separator = | 
+label-open-foreground = #ffffff
+label-close-foreground = #ffffff
+
+menu-0-0 = " Toggle Orientation "
+menu-0-0-exec = "/path/to/toggle_orientation.sh"
+
+menu-0-1 = " KDE Screen Settings "
+menu-0-1-exec = "/home/francois/.config/polybar.old/screen_settings.sh"
+
+menu-0-2 = " Touchscreen Fix "
+menu-0-2-exec = "$HOME/QolScripts/touchscreen_fix.sh"
+
+
+
+

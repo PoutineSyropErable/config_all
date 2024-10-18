@@ -1,6 +1,7 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+
 vim.opt.backspace = '2'
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
@@ -18,13 +19,10 @@ vim.cmd [[ set noswapfile ]]
 vim.cmd [[ set termguicolors ]]
 --vim.opt.clipboard = 'unnamedplus'
 --Line numbers
---vim.wo.number = true
+vim.wo.number = true
 vim.opt.number = true
 vim.opt.relativenumber = true
--- Set the color of absolute line numbers
--- vim.cmd([[highlight LineNr guifg=#babeff]])
---i'll move this somewhere else?
-vim.cmd([[highlight LineNr guifg=#cba6f8]])
+
 
 --if you are on a comment and press enter, don't start on another comment
 vim.api.nvim_set_var('commentstring', '')
@@ -57,7 +55,8 @@ vim.opt.listchars = {
 -- Stop automatically adding comments
 vim.cmd('autocmd BufEnter * set formatoptions-=cro')
 vim.cmd('autocmd BufEnter * setlocal formatoptions-=cro')
--- vim.filetype.plugin_on()
+vim.g.python3_host_prog = '/home/francois/MainPython_Virtual_Environment/pip_venv/bin/python'
+
 
 
 

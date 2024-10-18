@@ -8,6 +8,7 @@
 # this file and re-run i3-config-wizard(1).
 #
 
+#
 # i3 config file (v4)
 ## Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
@@ -17,7 +18,17 @@ exec --no-startup-id $HOME/BatteryInfo/start_battery_monitor.sh
 
 
 
+# Unset Wayland environment variable when i3 starts
+exec_always --no-startup-id sh -c 'unset HYPRLAND_INSTANCE_SIGNATURE'
+exec_always --no-startup-id fish -c 'set -e HYPRLAND_INSTANCE_SIGNATURE'
+exec_always --no-startup-id tmux setenv -g HYPRLAND_INSTANCE_SIGNATURE ''
+
+#This is the important one, it will make it so tmux doesn't chose the wrong display server
+exec --no-startup-id fish -c "kmux"
+
+
 #------------------------
+# Canadian French. French Canadian. keyboard binding. keyboard layout. key binding
 exec_always --no-startup-id setxkbmap ca fr
 #exec_always --no-startup-id $HOME/refresh_xbindkeys
 # Since now, I've switched to Windows+Right shift for those. 
@@ -27,9 +38,9 @@ exec_always --no-startup-id setxkbmap ca fr
 
 
 
-# Canadian French. French Canadian. keyboard binding. keyboard layout. key binding
 
-exec --no-startup-id mpdris2-rs --no-notification --host localhost:6600
+
+
 #To replace all instance for monitors:
 # :%s/HMDI-A-0/HDMI-1/g
 
@@ -126,7 +137,7 @@ exec --no-startup-id dunst
 exec --no-startup-id pasystray
 exec --no-startup-id nm-applet
 
-exec --no-startup-id notify-send -u low -t 5000 "loading into i3"
+#exec --no-startup-id notify-send -u low -t 5000 "loading into i3"
 
 
 
@@ -144,6 +155,8 @@ floating_modifier $mod
 bindsym $mod+Return exec kitty
 bindsym $mod2+Return exec kitty #big fingers
 
+
+bindsym $mod+dead_grave exec alacritty
 #i3-sensible-terminal was default
 #options: Terminator, alacritty, gnome-terminal
 
@@ -182,7 +195,7 @@ bindsym $mod2+o exec --no-startup-id ~/.config/rofi/applets/bin/apps.sh
 bindsym $mod+p exec --no-startup-id ~/.config/rofi/applets/bin/powermenu.sh
 bindsym $mod2+p exec --no-startup-id ~/.config/rofi/applets/bin/powermenu.sh
 
-bindsym $mod+y exec --no-startup-id ~/.config/rofi/applets/bin/quicklinks.sh
+bindsym $mod+y exec --no-startup-id thunderbird
 
 bindsym $mod+t exec --no-startup-id ~/.config/rofi/applets/bin/screenshot.sh
 bindsym $mod2+t exec --no-startup-id ~/.config/rofi/applets/bin/screenshot.sh
@@ -629,6 +642,7 @@ bindsym $mod+$mod2+Down exec --no-startup-id mpc volume -5
 bindsym $mod+$mod2+Left exec --no-startup-id  mpc seek -10
 bindsym $mod+$mod2+Right exec --no-startup-id mpc seek +10 
 
+
 bindsym $mod+$mod2+j exec --no-startup-id mpc seek -5 
 bindsym $mod+$mod2+l exec --no-startup-id mpc seek +5 
 
@@ -638,6 +652,7 @@ bindsym $mod+$mod2+period exec --no-startup-id mpc seek +1
 
 bindsym $mod+$mod2+Shift+Left exec --no-startup-id  mpc seek -30
 bindsym $mod+$mod2+Shift+Right exec --no-startup-id mpc seek +30 
+
 
 
 #bindsym $mod+$XF86WakeUp+Right exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@   +1%   && $refresh_i3status
@@ -712,20 +727,36 @@ bindsym $mod+$mod2+Control+Down exec "$HOME/Videos/i3-video-wallpaper-main/mpv-c
 bindsym $mod+$mod2+Control+Up exec "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh volume +5"
 
 # Pactl volume down
-bindsym $mod+Home exec "pactl set-sink-volume @DEFAULT_SINK@ -1%"
-bindsym $mod+Shift+Home exec "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+bindsym $mod+End exec "pactl set-sink-volume @DEFAULT_SINK@ -1%"
+bindsym $mod+Shift+End exec "pactl set-sink-volume @DEFAULT_SINK@ -5%"
 
 # Pactl volume up
-bindsym $mod+End exec "pactl set-sink-volume @DEFAULT_SINK@ +1%"
-bindsym $mod+Shift+End exec "pactl set-sink-volume @DEFAULT_SINK@ +5%"
+bindsym $mod+Home exec "pactl set-sink-volume @DEFAULT_SINK@ +1%"
+bindsym $mod+Shift+Home exec "pactl set-sink-volume @DEFAULT_SINK@ +5%"
+
+# Pactl volume down
+bindsym $mod2+End exec "pactl set-sink-volume @DEFAULT_SINK@ -1%"
+bindsym $mod2+Shift+End exec "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+
+# Pactl volume up
+bindsym $mod2+Home exec "pactl set-sink-volume @DEFAULT_SINK@ +1%"
+bindsym $mod2+Shift+Home exec "pactl set-sink-volume @DEFAULT_SINK@ +5%"
 
 # MPC volume down
-bindsym $mod+Next exec "mpc volume -1"
-bindsym $mod+Shift+Next exec "mpc volume -5"
+bindsym $mod2+Next exec "mpc volume -1"
+bindsym $mod2+Shift+Next exec "mpc volume -5"
 
 # MPC volume up
-bindsym $mod+Prior exec "mpc volume +1"
-bindsym $mod+Shift+Prior exec "mpc volume +5"
+bindsym $mod2+Prior exec "mpc volume +1"
+bindsym $mod2+Shift+Prior exec "mpc volume +5"
+
+
+#Playerctl
+
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+
 
 bindsym $mod+Shift+m  exec --no-startup-id kitty -e tmux new-session -s Music 'ncmpcpp'
 bindsym $mod2+Shift+m exec --no-startup-id kitty -e tmux new-session 'ncmpcpp'
@@ -749,12 +780,21 @@ default_border pixel 2
 bindsym $mod+Control+f exec --no-startup-id /home/francois/.config/conky/show_all/shuffle_x.sh
 bindsym $mod+Control+g exec --no-startup-id /home/francois/.config/conky/show_all/shuffle_y.sh
 
-gaps inner 7
-gaps outer 7
+gaps inner 6
+gaps outer 5
+
 
 
 for_window [class="Polybar"] border none
 for_window [class="Polybar"] floating enable
 
 exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/nohorny_slideshow.sh
+#Oh it only exec at boot makes sense
 bindsym $mod+x exec fish -c "set_public"
+
+
+#exec --no-startup-id mpd
+#exec --no-startup-id mpdris2-rs --no-notification --host localhost:6600
+
+#exec --no-startup-id "$HOME/WindowsFileSystem/mount_windows.sh"
+bindsym $mod+minus exec --no-startup-id setxkbmap ca fr

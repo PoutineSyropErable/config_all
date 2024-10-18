@@ -1,10 +1,10 @@
-sw_volume: 100
+sw_volume: 65
 audio_device_state:0:My ALSA Device
 audio_device_state:1:My Pulse Output
 audio_device_state:1:My FIFO Output
 state: pause
-current: 238
-time: 143.250000
+current: 270
+time: 30.430000
 random: 1
 repeat: 1
 single: 0
@@ -170,20 +170,20 @@ playlist_begin
 154:Lies of P/03. Someday.flac
 155:Lies of P/02. Divine Service.flac
 156:Lies of P/01. Feel.flac
-157:YUNGBLUD - superdeadfriends (Official Audio).mp3
-158:You just activated my trap card. (Yu Gi Oh).mp3
-159:YMFAH - The Sims Soundtrack Buy Mode 2.mp3
-160:YMFAH - The Legendary Air Ride Machine .mp3
-161:YMFAH - Tetris Theme -  (The 8-Bit Big Band).mp3
-162:YMFAH - Mario Kart 8 - Big Blue.mp3
-163:YMFAH - Life Will Change (Instrumental) Persona 5.mp3
-164:YMFAH - DuckTales Remastered - Moon Theme Remix.mp3
-165:YMFAH - Delfino Plaza - (The 8-Bit Big Band).mp3
-166:YAMFAH - Initial D Deja Vu - Epic Orchestral Cover.mp3
-167:Word Up - The BossHoss.mp3
-168:Welcome to the Internet.mp3
-169:Undertale - Spider Dance.mp3
-170:Undertale - Megalovania Swap(4,2) Deltarune.mp3
+157:You just activated my trap card. (Yu Gi Oh).mp3
+158:YMFAH - The Sims Soundtrack Buy Mode 2.mp3
+159:YMFAH - The Legendary Air Ride Machine .mp3
+160:YMFAH - Tetris Theme -  (The 8-Bit Big Band).mp3
+161:YMFAH - Mario Kart 8 - Big Blue.mp3
+162:YMFAH - Life Will Change (Instrumental) Persona 5.mp3
+163:YMFAH - DuckTales Remastered - Moon Theme Remix.mp3
+164:YMFAH - Delfino Plaza - (The 8-Bit Big Band).mp3
+165:YAMFAH - Initial D Deja Vu - Epic Orchestral Cover.mp3
+166:Word Up - The BossHoss.mp3
+167:Welcome to the Internet.mp3
+168:Undertale - Spider Dance.mp3
+169:Undertale - Megalovania Swap(4,2) Deltarune.mp3
+170:YUNGBLUD - superdeadfriends (Official Audio).mp3
 171:Undertale - Megalovania.mp3
 172:Undertale - Hopes and Dreams.mp3
 173:Undertale - Death by Glamour.mp3

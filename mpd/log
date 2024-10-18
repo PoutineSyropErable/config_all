@@ -17206,3 +17206,118 @@ Aug 11 22:28 : player: played "The Witcher 3/01 The Trail.mp3"
 Aug 11 22:30 : player: played "MGSR - Collective Christmass.mp3"
 Aug 11 22:40 : player: played "Dragonforce - Soldiers of the Wasteland.mp3"
                                                                                                                       Aug 12 03:43 : exception: Failed to create Avahi client: Daemon not running
+Aug 12 04:02 : player: played "Fleetwood Mac - The Chain.mp3"
+Aug 12 04:02 : exception: Failed to create Avahi client: Daemon not running
+Aug 12 04:21 : exception: Failed to create Avahi client: Daemon not running
+Aug 12 04:50 : player: played "Fleetwood Mac - The Chain.mp3"
+Aug 12 04:50 : exception: Failed to create Avahi client: Daemon not running
+Aug 12 07:01 : exception: Failed to create Avahi client: Daemon not running
+Aug 13 04:56 : exception: Failed to create Avahi client: Daemon not running
+Aug 13 04:57 : player: played "Fleetwood Mac - The Chain.mp3"
+Aug 13 04:57 : exception: Failed to create Avahi client: Daemon not running
+Aug 13 05:01 : output: Failed to pause "My Pulse Output" (pulse): failed to connect the stream: Connection terminated
+Aug 13 05:03 : exception: Failed to create Avahi client: Daemon not running
+Aug 13 05:04 : exception: Failed to create Avahi client: Daemon not running
+Aug 13 05:22 : exception: Failed to create Avahi client: Daemon not running
+Aug 13 01:30 : exception: Failed to create Avahi client: Daemon not running
+Aug 13 02:13 : player: played "Fleetwood Mac - The Chain.mp3"
+Aug 13 02:15 : player: played "Stellar Blade - Raven OST.mp3"
+Aug 13 02:18 : player: played "Dark Souls III OST Main Theme.mp3"
+Aug 13 02:21 : player: played "The Witcher 3/25 Welcome, Imlerith.mp3"
+Aug 13 02:30 : player: played "Payday 2 - Break The Rules.mp3"
+Aug 13 02:30 : player: played "Lies of P/49. Walker of Illusions.flac"
+Aug 13 02:32 : player: played "Lies of P/35. Fascination.flac"
+Aug 13 02:35 : player: played "Aaron Copland - Fanfare For The Common Man.mp3"
+Aug 13 02:38 : player: played "MGSR - The Only Thing I Know For Real.mp3"
+Aug 13 02:42 : player: played "Bloodborne/11 - The Witch of Hemwick.flac"
+Aug 13 02:46 : player: played "Coldplay - Viva La Vida (Official Video).mp3"
+Aug 13 02:46 : player: played "Lies of P/59. Laxasia the Complete (Battle End).flac"
+Aug 13 02:48 : player: played "Edgerunners - RAT BOY & IBDY - Whos Ready For Tomorrow.mp3"
+Aug 13 02:52 : mad: input does not appear to be a mp3 bit stream
+[src/libmpg123/parse.c:skip_junk():1260] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+Aug 13 02:52 : mpg123: mpg123_getformat() failed: A generic mpg123 error.
+Aug 13 02:52 : player: played "DOOM - Rip & Tear.mp3"
+Aug 13 02:54 : player: played "Doom - E1M1 (Classic) - At Dooms Gate.mp3"
+Aug 13 02:55 : player: played "Lies of P/28. Fallen Archbishop Andreus (Phase Change).flac"
+Aug 13 02:56 : player: played "I Cannot Let You Leave  - The Witcher 3 Wild Hunt OST.mp3"
+Aug 13 02:59 : player: played "Lies of P/18. Dreadful March.flac"
+Aug 13 03:01 : player: played "Lies of P/23. Judgement of Mourning.flac"
+Aug 13 03:04 : player: played "Lies of P/13. Quixotic (Instrumental Version).flac"
+Aug 13 03:08 : player: played "Lies of P/70. Memory of Beach (Piano Version).flac"
+Aug 13 03:11 : player: played "CYBERPUNK 2077 - FRIDAY NIGHT FIRE FIGHT.mp3"
+Aug 13 03:14 : player: played "The Witcher 3/35 Hunt Or Be Hunted.mp3"
+Aug 13 03:18 : player: played "Payday 2 - Break the rules (short).mp3"
+Aug 13 03:19 : player: played "Aint No Mountain High Enough  - Marvin Gaye.mp3"
+Aug 13 16:41 : exception: Failed to create Avahi client: Daemon not running
+Aug 13 16:46 : player: played "Aint No Mountain High Enough  - Marvin Gaye.mp3"
+Aug 14 01:33 : output: Failed to pause "My Pulse Output" (pulse): failed to connect the stream: Connection terminated
+Aug 15 00:17 : exception: Failed to create Avahi client: Daemon not running
+Aug 15 00:44 : exception: Failed to create Avahi client: Daemon not running
+Aug 15 18:43 : exception: Failed to create Avahi client: Daemon not running
+Aug 15 20:12 : player: played "Anime/One Piece - Opening 26 - Us! .mp3"
+Aug 15 20:14 : player: played "Jim Croce - Time in a bottle.mp3"
+Aug 15 20:17 : player: played "YUNGBLUD - superdeadfriends (Official Audio).mp3"
+Aug 15 20:21 : player: played "Anime/Cowboy Bebop - Opening  Tank!.mp3"
+Aug 15 20:25 : player: played "Initial D  Deja Vu.mp3"
+Aug 15 20:30 : player: played "Coldplay - Viva La Vida (Official Video).mp3"
+Aug 15 20:36 : player: played "You just activated my trap card. (Yu Gi Oh).mp3"
+Aug 15 20:39 : player: played "Lies of P/12. Proposal, Flower, Wolf Part 1 (Golden).flac"
+Aug 15 20:39 : player: played "Lies of P/27. Fallen Archbishop Andreus (Battle Intro).flac"
+Aug 15 20:47 : player: played "A Little Less Conversation (JXL Radio Edit Remix) HD.mp3"
+Aug 15 20:52 : player: played "Undertale - Megalovania.mp3"
+Aug 16 01:40 : output: Failed to pause "My Pulse Output" (pulse): failed to connect the stream: Connection terminated
+Aug 17 15:48 : exception: Failed to create Avahi client: Daemon not running
+Aug 18 17:01 : exception: Failed to create Avahi client: Daemon not running
+Aug 19 00:34 : exception: Failed to create Avahi client: Daemon not running
+Aug 19 20:15 : exception: Failed to create Avahi client: Daemon not running
+Aug 19 20:18 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 19 20:19 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 19 20:19 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 19 20:20 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 19 20:20 : player: played "The Witcher 3/26 Drink Up, There_s More!.mp3"
+Aug 19 20:20 : exception: Failed to create Avahi client: Daemon not running
+Aug 19 20:21 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection terminated
+Aug 19 20:21 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 19 20:21 : player: played "The Witcher 3/26 Drink Up, There_s More!.mp3"
+Aug 19 20:22 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 19 20:22 : player: played "Come A Little Bit Closer - Jay & The Americans.mp3"
+Aug 19 20:22 : exception: Failed to create Avahi client: Daemon not running
+Aug 19 20:23 : player: played "Come A Little Bit Closer - Jay & The Americans.mp3"
+Aug 19 20:24 : exception: Failed to create Avahi client: Daemon not running
+Aug 19 20:24 : exception: Failed to create Avahi client: Daemon not running
+Aug 19 20:27 : exception: Failed to create Avahi client: Daemon not running
+Aug 19 20:27 : exception: Failed to create Avahi client: Daemon not running
+Aug 19 20:28 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 19 20:29 : exception: Failed to open "My Pulse Output" (pulse); failed to connect: Connection refused
+Aug 20 01:20 : exception: Failed to create Avahi client: Daemon not running
+Aug 20 02:24 : exception: Failed to create Avahi client: Daemon not running
+Aug 20 03:13 : exception: Failed to create Avahi client: Daemon not running
+Aug 20 04:13 : output: Failed to pause "My Pulse Output" (pulse): failed to connect the stream: Connection terminated
+Aug 20 16:09 : exception: Failed to create Avahi client: Daemon not running
+Aug 21 15:08 : exception: Failed to create Avahi client: Daemon not running
+Aug 22 16:10 : exception: Failed to create Avahi client: Daemon not running
+Aug 26 02:48 : output: Failed to pause "My Pulse Output" (pulse): failed to connect the stream: Connection terminated
+Sep 01 20:00 : exception: Failed to create Avahi client: Daemon not running
+Sep 01 20:01 : player: played "Come A Little Bit Closer - Jay & The Americans.mp3"
+Sep 01 20:01 : player: played "Lies of P/34. Pianist of Krat II.flac"
+Sep 01 20:03 : player: played "Anime/Jojos Bizarre Adventure Diamond is Unbreakable - Opening 1 (Creditless)  -HD-.mp3"
+Sep 01 20:05 : player: played "Edgerunners - RAT BOY & IBDY - Whos Ready For Tomorrow.mp3"
+Sep 01 20:17 : player: played "Lies of P/11. Shadow Flower.flac"
+                                                                                                                      Sep 04 12:20 : exception: Failed to create Avahi client: Daemon not running
+Sep 28 03:02 : exception: Failed to create Avahi client: Daemon not running
+Sep 27 23:31 : exception: Failed to create Avahi client: Daemon not running
+Sep 28 03:47 : exception: Failed to create Avahi client: Daemon not running
+Sep 28 22:22 : exception: Failed to create Avahi client: Daemon not running
+Sep 30 14:54 : exception: Failed to create Avahi client: Daemon not running
+Oct 02 22:21 : exception: Failed to create Avahi client: Daemon not running
+Oct 03 19:49 : exception: Failed to create Avahi client: Daemon not running
+Oct 04 12:28 : exception: Failed to create Avahi client: Daemon not running
+Oct 04 20:49 : exception: Failed to create Avahi client: Daemon not running
+Oct 06 17:04 : exception: Failed to create Avahi client: Daemon not running
+Oct 06 21:47 : exception: Failed to create Avahi client: Daemon not running
+Oct 06 22:07 : exception: Failed to create Avahi client: Daemon not running
+Oct 08 14:51 : exception: Failed to create Avahi client: Daemon not running
+Oct 08 15:25 : exception: Failed to create Avahi client: Daemon not running
+Oct 09 21:53 : exception: Failed to create Avahi client: Daemon not running
+Oct 16 21:37 : exception: Failed to create Avahi client: Daemon not running
+Oct 18 18:26 : exception: Failed to create Avahi client: Daemon not running

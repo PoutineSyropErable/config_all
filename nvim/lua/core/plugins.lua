@@ -13,6 +13,8 @@ require("lazy").setup({
 	"sindrets/diffview.nvim",
 	"preservim/vimux",
 	"norcalli/nvim-colorizer.lua",
+
+	"brgmnn/vim-opencl",
 	{ 'alexghergh/nvim-tmux-navigation', config = function()
 
 		nvim_tmux_nav = require('nvim-tmux-navigation')

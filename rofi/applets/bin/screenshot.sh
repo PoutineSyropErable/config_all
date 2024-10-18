@@ -11,7 +11,7 @@ theme="$type/$style"
 
 # Theme Elements
 prompt='Screenshot'
-mesg="$HOME/Pictures/Screenshots"
+mesg="DIR: `xdg-user-dir PICTURES`/Screenshots"
 
 if [[ "$theme" == *'type-1'* ]]; then
 	list_col='1'
@@ -56,14 +56,7 @@ rofi_cmd() {
 		-p "$prompt" \
 		-mesg "$mesg" \
 		-markup-rows \
-		-theme ${theme} \
-        -kb-row-up    'i,Up' \
-        -kb-row-down  'k,Down' \
-        -kb-row-left  'j' \
-        -kb-row-right 'l' \
-        -kb-accept-entry 'h,Return'
-	
-
+		-theme ${theme}
 }
 
 # Pass variables to rofi dmenu

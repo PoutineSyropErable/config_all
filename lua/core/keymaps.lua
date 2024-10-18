@@ -319,42 +319,34 @@ keymap.set("n", "<leader>Tf", term_map.move({ open_cmd = "float" }))
 
 
 
---------------------------------------Tmux
-keymap.set('', "<C-s>j", nvim_tmux_nav.NvimTmuxNavigateLeft)
-keymap.set('', "<C-s>k", nvim_tmux_nav.NvimTmuxNavigateDown)
-keymap.set('', "<C-s>i", nvim_tmux_nav.NvimTmuxNavigateUp)
-keymap.set('', "<C-s>l", nvim_tmux_nav.NvimTmuxNavigateRight)
-keymap.set('', "<C-s>,", nvim_tmux_nav.NvimTmuxNavigateLastActive)
-keymap.set('', "<C-s>Space", nvim_tmux_nav.NvimTmuxNavigateNext)
+--------------------------------------Tmux on Linux, Window Navigation here!  
+local keymap = vim.keymap -- Adjust this based on your actual keymap setup
 
-keymap.set('', "<C-s><Left>", nvim_tmux_nav.NvimTmuxNavigateLeft)
-keymap.set('', "<C-s><Down>", nvim_tmux_nav.NvimTmuxNavigateDown)
-keymap.set('', "<C-s><Up>", nvim_tmux_nav.NvimTmuxNavigateUp)
-keymap.set('', "<C-s><Right>", nvim_tmux_nav.NvimTmuxNavigateRight)
+-- Navigate between panes with Ctrl+s
+keymap.set('', "<C-s>j", ":wincmd h<CR>")
+keymap.set('', "<C-s>k", ":wincmd j<CR>")
+keymap.set('', "<C-s>i", ":wincmd k<CR>")
+keymap.set('', "<C-s>l", ":wincmd l<CR>")
+keymap.set('', "<C-s>,", ":wincmd p<CR>") -- Navigate to the last active pane
+keymap.set('', "<C-s>Space", ":wincmd w<CR>") -- Navigate to the next pane
 
+-- Navigate using arrow keys with Ctrl+s
+keymap.set('', "<C-s><Left>", ":wincmd h<CR>")
+keymap.set('', "<C-s><Down>", ":wincmd j<CR>")
+keymap.set('', "<C-s><Up>", ":wincmd k<CR>")
+keymap.set('', "<C-s><Right>", ":wincmd l<CR>")
 
-keymap.set('', "<C-w>j", nvim_tmux_nav.NvimTmuxNavigateLeft)
-keymap.set('', "<C-w>k", nvim_tmux_nav.NvimTmuxNavigateDown)
-keymap.set('', "<C-w>i", nvim_tmux_nav.NvimTmuxNavigateUp)
-keymap.set('', "<C-w>l", nvim_tmux_nav.NvimTmuxNavigateRight)
+-- Navigate using Ctrl+w
+keymap.set('', "<C-w>j", ":wincmd h<CR>")
+keymap.set('', "<C-w>k", ":wincmd j<CR>")
+keymap.set('', "<C-w>i", ":wincmd k<CR>")
+keymap.set('', "<C-w>l", ":wincmd l<CR>")
 
-keymap.set('', "<C-w><Left>", nvim_tmux_nav.NvimTmuxNavigateLeft)
-keymap.set('', "<C-w><Down>", nvim_tmux_nav.NvimTmuxNavigateDown)
-keymap.set('', "<C-w><Up>", nvim_tmux_nav.NvimTmuxNavigateUp)
-keymap.set('', "<C-w><Right>", nvim_tmux_nav.NvimTmuxNavigateRight)
-
-
-keymap.set('', "<C-s>j", nvim_tmux_nav.NvimTmuxNavigateLeft)
-keymap.set('', "<C-s>k", nvim_tmux_nav.NvimTmuxNavigateDown)
-keymap.set('', "<C-s>i", nvim_tmux_nav.NvimTmuxNavigateUp)
-keymap.set('', "<C-s>l", nvim_tmux_nav.NvimTmuxNavigateRight)
-keymap.set('', "<C-s>,", nvim_tmux_nav.NvimTmuxNavigateLastActive)
-keymap.set('', "<C-s>Space", nvim_tmux_nav.NvimTmuxNavigateNext)
-
-keymap.set('', "<C-s><Left>", nvim_tmux_nav.NvimTmuxNavigateLeft)
-keymap.set('', "<C-s><Down>", nvim_tmux_nav.NvimTmuxNavigateDown)
-keymap.set('', "<C-s><Up>", nvim_tmux_nav.NvimTmuxNavigateUp)
-keymap.set('', "<C-s><Right>", nvim_tmux_nav.NvimTmuxNavigateRight)
+-- Navigate using arrow keys with Ctrl+w
+keymap.set('', "<C-w><Left>", ":wincmd h<CR>")
+keymap.set('', "<C-w><Down>", ":wincmd j<CR>")
+keymap.set('', "<C-w><Up>", ":wincmd k<CR>")
+keymap.set('', "<C-w><Right>", ":wincmd l<CR>")
 
 
 

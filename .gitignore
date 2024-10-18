@@ -5,7 +5,6 @@
 !readme.md
 !.gitignore
 # Include specific directories
-!/aconfmgr/
 !/awesome/
 !/cava/
 !/ctpv/
@@ -39,20 +38,20 @@
 !/awesome/*/*/*/
 !/awesome/*/*/*/*/
 
-!/aconfmgr/10-ignores.sh
-!/aconfmgr/files
-!/aconfmgr/files/*
-!/aconfmgr/files/**
-!/aconfmgr/files/*/*
-!/aconfmgr/files/*/*/*
-!/aconfmgr/files/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*/*/*/*/*/*
+# !/aconfmgr/10-ignores.sh
+# !/aconfmgr/files
+# !/aconfmgr/files/*
+# !/aconfmgr/files/**
+# !/aconfmgr/files/*/*
+# !/aconfmgr/files/*/*/*
+# !/aconfmgr/files/*/*/*/*
+# !/aconfmgr/files/*/*/*/*/*
+# !/aconfmgr/files/*/*/*/*/*/*
+# !/aconfmgr/files/*/*/*/*/*/*/*
+# !/aconfmgr/files/*/*/*/*/*/*/*/*
+# !/aconfmgr/files/*/*/*/*/*/*/*/*/*
+# !/aconfmgr/files/*/*/*/*/*/*/*/*/*/*
+# !/aconfmgr/files/*/*/*/*/*/*/*/*/*/*/*
 
 !/cava/**/*
 !/cava/*/

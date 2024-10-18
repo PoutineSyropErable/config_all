@@ -1,0 +1,14 @@
+[Unit]
+Description = Unfuck permissions on my own files created in another OS on /home/francois
+After=local-fs.target
+Before=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/chown -R francois:francois /home/francois
+
+[Install]
+WantedBy=multi-user.target
+
+
+

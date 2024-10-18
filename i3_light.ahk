@@ -226,9 +226,6 @@ return
 
 
 
-!d:: ; This binds Alt + d
-    Click ; Simulates a left mouse click
-return
 
 
 ;-----------------------------------------------
@@ -262,16 +259,18 @@ return
 
 ;------------------------------------------------------- MY KEYBINDS ------------------------------------------
 
-; Close the active window with Win + q
+
+
+; Close the active window with Win + ;
+#;:: ; Win + ;
+WinClose, A
+return
+
+; Kill the active window with Win + Shift + ;
 #+;:: ; Win + Shift+ ;
 WinKill, A
 return
 
-
-; Close the active window with Win + .
-#.:: ; Win + ;
-WinClose, A
-return
 
 #w::
 Run firefox
@@ -293,9 +292,15 @@ Run wt new-tab -p  "{701794fd-607c-5404-a93a-538ab1bd5727}" --startingDirectory 
 ;Click Left
 Return
 
-#<::  ; Windows + < (above enter)     To open kitty in Arch WSL
+#<::  ; Windows + < (above enter)     To open gui kitty (From the start menu, green option with the arrow. )
 Run C:\Users\Francois\AppData\Local\Microsoft\WindowsApps\gwsl.exe --r --wsl_machine="Arch" --wsl_cmd="kitty" --w_mode="Multi Window" --clip_enabled="Default" --gtk_scale="Default" --qt_scale="Default" --append="" --theme="follow" --root="false" --dbus="false" --
 ;Click Left
+Return
+
+
+
+#.::
+Run "C:\Program Files\WSL\wslg.exe" -d Arch --cd "~" -- kitty
 Return
 
 

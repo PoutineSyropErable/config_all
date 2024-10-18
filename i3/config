@@ -39,6 +39,8 @@ exec_always --no-startup-id setxkbmap ca fr
 
 
 
+
+
 #To replace all instance for monitors:
 # :%s/HMDI-A-0/HDMI-A-0/g
 
@@ -484,27 +486,27 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-# These bindings trigger as soon as you enter the resize mode
+	# These bindings trigger as soon as you enter the resize mode
 
-# Pressing left will shrink the window’s width.
-# Pressing right will grow the window’s width.
-# Pressing up will shrink the window’s height.
-# Pressing down will grow the window’s height.
-bindsym j resize shrink width 5 px or 5 ppt
-bindsym k resize grow height 5 px or 5 ppt
-bindsym i resize shrink height 5 px or 5 ppt
-bindsym l resize grow width 5 px or 5 ppt
+	# Pressing left will shrink the window’s width.
+	# Pressing right will grow the window’s width.
+	# Pressing up will shrink the window’s height.
+	# Pressing down will grow the window’s height.
+	bindsym j resize shrink width 5 px or 5 ppt
+	bindsym k resize grow height 5 px or 5 ppt
+	bindsym i resize shrink height 5 px or 5 ppt
+	bindsym l resize grow width 5 px or 5 ppt
 
-# same bindings, but for the arrow keys
-bindsym Left resize shrink width 2 px or 2 ppt
-bindsym Down resize grow height 2 px or 2 ppt
-bindsym Up resize shrink height 2 px or 2 ppt
-bindsym Right resize grow width 2 px or 2 ppt
+	# same bindings, but for the arrow keys
+	bindsym Left resize shrink width 2 px or 2 ppt
+	bindsym Down resize grow height 2 px or 2 ppt
+	bindsym Up resize shrink height 2 px or 2 ppt
+	bindsym Right resize grow width 2 px or 2 ppt
 
-# back to normal: Enter or Escape or $mod+r
-bindsym Return mode "default"
-bindsym Escape mode "default"
-bindsym $mod+r mode "default"
+	# back to normal: Enter or Escape or $mod+r
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym $mod+r mode "default"
 }
 
 bindsym $mod+r mode "resize"
@@ -538,7 +540,7 @@ exec_always --no-startup-id $HOME/.config/polybar.old/all_bars.sh
 #-------------------------------------------- start of perso stuff
 
 #bindsym $mod+l exec i3lock -i ~/Pictures/Desktop\ Background\ Slideshow/resized/anime\ cyberpunk\ girl.png
-exec --no-startup-id betterlockscreen -u ~/Pictures/Desktop\ Background\ Slideshow/Cool\ Pictures/resized_1200/anime\ cyberpunk\ girl.png
+exec --no-startup-id $HOME/QolScripts/set_lock_screen.sh
 #bindsym $mod+l exec betterlockscreen -l
 bindsym $mod+F10 exec --no-startup-id betterlockscreen -l
 
@@ -619,7 +621,6 @@ bindsym $mod+Control+o             exec --no-startup-id $HOME/Pictures/Slideshow
 
 
 bindsym $mod+Control+m       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "$HOME/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/wp13527036-malenia-elden-ring-wallpapers.png"
-
 bindsym $mod+Control+Shift+m       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "$HOME/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/anime cyberpunk girl.png"
 
 
@@ -731,8 +732,8 @@ bindsym $mod+Shift+End exec "pactl set-sink-volume @DEFAULT_SINK@ -5%"
 # Pactl volume up
 bindsym $mod+Home exec "pactl set-sink-volume @DEFAULT_SINK@ +1%"
 bindsym $mod+Shift+Home exec "pactl set-sink-volume @DEFAULT_SINK@ +5%"
-# Pactl volume down
 
+# Pactl volume down
 bindsym $mod2+End exec "pactl set-sink-volume @DEFAULT_SINK@ -1%"
 bindsym $mod2+Shift+End exec "pactl set-sink-volume @DEFAULT_SINK@ -5%"
 
@@ -775,6 +776,8 @@ default_border pixel 2
 #
 
 
+bindsym $mod+Control+f exec --no-startup-id /home/francois/.config/conky/show_all/shuffle_x.sh
+bindsym $mod+Control+g exec --no-startup-id /home/francois/.config/conky/show_all/shuffle_y.sh
 
 gaps inner 6
 gaps outer 5

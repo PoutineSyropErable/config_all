@@ -606,6 +606,7 @@ bindsym $mod2+w exec --no-startup-id $HOME/google_launch
 
 bindsym $mod+Control+h       exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/horny_slideshow.sh & 
 bindsym $mod+Control+Shift+h exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/toohorny_slideshow.sh & 
+bindsym $mod+$mod2+Shift+h exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Master/s_slideshow.sh & 
 bindsym $mod+Control+n       exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/nohorny_slideshow.sh & 
 
 
@@ -622,7 +623,20 @@ bindsym $mod+Control+m       exec --no-startup-id feh  --bg-center --bg-fill --n
 bindsym $mod+Control+Shift+m       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "$HOME/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/anime cyberpunk girl.png"
 
 
+
+bindsym $mod2+Control+n       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/8714ab1fb626c435433e749ca0cc83cd.png"
+bindsym $mod2+Control+shift+n       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/f2d4po3oiaj81.png"
+
+
+bindsym $mod2+Control+m       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/1353156.png"
+bindsym $mod2+Control+shift+m       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/wp13334761.png"
+
+bindsym $mod2+Control+b       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/1342688.png"
+bindsym $mod2+Control+shift+b       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/1311862.png"
+
 # Media player controls
+bindsym $mod+$mod2+Up   exec --no-startup-id mpc volume +5
+bindsym $mod+$mod2+Down exec --no-startup-id mpc volume -5
 bindsym $mod+$mod2+Left exec --no-startup-id  mpc seek -10
 bindsym $mod+$mod2+Right exec --no-startup-id mpc seek +10 
 
@@ -638,8 +652,7 @@ bindsym $mod+$mod2+Shift+Left exec --no-startup-id  mpc seek -30
 bindsym $mod+$mod2+Shift+Right exec --no-startup-id mpc seek +30 
 
 
-bindsym $mod+$mod2+Up   exec --no-startup-id mpc volume +5
-bindsym $mod+$mod2+Down exec --no-startup-id mpc volume -5
+
 #bindsym $mod+$XF86WakeUp+Right exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@   +1%   && $refresh_i3status
 #bindsym $mod+XF86WakeUp+Left   exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@   -1%   && $refresh_i3status
 #these two are from xbindkeys

@@ -6,10 +6,13 @@
 !.gitignore
 # Include specific directories
 !/aconfmgr/
+!/awesome/
 !/cava/
+!/ctpv/
 !/conky/
 !/dunst/
 !/fish/
+!/hypr/
 !/i3/
 !/lf/
 !/kitty/
@@ -23,8 +26,18 @@
 !/polybar/
 !/polybar.old/
 !/rofi/
+!/sway
 !/tmux/
+!/waybar/
 
+
+
+
+!/awesome/**/*
+!/awesome/*/
+!/awesome/*/*/
+!/awesome/*/*/*/
+!/awesome/*/*/*/*/
 
 !/aconfmgr/10-ignores.sh
 !/aconfmgr/files
@@ -47,6 +60,11 @@
 !/cava/*/*/*/
 !/cava/*/*/*/*/
 
+!/ctpv/**/*
+!/ctpv/*/
+!/ctpv/*/*/
+!/ctpv/*/*/*/
+!/ctpv/*/*/*/*/
 
 !/conky/**/*
 !/conky/*/
@@ -68,6 +86,15 @@
 !/fish/*/*/
 !/fish/*/*/*/
 !/fish/*/*/*/*/
+
+
+
+!/hypr/**/*
+!/hypr/*/
+!/hypr/*/*/
+!/hypr/*/*/*/
+!/hypr/*/*/*/*/
+
 
 !/i3/**/*
 !/i3/*/
@@ -144,6 +171,12 @@
 !/rofi/*/*/*/*/
 !/rofi/*/*/*/*/*
 
+!/sway/**/*
+!/sway/*/
+!/sway/*/*/
+!/sway/*/*/*/
+!/sway/*/*/*/*/
+!/sway/*/*/*/*/*
 
 !/tmux/**/*
 !/tmux/*/
@@ -151,5 +184,14 @@
 !/tmux/*/*/*/
 !/tmux/*/*/*/*/
 
+!/waybar/**/*
+!/waybar/*/
+!/waybar/*/*/
+!/waybar/*/*/*/
+!/waybar/*/*/*/*/
 
-#/polybar.old/weather-polybar-plugin/.owm-key
+/polybar.old/weather-polybar-plugin/.owm-key
+
+
+/mpd/state
+thefuck/__pycache__/settings.cpython-312.pyc

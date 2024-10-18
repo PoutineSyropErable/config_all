@@ -1,6 +1,7 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+
 vim.opt.backspace = '2'
 vim.opt.showcmd = true
 vim.opt.laststatus = 2
@@ -19,6 +20,9 @@ vim.cmd [[ set termguicolors ]]
 --vim.opt.clipboard = 'unnamedplus'
 --Line numbers
 vim.wo.number = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+
 
 --if you are on a comment and press enter, don't start on another comment
 vim.api.nvim_set_var('commentstring', '')
@@ -41,9 +45,18 @@ vim.opt.listchars = {
 	extends = '»'
 }
 
-
-vim.opt.shell = 'wsl.exe'
-vim.opt.shellcmdflag = '-d Arch'
+--vim.opt.clipboard = 'unnamedplus'
 
 
-vim.g.jupyter_notebook = 'C:\\Users\\Francois\\anaconda3\\Scripts\\jupyter.exe'
+
+-- Remove `c` and `r` from formatoptions to exclude comments
+--vim.o.formatoptions = vim.o.formatoptions:gsub('c', ''):gsub('r', '')
+
+-- Stop automatically adding comments
+vim.cmd('autocmd BufEnter * set formatoptions-=cro')
+vim.cmd('autocmd BufEnter * setlocal formatoptions-=cro')
+vim.g.python3_host_prog = '/home/francois/MainPython_Virtual_Environment/pip_venv/bin/python'
+
+
+
+

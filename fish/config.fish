@@ -218,6 +218,8 @@ alias cco="cd ~/.config"
 alias ct="cd ~/.local/share/Trash/files"
 alias ctm="cd ~/.config/tmux"
 alias chg=" cd ~/home_for_git"
+alias cs9="cd ~ ; cd sem9"
+
 
 alias kmux="tmux kill-server"
 alias lmux="tmux detach"

@@ -73,7 +73,7 @@ exec_always --no-startup-id feh  --bg-center --bg-fill --no-fehbg "$HOME/Picture
 
 exec_always --no-startup-id export TERMINAL=kitty
 
-exec_always --no-startup-id $HOME/QolScripts/set_mouse_speed.sh 0.63 "skip_confirmation"
+exec_always --no-startup-id $HOME/QolScripts/set_mouse_speed.sh 0.51 "skip_confirmation"
 
 
 

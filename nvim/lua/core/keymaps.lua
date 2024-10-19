@@ -156,7 +156,7 @@ function Write_and_close()
 end
 
 -- Keymap for closing the current tab using Ctrl+w X
-keymap.set('n', '<C-w>X', ':bd<CR>', { noremap = true, silent = true })
+keymap.set('n', '<C-w>X', ':bd!<CR>', { noremap = true, silent = true })
 keymap.set('n', '<C-w>d', ':close<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-w>x', ':lua write_and_close()<CR>', { noremap = true, silent = true })
 

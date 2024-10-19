@@ -5,7 +5,7 @@
 !readme.md
 !.gitignore
 # Include specific directories
-!/aconfmgr/
+# !/aconfmgr/
 !/awesome/
 !/cava/
 !/ctpv/

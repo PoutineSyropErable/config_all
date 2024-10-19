@@ -39,20 +39,20 @@
 !/awesome/*/*/*/
 !/awesome/*/*/*/*/
 
-!/aconfmgr/10-ignores.sh
-!/aconfmgr/files
-!/aconfmgr/files/*
-!/aconfmgr/files/**
-!/aconfmgr/files/*/*
-!/aconfmgr/files/*/*/*
-!/aconfmgr/files/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*/*/*/*/*
-!/aconfmgr/files/*/*/*/*/*/*/*/*/*/*/*
+# !/aconfmgr/10-ignores.sh
+# !/aconfmgr/files
+# !/aconfmgr/files/*
+# !/aconfmgr/files/**
+# !/aconfmgr/files/*/*
+# !/aconfmgr/files/*/*/*
+# !/aconfmgr/files/*/*/*/*
+# !/aconfmgr/files/*/*/*/*/*
+# !/aconfmgr/files/*/*/*/*/*/*
+# !/aconfmgr/files/*/*/*/*/*/*/*
+# !/aconfmgr/files/*/*/*/*/*/*/*/*
+# !/aconfmgr/files/*/*/*/*/*/*/*/*/*
+# !/aconfmgr/files/*/*/*/*/*/*/*/*/*/*
+# !/aconfmgr/files/*/*/*/*/*/*/*/*/*/*/*
 
 !/cava/**/*
 !/cava/*/

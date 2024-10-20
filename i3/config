@@ -589,6 +589,8 @@ bindsym $mod+Control+5 exec --no-startup-id fish -c "pv $HOME/QolScripts/screen_
 
 bindsym $mod+Control+6 exec --no-startup-id fish -c "pv $HOME/QolScripts/screen_placer.py"
 
+bindsym $mod+Control+0 exec --no-startup-id exec kcmshell6 kcm_kscreen
+
 bindsym $mod+Control+t       exec --no-startup-id  $HOME/.config/polybar.old/polybar_toggle bar0
 bindsym $mod+Control+Shift+b       exec --no-startup-id  $HOME/.config/polybar.old/polybar_toggle bar2
 bindsym $mod+Control+b exec --no-startup-id  $HOME/.config/polybar.old/polybar_toggle bar3

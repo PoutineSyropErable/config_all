@@ -14,17 +14,31 @@ alias j="z"
 #zoxide is better i think
 
 
-
 #atuin init fish --disable-ctrl-r --disable-up-arrow | source
+
+function gcl
+	git checkout laptop
+	cd -
+end
+
+function gcd
+	git checkout desktop
+	cd -
+end
+
+
+#This is to get the n_th element of a bash array. (counts starts at 1)
+# So echo "aaa bbb ccc" | get 2 = "bbb" 
+function get
+	set -l n $argv[1]
+	awk "{print \$$n}"
+end
+
 
 alias svim="sudo -E nvim"
 alias ovim="/usr/bin/vim"
 alias vim="nvim"
 alias nano="nvim"
-function get
-set -l n $argv[1]
-awk "{print \$$n}"
-end
 
 alias slf="sudo -E lf"
 alias fmod="vim ~/.config/fish/config.fish"
@@ -75,14 +89,14 @@ alias theme="kitty +kitten themes"
 alias updatelocate="sudo updatedb"
 
 function package_finder
-echo "Changing shell to Bash..."
-sudo chsh -s /bin/bash
+	echo "Changing shell to Bash..."
+	sudo chsh -s /bin/bash
 
-echo "Running fpf -a..."
-fpf -a
+	echo "Running fpf -a..."
+	fpf -a
 
-echo "Changing shell back to Fish..."
-sudo chsh -s /bin/fish
+	echo "Changing shell back to Fish..."
+	sudo chsh -s /bin/fish
 end
 #this is a fuzzy package finder
 
@@ -100,19 +114,19 @@ end
 
 
 function change_permission
-    echo "This will change the permission of all files of <type> to <permissions> in the current directory"
-    echo "Usage: change_permission <extension> <permissions>"
-    echo " 644 for regular files, 744 for scripts/executable, 600 for private files, 755 for directories "
+	echo "This will change the permission of all files of <type> to <permissions> in the current directory"
+	echo "Usage: change_permission <extension> <permissions>"
+	echo " 644 for regular files, 744 for scripts/executable, 600 for private files, 755 for directories "
 
-    set -l ext (read -P "File Type: ")
-    set -l perm (read -P "Permissions: ")
-    set -l recursive (read -P "Recursive (y/n): ")
+	set -l ext (read -P "File Type: ")
+	set -l perm (read -P "Permissions: ")
+	set -l recursive (read -P "Recursive (y/n): ")
 
-    if test "$recursive" = "y"
-        find . -type f -name "*.$ext" -exec chmod $perm {} +
-    else
-        find . -maxdepth 1 -type f -name "*.$ext" -exec chmod $perm {} +
-    end
+	if test "$recursive" = "y"
+		find . -type f -name "*.$ext" -exec chmod $perm {} +
+	else
+		find . -maxdepth 1 -type f -name "*.$ext" -exec chmod $perm {} +
+	end
 end
 
 
@@ -131,32 +145,32 @@ function change_permission_recursive
 end
 
 function fzfv
-vim (fzf -m --preview='bat --color=always {}')
+	vim (fzf -m --preview='bat --color=always {}')
 end
 
 
 function fzfp
-# Get the current directory
-set image_dir (pwd)
+	# Get the current directory
+	set image_dir (pwd)
 
-# Select an image using fzf with preview
-set selected_image (find $image_dir -type f -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' | fzf --preview='feh --preload {}' --preview-window=right:50%:wrap)
+	# Select an image using fzf with preview
+	set selected_image (find $image_dir -type f -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' | fzf --preview='feh --preload {}' --preview-window=right:50%:wrap)
 
-# Pipe the selected image into command 'c'
-if test -n "$selected_image"
-	echo $selected_image | c
-end
+	# Pipe the selected image into command 'c'
+	if test -n "$selected_image"
+		echo $selected_image | c
+	end
 end
 
 function fzfc
-fzf -m --preview='feh {}' | c 
+	fzf -m --preview='feh {}' | c 
 end
 
 alias pythonvenv="$HOME/MainPython_Virtual_Environment/pip_venv/bin/python"
 alias pv="pythonvenv"
 
 function govenv
-source $HOME/MainPython_Virtual_Environment/pip_venv/bin/activate.fish
+	source $HOME/MainPython_Virtual_Environment/pip_venv/bin/activate.fish
 end
 
 
@@ -164,9 +178,9 @@ alias searchdir="rg --files | fzf"
 alias sdir="searchdir"
 
 function pvp1
-echo "Control+Shift+p Python: Select Interpreter, Enter Interpreter path"
-echo -n "$HOME/MainPython_Virtual_Environment/pip_venv/bin/python" | c 
-echo "The path of the python interpreter is now inside your clipboard. Just Control v it"
+	echo "Control+Shift+p Python: Select Interpreter, Enter Interpreter path"
+	echo -n "$HOME/MainPython_Virtual_Environment/pip_venv/bin/python" | c 
+	echo "The path of the python interpreter is now inside your clipboard. Just Control v it"
 end
 
 
@@ -177,17 +191,17 @@ alias quitvenv="deactivate"
 
 
 function lallvenv
-    if status --is-interactive
-        # Deactivate all active Conda environments
-        while set -q CONDA_DEFAULT_ENV
-            conda deactivate
-        end
+	if status --is-interactive
+		# Deactivate all active Conda environments
+		while set -q CONDA_DEFAULT_ENV
+			conda deactivate
+		end
 
-        # Deactivate Python virtual environment if active
-        if set -q VIRTUAL_ENV
-            deactivate
-        end
-    end
+		# Deactivate Python virtual environment if active
+		if set -q VIRTUAL_ENV
+			deactivate
+		end
+	end
 end
 
 
@@ -242,44 +256,44 @@ alias ji="tmux select-pane -U"
 
 
 function tswap
-set -l pane1 $argv[1]
-set -l pane2 $argv[2]
+	set -l pane1 $argv[1]
+	set -l pane2 $argv[2]
 
-tmux swap-pane -s $pane1 -t $pane2
+	tmux swap-pane -s $pane1 -t $pane2
 end
 
 
 
 
 function comparehash_md5
-set file "$argv[1]"
-set expected_hash "$argv[2]"
+	set file "$argv[1]"
+	set expected_hash "$argv[2]"
 
-set actual_hash (md5sum "$file" | awk '{print $1}')
+	set actual_hash (md5sum "$file" | awk '{print $1}')
 
-if test "$actual_hash" = "$expected_hash"
-	echo "Hashes match: $actual_hash"
-else
-	echo "Hashes do not match:"
-	echo "Actual hash:   $actual_hash"
-	echo "Expected hash: $expected_hash"
-end
+	if test "$actual_hash" = "$expected_hash"
+		echo "Hashes match: $actual_hash"
+	else
+		echo "Hashes do not match:"
+		echo "Actual hash:   $actual_hash"
+		echo "Expected hash: $expected_hash"
+	end
 end
 
 
 function comparehash_sha
-set file "$argv[1]"
-set expected_hash "$argv[2]"
+	set file "$argv[1]"
+	set expected_hash "$argv[2]"
 
-set actual_hash (sha256sum "$file" | awk '{print $1}')
+	set actual_hash (sha256sum "$file" | awk '{print $1}')
 
-if test "$actual_hash" = "$expected_hash"
-	echo "Hashes match: $actual_hash"
-else
-	echo "Hashes do not match:"
-	echo "Actual hash:   $actual_hash"
-	echo "Expected hash: $expected_hash"
-end
+	if test "$actual_hash" = "$expected_hash"
+		echo "Hashes match: $actual_hash"
+	else
+		echo "Hashes do not match:"
+		echo "Actual hash:   $actual_hash"
+		echo "Expected hash: $expected_hash"
+	end
 end
 
 
@@ -300,20 +314,20 @@ alias prevc="history --max=1 | c"
 
 
 function ndiff
-if test (count $argv) -ne 2
-	echo "Usage: nrdiff file1 file2"
-	return 1
-end
-diff --color $argv[1] $argv[2] | diff-so-fancy | bat
+	if test (count $argv) -ne 2
+		echo "Usage: nrdiff file1 file2"
+		return 1
+	end
+	diff --color $argv[1] $argv[2] | diff-so-fancy | bat
 end
 
 
 function bdiff
-if test (count $argv) -ne 2
-	echo "Usage: ndiff file1 file2"
-	return 1
-end
-git diff --no-index --color $argv[1] $argv[2] | diff-so-fancy | bat
+	if test (count $argv) -ne 2
+		echo "Usage: ndiff file1 file2"
+		return 1
+	end
+	git diff --no-index --color $argv[1] $argv[2] | diff-so-fancy | bat
 end
 
 
@@ -413,10 +427,10 @@ export EDITOR=nvim
 
 
 function fish_greeting
-clear
-# echo "Welcome to Poutine Au Sirop D'erable's config!" | figlet | lolcat
-#fortune | cowsay -f dragon
-#-o is for offensive/spicier
+	clear
+	# echo "Welcome to Poutine Au Sirop D'erable's config!" | figlet | lolcat
+	#fortune | cowsay -f dragon
+	#-o is for offensive/spicier
 end
 
 
@@ -438,13 +452,13 @@ end
 
 # Function to activate Conda environments
 function conda_activate
-set conda_path "$HOME/miniconda3/bin/conda"
-if test -x $conda_path
-	eval $conda_path "shell.fish" "hook" $argv | source
-	conda activate conda_venv
-else
-	echo "Error: Conda not found at $conda_path"
-end
+	set conda_path "$HOME/miniconda3/bin/conda"
+	if test -x $conda_path
+		eval $conda_path "shell.fish" "hook" $argv | source
+		conda activate conda_venv
+	else
+		echo "Error: Conda not found at $conda_path"
+	end
 end
 
 

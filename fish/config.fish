@@ -17,14 +17,33 @@ alias j="z"
 
 #atuin init fish --disable-ctrl-r --disable-up-arrow | source
 
+
+
+function gcl
+	git checkout laptop
+	cd -
+end
+
+function gcd
+	git checkout desktop
+	cd -
+end
+
+
+#This is to get the n_th element of a bash array. (counts starts at 1)
+# So echo "aaa bbb ccc" | get 2 = "bbb" 
+function get
+	set -l n $argv[1]
+	awk "{print \$$n}"
+end
+
+
+
+
 alias svim="sudo -E nvim"
 alias ovim="/usr/bin/vim"
 alias vim="nvim"
 alias nano="nvim"
-function get
-set -l n $argv[1]
-awk "{print \$$n}"
-end
 
 alias slf="sudo -E lf"
 alias fmod="vim ~/.config/fish/config.fish"

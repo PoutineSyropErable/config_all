@@ -8,7 +8,7 @@
 
 configuration {
 	/*---------- General setting ----------*/
-	modi: "drun,run,filebrowser,window,emoji,ssh,windowcd,keys,combi";
+	modi: "drun,run,filebrowser,window,ssh,windowcd,keys,combi";
 	case-sensitive: false;
 	cycle: true;
 	filter: "";

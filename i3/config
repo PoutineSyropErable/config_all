@@ -156,7 +156,7 @@ bindsym $mod+Return exec kitty
 bindsym $mod2+Return exec kitty #big fingers
 
 
-bindsym $mod+dead_grave exec alacritty
+bindsym $mod+less exec alacritty
 #i3-sensible-terminal was default
 #options: Terminator, alacritty, gnome-terminal
 
@@ -575,7 +575,7 @@ exec_always --no-startup-id picom -b --config $HOME/.config/picom/picom.conf
 
 
 
-exec --no-startup-id xrandr --output HDMI-A-0 $HOME/QolScripts/turn_off_other_screens.sh
+exec --no-startup-id xrandr --output DisplayPort-2 --mode 1920x1080 --rate 144
 
 bindsym $mod+Control+1 exec --no-startup-id  $HOME/QolScripts/turn_off_other_screens.sh
 
@@ -628,6 +628,7 @@ bindsym $mod+Control+Shift+m       exec --no-startup-id feh  --bg-center --bg-fi
 
 
 
+bindsym $mod+Control+Shift+n       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/8714ab1fb626c435433e749ca0cc83cd.png"
 bindsym $mod2+Control+n       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/8714ab1fb626c435433e749ca0cc83cd.png"
 bindsym $mod2+Control+shift+n       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/f2d4po3oiaj81.png"
 

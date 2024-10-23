@@ -19,7 +19,7 @@ conky.config = {
  
     --Placement
     xinerama_head = 0,                          -- monitor 1
-    alignment = 'bottom_left',                    -- top_left,top_middle,top_right,bottom_left,bottom_middle,bottom_right,
+    alignment = 'bottom_right',                    -- top_left,top_middle,top_right,bottom_left,bottom_middle,bottom_right,
                                                 -- middle_left,middle_middle,middle_right,none
     gap_x = 88,                                 -- pixels between right or left border
 	--28

@@ -101,6 +101,7 @@ lspconfig.clangd.setup({
 
 
 
+
 local opts = { noremap=true, silent=true }
 vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
 vim.api.nvim_set_keymap('n', '$', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)

@@ -343,6 +343,7 @@ font-2 = "JetBrainsMono Nerd Font:size=15;3"
 font-3 = "JetBrainsMono Nerd Font:size=9;2"
 font-4 = "Siji:size=10;0"
 font-5 = "FontAwesome:size=13;14"
+font-6 = "Noto Sans CJK:size=12;1"
 
 
 
@@ -539,6 +540,7 @@ label-urgent    = %name% %icon%
 [module/mpd]
 type = internal/mpd
 format-online = %{T4}<label-song>%{T-}  %{T3}<icon-prev> <toggle> <icon-stop> <icon-next>%{T-}
+label-font = font-6
 ;<icon-random> <icon-repeat>%{T-}
 #red4 was the old color
 format-online-foreground = ${colors.bad_warning2}
@@ -1102,11 +1104,11 @@ label-open-foreground = #ffffff
 label-close-foreground = #ffffff
 
 menu-0-0 = " i3 "
-menu-0-0-exec = kitty --detach vim ~/keybinds/i3_keys.md
+menu-0-0-exec = kitty nvim ~/keybinds/i3_keys.md
 menu-0-1 = " Kitty "
-menu-0-1-exec =kitty --detach vim  ~/keybinds/kitty_keys.md
+menu-0-1-exec = kitty nvim  ~/keybinds/kitty_keys.md
 menu-0-2 = " Tmux "
-menu-0-2-exec = kitty --detact ~/keybinds/tmux_keys.md
+menu-0-2-exec = kitty nvim ~/keybinds/tmux_keys.md
 
 
 

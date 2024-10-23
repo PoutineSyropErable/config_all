@@ -42,6 +42,7 @@ vim.api.nvim_set_keymap('v', '<leader>v', '"+p', { noremap = true, silent = true
 vim.api.nvim_set_keymap('n', '<C-c>', '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-x>', '"+d', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-C>', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-V>', '"+p', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('v', '<C-C>', '"+y', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<C-c>', '"+y', { noremap = true, silent = true })
@@ -98,14 +99,16 @@ keymap.set("n", "gx", ":!open <c-r><c-a><CR>") -- open URL under cursor
 
 ----------------Split window management, split, resize
 --there's a repeat of sh, it's fine. It's for inside nvim_tree, to open current file in a split
-keymap.set('n', '<leader>sv',   tapi.node.open.vertical,              opts('Open: Vertical Split'))
-keymap.set('n', '<leader>sh',   tapi.node.open.horizontal,            opts('Open: Horizontal Split'))
+keymap.set('n', '<leader>sh',   tapi.node.open.vertical,              opts('Open: Vertical Split'))
+keymap.set('n', '<leader>sv',   tapi.node.open.horizontal,            opts('Open: Horizontal Split'))
+-- I'm used to have it the other way arround. Horizontal split. = Side by side. Though its a vertical line. 
+-- Too late, I'm used to it mixed up
 keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width
 keymap.set("n", "<leader>sx", ":close<CR>") -- close split window
-keymap.set("n", "<leader>sj", "<C-w>-") -- make split window height shorter
-keymap.set("n", "<leader>sk", "<C-w>+") -- make split windows height taller
+keymap.set("n", "<leader>sk", "<C-w>-") -- make split window height shorter
+keymap.set("n", "<leader>si", "<C-w>+") -- make split windows height taller
 keymap.set("n", "<leader>sl", "<C-w>>5") -- make split windows width bigger 
-keymap.set("n", "<leader>sh", "<C-w><5") -- make split windows width smaller
+keymap.set("n", "<leader>sj", "<C-w><5") -- make split windows width smaller
 
 
 
@@ -311,7 +314,8 @@ keymap.set("n", "<leader>Th", term_map.move({ open_cmd = "belowright new" }))
 keymap.set("n", "<leader>TH", term_map.move({ open_cmd = "botright new" }))
 keymap.set("n", "<leader>Tf", term_map.move({ open_cmd = "float" }))
 
-
+vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('t', 'jk', '<C-\\><C-n>', { noremap = true, silent = true })
 
 
 
@@ -560,5 +564,6 @@ vim.api.nvim_set_keymap('n', 'zb', 'zb', { noremap = true, silent = true })
 
 ----------------------------------------------- END OF CONFIG FILE
 
+vim.api.nvim_set_keymap('', '<C-V>', '"+p', { noremap = true, silent = true })
 print("Vim configuration reloaded")
 --print(vim.env.TERM)

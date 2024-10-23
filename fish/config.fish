@@ -9,10 +9,11 @@ atuin init fish --disable-up-arrow | source
 source ~/.config/lf/lf.fish
 
 
-#alias cd="z"
+alias cd="z"
 alias j="z"
 #zoxide is better i think
 
+alias lg="lazygit"
 
 
 #atuin init fish --disable-ctrl-r --disable-up-arrow | source
@@ -174,7 +175,13 @@ function govenv
 source $HOME/MainPython_Virtual_Environment/pip_venv/bin/activate.fish
 end
 
+function govenv3
+source $HOME/MainPython_Virtual_Environment/pip3_venv/bin/activate.fish
+end
 
+function govenvt
+source $HOME/MainPython_Virtual_Environment/venv_test/bin/activate.fish
+end
 alias searchdir="rg --files | fzf"
 alias sdir="searchdir"
 
@@ -306,7 +313,8 @@ alias yp="yay -S"
 
 alias c="xclip -sel c"
 alias copy="c"
-alias pwc="echo -n (pwd) | c"
+alias pwc='echo -n $(pwd) | c'
+alias pwv="cd (p)"
 alias paste="xclip -selection clipboard -o"
 alias p="paste"
 alias prevc="history --max=1 | c"
@@ -403,7 +411,7 @@ export PATH="$HOME/Videos/Animated_Background/:$PATH"
 export PATH="$HOME/Pictures/Slideshow_Scripts/Utils:$PATH"
 export PATH="$HOME/Pictures/Slideshow_Scripts/Master:$PATH"
 export PATH="$HOME/Pictures/Slideshow_Scripts/Parent:$PATH"
-export PATH="$HOME/miniconda3/bin:$PATH"
+# export PATH="$HOME/miniconda3/bin:$PATH"
 
 
 

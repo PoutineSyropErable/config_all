@@ -189,6 +189,23 @@ keymap.set("n", "<leader>cn", "]c") -- next diff hunk
 keymap.set("n", "<leader>cp", "[c") -- previous diff hunk
 
 
+----------------------------------------------- Flash keymaps
+local flash = require("flash")
+
+-- Setup Flash
+flash.setup({
+  event = "VeryLazy",
+  opts = {},
+})
+
+
+-- Define key mappings using vim.keymap.set
+vim.keymap.set({"n", "x", "o"}, "rj", flash.jump, { desc = "Flash" })
+vim.keymap.set({"n", "x", "o"}, "rt", flash.treesitter, { desc = "Flash Treesitter" })
+vim.keymap.set("o", "ro", flash.remote, { desc = "Remote Flash" })
+vim.keymap.set({"o", "x"}, "rs", flash.treesitter_search, { desc = "Treesitter Search" })
+vim.keymap.set("c", "rT", flash.toggle, { desc = "Toggle Flash Search" })
+
 
 
 

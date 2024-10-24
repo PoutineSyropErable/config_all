@@ -222,4 +222,27 @@ require("lazy").setup({
 		"nvim-telescope/telescope.nvim", tag = "0.1.4",
 		dependencies = { "nvim-lua/plenary.nvim"}
 	},
+
+
+	{
+    "goolord/alpha-nvim",
+    dependencies = { 'echasnovski/mini.icons' },
+    -- dependencies = { 'nvim-tree/nvim-web-devicons' },
+	},
+
+	
+	{
+	"Shatur/neovim-session-manager",
+	dependencies = { "nvim-lua/plenary.nvim"},
+	},
+
+	'nvim-telescope/telescope-ui-select.nvim',
+
+
+	-- Need to configure
+	"folke/flash.nvim",
+	"abecodes/tabout.nvim",
+	"echasnovski/mini.surround",
+	"Wansmer/treesj",
+
 })

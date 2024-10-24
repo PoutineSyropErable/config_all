@@ -14,6 +14,12 @@ require("core.plugin_config.swagger-preview")
 require("core.plugin_config.nvimtree_config")
 
 
+require("core.plugin_config.coloriser")
+require("core.plugin_config.alpha")
+require("core.plugin_config.telescope-ui-select")
+require("core.plugin_config.nvim-session-manager")
+
+
 
 
 require("core.plugin_config.nvim-dap-virtual-text")

@@ -55,20 +55,20 @@ require("lazy").setup({
 
 
 	'psf/black',
-	{
-		'jose-elias-alvarez/null-ls.nvim',  -- Required for integrating with Neovim's LSP
-		dependencies = { 'nvim-lua/plenary.nvim' },
-		config = function()
-			local null_ls = require('null-ls')
-
-			null_ls.setup({
-				sources = {
-					null_ls.builtins.formatting.black,
-					null_ls.builtins.formatting.clang_format,
-				},
-			})
-		end,
-	},
+	-- {
+	-- 	'jose-elias-alvarez/null-ls.nvim',  -- Required for integrating with Neovim's LSP
+	-- 	dependencies = { 'nvim-lua/plenary.nvim' },
+	-- 	config = function()
+	-- 		local null_ls = require('null-ls')
+	--
+	-- 		null_ls.setup({
+	-- 			sources = {
+	-- 				null_ls.builtins.formatting.black,
+	-- 				null_ls.builtins.formatting.clang_format,
+	-- 			},
+	-- 		})
+	-- 	end,
+	-- },
 
 	"preservim/vimux",
 	"norcalli/nvim-colorizer.lua",
@@ -244,5 +244,6 @@ require("lazy").setup({
 	"abecodes/tabout.nvim",
 	"echasnovski/mini.surround",
 	"Wansmer/treesj",
+	"stevearc/conform.nvim",
 
 })

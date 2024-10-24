@@ -113,20 +113,20 @@ vim.api.nvim_set_keymap('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<C
 
 
 
-local null_ls = require("null-ls")
-
-null_ls.setup({
-	sources = {
-		-- Formatting for C++ using clang-format
-		null_ls.builtins.formatting.clang_format.with({
-			filetypes = { "c", "cpp", "objc", "objcpp" },
-		}),
-
-		null_ls.builtins.diagnostics.shellcheck,
-		null_ls.builtins.formatting.shfmt,
-
-	},
-})
+-- local null_ls = require("null-ls")
+--
+-- null_ls.setup({
+-- 	sources = {
+-- 		-- Formatting for C++ using clang-format
+-- 		null_ls.builtins.formatting.clang_format.with({
+-- 			filetypes = { "c", "cpp", "objc", "objcpp" },
+-- 		}),
+--
+-- 		null_ls.builtins.diagnostics.shellcheck,
+-- 		null_ls.builtins.formatting.shfmt,
+--
+-- 	},
+-- })
 
 
 

@@ -238,6 +238,7 @@ alias cr="cd ~/.config/rofi"
 alias cm="cd ~/Music"
 alias cP="cd ~/.config/polybar.old/"
 alias clf="cd ~/.config/lf"
+alias chy="cd ~/.config/hypr"
 alias cdoc="cd ~/Documents"
 alias cdo="cd ~/Downloads"
 alias cco="cd ~/.config"
@@ -420,6 +421,12 @@ export PATH="$HOME/.config/conky:$PATH"
 
 export PATH="$HOME/.config/polybar.old/:$PATH"
 export PATH="$HOME/.config/polybar/:$PATH"
+
+export JAVA_HOME=/usr/bin/jvm/java-22-openjdk
+export PATH="$JAVA_HOME/bin:$PATH"
+export PATH_TO_FX="/usr/lib/jvm/javafx-sdk-23/lib"
+
+
 
 alias convert_folder="./update_slideshow_files"
 alias update_slideshow="./update_slideshow_files"

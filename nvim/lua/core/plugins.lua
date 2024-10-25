@@ -271,5 +271,6 @@ require("lazy").setup({
 	-- 	},
 	-- },
 
+	-- It just works
 	"voldikss/vim-floaterm",
 })

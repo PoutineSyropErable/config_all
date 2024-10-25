@@ -198,6 +198,7 @@ keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find files" })
 keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Buffers" })
 
 keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Help Tags" })
+keymap.set("n", "<leader>fH", ":nohlsearch<CR>")
 keymap.set("n", "<leader>fi", builtin.lsp_incoming_calls, {})
 keymap.set("n", "<leader>fm", function()
 	builtin.treesitter({ default_text = ":method:" })

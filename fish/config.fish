@@ -18,14 +18,18 @@ alias lg="lazygit"
 
 #atuin init fish --disable-ctrl-r --disable-up-arrow | source
 
-
+alias gpd="git push origin desktop"
+alias gpl="git push origin laptop"
+alias gpm="git push origin master"
 
 function gcl
+	cd ~/.config
 	git checkout laptop
 	cd -
 end
 
 function gcd
+	cd ~/.config
 	git checkout desktop
 	cd -
 end

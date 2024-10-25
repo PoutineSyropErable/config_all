@@ -31,17 +31,40 @@ lsp_defaults.capabilities = vim.tbl_deep_extend(
 	require('cmp_nvim_lsp').default_capabilities()
 )
 
+local cmp = require("cmp")
+-- `/` cmdline setup.
+cmp.setup.cmdline("/", {
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = {
+		{ name = "buffer" },
+	},
+})
+
+-- `:` cmdline setup.
+cmp.setup.cmdline(":", {
+	mapping = cmp.mapping.preset.cmdline(),
+	sources = cmp.config.sources({
+		{ name = "path" },
+	}, {
+		{
+			name = "cmdline",
+			option = {
+				ignore_cmds = { "Man", "!" },
+			},
+		},
+	}),
+})
 
 
-lspconfig.bashls.setup{
-  cmd = { "bash-language-server", "start" },
-  filetypes = { "sh", "bash" },
-  root_dir = lspconfig.util.root_pattern(".git", vim.fn.getcwd()),
-  settings = {
-    bash = {
-      useLinting = true,
-    }
-  }
+lspconfig.bashls.setup {
+	cmd = { "bash-language-server", "start" },
+	filetypes = { "sh", "bash" },
+	root_dir = lspconfig.util.root_pattern(".git", vim.fn.getcwd()),
+	settings = {
+		bash = {
+			useLinting = true,
+		}
+	}
 }
 
 
@@ -70,7 +93,7 @@ lspconfig.pyright.setup {
 	settings = {
 		python = {
 			analysis = {
-				typeCheckingMode = "basic",  -- Can be "off", "basic", or "strict"  
+				typeCheckingMode = "basic", -- Can be "off", "basic", or "strict"
 				autoSearchPaths = true,
 				useLibraryCodeForTypes = true,
 			}
@@ -88,7 +111,7 @@ lspconfig.clangd.setup({
 		"--cross-file-rename",             -- Support for renaming symbols across files
 		"--header-insertion=iwyu",         -- Include "what you use" insertion
 	},
-	capabilities = lsp_defaults.capabilities,  -- Auto-completion capabilities
+	capabilities = lsp_defaults.capabilities, -- Auto-completion capabilities
 	filetypes = { "c", "cpp", "objc", "objcpp" },
 	root_dir = lspconfig.util.root_pattern("compile_commands.json", "compile_flags.txt", ".git"),
 	settings = {
@@ -102,7 +125,7 @@ lspconfig.clangd.setup({
 
 
 
-local opts = { noremap=true, silent=true }
+local opts = { noremap = true, silent = true }
 vim.api.nvim_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
 vim.api.nvim_set_keymap('n', '$', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
 vim.api.nvim_set_keymap('n', '<leader>Br', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
@@ -113,20 +136,6 @@ vim.api.nvim_set_keymap('n', '<leader>ca', '<cmd>lua vim.lsp.buf.code_action()<C
 
 
 
--- local null_ls = require("null-ls")
---
--- null_ls.setup({
--- 	sources = {
--- 		-- Formatting for C++ using clang-format
--- 		null_ls.builtins.formatting.clang_format.with({
--- 			filetypes = { "c", "cpp", "objc", "objcpp" },
--- 		}),
---
--- 		null_ls.builtins.diagnostics.shellcheck,
--- 		null_ls.builtins.formatting.shfmt,
---
--- 	},
--- })
 
 
 

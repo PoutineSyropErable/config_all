@@ -12,7 +12,7 @@ source ~/.config/lf/lf.fish
 alias cd="z"
 alias j="z"
 #zoxide is better i think
-
+alias et="exit"
 alias lg="lazygit"
 
 
@@ -440,7 +440,7 @@ export EDITOR=nvim
 
 function fish_greeting
 clear
-echo "Welcome to Poutine Au Sirop D'erable's config!" | figlet | lolcat
+# echo "Welcome to Poutine Au Sirop D'erable's config!" | figlet | lolcat
 #fortune | cowsay -f dragon
 #-o is for offensive/spicier
 end

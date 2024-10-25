@@ -207,6 +207,8 @@ keymap.set("n", "<leader>fn", "<cmd>Telescope neoclip<CR>", { desc = "Telescope 
 keymap.set("n", "<leader>gc", builtin.git_commits, { desc = "Search Git Commits" })
 keymap.set("n", "<leader>gb", builtin.git_bcommits, { desc = "Search Git Commits for Buffer" })
 
+keymap.set("n", "<leader>fc", builtin.colorscheme, { desc = "Change Colors Scheme" })
+
 -- ---------------------------------------------ufo
 local ufo = require("ufo")
 -- Key mappings

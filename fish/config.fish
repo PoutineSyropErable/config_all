@@ -17,6 +17,10 @@ alias lg="lazygit"
 
 
 #atuin init fish --disable-ctrl-r --disable-up-arrow | source
+alias ga="git add ."
+function gc
+    git commit -m "$argv"
+end
 
 alias gpd="git push origin desktop"
 alias gpl="git push origin laptop"

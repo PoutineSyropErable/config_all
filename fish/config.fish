@@ -401,7 +401,7 @@ export PATH="$HOME/Videos/Animated_Background/:$PATH"
 export PATH="$HOME/Pictures/Slideshow_Scripts/Utils:$PATH"
 export PATH="$HOME/Pictures/Slideshow_Scripts/Master:$PATH"
 export PATH="$HOME/Pictures/Slideshow_Scripts/Parent:$PATH"
-export PATH="$HOME/miniconda3/bin:$PATH"
+# export PATH="$HOME/miniconda3/bin:$PATH"
 
 
 

@@ -575,7 +575,8 @@ exec_always --no-startup-id picom -b --config $HOME/.config/picom/picom.conf
 
 
 
-exec --no-startup-id xrandr --output HDMI-1 $HOME/QolScripts/turn_off_other_screens.sh
+#Huh, why is there a script
+exec --no-startup-id xrandr --output HDMI-1  ; $HOME/QolScripts/turn_off_other_screens.sh
 
 bindsym $mod+Control+1 exec --no-startup-id  $HOME/QolScripts/turn_off_other_screens.sh
 

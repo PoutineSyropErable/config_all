@@ -247,6 +247,7 @@ alias ch='cd ~'
 alias cr="cd ~/.config/rofi"
 alias cm="cd ~/Music"
 alias cP="cd ~/.config/polybar.old/"
+alias cpi="cd ~/Pictures"
 alias clf="cd ~/.config/lf"
 alias chy="cd ~/.config/hypr"
 alias cdoc="cd ~/Documents"

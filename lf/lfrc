@@ -283,7 +283,8 @@ map cr cd ~/.config/rofi/applets/bin
 
 map cl cd ~/.config/lf
 map cP cd ~/.config/polybar.old
-
+map cH cd ~/.config/hypr
+map cw cd ~/.config/waybar
 
 
 cmd open_dir_nvim  ${{ 

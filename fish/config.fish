@@ -323,11 +323,21 @@ end
 alias sp="sudo pacman -S"
 alias yp="yay -S"
 
-alias c="xclip -sel c"
+# alias c="xclip -sel c"
+# alias paste="xclip -selection clipboard -o"
+
+if test "$DISPLAY_SERVER" = "wayland"
+    alias c="wl-copy"
+    alias paste="wl-paste --type text/plain"
+else if test "$DISPLAY_SERVER" = "x11"
+    alias c="xclip -sel c"
+    alias paste="xclip -selection clipboard -o"
+end
+
+
 alias copy="c"
 alias pwc='echo -n $(pwd) | c'
 alias pwv="cd (p)"
-alias paste="xclip -selection clipboard -o"
 alias p="paste"
 alias prevc="history --max=1 | c"
 

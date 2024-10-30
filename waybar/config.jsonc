@@ -1,62 +1,65 @@
 {
-	"layer": "top",
 	"position": "top",
-	"modules-left": [],
+	"modules-left": ["mpd"],
 	"modules-center": ["hyprland/workspaces"],
-	"modules-right": ["network", "battery", "pulseaudio/slider", "cpu", "clock"],
-
-
-
+	"modules-right": ["pulseaudio", "clock", "tray"],
 	"clock": {
-		"interval": 60,
-		"format": "{:%H:%M}",
-		"tooltip-format": "<tt><small>{calendar}</small></tt>",
-		"calendar": {
-			"mode": "month",
-			"mode-mon-col": 3,
-			"weeks-pos": "right",
-			"on-scroll": 1,
-			"format": {
-				"months": "<span color='#ffead3'><b>{}</b></span>",
-				"days": "<span color='#ecc6d9'><b>{}</b></span>",
-				"weeks": "<span color='#99ffdd'><b>W{}</b></span>",
-				"weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-				"today": "<span color='#ff6699'><b><u>{}</u></b></span>"
-			},
-			"actions": {
-				"on-click-right": "mode",
-				"on-click-forward": "tz_up",
-				"on-click-backward": "tz_down",
-				"on-scroll-up": "shift_up",
-				"on-scroll-down": "shift_down"
-			}
-		}
+		"format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
 	},
-
-
+	"battery": {
+		"states": {
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "<span size='13000' foreground='#a6e3a1'>{icon} </span> {capacity}%",
+		"format-warning": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {capacity}%",
+		"format-critical": "<span size='13000' foreground='#E38C8F'>{icon} </span> {capacity}%",
+		"format-charging": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+		"format-plugged": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+		"format-alt": "<span size='13000' foreground='#B1E3AD'>{icon} </span> {time}",
+		"format-full": "<span size='13000' foreground='#B1E3AD'> </span>{capacity}%",
+		"format-icons": ["", "", "", "", ""],
+		"tooltip-format": "{time}"
+	},
 	"network": {
-		"format": "{essid} {signal_strength}%"
+		"format-wifi": "<span size='13000' foreground='#f5e0dc'>  </span>{essid}",
+		"format-ethernet": "<span size='13000' foreground='#f5e0dc'>󰤭  </span> Disconnected",
+		"format-linked": "{ifname} (No IP) ",
+		"format-disconnected": "<span size='13000' foreground='#f5e0dc'>  </span>Disconnected",
+		"tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
 	},
-
-	"pulseaudio/slider": {
-		"min": 0,
-		"max": 100,
-		"orientation": "horizontal",
-		"format": " {volume}%"
+	"pulseaudio": {
+		"format": "{icon}  {volume}%",
+		"format-muted": "",
+		"format-icons": {
+			"default": ["", "", " "]
+		},
+		"on-click": "pavucontrol"
 	},
-
-	"cpu": {
-		"format": "{usage}%",
-		"interval": 1
-	}
-
+	"mpd": {
+		"format": " {filename}   {stateIcon}    ({elapsedTime:%M:%S}/{totalTime:%M:%S})   {volume}% ",
+		"format-disconnected": "Disconnected ",
+		"format-stopped": "Stopped   {consumeIcon} {randomIcon} {repeatIcon} {singleIcon} ",
+		"interval": 10,
+		"consume-icons": {
+			"on": " " // Icon shows only when "consume" is on
+		},
+		"random-icons": {
+			"off": "<span color=\"#f53c3c\"></span> ", // Icon grayed out when "random" is off
+			"on": " "
+		},
+		"repeat-icons": {
+			"on": " "
+		},
+		"single-icons": {
+			"on": "1 "
+		},
+		"state-icons": {
+			"paused": "",
+			"playing": ""
+		},
+		"tooltip-format": "MPD (connected)",
+		"tooltip-format-disconnected": "MPD (disconnected)"
+	},
 }
-
-
-
-
-
-
-
-
-

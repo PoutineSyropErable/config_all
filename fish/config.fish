@@ -446,6 +446,9 @@ alias update_slideshow="./update_slideshow_files"
 
 export TERMINAL=kitty
 export EDITOR=nvim
+export HYPRSHOT_DIR="$HOME/Pictures/Screenshots"
+# You need to also export this in whatever code runs this
+
 
 
 

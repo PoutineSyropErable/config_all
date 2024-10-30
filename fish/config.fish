@@ -22,6 +22,8 @@ function gc
     git commit -m "$argv"
 end
 
+alias gcm="gc"
+
 alias gpd="git push origin desktop"
 alias gpl="git push origin laptop"
 alias gpm="git push origin master"

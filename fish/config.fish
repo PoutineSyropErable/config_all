@@ -367,7 +367,7 @@ zoxide init fish | source
 #
 # You may also like to assign a key (Ctrl-O) to this command:
 #
-bind \cf 'set old_tty (stty -g); stty sane; lfcd; stty $old_tty; commandline -f repaint'
+bind \cf 'set old_tty (stty -g); stty sane; lf; stty $old_tty; commandline -f repaint'
 #
 # You may put this in a function called fish_user_key_bindings.
 

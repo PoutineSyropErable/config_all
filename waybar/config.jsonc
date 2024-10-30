@@ -4,8 +4,9 @@
 	"modules-center": ["hyprland/workspaces"],
 	"modules-right": ["pulseaudio", "clock", "tray"],
 	"clock": {
-		"format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
-		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+		"format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M:%S}",
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"interval": 1,
 	},
 	"battery": {
 		"states": {
@@ -38,7 +39,8 @@
 		"on-click": "pavucontrol"
 	},
 	"mpd": {
-		"format": " <span color=\"#f53c3c\">{filename}</span>   {stateIcon}    ({elapsedTime:%M:%S}/{totalTime:%M:%S})   {volume}% ",
+		"format": " <span color=\"#42e5ff\">{filename}</span>   <span color=\"#ffc110\">  {stateIcon} {randomIcon}{repeatIcon}{singleIcon}{consumeIcon}  </span>   <span color=\"#ff4cc1\">({elapsedTime:%M:%S}/{totalTime:%M:%S})   {volume}%</span>  ",
+
 		"format-disconnected": "Disconnected ",
 		"format-stopped": "Stopped   {consumeIcon} {randomIcon} {repeatIcon} {singleIcon} ",
 		"interval": 10,

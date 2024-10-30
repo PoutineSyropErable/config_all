@@ -38,7 +38,7 @@
 		"on-click": "pavucontrol"
 	},
 	"mpd": {
-		"format": " {filename}   {stateIcon}    ({elapsedTime:%M:%S}/{totalTime:%M:%S})   {volume}% ",
+		"format": " <span color=\"#f53c3c\">{filename}</span>   {stateIcon}    ({elapsedTime:%M:%S}/{totalTime:%M:%S})   {volume}% ",
 		"format-disconnected": "Disconnected ",
 		"format-stopped": "Stopped   {consumeIcon} {randomIcon} {repeatIcon} {singleIcon} ",
 		"interval": 10,

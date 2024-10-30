@@ -23,6 +23,8 @@ function gc
 end
 
 alias gcm="gc"
+alias git_file_diff="git diff --name-only HEAD"
+alias gfd="git_file_diff"
 
 alias gpd="git push origin desktop"
 alias gpl="git push origin laptop"

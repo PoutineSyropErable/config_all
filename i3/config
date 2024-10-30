@@ -17,7 +17,6 @@ exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
 exec --no-startup-id $HOME/BatteryInfo/start_battery_monitor.sh
 
 
-
 # Unset Wayland environment variable when i3 starts
 exec_always --no-startup-id sh -c 'unset HYPRLAND_INSTANCE_SIGNATURE'
 exec_always --no-startup-id fish -c 'set -e HYPRLAND_INSTANCE_SIGNATURE'
@@ -69,7 +68,24 @@ exec_always --no-startup-id setxkbmap ca fr
 #green = #228b22
 
 #inkwell = #363945
-exec_always --no-startup-id feh  --bg-center --bg-fill --no-fehbg "$HOME/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/8714ab1fb626c435433e749ca0cc83cd.png"
+
+#--------------------------------BACGROUND IMAGES
+set $samurai_background "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/f2d4po3oiaj81.png"
+set $sekiro_background "$HOME/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/8714ab1fb626c435433e749ca0cc83cd.png"
+
+set $pink_anime_girl_background "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/1353156.png"
+set $butterfly_anime_girl_background "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/wp13334761.png"
+
+set $malenia_background "$HOME/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/wp13527036-malenia-elden-ring-wallpapers.png"
+set $cyberpunk_anime_girl_background "$HOME/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/anime cyberpunk girl.png"
+
+set $mortal_blade_background "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/1311862.png"
+set $ranni_moon_background "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/1342688.png"
+
+
+exec_always --no-startup-id feh  --bg-center --bg-fill --no-fehbg $samurai_background 
+
+
 
 exec_always --no-startup-id export TERMINAL=kitty
 
@@ -623,21 +639,22 @@ bindsym $mod+Control+i             exec --no-startup-id $HOME/Pictures/Slideshow
 bindsym $mod+Control+o             exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Master/faster.sh
 
 
-bindsym $mod+Control+m       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "$HOME/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/wp13527036-malenia-elden-ring-wallpapers.png"
-bindsym $mod+Control+Shift+m       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "$HOME/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/anime cyberpunk girl.png"
+bindsym $mod+Control+m       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg $malenia_background 
+bindsym $mod+Control+Shift+m       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg $cyberpunk_anime_girl__background
 
 
 
-bindsym $mod+Control+Shift+n       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/8714ab1fb626c435433e749ca0cc83cd.png"
-bindsym $mod2+Control+n       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/8714ab1fb626c435433e749ca0cc83cd.png"
-bindsym $mod2+Control+shift+n       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/f2d4po3oiaj81.png"
+bindsym $mod+Control+Shift+n       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg 
+bindsym $mod2+Control+n       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg $sekiro_background 
+bindsym $mod2+Control+shift+n       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg $samurai_background
 
 
-bindsym $mod2+Control+m       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/1353156.png"
-bindsym $mod2+Control+shift+m       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/wp13334761.png"
+bindsym $mod2+Control+m       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg $pink_anime_girl_background
+bindsym $mod2+Control+shift+m       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg $butterfly_anime_girl_background
 
-bindsym $mod2+Control+b       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/1342688.png"
-bindsym $mod2+Control+shift+b       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/1311862.png"
+
+bindsym $mod2+Control+b       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg $mortal_blade_background
+bindsym $mod2+Control+shift+b       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg $ranni_moon_background
 
 # Media player controls
 bindsym $mod+$mod2+Up   exec --no-startup-id mpc volume +5
@@ -791,7 +808,7 @@ gaps outer 5
 for_window [class="Polybar"] border none
 for_window [class="Polybar"] floating enable
 
-exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/nohorny_slideshow.sh
+# exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/nohorny_slideshow.sh
 #Oh it only exec at boot makes sense
 bindsym $mod+x exec fish -c "set_public"
 

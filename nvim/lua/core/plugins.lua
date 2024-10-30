@@ -150,7 +150,7 @@ require("lazy").setup({
 	"tpope/vim-fugitive",
 	-- New git plugins vv, needed? idk
 
-	"f-person/git-blame.nvim",
+	-- "f-person/git-blame.nvim",
 	"tpope/vim-rhubarb",
 	"tpope/vim-surround",
 	"airblade/vim-gitgutter",

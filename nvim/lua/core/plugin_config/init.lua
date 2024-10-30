@@ -18,7 +18,7 @@ require("core.plugin_config.alpha")
 require("core.plugin_config.telescope-ui-select")
 require("core.plugin_config.nvim-session-manager")
 
-require("core.plugin_config.tabout")
+-- require("core.plugin_config.tabout")
 require("core.plugin_config.mini_surround")
 require("core.plugin_config.tressj")
 require("core.plugin_config.conform")

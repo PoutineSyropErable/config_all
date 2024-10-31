@@ -21,6 +21,9 @@ map q quit-and-cd
 map Q quit
 map <esc> quit
 
+map V unselect
+map Y unyank
+
 cmd play_video ${{ 
     nohup "$HOME/Videos/i3-video-wallpaper-main/play_video" "\"$f\"" &
 }}
@@ -278,7 +281,7 @@ map cv cd ~/Videos
 map cs cd ~/.local/bin
 map ct cd ~/.local/share/Trash/files
 map cj cd /home/francois/MainPython_Virtual_Environment/projects/polyfem2d
-
+mao ci cd ~/.config/i3
 map cr cd ~/.config/rofi/applets/bin
 
 map cl cd ~/.config/lf
@@ -313,3 +316,4 @@ map ov !codium "$f"
 map oV !codium "."
 map ow !dbus-send --session --dest=org.xfce.Thunar --type=method_call --print-reply --reply-timeout=5000 /org/xfce/FileManager org.xfce.FileManager.Open --string "$f" --string "other"
 map om !mpv "$f"
+map of !thunar "."

@@ -233,7 +233,7 @@ position=bottom
 bottom = true
 
 modules-left = mpv-title mpv-info mpv-control
-modules-center = filesystem keybinds home-space
+modules-center = filesystem keybinds 
 modules-right =  eth gpu gpu_temp gpu_mem memory
 
 
@@ -284,7 +284,7 @@ position=bottom
 bottom = true
 
 modules-left = weather wireless-network
-modules-center =  screen-settings filesystem keybinds home-space 
+modules-center =  screen-settings filesystem keybinds  
 modules-right =  eth gpu gpu_temp gpu_mem memory
 
 

@@ -612,6 +612,7 @@ bindsym $mod+Control+h       exec --no-startup-id $HOME/Pictures/Slideshow_Scrip
 bindsym $mod+Control+Shift+h exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/toohorny_slideshow.sh & 
 bindsym $mod+$mod2+Shift+h exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Master/s_slideshow.sh & 
 bindsym $mod+Control+n       exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/nohorny_slideshow.sh & 
+bindsym $mod+Control+shift+n       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/f2d4po3oiaj81.png"
 
 
 bindsym $mod+Control+j             exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Master/previous.sh
@@ -789,7 +790,7 @@ gaps outer 5
 for_window [class="Polybar"] border none
 for_window [class="Polybar"] floating enable
 
-exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/nohorny_slideshow.sh
+# exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/nohorny_slideshow.sh
 #Oh it only exec at boot makes sense
 bindsym $mod+x exec fish -c "set_public"
 

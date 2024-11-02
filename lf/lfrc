@@ -84,7 +84,25 @@ cmd trash ${{
   done
 }}
 
+
 cmd open &{{
+    # Determine the MIME type of the file
+    mime_type=$(file --mime-type -Lb "$f")
+
+    # Check if the file is a text file
+    case "$mime_type" in
+        text/* | inode/x-empty)
+            # Send the file to nvim using lf-remote if it is a text file
+            lf -remote "send $id \$nvim \$fx"
+            ;;
+        *)
+            # Use xdg-open for non-text files
+            xdg-open "$f"
+            ;;
+    esac
+}}
+
+cmd open3 &{{
 	case $(file --mime-type -Lb $f) in
 		text/*) lf -remote "send $id \$nvim \$fx";;
 		*) xdg-open "$f"
@@ -270,6 +288,8 @@ map sl create_shortcut
 map ch cd ~
 map cc cd ~/.config
 map cD cd ~/Documents
+map ce cd ~/.config/eww
+map ew cd ~/.config/eww
 map cd cd ~/Downloads
 map cp cd ~/Pictures
 map cm cd ~/Music
@@ -314,6 +334,9 @@ map ov !codium "$f"
 map oV !codium "."
 map ow !dbus-send --session --dest=org.xfce.Thunar --type=method_call --print-reply --reply-timeout=5000 /org/xfce/FileManager org.xfce.FileManager.Open --string "$f" --string "other"
 map om !mpv "$f"
+
+map oip !pinta "$f"
+
 
 map of !thunar "$f" &
 map mp !mpc_playsong.sh "$f"

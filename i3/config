@@ -15,6 +15,9 @@
 # For admin authentification. It's a sudo GUI
 exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
 exec --no-startup-id $HOME/BatteryInfo/start_battery_monitor.sh
+exec --no-startup-id eww daemon
+exec --no-startup-id kanata
+#kanata is for home row modifiers keys
 
 
 # Unset Wayland environment variable when i3 starts
@@ -83,7 +86,8 @@ set $mortal_blade_background "/home/francois/Pictures/Desktop Background Slidesh
 set $ranni_moon_background "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/1342688.png"
 
 
-exec_always --no-startup-id feh  --bg-center --bg-fill --no-fehbg $samurai_background 
+exec_always --no-startup-id feh  --bg-center --bg-fill --no-fehbg $samurai_background $sekiro_background
+bindsym $mod+Control+r exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg $samurai_background $malenia_background
 
 
 
@@ -194,6 +198,8 @@ bindsym $mod2+semicolon kill
 bindsym $mod+d exec --no-startup-id ~/.config/rofi/launchers/type-6/launcher.sh
 bindsym $mod2+d exec --no-startup-id ~/.config/rofi/launchers/type-6/launcher.sh
 
+
+bindsym $mod2+e exec --no-startup-id "/home/francois/.config/eww/dashboard/launch_dashboard"
 
 bindsym $mod+b exec --no-startup-id ~/.config/rofi/applets/bin/battery.sh
 bindsym $mod2+b exec --no-startup-id ~/.config/rofi/applets/bin/battery.sh
@@ -630,6 +636,8 @@ bindsym $mod+Control+Shift+h exec --no-startup-id $HOME/Pictures/Slideshow_Scrip
 bindsym $mod+$mod2+Shift+h exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Master/s_slideshow.sh & 
 bindsym $mod+Control+n       exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/nohorny_slideshow.sh & 
 
+bindsym $mod+Control+Shift+n       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg $sekiro_background 
+
 
 bindsym $mod+Control+j             exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Master/previous.sh
 bindsym $mod+Control+k             exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Master/toggle.sh
@@ -644,7 +652,6 @@ bindsym $mod+Control+Shift+m       exec --no-startup-id feh  --bg-center --bg-fi
 
 
 
-bindsym $mod+Control+Shift+n       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg 
 bindsym $mod2+Control+n       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg $sekiro_background 
 bindsym $mod2+Control+shift+n       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg $samurai_background
 

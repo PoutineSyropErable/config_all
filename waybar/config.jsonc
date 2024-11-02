@@ -3,6 +3,11 @@
 	"modules-left": ["mpd"],
 	"modules-center": ["hyprland/workspaces"],
 	"modules-right": ["pulseaudio", "clock", "tray"],
+
+	// "position": "bottom",
+	// "modules-left": ["mpris"],
+		// Bottom bar configuration
+
 	"clock": {
 		"format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M:%S}",
 		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -43,7 +48,7 @@
 
 		"format-disconnected": "Disconnected ",
 		"format-stopped": "Stopped   {consumeIcon} {randomIcon} {repeatIcon} {singleIcon} ",
-		"interval": 10,
+		"interval": 0.1,
 		"consume-icons": {
 			"on": " " // Icon shows only when "consume" is on
 		},
@@ -64,4 +69,6 @@
 		"tooltip-format": "MPD (connected)",
 		"tooltip-format-disconnected": "MPD (disconnected)"
 	},
+
+
 }

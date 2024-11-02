@@ -9,6 +9,22 @@ atuin init fish --disable-up-arrow | source
 source ~/.config/lf/lf.fish
 
 
+
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_MUSIC_DIR="$HOME/Music"
+export XDG_PICTURES_DIR="$HOME/Pictures"
+
+
+export TERMINAL=kitty
+export BROWSER=firefox
+export VISUAL=neovide ## nano for example
+export EDITOR=nvim
+
+export HYPRSHOT_DIR="$HOME/Pictures/Screenshots"
+# You need to also export this in whatever code runs this
+
+
 alias cd="z"
 alias j="z"
 #zoxide is better i think
@@ -57,6 +73,7 @@ alias svim="sudo -E nvim"
 alias ovim="/usr/bin/vim"
 alias vim="nvim"
 alias nano="nvim"
+alias v="vim"
 
 alias slf="sudo -E lf"
 alias fmod="vim ~/.config/fish/config.fish"
@@ -73,7 +90,7 @@ alias nmod="cd ~/.config/nvim ; nvim ."
 
 alias amod="vim ~/.config/awesome/rc.lua"
 alias imod="vim ~/.i3rc"
-alias hmod="vim ~/.hyprrc"
+alias hmod="cd ~/.config/hypr ; vim hyprland.conf"
 alias smod="vim ~/.config/sway/config"
 alias wmod="vim ~/.config/waybar/"
 
@@ -96,6 +113,7 @@ alias jat="jq . |  bat --language json"
 
 alias reload="source ~/.config/fish/config.fish"
 alias r="source ~/.config/fish/config.fish"
+alias cls="clear"
 alias cl="clear"
 alias en="echo -n"
 alias theme="kitty +kitten themes"
@@ -237,7 +255,7 @@ alias ist="govenv ; speedtest-cli ;lvenv"
 
 #alias cd="z"
 # might break stuff idk. i'll keep it for now
-alias v="z"
+# alias v="z"
 alias eva="eza"
 alias ls="eza"
 alias ll='eza -alf'
@@ -245,8 +263,15 @@ alias la='eza -a'
 alias l='eza -cf'
 alias lsdir='ls -d */'
 
+
+#nu shell commands
+alias nls="nu -c 'ls'"
+
+
+
 alias ch='cd ~'
 alias cr="cd ~/.config/rofi"
+alias ce="cd ~/.config/eww"
 alias cm="cd ~/Music"
 alias cP="cd ~/.config/polybar.old/"
 alias cw="cd ~/.config/waybar"
@@ -330,12 +355,15 @@ alias yp="yay -S"
 # alias c="xclip -sel c"
 # alias paste="xclip -selection clipboard -o"
 
+set DISPLAY_SERVER "$XDG_SESSION_TYPE"
 if test "$DISPLAY_SERVER" = "wayland"
     alias c="wl-copy"
     alias paste="wl-paste --type text/plain"
+    alias p="wl-paste --type text/plain"
 else if test "$DISPLAY_SERVER" = "x11"
     alias c="xclip -sel c"
     alias paste="xclip -selection clipboard -o"
+    alias p="xclip -selection clipboard -o"
 end
 
 
@@ -419,6 +447,7 @@ alias "note=xournalpp"
 
 
 export PATH="$HOME:$PATH"
+export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/Documents/Linux Documents/University (real):$PATH"
 export PATH="$HOME/QolScripts:$PATH"
@@ -458,10 +487,6 @@ alias update_slideshow="./update_slideshow_files"
 #alias update_background="update_slideshow_files"
 
 
-export TERMINAL=kitty
-export EDITOR=nvim
-export HYPRSHOT_DIR="$HOME/Pictures/Screenshots"
-# You need to also export this in whatever code runs this
 
 
 

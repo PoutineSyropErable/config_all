@@ -1,0 +1,1 @@
+/home/francois/.config/nvim/lua/core/PluginsDocs/LSP_plugins_file_list.md

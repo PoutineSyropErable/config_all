@@ -110,21 +110,23 @@ lspconfig.clangd.setup({
 	},
 })
 
--- lspconfig.jdtls.setup({
--- 	cmd = { "jdtls" },
--- 	root_dir = lspconfig.util.root_pattern(".git", "pom.xml", "build.gradle", ".classpath"),
--- 	settings = {
--- 		java = {
--- 			configuration = {
--- 				runtimes = {
--- 					{ name = "JavaSE-23", path = "/usr/lib/jvm/java-23-openjdk" },
--- 					{ name = "JavaSE-24", path = "/usr/lib/jvm/liberica-nik-24-full" },
--- 				},
--- 			},
--- 		},
--- 	},
--- 	capabilities = lsp_defaults.capabilities,
--- })
+lspconfig.jdtls.setup({
+	cmd = { "jdtls" },
+	root_dir = lspconfig.util.root_pattern(".git", "pom.xml", "build.gradle", ".classpath"),
+	settings = {
+		java = {
+			configuration = {
+				runtimes = {
+					{ name = "JavaSE-23", path = "/usr/lib/jvm/java-23-openjdk" },
+					-- { name = "JavaFX-23", path = "/usr/lib/jvm/javafx-sdk-23.0.1/lib" },
+					{ name = "JavaSE-17", path = "/usr/lib/jvm/java-17-openjdk" },
+					-- { name = "JavaFX-17", path = "/usr/lib/jvm/javafx-sdk-17.0.13/lib" },
+				},
+			},
+		},
+	},
+	capabilities = lsp_defaults.capabilities,
+})
 
 local opts = { noremap = true, silent = true }
 vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)

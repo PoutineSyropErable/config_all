@@ -20,6 +20,7 @@ cmd quit-and-cd &{{
 map q quit-and-cd
 map Q quit
 map <esc> quit
+map V unselect
 
 cmd play_video ${{ 
     nohup "$HOME/Videos/i3-video-wallpaper-main/play_video" "\"$f\"" &
@@ -27,7 +28,7 @@ cmd play_video ${{
 
 
 cmd paste_clipboard ${{
-	echo -n \"$f\" | xclip -sel c
+	fish -c "echo -n \"$f\" | c"
 }}
 
 # Custom Functions

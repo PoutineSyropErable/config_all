@@ -476,9 +476,19 @@ export PATH="$HOME/.config/conky:$PATH"
 export PATH="$HOME/.config/polybar.old/:$PATH"
 export PATH="$HOME/.config/polybar/:$PATH"
 
-export JAVA_HOME=/usr/bin/jvm/java-22-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export PATH_TO_FX="/usr/lib/jvm/javafx-sdk-17.0.13/lib"
 export PATH="$JAVA_HOME/bin:$PATH"
-export PATH_TO_FX="/usr/lib/jvm/javafx-sdk-23/lib"
+
+# Set paths for JUnit 5 and JUnit 4
+set -gx JUNIT5_PATH /usr/lib/jvm/junit5
+set -gx JUNIT4_PATH /usr/lib/jvm/junit4
+
+# Add JUnit paths to CLASSPATH or module path
+set -gx CLASSPATH $JUNIT5_PATH/junit-jupiter-api-5.11.3.jar \
+                  $JUNIT5_PATH/junit-jupiter-engine-5.11.3.jar \
+                  $JUNIT5_PATH/junit-jupiter-params-5.11.3.jar \
+                  $JUNIT4_PATH/junit-4.13.2.jar 
 
 
 

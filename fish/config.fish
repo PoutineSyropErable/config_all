@@ -18,7 +18,7 @@ export XDG_PICTURES_DIR="$HOME/Pictures"
 
 export TERMINAL=kitty
 export BROWSER=firefox
-export VISUAL=neovide ## nano for example
+# export VISUAL=neovide ## nano for example
 export EDITOR=nvim
 
 export HYPRSHOT_DIR="$HOME/Pictures/Screenshots"
@@ -396,7 +396,6 @@ git diff --no-index --color $argv[1] $argv[2] | diff-so-fancy | bat
 end
 
 
-source /usr/share/autojump/autojump.fish
 zoxide init fish | source
 
 

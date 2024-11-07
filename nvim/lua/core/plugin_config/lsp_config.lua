@@ -110,6 +110,19 @@ lspconfig.clangd.setup({
 	},
 })
 
+local javafx_path = "/usr/lib/jvm/javafx-sdk-17.0.13/lib"
+
+-- Add each JavaFX JAR file
+local javafx_libs = {
+	javafx_path .. "/javafx.base.jar",
+	javafx_path .. "/javafx.controls.jar",
+	javafx_path .. "/javafx.fxml.jar",
+	javafx_path .. "/javafx.graphics.jar",
+	javafx_path .. "/javafx.media.jar",
+	javafx_path .. "/javafx.swing.jar",
+	javafx_path .. "/javafx.web.jar",
+}
+
 lspconfig.jdtls.setup({
 	cmd = { "jdtls" },
 	root_dir = lspconfig.util.root_pattern(".git", "pom.xml", "build.gradle", ".classpath"),

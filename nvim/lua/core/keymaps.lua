@@ -62,12 +62,24 @@ keymap.set({ "" }, "<C-v>", "<C-q>", { noremap = true, silent = true })
 ----------------------Others
 vim.api.nvim_buf_get_name(0)
 -- Run my build command (The basic (F5), and currently selected buffer one (F6))
-vim.api.nvim_set_keymap("n", "<F5>", ":!bash ./build.sh<CR>", { noremap = true, silent = true })
 -- vim.api.nvim_set_keymap("n", "<F6>", ':!bash ./build.sh "%:t"<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<F5>", ":!bash ./build.sh<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap(
 	"n",
 	"<F6>",
 	':lua vim.cmd("!bash ./build.sh " .. vim.fn.shellescape(vim.api.nvim_buf_get_name(0)))<CR>',
+	{ noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<F7>",
+	':lua vim.cmd("!bash ./build_test.sh " .. vim.fn.shellescape(vim.api.nvim_buf_get_name(0)))<CR>',
+	{ noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap(
+	"n",
+	"<F8>",
+	':lua vim.cmd("! " .. vim.fn.shellescape(vim.api.nvim_buf_get_name(0)))<CR>',
 	{ noremap = true, silent = true }
 )
 

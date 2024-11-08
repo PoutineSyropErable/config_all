@@ -94,7 +94,7 @@ cmd open &{{
     case "$mime_type" in
         text/* | inode/x-empty)
             # Send the file to nvim using lf-remote if it is a text file
-            lf -remote "send $id \$nvim \$fx"
+            lf -remote "send $id \$nvim \"\$fx\""
             ;;
         *)
             # Use xdg-open for non-text files
@@ -288,6 +288,7 @@ map sl create_shortcut
 # Movement
 map ch cd ~
 map cc cd ~/.config
+map ck cd ~/.config/kanata
 map cD cd ~/Documents
 map ce cd ~/.config/eww
 map ew cd ~/.config/eww

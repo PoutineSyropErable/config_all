@@ -186,7 +186,7 @@ require("lazy").setup({
 	"hrsh7th/cmp-path",
 	"hrsh7th/cmp-cmdline",
 	"saadparwaiz1/cmp_luasnip",
-
+	"mfussenegger/nvim-lint",
 	"clangd/clangd",
 	"Civitasv/cmake-tools.nvim",
 	-- coc.nvm and my lsp seems to be going against each other, so i won't use it

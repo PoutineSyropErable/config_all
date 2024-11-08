@@ -16,7 +16,7 @@
 exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
 exec --no-startup-id $HOME/BatteryInfo/start_battery_monitor.sh
 exec --no-startup-id eww daemon
-exec --no-startup-id kanata
+exec_always --no-startup-id $HOME/.config/kanata/restart_kanata.sh
 #kanata is for home row modifiers keys
 
 

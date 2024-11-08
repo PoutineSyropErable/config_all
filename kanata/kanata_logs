@@ -1,0 +1,21 @@
+2024-11-07T21:02:29.769718595-05:00 [0m[34m[INFO] [0mkanata v1.6.1 starting
+2024-11-07T21:02:29.769827534-05:00 [0m[34m[INFO] [0mprocess unmapped keys: true
+2024-11-07T21:02:29.769857984-05:00 [0m[34m[INFO] [0mNOTE: kanata was compiled to never allow cmd
+2024-11-07T21:02:29.769920494-05:00 [0m[34m[INFO] [0mconfig file is valid
+2024-11-07T21:02:29.770198862-05:00 [0m[34m[INFO] [0mCreated device "/dev/input/event260"
+2024-11-07T21:02:29.770227031-05:00 [0m[34m[INFO] [0mSleeping for 2s. Please release all keys and don't press additional ones. Run kanata with --help to see how understand more and how to disable this sleep.
+2024-11-07T21:02:31.770301722-05:00 [0m[34m[INFO] [0mentering the processing loop
+2024-11-07T21:02:31.770340292-05:00 [0m[34m[INFO] [0mentering the event loop
+2024-11-07T21:02:31.770347052-05:00 [0m[34m[INFO] [0mlooking for devices in /dev/input
+2024-11-07T21:02:31.770390811-05:00 [0m[34m[INFO] [0mInit: catching only releases and sending immediately
+2024-11-07T21:02:31.865622803-05:00 [0m[34m[INFO] [0mregistering /dev/input/event27: "Razer Razer BlackWidow Elite"
+2024-11-07T21:02:31.955488985-05:00 [0m[34m[INFO] [0mregistering /dev/input/event258: "Razer Razer BlackWidow Elite"
+2024-11-07T21:02:32.002135964-05:00 [0m[34m[INFO] [0mregistering /dev/input/event17: "Razer Razer BlackWidow Elite"
+2024-11-07T21:02:32.297039111-05:00 [0m[34m[INFO] [0mStarting kanata proper
+2024-11-07T21:02:32.297047541-05:00 [0m[34m[INFO] [0mYou may forcefully exit kanata by pressing lctl+spc+esc at any time. These keys refer to defsrc input, meaning BEFORE kanata remaps keys.
+2024-11-07T21:02:39.773583314-05:00 [0m[34m[INFO] [0mwatch found file changes, looking for new devices
+2024-11-07T21:02:39.773595914-05:00 [0m[34m[INFO] [0msleeping for a moment to let devices become ready
+2024-11-07T21:02:39.973661536-05:00 [0m[34m[INFO] [0mlooking for devices in /dev/input
+2024-11-07T21:02:40.168798244-05:00 [0m[34m[INFO] [0mwatch found file changes, looking for new devices
+2024-11-07T21:02:40.168810174-05:00 [0m[34m[INFO] [0msleeping for a moment to let devices become ready
+2024-11-07T21:02:40.368871606-05:00 [0m[34m[INFO] [0mlooking for devices in /dev/input

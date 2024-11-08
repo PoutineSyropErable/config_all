@@ -15,6 +15,7 @@
 !/hypr/
 !/i3/
 !/lf/
+!/kanata/
 !/kitty/
 !/mpc/
 !/mpd/
@@ -114,6 +115,9 @@
 !/kitty/*/*/
 !/kitty/*/*/*/
 !/kitty/*/*/*/*/
+
+
+!/kanata/*
 
 !/mpc/**/*
 !/mpc/*/

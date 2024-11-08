@@ -99,16 +99,31 @@ lspconfig.clangd.setup({
 		"--completion-style=bundled", -- Style for autocompletion
 		"--cross-file-rename", -- Support for renaming symbols across files
 		"--header-insertion=iwyu", -- Include "what you use" insertion
+		"--log=verbose",
 	},
 	capabilities = lsp_defaults.capabilities, -- Auto-completion capabilities
 	filetypes = { "c", "cpp", "objc", "objcpp" },
-	root_dir = lspconfig.util.root_pattern("compile_commands.json", "compile_flags.txt", ".git"),
+	root_dir = lspconfig.util.root_pattern("compile_commands.json", ".clangd", "Makefile", ".git", "compile_flags.txt"),
 	settings = {
 		clangd = {
 			fallbackFlags = { "-std=c++17" }, -- Adjust this if using a different C++ standard
 		},
 	},
 })
+
+-- require("lint").linters_by_ft = {
+-- 	c = { "gcc" }, -- Set GCC as the linter for C files
+-- 	cpp = { "g++" }, -- Set G++ as the linter for C++ files
+-- }
+
+-- require("lint").linters.gcc = {
+-- 	cmd = "gcc", -- Command to invoke GCC
+-- 	stdin = false, -- Don't use stdin for input (GCC reads files directly)
+-- 	args = { "-fsyntax-only" }, -- GCC argument to only check syntax, without producing an executable
+-- 	stream = "stderr", -- Parse errors/warnings from stderr (where GCC outputs diagnostics)
+-- 	ignore_exitcode = true, -- Don't stop parsing if GCC exits with non-zero (error) code
+-- 	parser = require("lint.parser").from_errorformat("%f:%l:%c: %trror: %m,%f:%l:%c: %tarning: %m"),
+-- }
 
 local javafx_path = "/usr/lib/jvm/javafx-sdk-17.0.13/lib"
 

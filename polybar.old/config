@@ -987,7 +987,7 @@ menu-3-0-foreground = ${colors.warning}
 
 ;Sleep/Suspend
 menu-4-0 = "Sleep"
-menu-4-0-exec = mpc -q pause ; amixer set Master mute ; systemctl suspend
+menu-4-0-exec = mpc -q pause ; amixer set Master mute ; systemctl suspend-then-hibernate
 menu-4-0-foreground = ${colors.warning}
 
 

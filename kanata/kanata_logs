@@ -19,3 +19,33 @@
 2024-11-07T21:02:40.168798244-05:00 [0m[34m[INFO] [0mwatch found file changes, looking for new devices
 2024-11-07T21:02:40.168810174-05:00 [0m[34m[INFO] [0msleeping for a moment to let devices become ready
 2024-11-07T21:02:40.368871606-05:00 [0m[34m[INFO] [0mlooking for devices in /dev/input
+2024-11-07T21:05:32.54187371-05:00 [0m[34m[INFO] [0mwatch found file changes, looking for new devices
+2024-11-07T21:05:32.54188719-05:00 [0m[34m[INFO] [0msleeping for a moment to let devices become ready
+2024-11-07T21:05:32.741952677-05:00 [0m[34m[INFO] [0mlooking for devices in /dev/input
+2024-11-07T21:05:32.862129033-05:00 [0m[34m[INFO] [0mwatch found file changes, looking for new devices
+2024-11-07T21:05:32.862143643-05:00 [0m[34m[INFO] [0msleeping for a moment to let devices become ready
+2024-11-07T21:05:33.062203788-05:00 [0m[34m[INFO] [0mlooking for devices in /dev/input
+2024-11-07T22:16:57.47856718-05:00 [0m[34m[INFO] [0mwatch found file changes, looking for new devices
+2024-11-07T22:16:57.47857865-05:00 [0m[34m[INFO] [0msleeping for a moment to let devices become ready
+2024-11-07T22:16:57.678647017-05:00 [0m[34m[INFO] [0mlooking for devices in /dev/input
+2024-11-07T22:16:57.841717229-05:00 [0m[34m[INFO] [0mwatch found file changes, looking for new devices
+2024-11-07T22:16:57.841732659-05:00 [0m[34m[INFO] [0msleeping for a moment to let devices become ready
+2024-11-07T22:16:58.041793895-05:00 [0m[34m[INFO] [0mlooking for devices in /dev/input
+2024-11-07T22:59:15.433681332-05:00 [0m[34m[INFO] [0mwatch found file changes, looking for new devices
+2024-11-07T22:59:15.433696962-05:00 [0m[34m[INFO] [0msleeping for a moment to let devices become ready
+2024-11-07T22:59:15.633776374-05:00 [0m[34m[INFO] [0mlooking for devices in /dev/input
+2024-11-07T22:59:15.791468474-05:00 [0m[34m[INFO] [0mwatch found file changes, looking for new devices
+2024-11-07T22:59:15.791492603-05:00 [0m[34m[INFO] [0msleeping for a moment to let devices become ready
+2024-11-07T22:59:15.991556425-05:00 [0m[34m[INFO] [0mlooking for devices in /dev/input
+2024-11-07T23:22:54.832044257-05:00 [0m[34m[INFO] [0mwatch found file changes, looking for new devices
+2024-11-07T23:22:54.832066637-05:00 [0m[34m[INFO] [0msleeping for a moment to let devices become ready
+2024-11-07T23:22:55.032131124-05:00 [0m[34m[INFO] [0mlooking for devices in /dev/input
+2024-11-07T23:22:55.237969798-05:00 [0m[34m[INFO] [0mwatch found file changes, looking for new devices
+2024-11-07T23:22:55.237986158-05:00 [0m[34m[INFO] [0msleeping for a moment to let devices become ready
+2024-11-07T23:22:55.438058484-05:00 [0m[34m[INFO] [0mlooking for devices in /dev/input
+2024-11-08T00:20:01.026082033-05:00 [0m[34m[INFO] [0mwatch found file changes, looking for new devices
+2024-11-08T00:20:01.026095933-05:00 [0m[34m[INFO] [0msleeping for a moment to let devices become ready
+2024-11-08T00:20:01.226161214-05:00 [0m[34m[INFO] [0mlooking for devices in /dev/input
+2024-11-08T00:20:01.427619393-05:00 [0m[34m[INFO] [0mwatch found file changes, looking for new devices
+2024-11-08T00:20:01.427635253-05:00 [0m[34m[INFO] [0msleeping for a moment to let devices become ready
+2024-11-08T00:20:01.627703524-05:00 [0m[34m[INFO] [0mlooking for devices in /dev/input

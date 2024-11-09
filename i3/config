@@ -12,6 +12,15 @@
 # i3 config file (v4)
 ## Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+
+# Canadian French. French Canadian. keyboard binding. keyboard layout. key binding
+exec_always --no-startup-id setxkbmap ca fr
+bindsym $mod+minus exec --no-startup-id setxkbmap ca fr
+#exec_always --no-startup-id $HOME/refresh_xbindkeys
+#^ This doesnt exist
+
+
+
 # For admin authentification. It's a sudo GUI
 exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
 exec --no-startup-id $HOME/BatteryInfo/start_battery_monitor.sh
@@ -30,11 +39,6 @@ exec --no-startup-id fish -c "kmux"
 
 
 #------------------------
-# Canadian French. French Canadian. keyboard binding. keyboard layout. key binding
-exec_always --no-startup-id setxkbmap ca fr
-#exec_always --no-startup-id $HOME/refresh_xbindkeys
-# Since now, I've switched to Windows+Right shift for those. 
-# I could add a custom toggle for xbindkeys. Using windows + guillemotleft («) next to shift. 
 
 
 
@@ -121,9 +125,6 @@ client.background       #FFFFFF
 #  }
 #}
 
-#exec --no-startup-id rm $HOME/.config/google-chrome/SingletonLock
-#exec --no-startup-id rm $HOME/.viminfo
-#exec --no-startup-id rm -rf ~/.cache/thumbnails/*
 
 #Windows = mod (Primary). Alt = mod2 (Secondary)
 set $mod Mod4
@@ -141,15 +142,20 @@ font pango:monospace 12
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
 
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
+
+# xss-lock grabs a logind suspend inhibit lock and will use a specified locker to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen -l
 
+# Use xautolock to lock the screen after 10 minutes of idle
+exec --no-startup-id xautolock -time 10 -locker "betterlockscreen -l" -notify 30 -notifier "notify-send 'Locking in 30 seconds...'"
 
-exec --no-startup-id xset s 600 #lock timeout
+# Turn off the display after 15 minutes of idle time
+exec --no-startup-id xset dpms 0 0 900
+
+# Use xautolock to suspend-then-hibernate after 20 minutes of idle
+exec --no-startup-id xautolock -killtime 20 -killer "systemctl suspend-then-hibernate"
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -824,4 +830,3 @@ bindsym $mod+x exec fish -c "set_public"
 #exec --no-startup-id mpdris2-rs --no-notification --host localhost:6600
 
 #exec --no-startup-id "$HOME/WindowsFileSystem/mount_windows.sh"
-bindsym $mod+minus exec --no-startup-id setxkbmap ca fr

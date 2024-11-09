@@ -10,19 +10,19 @@ source "$HOME"/.config/rofi/applets/shared/theme.bash
 theme="$type/$style"
 
 # Theme Elements
-prompt="`hostname`"
-mesg="Uptime : `uptime -p | sed -e 's/up //g'`"
+prompt="$(hostname)"
+mesg="Uptime : $(uptime -p | sed -e 's/up //g')"
 
-if [[ ( "$theme" == *'type-1'* ) || ( "$theme" == *'type-3'* ) || ( "$theme" == *'type-5'* ) ]]; then
+if [[ ("$theme" == *'type-1'*) || ("$theme" == *'type-3'*) || ("$theme" == *'type-5'*) ]]; then
 	list_col='1'
 	list_row='6'
-elif [[ ( "$theme" == *'type-2'* ) || ( "$theme" == *'type-4'* ) ]]; then
+elif [[ ("$theme" == *'type-2'*) || ("$theme" == *'type-4'*) ]]; then
 	list_col='6'
 	list_row='1'
 fi
 
 # Options
-layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
+layout=$(cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2)
 if [[ "$layout" == 'NO' ]]; then
 	option_1=" Lock"
 	option_2=" Logout"
@@ -52,9 +52,9 @@ rofi_cmd() {
 		-mesg "$mesg" \
 		-markup-rows \
 		-theme ${theme} \
-		-kb-row-up    'i,Up' \
-		-kb-row-down  'k,Down' \
-		-kb-row-left  'j' \
+		-kb-row-up 'i,Up' \
+		-kb-row-down 'k,Down' \
+		-kb-row-left 'j' \
 		-kb-row-right 'l' \
 		-kb-accept-entry 'h,Return'
 }
@@ -64,8 +64,6 @@ rofi_cmd() {
 run_rofi() {
 	echo -e "$option_1\n$option_2\n$option_3\n$option_4\n$option_5\n$option_6" | rofi_cmd
 }
-
-
 
 # Confirmation CMD
 confirm_cmd() {
@@ -86,13 +84,13 @@ confirm_exit() {
 }
 
 # Confirm and execute
-confirm_run () {	
+confirm_run() {
 	selected="$(confirm_exit)"
 	if [[ "$selected" == "$yes" ]]; then
-        ${1} && ${2} && ${3}
-    else
-        exit
-    fi	
+		${1} && ${2} && ${3}
+	else
+		exit
+	fi
 }
 
 # Execute Command
@@ -100,9 +98,9 @@ run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
 		betterlockscreen -l
 	elif [[ "$1" == '--opt2' ]]; then
-		confirm_run '/home/francois/.config/rofi/applets/bin/exit.sh'
+		confirm_run '/home/francois/.config/rofi/applets/bin/__exit.sh'
 	elif [[ "$1" == '--opt3' ]]; then
-		confirm_run 'mpc -q pause' 'amixer set Master mute' 'systemctl suspend'
+		confirm_run 'mpc -q pause' 'amixer set Master mute' 'systemctl suspend-then-hibernate'
 	elif [[ "$1" == '--opt4' ]]; then
 		confirm_run 'systemctl hibernate'
 	elif [[ "$1" == '--opt5' ]]; then
@@ -115,23 +113,22 @@ run_cmd() {
 # Actions
 chosen="$(run_rofi)"
 case ${chosen} in
-    $option_1)
-		run_cmd --opt1
-        ;;
-    $option_2)
-		run_cmd --opt2
-        ;;
-    $option_3)
-		run_cmd --opt3
-        ;;
-    $option_4)
-		run_cmd --opt4
-        ;;
-    $option_5)
-		run_cmd --opt5
-        ;;
-    $option_6)
-		run_cmd --opt6
-        ;;
+$option_1)
+	run_cmd --opt1
+	;;
+$option_2)
+	run_cmd --opt2
+	;;
+$option_3)
+	run_cmd --opt3
+	;;
+$option_4)
+	run_cmd --opt4
+	;;
+$option_5)
+	run_cmd --opt5
+	;;
+$option_6)
+	run_cmd --opt6
+	;;
 esac
-

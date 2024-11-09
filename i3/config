@@ -729,20 +729,20 @@ bindsym $mod+$mod2+Control+Down exec "$HOME/Videos/i3-video-wallpaper-main/mpv-c
 bindsym $mod+$mod2+Control+Up exec "$HOME/Videos/i3-video-wallpaper-main/mpv-control.sh volume +5"
 
 # Pactl volume down
-bindsym $mod+End exec "pactl set-sink-volume @DEFAULT_SINK@ -1%"
-bindsym $mod+Shift+End exec "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+bindsym $mod+Home exec "pactl set-sink-volume @DEFAULT_SINK@ -1%"
+bindsym $mod+Shift+Home exec "pactl set-sink-volume @DEFAULT_SINK@ -5%"
 
 # Pactl volume up
-bindsym $mod+Home exec "pactl set-sink-volume @DEFAULT_SINK@ +1%"
-bindsym $mod+Shift+Home exec "pactl set-sink-volume @DEFAULT_SINK@ +5%"
+bindsym $mod+End exec "pactl set-sink-volume @DEFAULT_SINK@ +1%"
+bindsym $mod+Shift+End exec "pactl set-sink-volume @DEFAULT_SINK@ +5%"
 
 # Pactl volume down
-bindsym $mod2+End exec "pactl set-sink-volume @DEFAULT_SINK@ -1%"
-bindsym $mod2+Shift+End exec "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+bindsym $mod2+Home exec "pactl set-sink-volume @DEFAULT_SINK@ -1%"
+bindsym $mod2+Shift+Home exec "pactl set-sink-volume @DEFAULT_SINK@ -5%"
 
 # Pactl volume up
-bindsym $mod2+Home exec "pactl set-sink-volume @DEFAULT_SINK@ +1%"
-bindsym $mod2+Shift+Home exec "pactl set-sink-volume @DEFAULT_SINK@ +5%"
+bindsym $mod2+End exec "pactl set-sink-volume @DEFAULT_SINK@ +1%"
+bindsym $mod2+Shift+End exec "pactl set-sink-volume @DEFAULT_SINK@ +5%"
 
 # MPC volume down
 bindsym $mod2+Next exec "mpc volume -1"

@@ -38,6 +38,7 @@ end
 alias svim="sudo -E nvim"
 alias ovim="/usr/bin/vim"
 alias vim="nvim"
+alias v="nvim"
 alias nano="nvim"
 
 alias slf="sudo -E lf"
@@ -215,9 +216,9 @@ alias ist="govenv ; speedtest-cli ;lvenv"
 #internet network listen
 
 
-#alias cd="z"
+alias cd="z"
 # might break stuff idk. i'll keep it for now
-alias v="z"
+# alias v="z"
 alias eva="eza"
 alias ls="eza"
 alias ll='eza -alf'
@@ -231,6 +232,7 @@ alias cm="cd ~/Music"
 alias cP="cd ~/.config/polybar.old/"
 alias clf="cd ~/.config/lf"
 alias cdoc="cd ~/Documents"
+alias cpi="cd ~/Pictures"
 alias cdo="cd ~/Downloads"
 alias cco="cd ~/.config"
 alias ct="cd ~/.local/share/Trash/files"

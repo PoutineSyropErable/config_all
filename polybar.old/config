@@ -1071,7 +1071,8 @@ interface = wlan0
 ; Minimum output width of upload/download rate
 ;format-connected = <ramp-signal>
 ;format-packetloss = <animation-packetloss> <label-connected>
-label-connected = %{F#00ff00}    %upspeed%     %{F#ff0000} %downspeed% %{F-}
+label-connected =​   	%{F#00ff00}   %upspeed%    %{F#ff0000} %downspeed% %{F-}    %{F#ffc100}1 Gbit/s %{F-} 
+#HARD CODED LINK SPEED
 
 
 

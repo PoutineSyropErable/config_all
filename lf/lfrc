@@ -88,10 +88,18 @@ cmd trash ${{
 }}
 
 cmd open &{{
+	extension="${f##*.}"
+	if [[ "$extension" == "xopp" ]]; then
+		notify-send "pass the if '$f'"
+		xournalpp "$f"
+		notify-send "after"
+	else
+	
 	case $(file --mime-type -Lb $f) in
 		text/*) lf -remote "send $id \$nvim \$fx";;
 		*) xdg-open "$f"
 	esac
+	fi
 }}
 
 cmd on-select &{{

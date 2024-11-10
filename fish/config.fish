@@ -9,19 +9,51 @@ atuin init fish --disable-up-arrow | source
 source ~/.config/lf/lf.fish
 
 
-#alias cd="z"
+
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_MUSIC_DIR="$HOME/Music"
+export XDG_PICTURES_DIR="$HOME/Pictures"
+
+
+export TERMINAL=kitty
+export BROWSER=firefox
+# export VISUAL=neovide ## nano for example
+export EDITOR=nvim
+
+export HYPRSHOT_DIR="$HOME/Pictures/Screenshots"
+# You need to also export this in whatever code runs this
+
+
+alias cd="z"
 alias j="z"
 #zoxide is better i think
+alias et="exit"
+alias lg="lazygit"
 
 
 #atuin init fish --disable-ctrl-r --disable-up-arrow | source
+alias ga="git add ."
+function gc
+	git commit -m "$argv"
+end
+
+alias gcm="gc"
+alias git_file_diff="git diff --name-only HEAD"
+alias gfd="git_file_diff"
+
+alias gpd="git push origin desktop"
+alias gpl="git push origin laptop"
+alias gpm="git push origin master"
 
 function gcl
+	cd ~/.config
 	git checkout laptop
 	cd -
 end
 
 function gcd
+	cd ~/.config
 	git checkout desktop
 	cd -
 end
@@ -35,11 +67,13 @@ function get
 end
 
 
+
+
 alias svim="sudo -E nvim"
 alias ovim="/usr/bin/vim"
 alias vim="nvim"
-alias v="nvim"
 alias nano="nvim"
+alias v="vim"
 
 alias slf="sudo -E lf"
 alias fmod="vim ~/.config/fish/config.fish"
@@ -52,13 +86,14 @@ alias ncmod="vim ~/.ncmpcpp/config"
 alias cmod="vim ~/.config/conky/show_all/show_all_conf"
 alias vmod="cd ~/.config/nvim ; nvim ."
 alias cnv="cd ~/.config/nvim ; nvim ."
-alias nmod="cd ~/.config/nvim ; nvim ."
 
 alias keymod="cd ~/.config/nvim ; nvim lua/core/keymaps.lua"
 
+alias nmod="cd ~/.config/nvim ; nvim ."
+
 alias amod="vim ~/.config/awesome/rc.lua"
 alias imod="vim ~/.i3rc"
-alias hmod="vim ~/.hyprrc"
+alias hmod="cd ~/.config/hypr ; vim hyprland.conf"
 alias smod="vim ~/.config/sway/config"
 alias wmod="vim ~/.config/waybar/"
 
@@ -74,8 +109,6 @@ alias cn="cd ~/.config/nvim"
 alias lsblk1="lsblk -o +PARTLABEL"
 
 
-alias cs9="ch ; cd sem9"
-
 alias franckfind="grep -r -l "/home/francois" ."
 alias ff="grep -r -l "/home/francois" ."
 
@@ -83,6 +116,7 @@ alias jat="jq . |  bat --language json"
 
 alias reload="source ~/.config/fish/config.fish"
 alias r="source ~/.config/fish/config.fish"
+alias cls="clear"
 alias cl="clear"
 alias en="echo -n"
 alias theme="kitty +kitten themes"
@@ -174,7 +208,13 @@ function govenv
 	source $HOME/MainPython_Virtual_Environment/pip_venv/bin/activate.fish
 end
 
+function govenv3
+	source $HOME/MainPython_Virtual_Environment/pip3_venv/bin/activate.fish
+end
 
+function govenvt
+	source $HOME/MainPython_Virtual_Environment/venv_test/bin/activate.fish
+end
 alias searchdir="rg --files | fzf"
 alias sdir="searchdir"
 
@@ -216,7 +256,7 @@ alias ist="govenv ; speedtest-cli ;lvenv"
 #internet network listen
 
 
-alias cd="z"
+#alias cd="z"
 # might break stuff idk. i'll keep it for now
 # alias v="z"
 alias eva="eza"
@@ -226,18 +266,31 @@ alias la='eza -a'
 alias l='eza -cf'
 alias lsdir='ls -d */'
 
+
+#nu shell commands
+alias nls="nu -c 'ls'"
+
+
+
 alias ch='cd ~'
 alias cr="cd ~/.config/rofi"
+alias ce="cd ~/.config/eww"
 alias cm="cd ~/Music"
 alias cP="cd ~/.config/polybar.old/"
-alias clf="cd ~/.config/lf"
-alias cdoc="cd ~/Documents"
+alias cw="cd ~/.config/waybar"
+alias cH="cd ~/.config/hypr"
 alias cpi="cd ~/Pictures"
+alias clf="cd ~/.config/lf"
+alias chy="cd ~/.config/hypr"
+alias cdoc="cd ~/Documents"
 alias cdo="cd ~/Downloads"
 alias cco="cd ~/.config"
+alias ck="cd ~/.config/kanata"
 alias ct="cd ~/.local/share/Trash/files"
 alias ctm="cd ~/.config/tmux"
 alias chg=" cd ~/home_for_git"
+alias cs9="cd ~ ; cd sem9"
+
 
 alias kmux="tmux kill-server"
 alias lmux="tmux detach"
@@ -303,10 +356,24 @@ end
 alias sp="sudo pacman -S"
 alias yp="yay -S"
 
-alias c="xclip -sel c"
+# alias c="xclip -sel c"
+# alias paste="xclip -selection clipboard -o"
+
+set DISPLAY_SERVER "$XDG_SESSION_TYPE"
+if test "$DISPLAY_SERVER" = "wayland"
+	alias c="wl-copy"
+	alias paste="wl-paste --type text/plain"
+	alias p="wl-paste --type text/plain"
+else if test "$DISPLAY_SERVER" = "x11"
+	alias c="xclip -sel c"
+	alias paste="xclip -selection clipboard -o"
+	alias p="xclip -selection clipboard -o"
+end
+
+
 alias copy="c"
-alias pwc="echo -n (pwd) | c"
-alias paste="xclip -selection clipboard -o"
+alias pwc='echo -n $(pwd) | c'
+alias pwv="cd (p)"
 alias p="paste"
 alias prevc="history --max=1 | c"
 
@@ -333,7 +400,6 @@ function bdiff
 end
 
 
-source /usr/share/autojump/autojump.fish
 zoxide init fish | source
 
 
@@ -349,7 +415,7 @@ zoxide init fish | source
 #
 # You may also like to assign a key (Ctrl-O) to this command:
 #
-bind \cf 'set old_tty (stty -g); stty sane; lfcd; stty $old_tty; commandline -f repaint'
+bind \cf 'set old_tty (stty -g); stty sane; lf; stty $old_tty; commandline -f repaint'
 #
 # You may put this in a function called fish_user_key_bindings.
 
@@ -384,7 +450,7 @@ alias "note=xournalpp"
 
 
 export PATH="$HOME:$PATH"
-export PATH="$HOME/node_modules/tree-sitter-cli:$PATH"
+export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/Documents/Linux Documents/University (real):$PATH"
 export PATH="$HOME/QolScripts:$PATH"
@@ -413,9 +479,20 @@ export PATH="$HOME/.config/conky:$PATH"
 export PATH="$HOME/.config/polybar.old/:$PATH"
 export PATH="$HOME/.config/polybar/:$PATH"
 
-export JAVA_HOME=/usr/bin/jvm/java-22-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk
+export PATH_TO_FX="/usr/lib/jvm/javafx-sdk-17.0.13/lib"
 export PATH="$JAVA_HOME/bin:$PATH"
-export PATH_TO_FX="/usr/lib/jvm/javafx-sdk-23/lib"
+
+# Set paths for JUnit 5 and JUnit 4
+set -gx JUNIT5_PATH /usr/lib/jvm/junit5
+set -gx JUNIT4_PATH /usr/lib/jvm/junit4
+
+# Add JUnit paths to CLASSPATH or module path
+set -gx CLASSPATH $JUNIT5_PATH/junit-jupiter-api-5.11.3.jar \
+$JUNIT5_PATH/junit-jupiter-engine-5.11.3.jar \
+$JUNIT5_PATH/junit-jupiter-params-5.11.3.jar \
+$JUNIT4_PATH/junit-4.13.2.jar 
+
 
 
 alias convert_folder="./update_slideshow_files"
@@ -423,8 +500,7 @@ alias update_slideshow="./update_slideshow_files"
 #alias update_background="update_slideshow_files"
 
 
-export TERMINAL=kitty
-export EDITOR=nvim
+
 
 
 
@@ -477,4 +553,3 @@ alias set_public="$HOME/.local/share/private/local/settings/set_public.sh"
 
 
 eval (tmuxifier init - fish)
-

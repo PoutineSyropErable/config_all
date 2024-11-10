@@ -20,9 +20,7 @@ cmd quit-and-cd &{{
 map q quit-and-cd
 map Q quit
 map <esc> quit
-
 map V unselect
-map Y unyank
 
 cmd play_video ${{ 
     nohup "$HOME/Videos/i3-video-wallpaper-main/play_video" "\"$f\"" &
@@ -30,7 +28,7 @@ cmd play_video ${{
 
 
 cmd paste_clipboard ${{
-	echo -n \"$f\" | xclip -sel c
+	fish -c "echo -n \"$f\" | c"
 }}
 
 # Custom Functions
@@ -87,19 +85,29 @@ cmd trash ${{
   done
 }}
 
+
 cmd open &{{
-	extension="${f##*.}"
-	if [[ "$extension" == "xopp" ]]; then
-		notify-send "pass the if '$f'"
-		xournalpp "$f"
-		notify-send "after"
-	else
-	
+    # Determine the MIME type of the file
+    mime_type=$(file --mime-type -Lb "$f")
+
+    # Check if the file is a text file
+    case "$mime_type" in
+        text/* | inode/x-empty)
+            # Send the file to nvim using lf-remote if it is a text file
+            lf -remote "send $id \$nvim \"\$fx\""
+            ;;
+        *)
+            # Use xdg-open for non-text files
+            xdg-open "$f"
+            ;;
+    esac
+}}
+
+cmd open3 &{{
 	case $(file --mime-type -Lb $f) in
 		text/*) lf -remote "send $id \$nvim \$fx";;
 		*) xdg-open "$f"
 	esac
-	fi
 }}
 
 cmd on-select &{{
@@ -280,7 +288,10 @@ map sl create_shortcut
 # Movement
 map ch cd ~
 map cc cd ~/.config
+map ck cd ~/.config/kanata
 map cD cd ~/Documents
+map ce cd ~/.config/eww
+map ew cd ~/.config/eww
 map cd cd ~/Downloads
 map cp cd ~/Pictures
 map cm cd ~/Music
@@ -289,12 +300,13 @@ map cv cd ~/Videos
 map cs cd ~/.local/bin
 map ct cd ~/.local/share/Trash/files
 map cj cd /home/francois/MainPython_Virtual_Environment/projects/polyfem2d
-mao ci cd ~/.config/i3
+
 map cr cd ~/.config/rofi/applets/bin
 
 map cl cd ~/.config/lf
 map cP cd ~/.config/polybar.old
-
+map cH cd ~/.config/hypr
+map cw cd ~/.config/waybar
 
 
 cmd open_dir_nvim  ${{ 
@@ -324,4 +336,9 @@ map ov !codium "$f"
 map oV !codium "."
 map ow !dbus-send --session --dest=org.xfce.Thunar --type=method_call --print-reply --reply-timeout=5000 /org/xfce/FileManager org.xfce.FileManager.Open --string "$f" --string "other"
 map om !mpv "$f"
-map of !thunar "."
+
+map oip !pinta "$f"
+
+
+map of !thunar "$f" &
+map mp !mpc_playsong.sh "$f"

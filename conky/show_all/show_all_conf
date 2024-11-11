@@ -1,7 +1,9 @@
 #!/config
 
 conky.config = {
- 
+    --out_to_x = false,
+    --out_to_wayland = true,
+
     --Various settings
  
     background = true,                          -- forked to background
@@ -131,9 +133,9 @@ ${color2}${font Roboto:size=11}D R I V E S   ${hr 2}${font}${color}
     ${color1}I/O Write:${color1} ${alignr}${offset -10}${diskio_write /dev/nvme0n1p6}${alignr}${diskiograph_write nvme0n1p6 8,100}
 
 ${color2}${font Roboto:size=11}N E T W O R K   ${hr 2}${font}${color}
-    ${color1}IP Address: ${color1}${offset 35$}${addrs wlan0}
-    ${color1}Eth Up:${color1} ${alignr}${offset -10$}${upspeed wlan0}${alignr}${upspeedgraph wlan0 8,100}
-    ${color1}Eth Down:${color1} ${alignr}${offset -10$}${downspeed wlan0}${alignr}${downspeedgraph wlan0 8,100}
+    ${color1}IP Address: ${color1}${offset 35$}${addrs enp14s0}
+    ${color1}Eth Up:${color1} ${alignr}${offset -10$}${upspeed enp14s0}${alignr}${upspeedgraph wlan0 8,100}
+    ${color1}Eth Down:${color1} ${alignr}${offset -10$}${downspeed enp14s0}${alignr}${downspeedgraph wlan0 8,100}
  
 ${color2}${font Roboto:size=11}P R O C E S S E S ${hr 2}${font}${color}
     ${color1}TOP: ${alignr}${offset -40}PID      ${alignr}CPU%      Mem%

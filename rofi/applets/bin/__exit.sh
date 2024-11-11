@@ -18,6 +18,9 @@ elif pgrep -x "sway" >/dev/null; then
 elif pgrep -x "awesome" >/dev/null; then
 	echo "awesome"
 	awesome-client 'awesome.quit()'
+elif pgrep -x "bspwm" >/dev/null; then
+	echo "bspwm"
+	bspc quit
 fi
 
 echo "it got here"

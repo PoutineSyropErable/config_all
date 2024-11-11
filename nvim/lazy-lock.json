@@ -45,6 +45,7 @@
   "nvim-lspconfig": { "branch": "master", "commit": "bc6ada4b0892b7f10852c0b8ca7209fd39a6d754" },
   "nvim-neoclip.lua": { "branch": "main", "commit": "32e05f2d23dc5b6a284a688c0535a83d1bfc633f" },
   "nvim-nio": { "branch": "master", "commit": "a428f309119086dc78dd4b19306d2d67be884eee" },
+  "nvim-parinfer": { "branch": "master", "commit": "5ca09287ab3f4144f78ff7977fabc27466f71044" },
   "nvim-tmux-navigation": { "branch": "main", "commit": "4898c98702954439233fdaf764c39636681e2861" },
   "nvim-tree.lua": { "branch": "master", "commit": "610a1c189bdb2b9b936169b2ea9d1838f971fa2b" },
   "nvim-treesitter": { "branch": "master", "commit": "7dc8aabe86db8c2f23520e8334f7584f83e84342" },
@@ -75,5 +76,6 @@
   "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },
   "vim-test": { "branch": "master", "commit": "b0661402277de193a374ae241f0742898cbcb319" },
   "vimux": { "branch": "master", "commit": "7db6b2f79d432ee3820668b1d4625311dbe1d0ad" },
-  "which-key.nvim": { "branch": "main", "commit": "8badb359f7ab8711e2575ef75dfe6fbbd87e4821" }
+  "which-key.nvim": { "branch": "main", "commit": "8badb359f7ab8711e2575ef75dfe6fbbd87e4821" },
+  "yuck.vim": { "branch": "master", "commit": "9b5e0370f70cc30383e1dabd6c215475915fe5c3" }
 }

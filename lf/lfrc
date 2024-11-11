@@ -1,9 +1,9 @@
-#!/config
+l
 set ratios 1:2:3
-set previewer ctpv
-set cleaner ctpvclear
-&ctpv -s $id
-&ctpvquit $id
+set previewer ~/.config/lf/previewer.sh
+set cleaner ~/.config/lf/cleaner.sh
+# &ctpv -s $id
+# &ctpvquit $id
 
 # Basic Settings
 set hidden true
@@ -281,7 +281,12 @@ map R reload
 map mf mkfile
 map md mkdir
 map bg setwallpaper
-map C clear
+
+
+
+
+map Ci !/home/francois/.config/lf/cleaner.sh >> /dev/null &
+map Cc clear
 
 map sl create_shortcut
 

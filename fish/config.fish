@@ -6,6 +6,7 @@ end
 thefuck --alias | source
 alias f="fuck"
 atuin init fish --disable-up-arrow | source
+# starship init fish | source
 source ~/.config/lf/lf.fish
 
 
@@ -86,6 +87,8 @@ alias ncmod="vim ~/.ncmpcpp/config"
 alias cmod="vim ~/.config/conky/show_all/show_all_conf"
 alias vmod="cd ~/.config/nvim ; nvim ."
 alias cnv="cd ~/.config/nvim ; nvim ."
+
+alias bsmod="cd ~/.config/bspwm ; nvim bspwmrc"
 
 alias keymod="cd ~/.config/nvim ; nvim lua/core/keymaps.lua"
 
@@ -450,6 +453,7 @@ alias "note=xournalpp"
 
 
 export PATH="$HOME:$PATH"
+export PATH="$HOME/AppImages:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/Documents/Linux Documents/University (real):$PATH"

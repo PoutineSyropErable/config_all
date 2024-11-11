@@ -189,6 +189,8 @@ require("lazy").setup({
 	"mfussenegger/nvim-lint",
 	"clangd/clangd",
 	"Civitasv/cmake-tools.nvim",
+	"elkowar/yuck.vim",
+	-- "gpanders/nvim-parinfer",
 	-- coc.nvm and my lsp seems to be going against each other, so i won't use it
 
 	-- "jayp0521/mason-null-ls.nvim",

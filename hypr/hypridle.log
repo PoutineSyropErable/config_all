@@ -1,0 +1,203 @@
+[LOG] Registered timeout rule for 5s:
+      on-timeout: notify-send 'Locking in 30 seconds...'
+      on-resume: 
+[LOG] Registered timeout rule for 10s:
+      on-timeout: brightnessctl -s set 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 15s:
+      on-timeout: loginctl lock-session
+      on-resume: 
+[LOG] Registered timeout rule for 20s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 25s:
+      on-timeout: systemctl suspend-then-hibernate
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]   | got iface: wl_output v4
+[LOG] found 5 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_35
+[LOG] Idled: rule 5c1aded977a0
+[LOG] Running notify-send 'Locking in 30 seconds...'
+[LOG] Executing notify-send 'Locking in 30 seconds...'
+[LOG] Process Created with pid 20934
+[LOG] Idled: rule 5c1aded977e8
+[LOG] Running brightnessctl -s set 10
+[LOG] Executing brightnessctl -s set 10
+[LOG] Process Created with pid 20967
+Updated device 'input3:blue':
+Device 'input3:blue' of class 'leds':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+[LOG] Idled: rule 5c1aded97830
+[LOG] Running loginctl lock-session
+[LOG] Executing loginctl lock-session
+[LOG] Process Created with pid 21045
+[LOG] Got dbus .Session
+[LOG] Got Lock from dbus
+[LOG] Locking with pidof hyprlock || hyprlock
+[LOG] Executing pidof hyprlock || hyprlock
+[LOG] Process Created with pid 21052
+[LOG] Idled: rule 5c1aded97878
+[LOG] Running hyprctl dispatch dpms off
+[LOG] Executing hyprctl dispatch dpms off
+[LOG] Process Created with pid 21112
+ok
+[LOG] Idled: rule 5c1aded978c0
+[LOG] Running systemctl suspend-then-hibernate
+[LOG] Executing systemctl suspend-then-hibernate
+[LOG] Process Created with pid 21137
+[LOG] Got PrepareForSleep from dbus with sleep true
+[LOG] Running: loginctl lock-session
+[LOG] Executing loginctl lock-session
+[LOG] Process Created with pid 21145
+[WARN] No cookie in uninhibit
+[LOG] ScreenSaver inhibit: false dbus message from  (owner: :1.109) with content 
+[WARN] BUG THIS: inhibit locks < 0: -1
+[LOG] Inhibit locks: 0
+[LOG] Got dbus .Session
+[LOG] Got Lock from dbus
+[LOG] Locking with pidof hyprlock || hyprlock
+[LOG] Executing pidof hyprlock || hyprlock
+[LOG] Process Created with pid 21153
+21052
+[LOG] Registered timeout rule for 5s:
+      on-timeout: notify-send 'Locking in 30 seconds...'
+      on-resume: 
+[LOG] Registered timeout rule for 10s:
+      on-timeout: brightnessctl -s set 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 15s:
+      on-timeout: loginctl lock-session
+      on-resume: 
+[LOG] Registered timeout rule for 20s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 25s:
+      on-timeout: systemctl suspend-then-hibernate
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]   | got iface: wl_output v4
+[LOG] found 5 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_32
+[LOG] ScreenSaver inhibit: true dbus message from /usr/lib/electron33/electron (owner: :1.39) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1337 sent
+[LOG] Idled: rule 59a6de5a3040
+[LOG] Ignoring from onIdled(), inhibit locks: 1
+[LOG] Resumed: rule 59a6de5a3040
+[LOG] Ignoring from onResumed(), inhibit locks: 1
+[LOG] Idled: rule 59a6de5a3040
+[LOG] Ignoring from onIdled(), inhibit locks: 1
+[LOG] Resumed: rule 59a6de5a3040
+[LOG] Ignoring from onResumed(), inhibit locks: 1
+[LOG] Idled: rule 59a6de5a3040
+[LOG] Ignoring from onIdled(), inhibit locks: 1
+[LOG] Resumed: rule 59a6de5a3040
+[LOG] Ignoring from onResumed(), inhibit locks: 1
+[LOG] ScreenSaver inhibit: false dbus message from /usr/lib/electron33/electron (owner: :1.39) with content Video Wake Lock
+[LOG] Inhibit locks: 0
+[CRITICAL] [core] Disconnected from pollfd id 1

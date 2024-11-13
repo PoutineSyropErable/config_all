@@ -1,30 +1,48 @@
-l
 set ratios 1:2:3
-set previewer ~/.config/lf/previewer.sh
-set cleaner ~/.config/lf/cleaner.sh
-# &ctpv -s $id
-# &ctpvquit $id
+# set previewer /home/francois/.config/lf/previewer_tmux.sh
+# set cleaner /home/francois/.config/lf/cleaner_tmux.sh
+
+# set previewer /home/francois/.config/lf/previewer.sh
+# set cleaner /home/francois/.config/lf/cleaner.sh
+
+
+set previewer ctpv
+set cleaner ctpvclear
+&ctpv -s $id
+&ctpvquit $id
+
+
+# set sixel true
+# set previewer /home/francois/.config/lf/previewer_sixel.sh
+
 
 # Basic Settings
 set hidden true
 set ignorecase true
 set icons true
-#set sixel true
-#set rulerfmt "%d  |%a  |%p  |\033[7;31m %m \033[0m  |\033[7;33m %c \033[0m  |\033[7;35m %s \033[0m  |\033[7;34m %f \033[0m  |%i/%t"
 
 cmd quit-and-cd &{{
     pwd > "$LF_CD_FILE"
     lf -remote "send $id quit"
 }}
 
+cmd clear_general &{{
+	lf -remote "send $id clear"
+	lf -remote "send $id unselect"
+}}
+
 map q quit-and-cd
 map Q quit
 map <esc> quit
 map V unselect
-map Cc clear
+map B clear
+map C clear_general
+
+map h !/home/francois/.config/lf/empty.sh > /dev/null &
+map w !/home/francois/.config/lf/empty.sh > /dev/null &
+# This is in case the image preview cleaner doesn't work, executing a script goes to "press any key to continue", so just double tap h
 
 
-map Ci !/home/francois/.config/lf/cleaner.sh >> /dev/null &
 
 
 cmd play_video ${{ 

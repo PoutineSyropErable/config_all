@@ -73,8 +73,8 @@ sample_bits = 16
 ;method = portaudio
 ;source = auto
 
-;method = pulse
-;source = auto
+method = pulse
+source = auto
 
 ;method = pipewire
 ;source = auto

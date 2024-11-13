@@ -1,5 +1,6 @@
 #!/bin/sh
 draw() {
+	bat --color=always ~/.config/lf/empty.txt &
 	kitty +kitten icat --silent --stdin no --transfer-mode file --place "${w}x${h}@${x}x${y}" "$1" </dev/null >/dev/tty
 	exit 1
 }
@@ -21,4 +22,4 @@ video/*)
 	;;
 esac
 
-bat --color=always --style=plain --pager=never "$file"
+bat --color=always "$file"

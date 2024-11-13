@@ -36,6 +36,7 @@ require("conform").setup({
 		go = { "gofumpt", "golines", "goimports-reviser" },
 		c = { "clang-format" }, -- ~/.clang-format contains the style
 		cpp = { "clang-format" },
+		css = { "prettier" },
 		haskell = { "ormolu" },
 		yaml = { "yamlfmt" },
 		-- templ = { "prettier" },

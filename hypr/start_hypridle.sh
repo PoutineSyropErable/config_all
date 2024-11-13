@@ -2,4 +2,4 @@
 
 sleep 30
 
-hypridle >~/.config/hypr/hypridle.log
+hypridle >"$HOME/.config/hypr/hypridle.log"

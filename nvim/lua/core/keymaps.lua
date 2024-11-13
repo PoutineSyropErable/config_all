@@ -60,6 +60,16 @@ vim.api.nvim_set_keymap("n", "<leader>u", "<C-a>", { noremap = true, silent = tr
 keymap.set({ "" }, "<C-v>", "<C-q>", { noremap = true, silent = true })
 
 ----------------------Others
+-- Function to get the current file path and copy to clipboard
+function copy_current_file_path()
+	local file_path = vim.fn.expand("%:p") -- Get the absolute path of the current file
+	vim.fn.setreg("+", file_path) -- Copy to system clipboard (+ register)
+	vim.api.nvim_echo({ { "File path copied: " .. file_path, "Normal" } }, false, {})
+end
+
+-- Bind F1 to the function
+vim.api.nvim_set_keymap("n", "<F1>", ":lua copy_current_file_path()<CR>", { noremap = true, silent = true })
+
 vim.api.nvim_buf_get_name(0)
 -- Run my build command (The basic (F5), and currently selected buffer one (F6))
 -- vim.api.nvim_set_keymap("n", "<F6>", ':!bash ./build.sh "%:t"<CR>', { noremap = true, silent = true })

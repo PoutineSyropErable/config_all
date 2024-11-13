@@ -10,7 +10,7 @@
 		"interface": "enp14s0",
 		"family": "ipv4",
 		"format": "{ipaddr}",
-		"format-ethernet": "󰀂 {ipaddr}/{cidr}",
+		"format-ethernet": "󰀂  {ipaddr}/{cidr}",
 		"format-disconnected": "Disconnected",
 		"tooltip-format": "Interface: {ifname} | IP: {ipaddr} | Gateway: {gwaddr}",
 		"max-length": 50

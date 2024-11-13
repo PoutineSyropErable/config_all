@@ -21,6 +21,11 @@ map q quit-and-cd
 map Q quit
 map <esc> quit
 map V unselect
+map Cc clear
+
+
+map Ci !/home/francois/.config/lf/cleaner.sh >> /dev/null &
+
 
 cmd play_video ${{ 
     nohup "$HOME/Videos/i3-video-wallpaper-main/play_video" "\"$f\"" &
@@ -285,8 +290,6 @@ map bg setwallpaper
 
 
 
-map Ci !/home/francois/.config/lf/cleaner.sh >> /dev/null &
-map Cc clear
 
 map sl create_shortcut
 

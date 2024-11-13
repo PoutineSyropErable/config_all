@@ -100,6 +100,7 @@ alias imod="vim ~/.i3rc"
 alias hmod="cd ~/.config/hypr ; vim hyprland.conf"
 alias smod="vim ~/.config/sway/config"
 alias wmod=" cd ~/.config/waybar ; vim ~/.config/waybar/"
+alias irmod=" cd ~/.config/ironbar ; vim ~/.config/ironbar/"
 
 alias pview="bat ~/.config/polybar.old/config"
 alias fview="bat ~/.fishrc"

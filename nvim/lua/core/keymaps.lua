@@ -74,12 +74,34 @@ vim.api.nvim_buf_get_name(0)
 -- Run my build command (The basic (F5), and currently selected buffer one (F6))
 -- vim.api.nvim_set_keymap("n", "<F6>", ':!bash ./build.sh "%:t"<CR>', { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap(
-	"n",
-	"<F4>",
-	':lua vim.cmd("! " .. vim.fn.shellescape(vim.api.nvim_buf_get_name(0)))<CR>',
-	{ noremap = true, silent = true }
-)
+-- vim.api.nvim_set_keymap(
+-- 	"n",
+-- 	"<F4>",
+-- 	':lua vim.cmd("! " .. vim.fn.shellescape(vim.api.nvim_buf_get_name(0)))<CR>',
+-- 	{ noremap = true, silent = true }
+-- )
+
+vim.api.nvim_set_keymap("n", "<F4>", ":lua RunCurrentFile()<CR>", { noremap = true, silent = true })
+
+function RunCurrentFile()
+	local filepath = vim.api.nvim_buf_get_name(0) -- Get the full file path
+	local file_ext = vim.fn.fnamemodify(filepath, ":e") -- Get the file extension
+
+	if file_ext == "sh" then
+		-- Run Bash script
+		vim.cmd("!bash " .. vim.fn.shellescape(filepath))
+	elseif file_ext == "c" then
+		-- Compile and run C file
+		local executable = vim.fn.shellescape(filepath:gsub("%.c$", ""))
+		vim.cmd("!gcc " .. vim.fn.shellescape(filepath) .. " -o " .. executable .. " && " .. executable)
+	elseif file_ext == "py" then
+		-- Run Python script
+		vim.cmd("!python3 " .. vim.fn.shellescape(filepath))
+	else
+		print("File type not supported for running with F4")
+	end
+end
+
 vim.api.nvim_set_keymap("n", "<F5>", ":!bash ./build.sh<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap(
 	"n",

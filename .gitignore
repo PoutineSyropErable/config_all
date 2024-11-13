@@ -31,6 +31,7 @@
 !/sway
 !/tmux/
 !/waybar/
+!/xava/
 
 
 
@@ -199,6 +200,12 @@
 !/waybar/*/*/
 !/waybar/*/*/*/
 !/waybar/*/*/*/*/
+
+!/xava/**/*
+!/xava/*/
+!/xava/*/*/
+!/xava/*/*/*/
+!/xava/*/*/*/*/
 
 /polybar.old/weather-polybar-plugin/.owm-key
 

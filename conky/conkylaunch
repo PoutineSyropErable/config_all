@@ -1,3 +1,4 @@
-killall - q conky
+sleep 1
+
 conky -c $HOME/.config/conky/show_all/show_all_conf &
 

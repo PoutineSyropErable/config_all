@@ -28,7 +28,7 @@ case $LAYOUT in
 	hyprctl keyword bind SUPER, V, togglesplit
 	hyprctl keyword bind SUPER, O, pseudo
 	hyprctl keyword bind SUPERSHIFT, O, exec, hyprctl dispatch workspaceopt allpseudo
-	notify-send -i "$HOME/.config/hypr/mako/icons/hyprland.png" -t 1000 "Layout" "Dwindle"
+	# notify-send -i "$HOME/.config/hypr/mako/icons/hyprland.png" -t 1000 "Layout" "Dwindle"
 	;;
 "dwindle")
 	hyprctl keyword general:layout master
@@ -54,7 +54,7 @@ case $LAYOUT in
 	hyprctl keyword bind SUPERSHIFT, M, layoutmsg, swapwithmaster
 	hyprctl keyword bind SUPER, period, layoutmsg, orientationnext
 	hyprctl keyword bind SUPER, comma, layoutmsg, orientationprev
-	notify-send -i "$HOME/.config/hypr/mako/icons/hyprland.png" -t 1000 "Layout" "Master"
+	# notify-send -i "$HOME/.config/hypr/mako/icons/hyprland.png" -t 1000 "Layout" "Master"
 	;;
 *) ;;
 

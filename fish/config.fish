@@ -69,6 +69,9 @@ function get
 	awk "{print \$$n}"
 end
 
+function execp
+    nohup $argv >> /dev/null &
+end
 
 
 

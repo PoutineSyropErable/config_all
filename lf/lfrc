@@ -42,6 +42,7 @@ map h !/home/francois/.config/lf/empty.sh > /dev/null &
 map w !/home/francois/.config/lf/empty.sh > /dev/null &
 # This is in case the image preview cleaner doesn't work, executing a script goes to "press any key to continue", so just double tap h
 
+map I !file "$f"
 
 
 

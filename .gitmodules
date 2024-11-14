@@ -16,3 +16,6 @@
 [submodule "ironbar"]
 	path = ironbar
 	url = https://github.com/PoutineSyropErable/config_ironbar
+[submodule "xava"]
+	path = xava
+	url = https://github.com/PoutineSyropErable/config_xava

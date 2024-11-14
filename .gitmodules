@@ -13,3 +13,6 @@
 [submodule "kanata"]
 	path = kanata
 	url = https://github.com/PoutineSyropErable/config_kanata
+[submodule "ironbar"]
+	path = ironbar
+	url = https://github.com/PoutineSyropErable/config_ironbar

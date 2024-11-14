@@ -1,0 +1,3 @@
+[submodule "eww"]
+	path = eww
+	url = https://github.com/PoutineSyropErable/config_eww

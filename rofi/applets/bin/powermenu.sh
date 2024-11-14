@@ -15,7 +15,7 @@ mesg="Uptime : $(uptime -p | sed -e 's/up //g')"
 
 if [[ ("$theme" == *'type-1'*) || ("$theme" == *'type-3'*) || ("$theme" == *'type-5'*) ]]; then
 	list_col='1'
-	list_row='6'
+	list_row='7'
 elif [[ ("$theme" == *'type-2'*) || ("$theme" == *'type-4'*) ]]; then
 	list_col='6'
 	list_row='1'
@@ -28,6 +28,7 @@ if [[ "$layout" == 'NO' ]]; then
 	option_2=" Logout"
 	option_3=" Suspend"
 	option_4=" Hibernate"
+	option_7="  Suspend-then-hibernate"
 	option_5=" Reboot"
 	option_6=" Shutdown"
 	yes=' Yes'
@@ -62,7 +63,7 @@ rofi_cmd() {
 
 # Pass variables to rofi dmenu
 run_rofi() {
-	echo -e "$option_1\n$option_2\n$option_3\n$option_4\n$option_5\n$option_6" | rofi_cmd
+	echo -e "$option_1\n$option_2\n$option_3\n$option_7\n$option_4\n$option_5\n$option_6" | rofi_cmd
 }
 
 # Confirmation CMD
@@ -96,17 +97,19 @@ confirm_run() {
 # Execute Command
 run_cmd() {
 	if [[ "$1" == '--opt1' ]]; then
-		betterlockscreen -l
+		confirm_run '/home/francois/.config/rofi/applets/bin/__lock.sh'
 	elif [[ "$1" == '--opt2' ]]; then
 		confirm_run '/home/francois/.config/rofi/applets/bin/__exit.sh'
 	elif [[ "$1" == '--opt3' ]]; then
-		confirm_run 'mpc -q pause' 'amixer set Master mute' 'systemctl suspend-then-hibernate'
+		confirm_run 'mpc -q pause' 'amixer set Master mute' 'systemctl suspend'
 	elif [[ "$1" == '--opt4' ]]; then
 		confirm_run 'systemctl hibernate'
 	elif [[ "$1" == '--opt5' ]]; then
 		confirm_run 'systemctl reboot'
 	elif [[ "$1" == '--opt6' ]]; then
 		confirm_run 'systemctl poweroff'
+	elif [[ "$1" == '--opt7' ]]; then
+		confirm_run 'systemctl suspend-then-hibernate'
 	fi
 }
 
@@ -130,5 +133,8 @@ $option_5)
 	;;
 $option_6)
 	run_cmd --opt6
+	;;
+$option_7)
+	run_cmd --opt7
 	;;
 esac

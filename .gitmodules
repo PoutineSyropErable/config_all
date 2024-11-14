@@ -22,3 +22,6 @@
 [submodule "cava"]
 	path = cava
 	url = https://github.com/PoutineSyropErable/config_cava
+[submodule "kitty"]
+	path = kitty
+	url = https://github.com/PoutineSyropErable/config_kitty

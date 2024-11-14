@@ -1,3 +1,6 @@
 [submodule "eww"]
 	path = eww
 	url = https://github.com/PoutineSyropErable/config_eww
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/PoutineSyropErable/config_nvim

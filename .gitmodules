@@ -25,3 +25,6 @@
 [submodule "kitty"]
 	path = kitty
 	url = https://github.com/PoutineSyropErable/config_kitty
+[submodule "lf"]
+	path = lf
+	url = https://github.com/PoutineSyropErable/config_lf

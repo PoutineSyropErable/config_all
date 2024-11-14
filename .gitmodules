@@ -4,3 +4,12 @@
 [submodule "nvim"]
 	path = nvim
 	url = https://github.com/PoutineSyropErable/config_nvim
+[submodule "fish"]
+	path = fish
+	url = https://github.com/PoutineSyropErable/config_fish
+[submodule "tmux"]
+	path = tmux
+	url = https://github.com/PoutineSyropErable/config_tmux
+[submodule "kanata"]
+	path = kanata
+	url = https://github.com/PoutineSyropErable/config_kanata

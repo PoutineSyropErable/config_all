@@ -19,3 +19,6 @@
 [submodule "xava"]
 	path = xava
 	url = https://github.com/PoutineSyropErable/config_xava
+[submodule "cava"]
+	path = cava
+	url = https://github.com/PoutineSyropErable/config_cava

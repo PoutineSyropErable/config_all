@@ -1,3 +1,6 @@
 [submodule "cava"]
 	path = cava
 	url = https://github.com/PoutineSyropErable/config_cava.git
+[submodule "fish"]
+	path = fish
+	url = https://github.com/PoutineSyropErable/config_fish.git

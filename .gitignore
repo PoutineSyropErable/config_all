@@ -4,18 +4,22 @@
 # Do not ignore the .gitignore file
 !readme.md
 !.gitignore
+!.gitmodules
 # Include specific directories
+# !/aconfmgr/
 !/awesome/
 !/cava/
 !/ctpv/
 !/conky/
 !/dunst/
+!/eww/
 !/fish/
 !/hypr/
 !/i3/
+!/ironbar/
 !/lf/
+!/kanata/
 !/kitty/
-!kanata/
 !/mpc/
 !/mpd/
 !/mpDris2/
@@ -29,6 +33,7 @@
 !/sway
 !/tmux/
 !/waybar/
+!/xava/
 
 
 
@@ -102,6 +107,11 @@
 !/i3/*/*/*/
 !/i3/*/*/*/*/
 
+!/ironbar/**/*
+!/ironbar/*/
+!/ironbar/*/*/
+!/ironbar/*/*/*/
+!/ironbar/*/*/*/*/
 
 !/lf/**/*
 !/lf/*/
@@ -115,7 +125,8 @@
 !/kitty/*/*/*/
 !/kitty/*/*/*/*/
 
-!/kanata/*/
+
+!/kanata/*
 
 !/mpc/**/*
 !/mpc/*/
@@ -192,8 +203,18 @@
 !/waybar/*/*/*/
 !/waybar/*/*/*/*/
 
+!/xava/**/*
+!/xava/*/
+!/xava/*/*/
+!/xava/*/*/*/
+!/xava/*/*/*/*/
+
 /polybar.old/weather-polybar-plugin/.owm-key
 
 
 /mpd/state
 thefuck/__pycache__/settings.cpython-312.pyc
+
+/nvim/term2alpha/
+/gh
+

@@ -54,3 +54,6 @@
 	branch = master
 
 
+[submodule "waybar"]
+	path = waybar
+	url = https://github.com/PoutineSyropErable/config_waybar.git

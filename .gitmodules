@@ -57,3 +57,6 @@
 	path = waybar
 	url = https://github.com/PoutineSyropErable/config_waybar
 	branch = master
+[submodule "hypr"]
+	path = hypr
+	url = https://github.com/PoutineSyropErable/config_hypr

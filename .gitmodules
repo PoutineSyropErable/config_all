@@ -15,7 +15,7 @@
 
 [submodule "tmux"]
 	path = tmux
-	url = https://github.com/PoutineSyropErable/config_tmux
+	url = https://github.com/PoutineSyropErable/config_tmux.git
 	branch = master
 
 [submodule "kanata"]

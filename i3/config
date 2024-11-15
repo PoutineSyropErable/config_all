@@ -83,13 +83,13 @@ exec --no-startup-id dex --autostart --environment i3
 # exec --no-startup-id xss-lock --transfer-sleep-lock -- betterlockscreen -l
 
 # Use xautolock to lock the screen after 1 minute of idle
-exec --no-startup-id xautolock -time 1 -locker "betterlockscreen -l" -notify 5 -notifier "notify-send 'Locking in 5 seconds...'"
+exec --no-startup-id xautolock -time 10 -locker "betterlockscreen -l" -notify 5 -notifier "notify-send 'Locking in 5 seconds...'"
 
 # Turn off the display after 15 seconds of idle time
-exec --no-startup-id xset dpms 0 0 70
+exec --no-startup-id xset dpms 0 0 615
 
 # Use xautolock to suspend-then-hibernate after 1 minute of idle
-exec --no-startup-id xautolock -killtime 3 -killer "systemctl suspend-then-hibernate"
+exec --no-startup-id xautolock -killtime 20 -killer "systemctl suspend"
 
 bindsym $mod+F10 exec --no-startup-id betterlockscreen -l
 bindsym $mod+F11 exec --no-startup-id xset dpms force off
@@ -102,7 +102,7 @@ exec --no-startup-id dunst
 exec --no-startup-id pasystray
 exec --no-startup-id nm-applet
 
-exec_always --no-startup-id export TERMINAL=kitty
+exec_always --no-startup-id export TERMINAL="kitty tmux"
 exec_always --no-startup-id $HOME/QolScripts/set_mouse_speed.sh 0.51 "skip_confirmation"
 
 
@@ -176,8 +176,8 @@ bindsym XF86AudioMute        exec --no-startup-id pactl set-sink-mute   @DEFAULT
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
-bindsym $mod2+Return exec kitty #big fingers
+bindsym $mod+Return exec kitty tmux
+bindsym $mod2+Return exec kitty tmux #big fingers
 
 
 bindsym $mod+less exec alacritty

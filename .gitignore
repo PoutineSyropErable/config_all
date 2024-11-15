@@ -4,6 +4,7 @@
 # Do not ignore the .gitignore file
 !readme.md
 !.gitignore
+!.gitmodules
 # Include specific directories
 # !/aconfmgr/
 !/awesome/

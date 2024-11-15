@@ -10,3 +10,6 @@
 [submodule "lf"]
 	path = lf
 	url = https://github.com/PoutineSyropErable/config_lf.git
+[submodule "nvim"]
+	path = nvim
+	url = https://github.com/PoutineSyropErable/config_nvim.git

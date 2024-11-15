@@ -7,3 +7,6 @@
 [submodule "kanata"]
 	path = kanata
 	url = https://github.com/PoutineSyropErable/config_kanata.git
+[submodule "lf"]
+	path = lf
+	url = https://github.com/PoutineSyropErable/config_lf.git

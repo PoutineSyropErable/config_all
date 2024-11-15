@@ -1,6 +1,6 @@
 [submodule "eww"]
 	path = eww
-	url = https://github.com/PoutineSyropErable/config_eww
+	url = https://github.com/PoutineSyropErable/config_eww.git
 	branch = master
 
 [submodule "nvim"]

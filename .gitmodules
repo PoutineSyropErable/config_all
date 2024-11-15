@@ -1,24 +1,56 @@
-[submodule "cava"]
-	path = cava
-	url = https://github.com/PoutineSyropErable/config_cava.git
-[submodule "fish"]
-	path = fish
-	url = https://github.com/PoutineSyropErable/config_fish.git
-[submodule "kanata"]
-	path = kanata
-	url = https://github.com/PoutineSyropErable/config_kanata.git
-[submodule "lf"]
-	path = lf
-	url = https://github.com/PoutineSyropErable/config_lf.git
+[submodule "eww"]
+	path = eww
+	url = https://github.com/PoutineSyropErable/config_eww
+	branch = master
+
 [submodule "nvim"]
 	path = nvim
-	url = https://github.com/PoutineSyropErable/config_nvim.git
-[submodule "rofi"]
-	path = rofi
-	url = https://github.com/PoutineSyropErable/config_rofi.git
+	url = https://github.com/PoutineSyropErable/config_nvim
+	branch = master
+
+[submodule "fish"]
+	path = fish
+	url = https://github.com/PoutineSyropErable/config_fish
+	branch = master
+
 [submodule "tmux"]
 	path = tmux
-	url = https://github.com/PoutineSyropErable/config_tmux.git
+	url = https://github.com/PoutineSyropErable/config_tmux
+	branch = master
+
+[submodule "kanata"]
+	path = kanata
+	url = https://github.com/PoutineSyropErable/config_kanata
+	branch = master
+
+[submodule "ironbar"]
+	path = ironbar
+	url = https://github.com/PoutineSyropErable/config_ironbar
+	branch = master
+
+[submodule "xava"]
+	path = xava
+	url = https://github.com/PoutineSyropErable/config_xava
+	branch = master
+
+[submodule "cava"]
+	path = cava
+	url = https://github.com/PoutineSyropErable/config_cava
+	branch = master
+
 [submodule "kitty"]
 	path = kitty
-	url = https://github.com/PoutineSyropErable/config_kitty.git
+	url = https://github.com/PoutineSyropErable/config_kitty
+	branch = master
+
+[submodule "lf"]
+	path = lf
+	url = https://github.com/PoutineSyropErable/config_lf
+	branch = master
+
+[submodule "rofi"]
+	path = rofi
+	url = https://github.com/PoutineSyropErable/config_rofi
+	branch = master
+
+

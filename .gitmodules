@@ -16,3 +16,6 @@
 [submodule "rofi"]
 	path = rofi
 	url = https://github.com/PoutineSyropErable/config_rofi.git
+[submodule "tmux"]
+	path = tmux
+	url = https://github.com/PoutineSyropErable/config_tmux.git

@@ -19,3 +19,6 @@
 [submodule "tmux"]
 	path = tmux
 	url = https://github.com/PoutineSyropErable/config_tmux.git
+[submodule "kitty"]
+	path = kitty
+	url = https://github.com/PoutineSyropErable/config_kitty.git

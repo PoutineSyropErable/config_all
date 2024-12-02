@@ -1,0 +1,1 @@
+/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/1342688.png

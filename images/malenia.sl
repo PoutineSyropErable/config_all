@@ -1,0 +1,1 @@
+/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/wp13527036-malenia-elden-ring-wallpapers.png

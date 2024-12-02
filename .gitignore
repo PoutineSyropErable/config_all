@@ -16,6 +16,7 @@
 !/fish/
 !/hypr/
 !/i3/
+!/images/
 !/ironbar/
 !/lf/
 !/kanata/
@@ -106,6 +107,12 @@
 !/i3/*/*/
 !/i3/*/*/*/
 !/i3/*/*/*/*/
+
+!/images/**/*
+!/images/*/
+!/images/*/*/
+!/images/*/*/*/
+!/images/*/*/*/*/
 
 !/ironbar/**/*
 !/ironbar/*/

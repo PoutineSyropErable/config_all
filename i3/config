@@ -142,6 +142,7 @@ exec --no-startup-id xautolock -killtime 20 -killer "systemctl suspend-then-hibe
 exec --no-startup-id dunst
 exec --no-startup-id pasystray
 exec --no-startup-id nm-applet
+exec --no-startup-id kanata
 
 #exec --no-startup-id notify-send -u low -t 5000 "loading into i3"
 
@@ -158,8 +159,8 @@ bindsym XF86AudioMicMute     exec --no-startup-id pactl set-source-mute @DEFAULT
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
-bindsym $mod2+Return exec kitty #big fingers
+bindsym $mod+Return exec kitty tmux
+bindsym $mod2+Return exec kitty tmux #big fingers
 
 
 bindsym $mod+dead_grave exec alacritty
@@ -281,10 +282,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod2+h split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod2+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -643,6 +644,8 @@ bindsym $mod2+Control+shift+m       exec --no-startup-id feh  --bg-center --bg-f
 
 bindsym $mod2+Control+b       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/1342688.png"
 bindsym $mod2+Control+shift+b       exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/Desktop Background Slideshow/Cool Pictures/resized_1200/1311862.png"
+
+bindsym $mod2+Control+ v      exec --no-startup-id feh  --bg-center --bg-fill --no-fehbg "/home/francois/Pictures/png"
 
 # Media player controls
 bindsym $mod+$mod2+Up   exec --no-startup-id mpc volume +5

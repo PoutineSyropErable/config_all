@@ -1,7 +1,7 @@
 [submodule "eww"]
 	path = eww
 	url = https://github.com/PoutineSyropErable/config_eww
-	branch = master
+	branch = blue
 
 [submodule "nvim"]
 	path = nvim

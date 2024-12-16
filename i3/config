@@ -45,13 +45,17 @@
 
 
 
+#Windows = mod (Primary). Alt = mod2 (Secondary)
+set $mod Mod4
+set $mod2 Mod1
 
 #------------------------
-exec --no-startup-id xrandr --output DisplayPort-2 --mode 1920x1080 --rate 144
+exec --no-startup-id xrandr --output DisplayPort-0 --mode 1920x1080 --rate 144
 
 # Canadian French. French Canadian. keyboard binding. keyboard layout. key binding
 exec_always --no-startup-id setxkbmap ca fr
 bindsym $mod+minus exec --no-startup-id setxkbmap ca fr
+bindsym $mod+equal exec --no-startup-id kanata
 
 
 
@@ -60,7 +64,8 @@ bindsym $mod+minus exec --no-startup-id setxkbmap ca fr
 exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
 exec --no-startup-id $HOME/BatteryInfo/start_battery_monitor.sh
 exec --no-startup-id eww daemon
-exec_always --no-startup-id $HOME/.config/kanata/restart_kanata.sh
+exec --no-startup-id kanata
+# exec_always --no-startup-id $HOME/.config/kanata/restart_kanata.sh
 #kanata is for home row modifiers keys
 
 
@@ -89,7 +94,7 @@ exec --no-startup-id xautolock -time 10 -locker "betterlockscreen -l" -notify 5 
 exec --no-startup-id xset dpms 0 0 615
 
 # Use xautolock to suspend-then-hibernate after 1 minute of idle
-exec --no-startup-id xautolock -killtime 20 -killer "systemctl suspend"
+# exec --no-startup-id xautolock -killtime 20 -killer "systemctl suspend"
 
 bindsym $mod+F10 exec --no-startup-id betterlockscreen -l
 bindsym $mod+F11 exec --no-startup-id xset dpms force off
@@ -149,9 +154,6 @@ client.background       #FFFFFF
 
 
 
-#Windows = mod (Primary). Alt = mod2 (Secondary)
-set $mod Mod4
-set $mod2 Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -177,6 +179,7 @@ floating_modifier $mod
 
 # start a terminal
 bindsym $mod+Return exec kitty tmux
+bindsym $mod+h exec kitty tmux
 bindsym $mod2+Return exec kitty tmux #big fingers
 
 
@@ -229,7 +232,10 @@ bindsym $mod2+t exec --no-startup-id ~/.config/rofi/applets/bin/screenshot.sh
 bindsym $mod+u exec --no-startup-id ~/.config/rofi/applets/bin/volume.sh
 bindsym $mod2+u exec --no-startup-id ~/.config/rofi/applets/bin/volume.sh
 
-bindsym $mod+n exec --no-startup-id rofi -modi emoji -show emoji
+bindsym $mod+n exec --no-startup-id $HOME/QolScripts/toggle_nightlight_x11.sh
+bindsym $mod+Shift+n exec $HOME/QolScripts/toggle_invert_colors.sh
+
+# bindsym $mod+n exec --no-startup-id rofi -modi emoji -show emoji
 bindsym $mod2+n exec --no-startup-id rofi -modi emoji -show emoji
 
 bindsym $mod+Tab exec --no-startup-id rofi -show window
@@ -301,10 +307,10 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod2+h split h
 
 # split in vertical orientation
-bindsym $mod+v split v
+bindsym $mod2+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
@@ -368,16 +374,16 @@ set $ws30 "30"
 
 
 # this is useless since it goes to promary screen anyway
-workspace $ws1 output DisplayPort-2 
-workspace $ws2 output DisplayPort-2 
-workspace $ws3 output DisplayPort-2 
-workspace $ws4 output DisplayPort-2 
-workspace $ws5 output DisplayPort-2 
-workspace $ws6 output DisplayPort-2 
-workspace $ws7 output DisplayPort-2 
-workspace $ws8 output DisplayPort-2 
-workspace $ws9 output DisplayPort-2 
-workspace $ws10 output DisplayPort-2 
+workspace $ws1 output DisplayPort-0 
+workspace $ws2 output DisplayPort-0 
+workspace $ws3 output DisplayPort-0 
+workspace $ws4 output DisplayPort-0 
+workspace $ws5 output DisplayPort-0 
+workspace $ws6 output DisplayPort-0 
+workspace $ws7 output DisplayPort-0 
+workspace $ws8 output DisplayPort-0 
+workspace $ws9 output DisplayPort-0 
+workspace $ws10 output DisplayPort-0 
 #...
 
 # This is usefull for when there's the second screen
@@ -602,11 +608,11 @@ bindsym $mod2+Shift+space exec --no-startup-id brightnessctl -d platform::kbd_ba
 
 bindsym $mod+Control+1 exec --no-startup-id  $HOME/QolScripts/turn_off_other_screens.sh
 
-bindsym $mod+Control+2 exec --no-startup-id fish -c "pv $HOME/QolScripts/screen_placer.py DisplayPort-2 HDMI-A-0" ; exec --no-startup-id $HOME/QolScripts/set_lock_screen.sh
+bindsym $mod+Control+2 exec --no-startup-id fish -c "pv $HOME/QolScripts/screen_placer.py DisplayPort-0 HDMI-A-0" ; exec --no-startup-id $HOME/QolScripts/set_lock_screen.sh
 
 bindsym $mod+Control+3 exec --no-startup-id $HOME/QolScripts/screen_placement_layout_n1.sh
 
-bindsym $mod+Control+4 exec --no-startup-id xrandr --output DP-1 --mode 2560x1440 --fbmm 597x366 --rate 75 --right-of HMDI-1 ; exec kcmshell6 kcm_kscreen
+bindsym $mod+Control+4 exec --no-startup-id xrandr --output DP-1 --mode 2560x1440 --fbmm 597x366 --rate 75 --right-of HMDI-A-0 ; exec kcmshell6 kcm_kscreen
 
 bindsym $mod+Control+5 exec --no-startup-id fish -c "pv $HOME/QolScripts/screen_placer.py HDMI-A-0 DP-1"
 

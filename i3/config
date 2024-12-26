@@ -610,10 +610,12 @@ bindsym $mod+Control+p exec --no-startup-id  $HOME/.config/picom/picom_toggler.s
 bindsym $mod+c exec --no-startup-id thunar
 bindsym $mod+w exec --no-startup-id firefox
 bindsym $mod+Shift+w exec --no-startup-id firefox --private-window
+bindsym $mod2+w exec --no-startup-id google-chrome-stable
+bindsym $mod2+Shift+w exec --no-startup-id google-chrome-stable --incognito
+
 #bindsym $mod+w exec --no-startup-id $HOME/google_launch
 
 bindsym $mod2+c exec --no-startup-id dolphin
-bindsym $mod2+w exec --no-startup-id $HOME/google_launch
 
 bindsym $mod+Control+h       exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/horny_slideshow.sh & 
 bindsym $mod+Control+Shift+h exec --no-startup-id $HOME/Pictures/Slideshow_Scripts/Parent/toohorny_slideshow.sh & 
@@ -809,3 +811,4 @@ bindsym $mod+x exec fish -c "set_public"
 
 #exec --no-startup-id "$HOME/WindowsFileSystem/mount_windows.sh"
 bindsym $mod+minus exec --no-startup-id setxkbmap ca fr
+exec_always --no-startup-id setxkbmap ca fr

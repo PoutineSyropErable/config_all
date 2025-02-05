@@ -25,8 +25,7 @@
 
 [submodule "ironbar_custom_build"]
 	path = ironbar/ironbar_workspace_ordered
-	url =  https://github.com/PoutineSyropErable/ironbar_worksace_order
-	# This is not a typo in this file. It's a typo in the repo name
+	url =  https://github.com/PoutineSyropErable/ironbar_workspace_ordered
 	branch = master
 
 [submodule "kanata"]

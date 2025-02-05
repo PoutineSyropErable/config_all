@@ -25,7 +25,7 @@
 
 [submodule "ironbar_custom_build"]
 	path = ironbar/ironbar_workspace_ordered/
-	url = https://github.com/PoutineSyropErable/ironbar_worksace_order
+	url = https://github.com/PoutineSyropErable/ironbar_workspace_order
 	branch = master
 
 [submodule "kanata"]

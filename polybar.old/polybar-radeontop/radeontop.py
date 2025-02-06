@@ -13,9 +13,12 @@ db 0.83%, cb 0.83%, vram 6.61% 539.47mb, gtt 0.92% 73.34mb, mclk 100.00% 2.000gh
 class radeontop:
     def __init__(self):
         Komi = subprocess.Popen(["radeontop", "-l", "1", "-d", "-"], stdout=PIPE, stderr=DEVNULL)
-        vram = Komi.communicate()[0].decode('utf-8')  # Komi can communicate?
+        vram = Komi.communicate()[0].decode("utf-8")  # Komi can communicate?
         vram = vram.split("\n")[1]
+
+        print(f"vram = {vram}")
         self.vram = vram.split(",")[12].split()[1]
+
 
 rtop = radeontop()
 print(rtop.vram)

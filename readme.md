@@ -4,7 +4,7 @@ I recommend you use them, as this might not be updated at all
 so:
 
 ```bash
-git clone --branch desktop --depth 1 https://github.com/PoutineSyropErable/PoutineErable.config.git ~/.config_poutine/
+git clone --branch desktop --depth 1 https://github.com/PoutineSyropErable/config_all ~/.config_poutine/
 
 # or write laptop, but i mostly work on the desktop branch, as due to submodules, those who need can be branched themselves.
 #

@@ -5,17 +5,44 @@ I recommend you use them, as this might not be updated at all
 nvim, zsh, tmux are the main one. They should have all the install commands together.
 lf has one too.
 
+Hyprland(hypr) and i3 are the x11 and Wayland window managers (Everything visual needs it)
+Kitty is the terminal
+Tmux is inside the terminal to allow splits
+zsh is the shell
+lf is the file manager
+neovim=nvim is the text editor/IDE.
+ncmpcpp is the mpd+mpc tui (terminal user interface) music manager
+(For hyprland)
+ironbar is the top bar
+waybar is the bottom bar.
+(For i3):
+polybar is both bars
+
+cava is for music playing in terminal with a bar graph for frequency amplitude (The cool looking thing)
+And Xava is like cava, but embeded in the screen itself
+Eww and conky are extra window that appears with widgets (conky is for performance monitoring, eww is general)
+
+Kanata is for using asdf jkl; as control, alt, shift, windows/command/super,
+rofi is an application launcher. You'll need rofi-wayland (for Linux only)
+Mac already has one
+
+```bash
+sudo pacman -S rofi-wayland
+# linux only
+
+```
+
 <pre>
 <a href="https://github.com/PoutineSyropErable/config_all">https://github.com/PoutineSyropErable/config_all</a>
-# ^The parent, the children vv
-<a href="https://github.com/PoutineSyropErable/config_kitty">https://github.com/PoutineSyropErable/config_kitty</a>
-<a href="https://github.com/PoutineSyropErable/config_tmux">https://github.com/PoutineSyropErable/config_tmux</a>
+# ^The parent, the children vv (They need more then just cloning to setup them up. go check their readmes. )
+<a href="https://github.com/PoutineSyropErable/config_zsh">https://github.com/PoutineSyropErable/config_zsh</a>
 <a href="https://github.com/PoutineSyropErable/config_lf">https://github.com/PoutineSyropErable/config_lf</a>
+<a href="https://github.com/PoutineSyropErable/config_tmux">https://github.com/PoutineSyropErable/config_tmux</a>
 <a href="https://github.com/PoutineSyropErable/config_nvim">https://github.com/PoutineSyropErable/config_nvim</a>
-# You get it, config_{dirname}, you can also just click on the dir that are submodules and you'll be moved there
+# You get it, config_{dirname}, you can also just click on the dir that are submodules (The blue ones on github) and you'll be moved there
 </pre>
 
-so:
+To install in one go:
 
 ```bash
 git clone --branch desktop --depth 1 https://github.com/PoutineSyropErable/config_all ~/.config_poutine/
@@ -32,8 +59,16 @@ git submodule init && git submodule update || echo "Non-recursive submodule upda
 # Step 4: Fallback to recursive update if needed
 git submodule update --init --recursive || echo "Recursive submodule update failed"
 
+# Step 4.5: rename ~/.config_poutine to ~/.config ( you should do that one yourself. But, it shouldn't fuck things up)
+[ -d ~/.config ] && mv --backup=numbered ~/.config ~/.config_backup && mv ~/.config_poutine ~/.config
+# maybe the line above isn't fully posix complient, idk. In which case, idc, just rename your old config to not nuke it
+
+
+
 # Step 5:
-# Go check the urls and do the installation of every things in their readme, zsh + nvim + lf i recommend
+# Go check the urls and do the installation of every things in their readme.
+# lf, zsh, nvim have specific readmes, with specific install guide
+# tmux also, because you need to create a softlink to ~/.tmux.conf
 ```
 
 ** You should check the .git of nvim, zsh, and other to set them up **

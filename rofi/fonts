@@ -1,0 +1,474 @@
+config.rasi:	font: "Mono 12";
+applets/type-5/style-3.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+powermenu/type-6/style-5.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+powermenu/type-6/style-5.rasi:    font:                        "feather bold 32";
+powermenu/type-4/style-5.rasi:    prompt-font:                 "Iosevka Nerd Font Bold 32";
+powermenu/type-4/style-5.rasi:    textbox-font:                "Iosevka Nerd Font 12";
+powermenu/type-4/style-5.rasi:    element-text-font:           "feather Bold 48";
+powermenu/type-4/style-5.rasi:    font:                        var(prompt-font);
+powermenu/type-4/style-5.rasi:    font:                        var(textbox-font);
+powermenu/type-4/style-5.rasi:    font:                        var(element-text-font);
+applets/type-5/style-2.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+powermenu/type-4/style-4.rasi:    prompt-font:                 "Iosevka Nerd Font Bold Italic 72";
+powermenu/type-4/style-4.rasi:    textbox-font:                "Iosevka Nerd Font 16";
+powermenu/type-4/style-4.rasi:    element-text-font:           "feather Bold 64";
+powermenu/type-4/style-4.rasi:    font:                        var(prompt-font);
+powermenu/type-4/style-4.rasi:    font:                        var(textbox-font);
+powermenu/type-4/style-4.rasi:    font:                        var(element-text-font);
+powermenu/type-6/style-4.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+powermenu/type-6/style-4.rasi:    font:                        "feather bold 32";
+applets/type-5/style-1.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+powermenu/type-6/style-3.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+powermenu/type-6/style-3.rasi:    font:                        "feather bold 32";
+powermenu/type-4/style-3.rasi:    prompt-font:                 "Iosevka Nerd Font Bold 48";
+powermenu/type-4/style-3.rasi:    textbox-font:                "Iosevka Nerd Font 12";
+powermenu/type-4/style-3.rasi:    element-text-font:           "feather 48";
+powermenu/type-4/style-3.rasi:    font:                        var(prompt-font);
+powermenu/type-4/style-3.rasi:    font:                        var(textbox-font);
+powermenu/type-4/style-3.rasi:    font:                        var(element-text-font);
+applets/type-4/style-3.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+applets/type-4/style-3.rasi:    font:                        "feather 28";
+powermenu/type-4/style-2.rasi:    prompt-font:                 "Iosevka Nerd Font Bold 72";
+powermenu/type-4/style-2.rasi:    textbox-font:                "Iosevka Nerd Font 14";
+powermenu/type-4/style-2.rasi:    element-text-font:           "feather 64";
+powermenu/type-4/style-2.rasi:    font:                        var(prompt-font);
+powermenu/type-4/style-2.rasi:    font:                        var(textbox-font);
+powermenu/type-4/style-2.rasi:    font:                        var(element-text-font);
+powermenu/type-6/style-2.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+powermenu/type-6/style-2.rasi:    font:                        "feather bold 32";
+applets/type-4/style-2.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+applets/type-4/style-2.rasi:    font:                        "feather 28";
+powermenu/type-6/style-1.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+powermenu/type-6/style-1.rasi:    font:                        "feather bold 32";
+powermenu/type-4/style-1.rasi:    prompt-font:                 "JetBrains Mono Nerd Font Bold Italic 64";
+powermenu/type-4/style-1.rasi:    textbox-font:                "JetBrains Mono Nerd Font 16";
+powermenu/type-4/style-1.rasi:    element-text-font:           "feather 64";
+powermenu/type-4/style-1.rasi:    font:                        var(prompt-font);
+powermenu/type-4/style-1.rasi:    font:                        var(textbox-font);
+powermenu/type-4/style-1.rasi:    font:                        var(element-text-font);
+powermenu/type-4/shared/fonts.rasi:    font: "JetBrains Mono Nerd Font 12";
+applets/type-4/style-1.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+applets/type-4/style-1.rasi:    font:                        "feather 28";
+applets/shared/fonts.rasi:    font: "JetBrains Mono Nerd Font 10";
+powermenu/type-2/style-9.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-2/style-9.rasi:    font:                        "feather bold 24";
+powermenu/type-5/style-5.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+powermenu/type-5/style-5.rasi:    font:                        "feather bold 32";
+applets/type-3/style-3.rasi:@import                          "../shared/fonts.rasi"
+applets/type-3/style-3.rasi:    font:                        "feather 24";
+powermenu/type-3/style-5.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-3/style-5.rasi:    element-font:                "feather 48";
+powermenu/type-3/style-5.rasi:    font:                        var(element-font);
+powermenu/type-4/shared/confirm.rasi:@import                          "fonts.rasi"
+powermenu/type-4/shared/confirm.rasi:    font:                        "feather 48";
+powermenu/type-2/shared/fonts.rasi:    font: "JetBrains Mono Nerd Font 10";
+applets/type-3/style-1.rasi:@import                          "../shared/fonts.rasi"
+applets/type-3/style-1.rasi:    font:                        "feather 24";
+powermenu/type-2/style-8.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-2/style-8.rasi:    font:                        "feather bold 24";
+powermenu/type-5/style-4.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+powermenu/type-5/style-4.rasi:    font:                        "feather bold 32";
+applets/type-3/style-2.rasi:@import                          "../shared/fonts.rasi"
+applets/type-3/style-2.rasi:    font:                        "feather 24";
+applets/type-2/style-3.rasi:@import                          "../shared/fonts.rasi"
+applets/type-2/style-3.rasi:    font:                        "feather 28";
+powermenu/type-3/style-4.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-3/style-4.rasi:    element-font:                "feather 48";
+powermenu/type-3/style-4.rasi:    font:                        var(element-font);
+powermenu/type-2/style-7.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-2/style-7.rasi:    font:                        "feather bold 32";
+powermenu/type-2/style-10.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-2/style-10.rasi:    font:                        "feather bold 48";
+powermenu/type-2/style-2.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-2/style-2.rasi:    font:                        "feather bold 32";
+powermenu/type-2/style-4.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-2/style-4.rasi:    font:                        "feather bold 24";
+powermenu/type-2/style-1.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-2/style-1.rasi:    font:                        "feather bold 32";
+powermenu/type-1/style-1.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-2/style-3.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-2/style-3.rasi:    font:                        "feather bold 32";
+powermenu/type-3/shared/fonts.rasi:    font: "JetBrains Mono Nerd Font 12";
+powermenu/type-2/style-6.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-2/style-6.rasi:    font:                        "feather bold 24";
+powermenu/type-2/style-5.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-2/style-5.rasi:    font:                        "feather bold 24";
+powermenu/type-1/shared/fonts.rasi:    font: "JetBrains Mono Nerd Font 10";
+powermenu/type-5/style-3.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+powermenu/type-5/style-3.rasi:    font:                        "feather bold 32";
+applets/type-2/style-2.rasi:@import                          "../shared/fonts.rasi"
+applets/type-2/style-2.rasi:    font:                        "feather 28";
+powermenu/type-3/style-3.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-3/style-3.rasi:    element-font:                "feather 48";
+powermenu/type-3/style-3.rasi:    font:                        var(element-font);
+powermenu/type-3/style-1.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-3/style-1.rasi:    element-font:                "feather 64";
+powermenu/type-3/style-1.rasi:    font:                        var(element-font);
+powermenu/type-3/style-2.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-3/style-2.rasi:    element-font:                "feather 64";
+powermenu/type-3/style-2.rasi:    font:                        var(element-font);
+powermenu/type-5/style-1.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+powermenu/type-5/style-1.rasi:    font:                        "feather bold 32";
+powermenu/type-5/style-2.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+powermenu/type-5/style-2.rasi:    font:                        "feather bold 32";
+applets/bin/latex/tabu_doxygen.sty:        \noexpand\tabu@rowfontreset
+applets/bin/latex/tabu_doxygen.sty:    \let\justifying    \tabu@justifying   \let\rowfont        \tabu@rowfont
+applets/bin/latex/tabu_doxygen.sty:    \let\tabu@rowfontreset@save \tabu@rowfontreset
+applets/bin/latex/tabu_doxygen.sty:    \let\tabu@@rowfontreset@save\tabu@@rowfontreset
+applets/bin/latex/tabu_doxygen.sty:    \let\tabu@rowfontreset      \@empty
+applets/bin/latex/tabu_doxygen.sty:    \let\tabu@rowfontreset  \tabu@rowfontreset@save
+applets/bin/latex/tabu_doxygen.sty:    \let\tabu@@rowfontreset \tabu@@rowfontreset@save
+applets/bin/latex/tabu_doxygen.sty:%% \rowfont ---------------------------------------------------------
+applets/bin/latex/tabu_doxygen.sty:\def\tabu@rowfont{\ifdim \baselineskip=\z@\noalign\fi
+applets/bin/latex/tabu_doxygen.sty:                    {\ifnum0=`}\fi    \tabu@row@font}
+applets/bin/latex/tabu_doxygen.sty:\newcommand*\tabu@row@font[2][]{%
+applets/bin/latex/tabu_doxygen.sty:        \global\let\tabu@@rowfontreset\tabu@rowfontreset
+applets/bin/latex/tabu_doxygen.sty:    \global\let\tabu@rowfontreset \tabu@rowfont@reset
+applets/bin/latex/tabu_doxygen.sty:}% \rowfont
+applets/bin/latex/tabu_doxygen.sty:\def\tabu@rowfont@reset{%
+applets/bin/latex/tabu_doxygen.sty:    \global\let\tabu@rowfontreset \tabu@@rowfontreset
+applets/bin/latex/tabu_doxygen.sty:    \global\let\tabu@cellfont     \@empty
+applets/bin/latex/tabu_doxygen.sty:}% \tabu@@rowfontreset
+applets/bin/latex/tabu_doxygen.sty:\let\tabu@rowfontreset \@empty     % overwritten \AtBeginDocument if colortbl
+applets/bin/latex/tabu_doxygen.sty:    \ifdefined\@raggedtwoe@everyselectfont    % <ragged2e>
+applets/bin/latex/tabu_doxygen.sty:\let\tabu@@rowfontreset \@empty % <init>
+applets/bin/latex/tabu_doxygen.sty:\let\tabu@rowfontreset  \@empty
+powermenu/type-1/style-5.rasi:@import                          "shared/fonts.rasi"
+powermenu/type-3/shared/confirm.rasi:@import                          "fonts.rasi"
+powermenu/type-3/shared/confirm.rasi:    font:                        "feather 48";
+applets/bin/html/tabs.css:.sm{position:relative;z-index:9999}.sm,.sm ul,.sm li{display:block;list-style:none;margin:0;padding:0;line-height:normal;direction:ltr;text-align:left;-webkit-tap-highlight-color:rgba(0,0,0,0)}.sm-rtl,.sm-rtl ul,.sm-rtl li{direction:rtl;text-align:right}.sm>li>h1,.sm>li>h2,.sm>li>h3,.sm>li>h4,.sm>li>h5,.sm>li>h6{margin:0;padding:0}.sm ul{display:none}.sm li,.sm a{position:relative}.sm a{display:block}.sm a.disabled{cursor:not-allowed}.sm:after{content:"\00a0";display:block;height:0;font:0/0 serif;clear:both;visibility:hidden;overflow:hidden}.sm,.sm *,.sm *:before,.sm *:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}.main-menu-btn{position:relative;display:inline-block;width:36px;height:36px;text-indent:36px;margin-left:8px;white-space:nowrap;overflow:hidden;cursor:pointer;-webkit-tap-highlight-color:rgba(0,0,0,0)}.main-menu-btn-icon,.main-menu-btn-icon:before,.main-menu-btn-icon:after{position:absolute;top:50%;left:2px;height:2px;width:24px;background:var(--nav-menu-button-color);-webkit-transition:all .25s;transition:all .25s}.main-menu-btn-icon:before{content:'';top:-7px;left:0}.main-menu-btn-icon:after{content:'';top:7px;left:0}#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon{height:0}#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:before{top:0;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}#main-menu-state:checked ~ .main-menu-btn .main-menu-btn-icon:after{top:0;-webkit-transform:rotate(45deg);transform:rotate(45deg)}#main-menu-state{position:absolute;width:1px;height:1px;margin:-1px;border:0;padding:0;overflow:hidden;clip:rect(1px,1px,1px,1px)}#main-menu-state:not(:checked) ~ #main-menu{display:none}#main-menu-state:checked ~ #main-menu{display:block}@media(min-width:768px){.main-menu-btn{position:absolute;top:-99999px}#main-menu-state:not(:checked) ~ #main-menu{display:block}}.sm-dox{background-image:var(--nav-gradient-image)}.sm-dox a,.sm-dox a:focus,.sm-dox a:hover,.sm-dox a:active{padding:0 12px;padding-right:43px;font-family:var(--font-family-nav);font-size:13px;font-weight:bold;line-height:36px;text-decoration:none;text-shadow:var(--nav-text-normal-shadow);color:var(--nav-text-normal-color);outline:0}.sm-dox a:hover{background-image:var(--nav-gradient-active-image);background-repeat:repeat-x;color:var(--nav-text-hover-color);text-shadow:var(--nav-text-hover-shadow)}.sm-dox a.current{color:#d23600}.sm-dox a.disabled{color:#bbb}.sm-dox a span.sub-arrow{position:absolute;top:50%;margin-top:-14px;left:auto;right:3px;width:28px;height:28px;overflow:hidden;font:bold 12px/28px monospace !important;text-align:center;text-shadow:none;background:var(--nav-menu-toggle-color);-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}.sm-dox a span.sub-arrow:before{display:block;content:'+'}.sm-dox a.highlighted span.sub-arrow:before{display:block;content:'-'}.sm-dox>li:first-child>a,.sm-dox>li:first-child>:not(ul) a{-moz-border-radius:5px 5px 0 0;-webkit-border-radius:5px;border-radius:5px 5px 0 0}.sm-dox>li:last-child>a,.sm-dox>li:last-child>*:not(ul) a,.sm-dox>li:last-child>ul,.sm-dox>li:last-child>ul>li:last-child>a,.sm-dox>li:last-child>ul>li:last-child>*:not(ul) a,.sm-dox>li:last-child>ul>li:last-child>ul,.sm-dox>li:last-child>ul>li:last-child>ul>li:last-child>a,.sm-dox>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a,.sm-dox>li:last-child>ul>li:last-child>ul>li:last-child>ul,.sm-dox>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>a,.sm-dox>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a,.sm-dox>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul,.sm-dox>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>a,.sm-dox>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a,.sm-dox>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul{-moz-border-radius:0 0 5px 5px;-webkit-border-radius:0;border-radius:0 0 5px 5px}.sm-dox>li:last-child>a.highlighted,.sm-dox>li:last-child>*:not(ul) a.highlighted,.sm-dox>li:last-child>ul>li:last-child>a.highlighted,.sm-dox>li:last-child>ul>li:last-child>*:not(ul) a.highlighted,.sm-dox>li:last-child>ul>li:last-child>ul>li:last-child>a.highlighted,.sm-dox>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a.highlighted,.sm-dox>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>a.highlighted,.sm-dox>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a.highlighted,.sm-dox>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>a.highlighted,.sm-dox>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>*:not(ul) a.highlighted{-moz-border-radius:0;-webkit-border-radius:0;border-radius:0}.sm-dox ul{background:var(--nav-menu-background-color)}.sm-dox ul a,.sm-dox ul a:focus,.sm-dox ul a:hover,.sm-dox ul a:active{font-size:12px;border-left:8px solid transparent;line-height:36px;text-shadow:none;background-color:var(--nav-menu-background-color);background-image:none}.sm-dox ul a:hover{background-image:var(--nav-gradient-active-image);background-repeat:repeat-x;color:var(--nav-text-hover-color);text-shadow:0 1px 1px black}.sm-dox ul ul a,.sm-dox ul ul a:hover,.sm-dox ul ul a:focus,.sm-dox ul ul a:active{border-left:16px solid transparent}.sm-dox ul ul ul a,.sm-dox ul ul ul a:hover,.sm-dox ul ul ul a:focus,.sm-dox ul ul ul a:active{border-left:24px solid transparent}.sm-dox ul ul ul ul a,.sm-dox ul ul ul ul a:hover,.sm-dox ul ul ul ul a:focus,.sm-dox ul ul ul ul a:active{border-left:32px solid transparent}.sm-dox ul ul ul ul ul a,.sm-dox ul ul ul ul ul a:hover,.sm-dox ul ul ul ul ul a:focus,.sm-dox ul ul ul ul ul a:active{border-left:40px solid transparent}@media(min-width:768px){.sm-dox ul{position:absolute;width:12em}.sm-dox li{float:left}.sm-dox.sm-rtl li{float:right}.sm-dox ul li,.sm-dox.sm-rtl ul li,.sm-dox.sm-vertical li{float:none}.sm-dox a{white-space:nowrap}.sm-dox ul a,.sm-dox.sm-vertical a{white-space:normal}.sm-dox .sm-nowrap>li>a,.sm-dox .sm-nowrap>li>:not(ul) a{white-space:nowrap}.sm-dox{padding:0 10px;background-image:var(--nav-gradient-image);line-height:36px}.sm-dox a span.sub-arrow{top:50%;margin-top:-2px;right:12px;width:0;height:0;border-width:4px;border-style:solid dashed dashed dashed;border-color:var(--nav-text-normal-color) transparent transparent transparent;background:transparent;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0}.sm-dox a,.sm-dox a:focus,.sm-dox a:active,.sm-dox a:hover,.sm-dox a.highlighted{padding:0 12px;background-image:var(--nav-separator-image);background-repeat:no-repeat;background-position:right;-moz-border-radius:0 !important;-webkit-border-radius:0;border-radius:0 !important}.sm-dox a:hover{background-image:var(--nav-gradient-active-image);background-repeat:repeat-x;color:var(--nav-text-hover-color);text-shadow:var(--nav-text-hover-shadow)}.sm-dox a:hover span.sub-arrow{border-color:var(--nav-text-hover-color) transparent transparent transparent}.sm-dox a.has-submenu{padding-right:24px}.sm-dox li{border-top:0}.sm-dox>li>ul:before,.sm-dox>li>ul:after{content:'';position:absolute;top:-18px;left:30px;width:0;height:0;overflow:hidden;border-width:9px;border-style:dashed dashed solid dashed;border-color:transparent transparent #bbb transparent}.sm-dox>li>ul:after{top:-16px;left:31px;border-width:8px;border-color:transparent transparent var(--nav-menu-background-color) transparent}.sm-dox ul{border:1px solid #bbb;padding:5px 0;background:var(--nav-menu-background-color);-moz-border-radius:5px !important;-webkit-border-radius:5px;border-radius:5px !important;-moz-box-shadow:0 5px 9px rgba(0,0,0,0.2);-webkit-box-shadow:0 5px 9px rgba(0,0,0,0.2);box-shadow:0 5px 9px rgba(0,0,0,0.2)}.sm-dox ul a span.sub-arrow{right:8px;top:50%;margin-top:-5px;border-width:5px;border-color:transparent transparent transparent var(--nav-menu-foreground-color);border-style:dashed dashed dashed solid}.sm-dox ul a,.sm-dox ul a:hover,.sm-dox ul a:focus,.sm-dox ul a:active,.sm-dox ul a.highlighted{color:var(--nav-menu-foreground-color);background-image:none;border:0 !important}.sm-dox ul a:hover{background-image:var(--nav-gradient-active-image);background-repeat:repeat-x;color:var(--nav-text-hover-color);text-shadow:var(--nav-text-hover-shadow)}.sm-dox ul a:hover span.sub-arrow{border-color:transparent transparent transparent var(--nav-text-hover-color)}.sm-dox span.scroll-up,.sm-dox span.scroll-down{position:absolute;display:none;visibility:hidden;overflow:hidden;background:var(--nav-menu-background-color);height:36px}.sm-dox span.scroll-up:hover,.sm-dox span.scroll-down:hover{background:#eee}.sm-dox span.scroll-up:hover span.scroll-up-arrow,.sm-dox span.scroll-up:hover span.scroll-down-arrow{border-color:transparent transparent #d23600 transparent}.sm-dox span.scroll-down:hover span.scroll-down-arrow{border-color:#d23600 transparent transparent transparent}.sm-dox span.scroll-up-arrow,.sm-dox span.scroll-down-arrow{position:absolute;top:0;left:50%;margin-left:-6px;width:0;height:0;overflow:hidden;border-width:6px;border-style:dashed dashed solid dashed;border-color:transparent transparent var(--nav-menu-foreground-color) transparent}.sm-dox span.scroll-down-arrow{top:8px;border-style:solid dashed dashed dashed;border-color:var(--nav-menu-foreground-color) transparent transparent transparent}.sm-dox.sm-rtl a.has-submenu{padding-right:12px;padding-left:24px}.sm-dox.sm-rtl a span.sub-arrow{right:auto;left:12px}.sm-dox.sm-rtl.sm-vertical a.has-submenu{padding:10px 20px}.sm-dox.sm-rtl.sm-vertical a span.sub-arrow{right:auto;left:8px;border-style:dashed solid dashed dashed;border-color:transparent #555 transparent transparent}.sm-dox.sm-rtl>li>ul:before{left:auto;right:30px}.sm-dox.sm-rtl>li>ul:after{left:auto;right:31px}.sm-dox.sm-rtl ul a.has-submenu{padding:10px 20px !important}.sm-dox.sm-rtl ul a span.sub-arrow{right:auto;left:8px;border-style:dashed solid dashed dashed;border-color:transparent #555 transparent transparent}.sm-dox.sm-vertical{padding:10px 0;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}.sm-dox.sm-vertical a{padding:10px 20px}.sm-dox.sm-vertical a:hover,.sm-dox.sm-vertical a:focus,.sm-dox.sm-vertical a:active,.sm-dox.sm-vertical a.highlighted{background:#fff}.sm-dox.sm-vertical a.disabled{background-image:var(--nav-gradient-image)}.sm-dox.sm-vertical a span.sub-arrow{right:8px;top:50%;margin-top:-5px;border-width:5px;border-style:dashed dashed dashed solid;border-color:transparent transparent transparent #555}.sm-dox.sm-vertical>li>ul:before,.sm-dox.sm-vertical>li>ul:after{display:none}.sm-dox.sm-vertical ul a{padding:10px 20px}.sm-dox.sm-vertical ul a:hover,.sm-dox.sm-vertical ul a:focus,.sm-dox.sm-vertical ul a:active,.sm-dox.sm-vertical ul a.highlighted{background:#eee}.sm-dox.sm-vertical ul a.disabled{background:var(--nav-menu-background-color)}}
+applets/type-2/style-1.rasi:@import                          "../shared/fonts.rasi"
+applets/type-2/style-1.rasi:    font:                        "feather 28";
+launchers/type-7/style-9.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+applets/bin/latex/refman.tex:    \usepackage{fontspec}
+applets/bin/latex/refman.tex:    \defaultfontfeatures{Ligatures={TeX}}
+applets/bin/latex/refman.tex:  % Define default fonts
+applets/bin/latex/refman.tex:    \usepackage[T1]{fontenc}
+applets/bin/latex/refman.tex:  % set main and monospaced font
+applets/bin/latex/refman.tex:  \doxyallsectionsfont{%
+applets/bin/latex/refman.tex:    \fontseries{bc}\selectfont%
+applets/bin/latex/refman.tex:    \fontseries{bc}\selectfont%
+applets/bin/latex/refman.tex:  % Redefine paragraph/subparagraph environments, using sectsty fonts
+applets/bin/latex/refman.tex:      \normalfont\normalsize\bfseries\SS@parafont%
+applets/bin/latex/refman.tex:      \normalfont\normalsize\bfseries\SS@subparafont%
+applets/bin/latex/refman.tex:  \captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+powermenu/type-1/style-4.rasi:@import                          "shared/fonts.rasi"
+applets/bin/latex/refman.log:(/usr/share/texmf-dist/tex/latex/amsfonts/amssymb.sty
+applets/bin/latex/refman.log:Package: amssymb 2013/01/14 v3.01 AMS font symbols
+applets/bin/latex/refman.log:(/usr/share/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+applets/bin/latex/refman.log:Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+applets/bin/latex/refman.log:LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+applets/bin/latex/refman.log:(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+applets/bin/latex/refman.log:Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+applets/bin/latex/refman.log:Now handling font encoding PD1 ...
+applets/bin/latex/refman.log:... no UTF-8 mapping file for font encoding PD1
+applets/bin/latex/refman.log:Now handling font encoding PU ...
+applets/bin/latex/refman.log:... no UTF-8 mapping file for font encoding PU
+applets/bin/latex/refman.log:LaTeX Font Info:    Trying to load font information for T1+phv on input line 20
+applets/bin/latex/refman.log:File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
+applets/bin/latex/refman.log:\everyMPshowfont=\toks37
+applets/bin/latex/refman.log:{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
+applets/bin/latex/refman.log: 566454 words of font info for 43 fonts, out of 8000000 for 9000
+applets/bin/latex/refman.log:</usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+applets/type-1/style-3.rasi:@import                          "../shared/fonts.rasi"
+applets/type-1/style-1.rasi:@import                          "../shared/fonts.rasi"
+applets/bin/latex/doxygen.sty:     \discretionary{}{\kern\fontdimen2\font}{\kern\fontdimen2\font}%
+applets/bin/latex/doxygen.sty:  \normalfont\ttfamily%
+applets/bin/latex/doxygen.sty:  \normalfont%
+applets/bin/latex/doxygen.sty:\setlist[DoxyItemize,2]{label=\normalfont\bfseries \textendash}
+applets/bin/latex/doxygen.sty:    \multicolumn{2}{l}{\hspace{-6pt}\bfseries\fontseries{bc}\selectfont\color{darkgray} #2}\\[1ex]%
+applets/bin/latex/doxygen.sty:    \multicolumn{2}{l}{\hspace{-6pt}\bfseries\fontseries{bc}\selectfont\color{darkgray} #2}\\[1ex]%
+applets/bin/latex/doxygen.sty:    \multicolumn{3}{l}{\hspace{-6pt}\bfseries\fontseries{bc}\selectfont\color{darkgray} #1}\\[1ex]%
+applets/bin/latex/doxygen.sty:    \multicolumn{3}{l}{\hspace{-6pt}\bfseries\fontseries{bc}\selectfont\color{darkgray} #1}\\[1ex]%
+applets/bin/latex/doxygen.sty:    \multicolumn{2}{l}{\hspace{-6pt}\bfseries\fontseries{bc}\selectfont\color{darkgray} #2}\\[1ex]%
+applets/bin/latex/doxygen.sty:    \multicolumn{2}{l}{\hspace{-6pt}\bfseries\fontseries{bc}\selectfont\color{darkgray} #2}\\[1ex]%
+applets/bin/latex/doxygen.sty:    \multicolumn{2}{l}{\hspace{-6pt}\bfseries\fontseries{bc}\selectfont\color{darkgray} #1}\\[1ex]%
+applets/bin/latex/doxygen.sty:    \multicolumn{2}{l}{\hspace{-6pt}\bfseries\fontseries{bc}\selectfont\color{darkgray} #1}\\[1ex]%
+applets/bin/latex/doxygen.sty:    \multicolumn{2}{l}{\hspace{-6pt}\bfseries\fontseries{bc}\selectfont\color{darkgray} #1}\\[1ex]%
+applets/bin/latex/doxygen.sty:    \multicolumn{2}{l}{\hspace{-6pt}\bfseries\fontseries{bc}\selectfont\color{darkgray} #1}\\[1ex]%
+applets/bin/latex/doxygen.sty:    \multicolumn{2}{l}{\hspace{-6pt}\bfseries\fontseries{bc}\selectfont\color{darkgray} #1}\\[1ex]%
+applets/bin/latex/doxygen.sty:    \multicolumn{2}{l}{\hspace{-6pt}\bfseries\fontseries{bc}\selectfont\color{darkgray} #1}\\[1ex]%
+applets/bin/latex/doxygen.sty:                                     {\raggedright\normalfont\Large\bfseries}}
+applets/bin/latex/doxygen.sty:                                     {\raggedright\normalfont\large\bfseries}}
+applets/bin/latex/doxygen.sty:                                     {\raggedright\normalfont\normalsize\bfseries}}
+applets/bin/latex/doxygen.sty:                                     {\raggedright\normalfont\normalsize\bfseries}}
+applets/bin/latex/doxygen.sty:                                     {\raggedright\normalfont\normalsize\bfseries}}
+applets/bin/latex/doxygen.sty:                                     {\raggedright\normalfont\normalsize\bfseries}}
+applets/bin/latex/doxygen.sty:                                     {\raggedright\normalfont\normalsize\bfseries}}
+applets/bin/latex/doxygen.sty:                                     {\raggedright\normalfont\normalsize\bfseries}}
+applets/bin/latex/doxygen.sty:                                     {\raggedright\normalfont\normalsize\bfseries}}    
+applets/bin/latex/doxygen.sty:\newcommand*{\doxypartfont}          [1]
+applets/bin/latex/doxygen.sty:   {\gdef\SS@partnumberfont{\SS@sectid{0}\SS@nopart\SS@makeulinepartchap#1}
+applets/bin/latex/doxygen.sty:    \gdef\SS@parttitlefont{\SS@sectid{0}\SS@titlepart\SS@makeulinepartchap#1}}
+applets/bin/latex/doxygen.sty:\newcommand*{\doxychapterfont}       [1]
+applets/bin/latex/doxygen.sty:   {\gdef\SS@chapnumfont{\SS@sectid{1}\SS@nopart\SS@makeulinepartchap#1}
+applets/bin/latex/doxygen.sty:    \gdef\SS@chaptitlefont{\SS@sectid{1}\SS@titlepart\SS@makeulinepartchap#1}}
+applets/bin/latex/doxygen.sty:\newcommand*{\doxysectionfont}       [1]
+applets/bin/latex/doxygen.sty:   {\gdef\SS@sectfont{\SS@sectid{2}\SS@rr\SS@makeulinesect#1}}
+applets/bin/latex/doxygen.sty:\newcommand*{\doxysubsectionfont}    [1]
+applets/bin/latex/doxygen.sty:   {\gdef\SS@subsectfont{\SS@sectid{3}\SS@rr\SS@makeulinesect#1}}
+applets/bin/latex/doxygen.sty:\newcommand*{\doxysubsubsectionfont} [1]
+applets/bin/latex/doxygen.sty:   {\gdef\SS@subsubsectfont{\SS@sectid{4}\SS@rr\SS@makeulinesect#1}}
+applets/bin/latex/doxygen.sty:\newcommand*{\doxyparagraphfont}     [1]
+applets/bin/latex/doxygen.sty:   {\gdef\SS@parafont{\SS@sectid{5}\SS@rr\SS@makeulinesect#1}}
+applets/bin/latex/doxygen.sty:\newcommand*{\doxysubparagraphfont}  [1]
+applets/bin/latex/doxygen.sty:   {\gdef\SS@subparafont{\SS@sectid{6}\SS@rr\SS@makeulinesect#1}}
+applets/bin/latex/doxygen.sty:\newcommand*{\doxyminisecfont}  [1]
+applets/bin/latex/doxygen.sty:   {\gdef\SS@minisecfont{\SS@sectid{7}\SS@rr\SS@makeulinepartchap#1}}
+applets/bin/latex/doxygen.sty:\newcommand*{\doxyallsectionsfont}   [1] {\doxypartfont{#1}%
+applets/bin/latex/doxygen.sty:                                          \doxychapterfont{#1}%
+applets/bin/latex/doxygen.sty:                                          \doxysectionfont{#1}%
+applets/bin/latex/doxygen.sty:                                          \doxysubsectionfont{#1}%
+applets/bin/latex/doxygen.sty:                                          \doxysubsubsectionfont{#1}%
+applets/bin/latex/doxygen.sty:                                          \doxyparagraphfont{#1}%
+applets/bin/latex/doxygen.sty:                                          \doxysubparagraphfont{#1}%
+applets/bin/latex/doxygen.sty:                                          \doxyminisecfont{#1}}%
+powermenu/type-1/style-3.rasi:@import                          "shared/fonts.rasi"
+applets/type-1/style-2.rasi:@import                          "../shared/fonts.rasi"
+launchers/type-7/style-8.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+applets/bin/html/navtree.css:  font: 12px var(--font-family-nav);
+applets/bin/html/navtree.css:  font-size:14px;
+applets/bin/html/navtree.css:  font-size:0.1px;
+launchers/type-7/style-3.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+launchers/type-6/style-9.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+powermenu/type-1/style-2.rasi:@import                          "shared/fonts.rasi"
+launchers/type-2/style-9.rasi:@import                          "shared/fonts.rasi"
+launchers/type-7/style-7.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+applets/bin/latex/etoc_doxygen.sty:\def\etocfontminustwo {\normalfont \LARGE \bfseries}
+applets/bin/latex/etoc_doxygen.sty:\def\etocfontminusone {\normalfont \large \bfseries}
+applets/bin/latex/etoc_doxygen.sty:\def\etocfontzero     {\normalfont \large \bfseries}
+applets/bin/latex/etoc_doxygen.sty:\def\etocfontone      {\normalfont \normalsize \bfseries}
+applets/bin/latex/etoc_doxygen.sty:\def\etocfonttwo      {\normalfont \normalsize}
+applets/bin/latex/etoc_doxygen.sty:\def\etocfontthree    {\normalfont \footnotesize}
+applets/bin/latex/etoc_doxygen.sty:        {\hbox{\normalfont\normalsize\hb@xt@2ex {\hss.\hss}}}
+applets/bin/latex/etoc_doxygen.sty:   \etocfontminustwo
+applets/bin/latex/etoc_doxygen.sty:   \etocfontminusone
+applets/bin/latex/etoc_doxygen.sty:   \etocfontzero
+applets/bin/latex/etoc_doxygen.sty:   \etocfontone
+applets/bin/latex/etoc_doxygen.sty:   \etocfonttwo
+applets/bin/latex/etoc_doxygen.sty:   \etocfontthree
+applets/bin/latex/etoc_doxygen.sty:    {\renewcommand*\etocfontone{\normalfont\normalsize}
+applets/bin/latex/etoc_doxygen.sty:    {\renewcommand*\etocfontone{\normalfont\normalsize}
+applets/bin/latex/etoc_doxygen.sty:    {\renewcommand*\etocfontone{\normalfont\normalsize}
+applets/bin/latex/etoc_doxygen.sty:    {\renewcommand*\etocfontone{\normalfont\normalsize}
+applets/bin/latex/etoc_doxygen.sty:    {\renewcommand*\etocfontone{\normalfont\normalsize}
+launchers/type-7/style-2.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+launchers/type-7/style-5.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+applets/bin/html/search/search.css:    font-weight: normal;
+applets/bin/html/search/search.css:    font-family: var(--font-family-search);
+applets/bin/html/search/search.css:        font-size: 16px;
+applets/bin/html/search/search.css:    font-size: inherit;
+applets/bin/html/search/search.css:    font: 8pt var(--font-family-search);
+applets/bin/html/search/search.css:    font-family: var(--font-family-monospace);
+applets/bin/html/search/search.css:    font-size: 10pt;
+applets/bin/html/search/search.css:    font-size: 8pt;
+applets/bin/html/search/search.css:    font-weight: bold;
+applets/bin/html/search/search.css:    font-family: var(--font-family-search);
+applets/bin/html/search/search.css:    font-family: var(--font-family-search);
+applets/bin/html/search/search.css:    font-size: 8pt;
+applets/bin/html/search/search.css:    font-family: var(--font-family-search);
+applets/bin/html/search/search.css:    font-size: 8pt;
+applets/bin/html/search/search.css:    font-style: italic;
+applets/bin/html/search/search.css:    font-family: var(--font-family-search);
+applets/bin/html/search/search.css:    font-weight: bold;
+launchers/type-6/style-8.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+launchers/type-7/style-10.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+applets/bin/Doxyfile:# Use this tag to change the font size of LaTeX formulas included as images in
+applets/bin/Doxyfile:# the HTML documentation. When you change the font size after a successful
+applets/bin/Doxyfile:# \usepackage command. To get the times font for instance you can specify :
+applets/bin/Doxyfile:# subgraphs. When you want a differently looking font in the dot files that
+applets/bin/Doxyfile:# Doxygen generates you can specify fontname, fontcolor and fontsize attributes.
+applets/bin/Doxyfile:# to find the font, which can be done by putting it in a standard location or by
+applets/bin/Doxyfile:# directory containing the font. Default graphviz fontsize is 14.
+applets/bin/Doxyfile:# The default value is: fontname=Helvetica,fontsize=10.
+applets/bin/Doxyfile:DOT_COMMON_ATTR        = "fontname=Helvetica,fontsize=10"
+applets/bin/Doxyfile:# The default value is: labelfontname=Helvetica,labelfontsize=10.
+applets/bin/Doxyfile:DOT_EDGE_ATTR          = "labelfontname=Helvetica,labelfontsize=10"
+applets/bin/Doxyfile:# You can set the path where dot can find font specified with fontname in
+launchers/type-2/style-13.rasi:@import                          "shared/fonts.rasi"
+launchers/type-2/style-8.rasi:@import                          "shared/fonts.rasi"
+launchers/type-6/style-7.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+launchers/type-7/style-1.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+launchers/type-2/style-7.rasi:@import                          "shared/fonts.rasi"
+launchers/type-2/style-12.rasi:@import                          "shared/fonts.rasi"
+launchers/type-7/style-4.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+launchers/type-7/style-6.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+applets/bin/html/doxygen.css:--nav-font-size-level1: 13px;
+applets/bin/html/doxygen.css:--nav-font-size-level2: 10px;
+applets/bin/html/doxygen.css:--nav-font-size-level3: 9px;
+applets/bin/html/doxygen.css:--toc-down-arrow-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='10px' width='5px' fill='grey'><text x='0' y='5' font-size='10'>&%238595;</text></svg>");
+applets/bin/html/doxygen.css:/** font-family */
+applets/bin/html/doxygen.css:--font-family-normal: Roboto,sans-serif;
+applets/bin/html/doxygen.css:--font-family-monospace: 'JetBrains Mono',Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace,fixed;
+applets/bin/html/doxygen.css:--font-family-nav: 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;
+applets/bin/html/doxygen.css:--font-family-title: Tahoma,Arial,sans-serif;
+applets/bin/html/doxygen.css:--font-family-toc: Verdana,'DejaVu Sans',Geneva,sans-serif;
+applets/bin/html/doxygen.css:--font-family-search: Arial,Verdana,sans-serif;
+applets/bin/html/doxygen.css:--font-family-icon: Arial,Helvetica;
+applets/bin/html/doxygen.css:--font-family-tooltip: Roboto,sans-serif;
+applets/bin/html/doxygen.css:--nav-font-size-level1: 13px;
+applets/bin/html/doxygen.css:--nav-font-size-level2: 10px;
+applets/bin/html/doxygen.css:--nav-font-size-level3: 9px;
+applets/bin/html/doxygen.css:--toc-down-arrow-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='10px' width='5px'><text x='0' y='5' font-size='10' fill='grey'>&%238595;</text></svg>");
+applets/bin/html/doxygen.css:/** font-family */
+applets/bin/html/doxygen.css:--font-family-normal: Roboto,sans-serif;
+applets/bin/html/doxygen.css:--font-family-monospace: 'JetBrains Mono',Consolas,Monaco,'Andale Mono','Ubuntu Mono',monospace,fixed;
+applets/bin/html/doxygen.css:--font-family-nav: 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;
+applets/bin/html/doxygen.css:--font-family-title: Tahoma,Arial,sans-serif;
+applets/bin/html/doxygen.css:--font-family-toc: Verdana,'DejaVu Sans',Geneva,sans-serif;
+applets/bin/html/doxygen.css:--font-family-search: Arial,Verdana,sans-serif;
+applets/bin/html/doxygen.css:--font-family-icon: Arial,Helvetica;
+applets/bin/html/doxygen.css:--font-family-tooltip: Roboto,sans-serif;
+applets/bin/html/doxygen.css:	font-weight: 400;
+applets/bin/html/doxygen.css:	font-size: 14px;
+applets/bin/html/doxygen.css:	font-family: var(--font-family-normal);
+applets/bin/html/doxygen.css:	font-family: var(--font-family-normal);
+applets/bin/html/doxygen.css:	font-size: 150%;
+applets/bin/html/doxygen.css:	font-weight: bold;
+applets/bin/html/doxygen.css:	font-size: 150%;
+applets/bin/html/doxygen.css:	font-size: 150%;
+applets/bin/html/doxygen.css:	font-weight: normal;
+applets/bin/html/doxygen.css:	font-size: 100%;
+applets/bin/html/doxygen.css:	font-weight: bold;
+applets/bin/html/doxygen.css:        font-size: 100%;
+applets/bin/html/doxygen.css:        font-weight: 700;
+applets/bin/html/doxygen.css:	font-weight: bold;
+applets/bin/html/doxygen.css:	font-size: 70%;
+applets/bin/html/doxygen.css:	font-size: 90%;
+applets/bin/html/doxygen.css:	font-weight: bold;
+applets/bin/html/doxygen.css:	font-size: 130%;
+applets/bin/html/doxygen.css:	font-size: 180%;
+applets/bin/html/doxygen.css:	font-weight: bold;
+applets/bin/html/doxygen.css:	font-weight: normal;
+applets/bin/html/doxygen.css:	font-weight: bold;
+applets/bin/html/doxygen.css:  font-size:  10pt;
+applets/bin/html/doxygen.css:  font-family: var(--font-family-monospace);
+applets/bin/html/doxygen.css:	font-family: var(--font-family-monospace);
+applets/bin/html/doxygen.css:        font-size: 13px;
+applets/bin/html/doxygen.css:	font-weight: bold;
+applets/bin/html/doxygen.css:	font-style: italic;
+applets/bin/html/doxygen.css:	font-size: 80%;
+applets/bin/html/doxygen.css:	font-size: 75%;
+applets/bin/html/doxygen.css:	font-weight: bold;
+applets/bin/html/doxygen.css:	font-size: 80%;
+applets/bin/html/doxygen.css:	font-weight: 300;
+applets/bin/html/doxygen.css:        font-size: 65%;
+applets/bin/html/doxygen.css:	font-size: 80%;
+applets/bin/html/doxygen.css:	font-weight: normal;
+applets/bin/html/doxygen.css:        font-weight: 400;
+applets/bin/html/doxygen.css:        font-weight: bold;
+applets/bin/html/doxygen.css:        font-family: var(--font-family-monospace);
+applets/bin/html/doxygen.css:	font-size: 65%;
+applets/bin/html/doxygen.css:	font-style: normal;
+applets/bin/html/doxygen.css:	font-family: var(--font-family-monospace);
+applets/bin/html/doxygen.css:        font-weight: bold;
+applets/bin/html/doxygen.css:        font-style: italic;
+applets/bin/html/doxygen.css:        font-family: var(--font-family-monospace);
+applets/bin/html/doxygen.css:	font-size: 7pt;
+applets/bin/html/doxygen.css:        font-size: 9pt;
+applets/bin/html/doxygen.css:    font-size: 80%;
+applets/bin/html/doxygen.css:    font-family: var(--font-family-icon);
+applets/bin/html/doxygen.css:    font-weight: bold;
+applets/bin/html/doxygen.css:    font-size: 12px;
+applets/bin/html/doxygen.css:	font-style: normal;
+applets/bin/html/doxygen.css:	font-size: 110%;
+applets/bin/html/doxygen.css:        font-size: 90%;
+applets/bin/html/doxygen.css:        font-weight: 400;
+applets/bin/html/doxygen.css:	font-size: 13px;
+applets/bin/html/doxygen.css:	font-size: 11px;
+applets/bin/html/doxygen.css:	font-family: var(--font-family-nav);
+applets/bin/html/doxygen.css:        font-size: 8pt;
+applets/bin/html/doxygen.css:	font-size: 8pt;
+applets/bin/html/doxygen.css:	font-size: 8pt;
+applets/bin/html/doxygen.css:    font-weight: bold !important;
+applets/bin/html/doxygen.css:	font-size: 200%;
+applets/bin/html/doxygen.css:	font-family: var(--font-family-title);
+applets/bin/html/doxygen.css:	font-size: 90%;
+applets/bin/html/doxygen.css:        font-family: var(--font-family-title);
+applets/bin/html/doxygen.css:	font-size: 50%;
+applets/bin/html/doxygen.css:	font-family: 50% var(--font-family-title);
+applets/bin/html/doxygen.css:	font-weight: bold;
+applets/bin/html/doxygen.css:        font-weight:bold;
+applets/bin/html/doxygen.css:        font: 10px/1.2 var(--font-family-toc);
+applets/bin/html/doxygen.css:        font: bold 12px/1.2 var(--font-family-toc);
+applets/bin/html/doxygen.css:        /* font family used at the site: https://unicode.org/emoji/charts/full-emoji-list.html
+applets/bin/html/doxygen.css:         * font-family: "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji", Times, Symbola, Aegyptus, Code2000, Code2001, Code2002, Musica, serif, LastResort;
+applets/bin/html/doxygen.css:        font-weight: bold;
+applets/bin/html/doxygen.css:	font-size: smaller;
+applets/bin/html/doxygen.css:	font-style: italic;
+applets/bin/html/doxygen.css:        font-weight: bold;
+applets/bin/html/doxygen.css:        font-weight: bold;
+applets/bin/html/doxygen.css:        font-size: 12px;
+applets/bin/html/doxygen.css:       	font-family: var(--font-family-tooltip);
+applets/bin/html/doxygen.css:	font-size: 110%;
+applets/bin/html/doxygen.css:    font-size: 80%;
+applets/bin/html/doxygen.css:    font-size: 80%;
+launchers/type-2/shared/fonts.rasi:    font: "Iosevka Nerd Font 10";
+launchers/type-6/style-6.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+launchers/type-2/style-11.rasi:@import                          "shared/fonts.rasi"
+launchers/type-2/style-6.rasi:@import                          "shared/fonts.rasi"
+launchers/type-2/style-5.rasi:@import                          "shared/fonts.rasi"
+applets/bin/quicklinks.sh:	efonts="JetBrains Mono Nerd Font 10"
+applets/bin/quicklinks.sh:	efonts="JetBrains Mono Nerd Font 28"
+applets/bin/quicklinks.sh:		-theme-str "element-text {font: \"$efonts\";}" \
+launchers/type-6/style-5.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+launchers/type-2/style-10.rasi:@import                          "shared/fonts.rasi"
+launchers/type-1/style-9.rasi:@import                          "shared/fonts.rasi"
+launchers/type-2/style-1.rasi:@import                          "shared/fonts.rasi"
+launchers/type-2/style-4.rasi:@import                          "shared/fonts.rasi"
+launchers/type-1/style-1.rasi:@import                          "shared/fonts.rasi"
+launchers/type-1/style-8.rasi:@import                          "shared/fonts.rasi"
+launchers/type-1/style-14.rasi:@import                          "shared/fonts.rasi"
+launchers/type-1/shared/fonts.rasi:    font: "JetBrains Mono Nerd Font 10";
+launchers/type-2/style-3.rasi:@import                          "shared/fonts.rasi"
+launchers/type-2/style-15.rasi:@import                          "shared/fonts.rasi"
+launchers/type-6/style-4.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+launchers/type-1/style-7.rasi:@import                          "shared/fonts.rasi"
+launchers/type-1/style-4.rasi:@import                          "shared/fonts.rasi"
+launchers/type-6/style-3.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+launchers/type-2/style-2.rasi:@import                          "shared/fonts.rasi"
+launchers/type-1/style-10.rasi:@import                          "shared/fonts.rasi"
+launchers/type-1/style-11.rasi:@import                          "shared/fonts.rasi"
+launchers/type-2/style-14.rasi:@import                          "shared/fonts.rasi"
+launchers/type-1/style-12.rasi:@import                          "shared/fonts.rasi"
+launchers/type-1/style-2.rasi:@import                          "shared/fonts.rasi"
+launchers/type-1/style-3.rasi:@import                          "shared/fonts.rasi"
+launchers/type-6/style-2.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+launchers/type-1/style-6.rasi:@import                          "shared/fonts.rasi"
+applets/bin/html/jquery.js:0].toUpperCase()+e.slice(1),n=Be.length;while(n--)if((e=Be[n]+t)in $e)return e}(e)||e)}var Ue=/^(none|table(?!-c[ea]).+)/,Xe=/^--/,Ve={position:"absolute",visibility:"hidden",display:"block"},Ge={letterSpacing:"0",fontWeight:"400"};function Ye(e,t,n){var r=te.exec(t);return r?Math.max(0,r[2]-(n||0))+(r[3]||"px"):t}function Qe(e,t,n,r,i,o){var a="width"===t?1:0,s=0,u=0;if(n===(r?"border":"content"))return 0;for(;a<4;a+=2)"margin"===n&&(u+=S.css(e,n+ne[a],!0,i)),r?("content"===n&&(u-=S.css(e,"padding"+ne[a],!0,i)),"margin"!==n&&(u-=S.css(e,"border"+ne[a]+"Width",!0,i))):(u+=S.css(e,"padding"+ne[a],!0,i),"padding"!==n?u+=S.css(e,"border"+ne[a]+"Width",!0,i):s+=S.css(e,"border"+ne[a]+"Width",!0,i));return!r&&0<=o&&(u+=Math.max(0,Math.ceil(e["offset"+t[0].toUpperCase()+t.slice(1)]-o-u-s-.5))||0),u}function Je(e,t,n){var r=Re(e),i=(!y.boxSizingReliable()||n)&&"border-box"===S.css(e,"boxSizing",!1,r),o=i,a=We(e,t,r),s="offset"+t[0].toUpperCase()+t.slice(1);if(Pe.test(a)){if(!n)return a;a="auto"}return(
+applets/bin/html/jquery.js:!y.boxSizingReliable()&&i||!y.reliableTrDimensions()&&A(e,"tr")||"auto"===a||!parseFloat(a)&&"inline"===S.css(e,"display",!1,r))&&e.getClientRects().length&&(i="border-box"===S.css(e,"boxSizing",!1,r),(o=s in e)&&(a=e[s])),(a=parseFloat(a)||0)+Qe(e,t,n||(i?"border":"content"),o,r,a)+"px"}function Ke(e,t,n,r,i){return new Ke.prototype.init(e,t,n,r,i)}S.extend({cssHooks:{opacity:{get:function(e,t){if(t){var n=We(e,"opacity");return""===n?"1":n}}}},cssNumber:{animationIterationCount:!0,columnCount:!0,fillOpacity:!0,flexGrow:!0,flexShrink:!0,fontWeight:!0,gridArea:!0,gridColumn:!0,gridColumnEnd:!0,gridColumnStart:!0,gridRow:!0,gridRowEnd:!0,gridRowStart:!0,lineHeight:!0,opacity:!0,order:!0,orphans:!0,widows:!0,zIndex:!0,zoom:!0},cssProps:{},style:function(e,t,n,r){if(e&&3!==e.nodeType&&8!==e.nodeType&&e.style){var i,o,a,s=X(t),u=Xe.test(t),l=e.style;if(u||(t=ze(s)),a=S.cssHooks[t]||S.cssHooks[s],void 0===n)return a&&"get"in a&&void 0!==(i=a.get(e,!1,r))?i:l[t];"string"===(o=typeof n)&&(i=te.exec(n))&&i[1]&&(n=se(
+launchers/type-1/style-5.rasi:@import                          "shared/fonts.rasi"
+launchers/type-5/style-5.rasi:    font:                        "Iosevka Nerd Font 10";
+launchers/type-1/style-13.rasi:@import                          "shared/fonts.rasi"
+launchers/type-6/style-10.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+launchers/type-6/style-1.rasi:    font:                        "JetBrains Mono Nerd Font 10";
+launchers/type-5/style-2.rasi:    font:                        "Iosevka Nerd Font 10";
+launchers/type-5/style-2.rasi:    font:                        "Iosevka Nerd Font Bold 10";
+launchers/type-4/style-3.rasi:@import                          "shared/fonts.rasi"
+launchers/type-5/style-4.rasi:    font:                        "Iosevka Nerd Font 10";
+launchers/type-1/style-15.rasi:@import                          "shared/fonts.rasi"
+launchers/type-4/style-4.rasi:@import                          "shared/fonts.rasi"
+launchers/type-4/style-6.rasi:@import                          "shared/fonts.rasi"
+launchers/type-3/style-9.rasi:@import                          "shared/fonts.rasi"
+launchers/type-3/style-3.rasi:@import                          "shared/fonts.rasi"
+launchers/type-4/style-2.rasi:@import                          "shared/fonts.rasi"
+launchers/type-4/style-9.rasi:@import                          "shared/fonts.rasi"
+launchers/type-5/style-3.rasi:    font:                        "Iosevka Nerd Font 10";
+launchers/type-5/style-3.rasi:    font:                        "Iosevka Nerd Font Bold 10";
+launchers/type-5/style-1.rasi:    font:                        "Grape Nuts 14";
+launchers/type-5/style-1.rasi:    font:                        "Grape Nuts Bold 14";
+launchers/type-3/style-1.rasi:@import                          "shared/fonts.rasi"
+launchers/type-4/style-7.rasi:@import                          "shared/fonts.rasi"
+launchers/type-3/shared/fonts.rasi:    font: "Iosevka Nerd Font 10";
+launchers/type-3/style-8.rasi:@import                          "shared/fonts.rasi"
+launchers/type-4/style-1.rasi:@import                          "shared/fonts.rasi"
+launchers/type-4/style-5.rasi:@import                          "shared/fonts.rasi"
+launchers/type-4/style-10.rasi:@import                          "shared/fonts.rasi"
+launchers/type-4/shared/fonts.rasi:    font: "Iosevka Nerd Font 10";
+launchers/type-4/style-8.rasi:@import                          "shared/fonts.rasi"
+launchers/type-3/style-2.rasi:@import                          "shared/fonts.rasi"
+launchers/type-3/style-5.rasi:@import                          "shared/fonts.rasi"
+launchers/type-3/style-7.rasi:@import                          "shared/fonts.rasi"
+launchers/type-3/style-10.rasi:@import                          "shared/fonts.rasi"
+launchers/type-3/style-6.rasi:@import                          "shared/fonts.rasi"
+launchers/type-3/style-4.rasi:@import                          "shared/fonts.rasi"

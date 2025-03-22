@@ -17,6 +17,9 @@ git submodule init && git submodule update || echo "Non-recursive submodule upda
 
 # Step 4: Fallback to recursive update if needed
 git submodule update --init --recursive || echo "Recursive submodule update failed"
+
+# Step 5:
+# Go check the urls and do the installation of every things in their readme
 ```
 
 ** You should check the .git of nvim, zsh, and other to set them up **

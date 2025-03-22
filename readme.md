@@ -22,13 +22,14 @@ lf has one too.
 
 10. polybar is both bars
 
-cava is for music playing in terminal with a bar graph for frequency amplitude (The cool looking thing)
-And Xava is like cava, but embeded in the screen itself
-Eww and conky are extra window that appears with widgets (conky is for performance monitoring, eww is general)
+11. cava is for music playing in terminal with a bar graph for frequency amplitude (The cool looking thing)
+12. Xava is like cava, but embeded in the screen itself
+13. Eww and conky are extra window that appears with widgets (conky is for performance monitoring, eww is general)
 
-Kanata is for using asdf jkl; as control, alt, shift, windows/command/super,
-rofi is an application launcher. You'll need rofi-wayland (for Linux only)
-Mac already has one
+14. Kanata is for using asdf jkl; as control, alt, shift, windows/command/super,
+15. rofi is an application launcher. You'll need rofi-wayland (for Linux only)
+
+    Mac already has one
 
 ```bash
 sudo pacman -S rofi-wayland

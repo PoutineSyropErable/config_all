@@ -1,5 +1,19 @@
 You should checkout the desktop or the laptop branch, as these are the branch for my personnal pc.
 I recommend you use them, as this might not be updated at all
+#You should also checkout the submodules, and their install readmes (should work with copy and paste)
+
+nvim, zsh, tmux are the main one. They should have all the install commands together.
+lf has one too.
+
+<pre>
+<a href="https://github.com/PoutineSyropErable/config_all">https://github.com/PoutineSyropErable/config_all</a>
+# ^The parent, the children vv
+<a href="https://github.com/PoutineSyropErable/config_kitty">https://github.com/PoutineSyropErable/config_kitty</a>
+<a href="https://github.com/PoutineSyropErable/config_tmux">https://github.com/PoutineSyropErable/config_tmux</a>
+<a href="https://github.com/PoutineSyropErable/config_lf">https://github.com/PoutineSyropErable/config_lf</a>
+<a href="https://github.com/PoutineSyropErable/config_nvim">https://github.com/PoutineSyropErable/config_nvim</a>
+# You get it, config_{dirname}, you can also just click on the dir that are submodules and you'll be moved there
+</pre>
 
 so:
 
@@ -19,7 +33,7 @@ git submodule init && git submodule update || echo "Non-recursive submodule upda
 git submodule update --init --recursive || echo "Recursive submodule update failed"
 
 # Step 5:
-# Go check the urls and do the installation of every things in their readme
+# Go check the urls and do the installation of every things in their readme, zsh + nvim + lf i recommend
 ```
 
 ** You should check the .git of nvim, zsh, and other to set them up **

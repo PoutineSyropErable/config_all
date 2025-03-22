@@ -4,7 +4,7 @@ I recommend you use them
 so:
 
 ```bash
-git clone --branch desktop --depth 1 https://github.com/PoutineSyropErable/PoutineErable.config.git ~/.config_poutine/
+git clone --branch desktop --depth 1 --recurse-submodules https://github.com/PoutineSyropErable/PoutineErable.config.git ~/.config_poutine/
 ```
 
 Example:

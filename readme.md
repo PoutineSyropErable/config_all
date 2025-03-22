@@ -4,7 +4,21 @@ I recommend you use them, as this might not be updated at all
 so:
 
 ```bash
-git clone --branch desktop --depth 1 --recurse-submodules https://github.com/PoutineSyropErable/PoutineErable.config.git ~/.config_poutine/
+git clone --branch desktop --depth 1 https://github.com/PoutineSyropErable/PoutineErable.config.git ~/.config_poutine/
+# or write laptop, but i mostly work on the desktop branch, as due to submodules, those who need can be branched themselves.
+#
+
+# Step 2: Move into the cloned repo
+cd ~/.config_poutine/
+
+# Step 3: Try non-recursive submodule init/update
+git submodule init && git submodule update || echo "Non-recursive submodule update failed"
+
+# Step 4: Fallback to recursive update if needed
+git submodule update --init --recursive || echo "Recursive submodule update failed"
+
+
+
 ```
 
 Example:

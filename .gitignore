@@ -1,229 +1,78 @@
-# Ignore everything
+# Ignore everything by default
 *
 
-# Do not ignore the .gitignore file
-!readme.md
+# Do not ignore these essential files
 !.gitignore
 !.gitmodules
-# Include specific directories
-# !/aconfmgr/
+!readme.md
+
+# Track only specific folders (explicit allowlist)
 !/awesome/
 !/cava/
-!/ctpv/
 !/conky/
+!/ctpv/
 !/dunst/
 !/eww/
 !/fish/
 !/hypr/
 !/i3/
 !/ironbar/
-!/lf/
 !/kanata/
 !/kitty/
+!/lf/
 !/mpc/
 !/mpd/
 !/mpDris2/
 !/mpv/
-!/nvim/
 !/ncmpcpp/
+!/nvim/
 !/picom/
 !/polybar/
 !/polybar.old/
 !/rofi/
-!/sway
+!/sway/
 !/tmux/
 !/waybar/
 !/xava/
+!/zsh/
 
+# Recursively include their contents
+!/awesome/**
+!/cava/**
+!/conky/**
+!/ctpv/**
+!/dunst/**
+!/eww/**
+!/fish/**
+!/hypr/**
+!/i3/**
+!/ironbar/**
+!/kanata/**
+!/kitty/**
+!/lf/**
+!/mpc/**
+!/mpd/**
+!/mpDris2/**
+!/mpv/**
+!/ncmpcpp/**
+!/nvim/**
+!/picom/**
+!/polybar/**
+!/polybar.old/**
+!/rofi/**
+!/sway/**
+!/tmux/**
+!/waybar/**
+!/xava/**
+!/zsh/**
 
-
-
-!/awesome/**/*
-!/awesome/*/
-!/awesome/*/*/
-!/awesome/*/*/*/
-!/awesome/*/*/*/*/
-
-# !/aconfmgr/10-ignores.sh
-# !/aconfmgr/files
-# !/aconfmgr/files/*
-# !/aconfmgr/files/**
-# !/aconfmgr/files/*/*
-# !/aconfmgr/files/*/*/*
-# !/aconfmgr/files/*/*/*/*
-# !/aconfmgr/files/*/*/*/*/*
-# !/aconfmgr/files/*/*/*/*/*/*
-# !/aconfmgr/files/*/*/*/*/*/*/*
-# !/aconfmgr/files/*/*/*/*/*/*/*/*
-# !/aconfmgr/files/*/*/*/*/*/*/*/*/*
-# !/aconfmgr/files/*/*/*/*/*/*/*/*/*/*
-# !/aconfmgr/files/*/*/*/*/*/*/*/*/*/*/*
-
-!/cava/**/*
-!/cava/*/
-!/cava/*/*/
-!/cava/*/*/*/
-!/cava/*/*/*/*/
-
-!/ctpv/**/*
-!/ctpv/*/
-!/ctpv/*/*/
-!/ctpv/*/*/*/
-!/ctpv/*/*/*/*/
-
-!/conky/**/*
-!/conky/*/
-!/conky/*/*/
-!/conky/*/*/*/
-!/conky/*/*/*/*/
-
-
-
-!/dunst/**/*
-!/dunst/*/
-!/dunst/*/*/
-!/dunst/*/*/*/
-!/dunst/*/*/*/*/
-
-
-!/fish/**/*
-!/fish/*/
-!/fish/*/*/
-!/fish/*/*/*/
-!/fish/*/*/*/*/
-
-
-
-!/hypr/**/*
-!/hypr/*/
-!/hypr/*/*/
-!/hypr/*/*/*/
-!/hypr/*/*/*/*/
-
-
-!/i3/**/*
-!/i3/*/
-!/i3/*/*/
-!/i3/*/*/*/
-!/i3/*/*/*/*/
-
-!/ironbar/**/*
-!/ironbar/*/
-!/ironbar/*/*/
-!/ironbar/*/*/*/
-!/ironbar/*/*/*/*/
-
-!/lf/**/*
-!/lf/*/
-!/lf/*/*/
-!/lf/*/*/*/
-!/lf/*/*/*/*/
-
-!/kitty/**/*
-!/kitty/*/
-!/kitty/*/*/
-!/kitty/*/*/*/
-!/kitty/*/*/*/*/
-
-
-!/kanata/*
-
-!/mpc/**/*
-!/mpc/*/
-!/mpc/*/*/
-!/mpc/*/*/*/
-!/mpc/*/*/*/*/
-
-!/mpd/**/*
-!/mpd/*/
-!/mpd/*/*/
-!/mpd/*/*/*/
-!/mpd/*/*/*/*/
-
-!/mpDris2/**/*
-!/mpDris2/*/
-!/mpDris2/*/*/
-!/mpDris2/*/*/*/
-!/mpDris2/*/*/*/*/
-
-!/mpv/**/*
-!/mpv/*/
-!/mpv/*/*/
-!/mpv/*/*/*/
-!/mpv/*/*/*/*/
-
-
-!/ncmpcpp/**/*
-!/ncmpcpp/*/
-!/ncmpcpp/*/*/
-!/ncmpcpp/*/*/*/
-!/ncmpcpp/*/*/*/*/
-
-!/nvim/**/*
-!/nvim/*/
-!/nvim/*/*/
-!/nvim/*/*/*/
-!/nvim/*/*/*/*/
-
-!/picom/**/*
-!/picom/*/
-!/picom/*/*/
-!/picom/*/*/*/
-!/picom/*/*/*/*/
-
-!/polybar.old/**/*
-!/polybar.old/*/
-!/polybar.old/*/*/
-!/polybar.old/*/*/*/
-!/polybar.old/*/*/*/*/
-
-!/rofi/**/*
-!/rofi/*/
-!/rofi/*/*/
-!/rofi/*/*/*/
-!/rofi/*/*/*/*/
-!/rofi/*/*/*/*/*
-
-!/sway/**/*
-!/sway/*/
-!/sway/*/*/
-!/sway/*/*/*/
-!/sway/*/*/*/*/
-!/sway/*/*/*/*/*
-
-!/tmux/**/*
-!/tmux/*/
-!/tmux/*/*/
-!/tmux/*/*/*/
-!/tmux/*/*/*/*/
-
-!/waybar/**/*
-!/waybar/*/
-!/waybar/*/*/
-!/waybar/*/*/*/
-!/waybar/*/*/*/*/
-
-!/xava/**/*
-!/xava/*/
-!/xava/*/*/
-!/xava/*/*/*/
-!/xava/*/*/*/*/
-
-
-!/zsh/**/*
-!/zsh/*/
-!/zsh/*/*/
-!/zsh/*/*/*/
-!/zsh/*/*/*/*/
-
-/polybar.old/weather-polybar-plugin/.owm-key
-
-
+# Ignore specific files even in included directories
 /mpd/state
-thefuck/__pycache__/settings.cpython-312.pyc
-
 /nvim/term2alpha/
 /gh
+lf/lf source code
 "lf/lf source code"
-lf/lf\ source\ code
 ironbar/ironbar
+thefuck/__pycache__/settings.cpython-312.pyc
+/polybar.old/weather-polybar-plugin/.owm-key
+

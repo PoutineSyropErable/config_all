@@ -27,7 +27,7 @@ https://www.youtube.com/watch?v=_ZSJtvB35-E
 ![i3 screenshot](https://github.com/PoutineSyropErable/home_for_git_public/raw/master/Pictures/Screenshot.png)
 
 Example for hyprland:
-![Hyprland Screenshots][https://github.com/PoutineSyropErable/config_hypr/blob/master/Hyprland%20look.png]
+![Hyprland Screenshot](https://github.com/PoutineSyropErable/config_hypr/raw/master/Hyprland%20look.png)
 
 For full usage, you'll need to also download:
 https://github.com/PoutineSyropErable/home_for_git_public

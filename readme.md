@@ -13,10 +13,10 @@ lf has one too.
 6. neovim=nvim is the text editor/IDE.
 7. ncmpcpp is the mpd+mpc tui (terminal user interface) music manager
 8. (For hyprland)
-9. ironbar is the top bar
-10. waybar is the bottom bar.
-11. (For i3):
-12. polybar is both bars
+   ironbar is the top bar
+   waybar is the bottom bar.
+9. (For i3):
+   polybar is both bars
 
 cava is for music playing in terminal with a bar graph for frequency amplitude (The cool looking thing)
 And Xava is like cava, but embeded in the screen itself

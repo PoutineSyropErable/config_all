@@ -209,6 +209,13 @@
 !/xava/*/*/*/
 !/xava/*/*/*/*/
 
+
+!/zsh/**/*
+!/zsh/*/
+!/zsh/*/*/
+!/zsh/*/*/*/
+!/zsh/*/*/*/*/
+
 /polybar.old/weather-polybar-plugin/.owm-key
 
 

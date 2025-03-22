@@ -1,5 +1,5 @@
 You should checkout the desktop or the laptop branch, as these are the branch for my personnal pc.
-I recommend you use them
+I recommend you use them, as this might not be updated at all
 
 so:
 

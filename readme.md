@@ -5,6 +5,7 @@ so:
 
 ```bash
 git clone --branch desktop --depth 1 https://github.com/PoutineSyropErable/PoutineErable.config.git ~/.config_poutine/
+
 # or write laptop, but i mostly work on the desktop branch, as due to submodules, those who need can be branched themselves.
 #
 
@@ -16,10 +17,9 @@ git submodule init && git submodule update || echo "Non-recursive submodule upda
 
 # Step 4: Fallback to recursive update if needed
 git submodule update --init --recursive || echo "Recursive submodule update failed"
-
-
-
 ```
+
+** You should check the .git of nvim, zsh, and other to set them up **
 
 Example For i3:
 https://www.youtube.com/watch?v=_ZSJtvB35-E

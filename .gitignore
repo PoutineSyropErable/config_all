@@ -5,6 +5,7 @@
 !.gitignore
 !.gitmodules
 !readme.md
+!mimeapps.list
 
 # Track only specific folders (explicit allowlist)
 !/awesome/
@@ -77,4 +78,6 @@ lf/lf source code
 ironbar/ironbar
 thefuck/__pycache__/settings.cpython-312.pyc
 /polybar.old/weather-polybar-plugin/.owm-key
+
+
 

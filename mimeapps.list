@@ -1,0 +1,16 @@
+[Default Applications]
+application/vnd.openxmlformats-officedocument.presentationml.presentation=libreoffice-impress.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-283SZ2.desktop
+message/rfc822=userapp-Thunderbird-283SZ2.desktop
+x-scheme-handler/mid=userapp-Thunderbird-283SZ2.desktop
+image/png=pqiv.desktop
+text/plain=neovim
+application/pdf=org.pwmt.zathura.desktop
+text/x-csrc=nvim.desktop
+
+[Added Associations]
+image/png=pinta.desktop;firefox.desktop;imv.desktop;sxiv.desktop;pqiv.desktop
+application/pdf=firefox.desktop;org.pwmt.zathura.desktop
+
+[Default Applications]
+text/x-csrc=nvim.desktop

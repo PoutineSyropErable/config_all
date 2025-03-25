@@ -1,3 +1,8 @@
+Arch install:
+https://github.com/PoutineSyropErable/ArchInstall
+( A subset of the install commands, and information to quickly load into the live environment from arch-installer.iso)
+
+
 You should checkout the desktop or the laptop branch, as these are the branch for my personnal pc.
 I recommend you use them, as this might not be updated at all
 #You should also checkout the submodules, and their install readmes (should work with copy and paste)

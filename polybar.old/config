@@ -740,7 +740,10 @@ interval = 5
 format-prefix = "GPU MEM: "
 format-prefix-foreground = ${colors.matrix_green} 
 format-underline = ${colors.full_green}
-exec = fish -c "pv $HOME/.config/polybar.old/polybar-radeontop/radeontop.py"
+# exec = fish -c "pv $HOME/.config/polybar.old/polybar-radeontop/radeontop.py"
+# GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet splash resume=UUID=653fe38c-185c-430f-a178-8866b710f7fd"
+# GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet splash resume=UUID=653fe38c-185c-430f-a178-8866b710f7fd"
+exec = echo $(( $(cat /sys/class/drm/card1/device/mem_info_vram_used) / 1024 / 1024 )) MB
 label = %output%
 
 

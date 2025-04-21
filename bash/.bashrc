@@ -13,3 +13,5 @@ PS1='[\u@\h \W]\$ '
 export RADV_PERFTEST=aco
 export TERMINAL=kitty
 export EDITOR=nvim
+
+#test

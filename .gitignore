@@ -10,6 +10,7 @@
 # Track only specific folders (explicit allowlist)
 !/awesome/
 !/aconfmgr/
+!/bash/
 !/cava/
 !/conky/
 !/ctpv/
@@ -42,6 +43,7 @@
 # Recursively include their contents
 !/awesome/**
 !/aconfmgr/**
+!/bash/**
 !/cava/**
 !/conky/**
 !/ctpv/**

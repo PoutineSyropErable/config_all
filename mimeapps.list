@@ -8,6 +8,7 @@ text/plain=neovim
 application/pdf=org.pwmt.zathura.desktop
 text/x-csrc=nvim.desktop
 text/x-csrc=nvim.desktop
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
 
 [Added Associations]
 image/png=krita_png.desktop;pinta.desktop;org.gnome.Loupe.desktop;imv.desktop;org.kde.gwenview.desktop;firefox.desktop;sxiv.desktop;pqiv.desktop;

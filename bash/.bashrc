@@ -15,3 +15,4 @@ export TERMINAL=kitty
 export EDITOR=nvim
 
 #test
+export AF_OPENCL_DEFAULT_DEVICE=1

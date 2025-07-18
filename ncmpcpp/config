@@ -1,0 +1,7 @@
+# Handle spaces/special chars in paths
+system_encoding = "UTF-8"  
+follow_now_playing_lyrics = yes  
+ignore_leading_the = yes  
+
+# Use MPD's music directory (avoids manual path entry)
+mpd_music_dir = "$HOME/Music/My Music"  

@@ -74,3 +74,6 @@
 	url = https://github.com/PoutineSyropErable/config_zsh
 	branch = master
 
+[submodule "vim"]
+	path = vim
+	url = https://github.com/PoutineSyropErable/config_vim

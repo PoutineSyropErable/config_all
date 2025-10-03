@@ -12,7 +12,7 @@
 [submodule "eww"]
 	path = eww
 	url = https://github.com/PoutineSyropErable/config_eww
-	branch = blue
+	branch = topbar
 
 [submodule "fish"]
 	path = fish

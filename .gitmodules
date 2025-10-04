@@ -84,3 +84,6 @@
 [submodule "vim"]
 	path = vim
 	url = https://github.com/PoutineSyropErable/config_vim
+[submodule "test"]
+	path = test
+	url = https://github.com/PoutineSyropErable/config_test

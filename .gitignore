@@ -77,6 +77,9 @@
 !/xava/**
 !/zsh/**
 
+
+!/test
+
 # Ignore specific files even in included directories
 /mpd/state
 /nvim/term2alpha/

@@ -1,4 +1,5 @@
 [submodule "aconfmgr"]
+
 	path = aconfmgr
 	url = https://github.com/PoutineSyropErable/config_aconfmgr
 	branch = master

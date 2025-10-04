@@ -19,6 +19,12 @@
 	url = https://github.com/PoutineSyropErable/config_fish
 	branch = master
 
+
+[submodule "gdb"]
+	path = gdb
+	url = https://github.com/PoutineSyropErable/config_gdb
+	branch = master
+
 [submodule "hypr"]
 	path = hypr
 	url = https://github.com/PoutineSyropErable/config_hypr

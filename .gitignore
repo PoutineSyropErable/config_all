@@ -17,6 +17,7 @@
 !/dunst/
 !/eww/
 !/fish/
+!/gdb/
 !/hypr/
 !/i3/
 !/ironbar/
@@ -51,6 +52,7 @@
 !/dunst/**
 !/eww/**
 !/fish/**
+!/gdb/**
 !/hypr/**
 !/i3/**
 !/ironbar/**

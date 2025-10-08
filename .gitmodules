@@ -87,3 +87,6 @@
 [submodule "test"]
 	path = test
 	url = https://github.com/PoutineSyropErable/config_test
+[submodule "rmpc"]
+	path = rmpc
+	url = https://github.com/PoutineSyropErable/config_rmpc

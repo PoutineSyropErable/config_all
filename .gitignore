@@ -33,6 +33,7 @@
 !/picom/
 !/polybar/
 !/polybar.old/
+!/rmpc/
 !/rofi/
 !/sway/
 !/tmux/
@@ -68,6 +69,7 @@
 !/picom/**
 !/polybar/**
 !/polybar.old/**
+!/rmpc/**
 !/rofi/**
 !/sway/**
 !/tmux/**

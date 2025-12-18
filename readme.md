@@ -72,6 +72,14 @@ git submodule update --init --recursive || echo "Recursive submodule update fail
 [ -d ~/.config ] && mv --backup=numbered ~/.config ~/.config_backup && mv ~/.config_poutine ~/.config
 # maybe the line above isn't fully posix complient, idk. In which case, idc, just rename your old config to not nuke it
 
+# Step 5. Get tmux sessionizer
+# Clone the repo if it doesn't exist
+[ ! -d "$HOME/.local/tmux-sessionizer" ] && git clone https://github.com/PoutineSyropErable/tmux-sessionizer "$HOME/.local/tmux-sessionizer" || git -C "$HOME/.local/tmux-sessionizer" pull
+
+# Create or update the symlink
+ln -sfn "$HOME/.local/tmux-sessionizer" "$HOME/.config/tmux-sessionizer-local"
+
+
 
 
 # Step 5:

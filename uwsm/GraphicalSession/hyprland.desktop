@@ -1,0 +1,10 @@
+# /usr/share/wayland-sessions/hyprland.desktop
+# Delete both of these comments, as they will cause break
+[Desktop Entry]
+Name=Hyprland
+Comment=An intelligent dynamic tiling Wayland compositor
+Exec=Hyprland
+Type=Application
+DesktopNames=Hyprland
+Keywords=tiling;wayland;compositor;
+

@@ -33,6 +33,8 @@
 !/rofi/
 !/sway
 !/tmux/
+!/tmux-sessionizer/
+|/tmux-sessionizer-config/
 !/waybar/
 !/xava/
 
@@ -203,6 +205,11 @@
 !/tmux/*/*/
 !/tmux/*/*/*/
 !/tmux/*/*/*/*/
+
+
+!/tmux-sessionizer/**
+|/tmux-sessionizer-config/**
+!/uwsm/**
 
 !/waybar/**/*
 !/waybar/*/

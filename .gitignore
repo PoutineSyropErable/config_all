@@ -37,6 +37,8 @@
 !/rofi/
 !/sway/
 !/tmux/
+!/tmux-sessionizer/
+|/tmux-sessionizer-config/
 !/uwsm
 !/vim/
 !/waybar/
@@ -73,6 +75,8 @@
 !/rofi/**
 !/sway/**
 !/tmux/**
+!/tmux-sessionizer/**
+|/tmux-sessionizer-config/**
 !/uwsm/**
 !/vim/**
 !/waybar/**

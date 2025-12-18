@@ -95,3 +95,6 @@
 [submodule "test"]
 	path = test
 	url = https://github.com/PoutineSyropErable/config_test
+[submodule "tmux-sessionizer"]
+	path = tmux-sessionizer
+	url = https://github.com/PoutineSyropErable/config_tmux-sessionizer

@@ -159,6 +159,7 @@ bindsym XF86AudioMicMute     exec --no-startup-id pactl set-source-mute @DEFAULT
 floating_modifier $mod
 
 # start a terminal
+bindsym $mod+h exec kitty tmux
 bindsym $mod+Return exec kitty tmux
 bindsym $mod2+Return exec kitty tmux #big fingers
 

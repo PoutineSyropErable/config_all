@@ -98,3 +98,7 @@
 [submodule "tmux-sessionizer"]
 	path = tmux-sessionizer
 	url = https://github.com/PoutineSyropErable/config_tmux-sessionizer
+[submodule "i3"]
+	path = i3
+	url = https://github.com/PoutineSyropErable/config_i3
+	branch = master

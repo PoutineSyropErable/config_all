@@ -30,6 +30,11 @@
 	path = hypr
 	url = https://github.com/PoutineSyropErable/config_hypr
 
+[submodule "i3"]
+	path = i3
+	url = https://github.com/PoutineSyropErable/config_i3
+	branch = master
+
 [submodule "ironbar"]
 	path = ironbar
 	url = https://github.com/PoutineSyropErable/config_ironbar
@@ -71,6 +76,9 @@
 	url = https://github.com/PoutineSyropErable/config_tmux
 	branch = master
 
+[submodule "tmux-sessionizer"]
+	path = tmux-sessionizer
+	url = https://github.com/PoutineSyropErable/config_tmux-sessionizer
 
 [submodule "vim"]
 	path = vim
@@ -95,6 +103,4 @@
 [submodule "test"]
 	path = test
 	url = https://github.com/PoutineSyropErable/config_test
-[submodule "tmux-sessionizer"]
-	path = tmux-sessionizer
-	url = https://github.com/PoutineSyropErable/config_tmux-sessionizer
+

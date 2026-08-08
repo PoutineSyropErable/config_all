@@ -17,6 +17,9 @@ export EDITOR=nvim
 #test
 export AF_OPENCL_DEFAULT_DEVICE=1
 
+alias bmod="nvim ~/.bashrc"
+alias r="source ~/.bashrc"
+
 export PATH="$HOME/bin:$HOME/.local/bin:$HOME/.cargo/bin:$HOME/go/bin:$PATH"
 # not needed cause symlink vv
 # export PATH="$HOME/.local/bin/zen-browser/:$PATH"
